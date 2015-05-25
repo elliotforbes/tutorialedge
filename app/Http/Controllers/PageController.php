@@ -17,7 +17,12 @@ class PageController extends Controller {
 		//
         return view('index');
 	}
-
+    
+    public function single()
+    {
+        return view('static.single2');   
+    }
+    
 	/**
 	 * Show the form for creating a new resource.
 	 *
