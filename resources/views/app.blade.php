@@ -1,43 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Laravel</title>
-
-	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-
-	<!-- Fonts -->
-	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+    <title>Tutorial-Edge.com | Learn to Program here!</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!--    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">-->
+    <link rel="stylesheet" href="{{ asset('/css/front-end.css') }}">
 </head>
+
 <body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#">Laravel</a>
-			</div>
-
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="{{ url('/') }}">Home</a></li>
-				</ul>
-
-				<ul class="nav navbar-nav navbar-right">
-					@if (Auth::guest())
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo"><a href="/">Tutorial-Edge.com</a></div>
+                </div>
+                <div class="nav col-md-8">
+                   
+                   
+                   
+                   
+                   
+                    <ul class="topnav pull-right">
+                    @if (Auth::guest())
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
 						<li><a href="{{ url('/auth/register') }}">Register</a></li>
 					@else
@@ -48,15 +35,111 @@
 							</ul>
 						</li>
 					@endif
-				</ul>
-			</div>
-		</div>
-	</nav>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    @yield('featured-top')
+    
+    <div class="content">
+        <div class="container">
 
-	@yield('content')
+            @yield('content')
 
-	<!-- Scripts -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-</body>
+        </div>
+    </div>
+
+<!--
+    <div class="latest-posts">
+        <div class="container">
+           <h2>Featured Tutorials</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="img-responsive image-responsive-centered" alt="Woman writing in a notebook" title="Woman writing in a notebook" src="//lh5.ggpht.com/bkmfzv_U-lHdif9miQDh9bquTN-d35VM6c1TGIHJmmCr7YzFmgWB0EtawFh4zadk02BDo5VP2zmCdfOc9g=s355#w=1724&amp;h=1060">
+                    <h3>Learn Javascript in your Lunch hour!</h3>
+                    <div>
+						See how to build a career in <a href="http://blog.udacity.com/front-end-web-developer-career-guide" target="_blank">front end web development</a>.
+					</div>
+                </div>
+                <div class="col-md-3">
+                    <img class="img-responsive image-responsive-centered" alt="iOS Nanodegree" title="iOS Nanodegree" src="https://lh3.ggpht.com/mgyUnDEyRP_1SWyCqRVLV7YyxXQFIalWcMNHX0n3iL1ohlIfjI_BGnYttbZphiOPK3rbVUy2HJ5Q4SiNeeE=s355#w=1090&amp;h=670">
+                    <h3>What skills to learn?</h3>
+                    <div>
+						See how to build a career in <a href="http://blog.udacity.com/front-end-web-developer-career-guide" target="_blank">front end web development</a>.
+					</div>
+                </div>
+                <div class="col-md-3">
+                    <img class="img-responsive image-responsive-centered" alt="Two guys talking in front of a wall covered in different sized devices" title="Two guys talking in front of a wall covered in different sized devices" src="//lh6.ggpht.com/UfMbnNAjbz9gpWVzFhmYyOJg-5paoozIIkVhKWHAGNLpfaptKrysZxyuiQlqVkYiCHhyBBlJiowyxzHStn0P=s355#w=1748&amp;h=1075">
+                    <h3>What skills to learn?</h3>
+                    <div>
+						See how to build a career in <a href="http://blog.udacity.com/front-end-web-developer-career-guide" target="_blank">front end web development</a>.
+					</div>
+                </div>
+                <div class="col-md-3">
+                    <img class="img-responsive image-responsive-centered" alt="Strategy" title="Strategy" src="//lh3.googleusercontent.com/yu522724UipioJRuWX5524X3yeeYHFx5pJxQF7_fTvuA309WXHB6NYt2VtBkVEZ_kuLk-7UJ-N2BF7RJHENM=s355#w=436&amp;h=268">
+                    <h3>What skills to learn?</h3>
+                    <div>
+						See how to build a career in <a href="http://blog.udacity.com/front-end-web-developer-career-guide" target="_blank">front end web development</a>.
+					</div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    
+-->
+    
+    
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3>About Us</h3>
+                    <p>Tutorial-Edge.com was founded in January of 2015 with the main goal of helping people who want to learn how to code. 
+                    <br><br>
+                    The site initially started out as a hobby for me and more importantly an incentive for me to constantly keep pushing myself and learning new things.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Community</h3>
+                    <ul>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Learning LWJGL 3</a></li>
+                        <li><a href="#">Learning Laravel 5</a></li>
+                        <li><a href="/Programming_Design_Patterns">Programming Design Concepts</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Follow Us!</h3> 
+                    <p>If you have found any of the content on this website useful then help the site out by following us on your preferred social media channel!</p>
+                    <ul class="footer-connect">
+                            <li><a href="http://facebook.com/laracasts"><i class="fa fa-facebook-square fa-3x"></i></a></li>
+                            <li><a href="http://twitter.com/laracasts"><i class="fa fa-twitter-square fa-3x"></i></a></li>
+                            <li><a href="https://github.com/laracasts"><i class="fa fa-github-square fa-3x"></i></a></li>
+                        </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="col-md-6">
+                <p>Copyright 2015 @copy; Tutorial-Edge.com</p>
+            </div>
+            <div class="col-md-6">
+                <p class="pull-right">Designed and Owned by <a href="http://elliotforbes.co.uk/">Elliot Forbes.</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js" </script>
+    </body>
 </html>
