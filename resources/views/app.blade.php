@@ -6,11 +6,19 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <!--    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">-->
     <link rel="stylesheet" href="{{ asset('/css/front-end.css') }}">
 </head>
 
 <body>
+<!--
     <div class="header">
         <div class="container">
             <div class="row">
@@ -40,7 +48,45 @@
             </div>
         </div>
     </div>
-    
+-->
+   
+       <nav id="cbp-hrmenu" class="cbp-hrmenu">
+        <ul>
+            <li><a href="/">TutorialEdge.net</a></li>
+            <li>
+                <a href="#">Products</a>
+                <div class="cbp-hrsub">
+                    <div class="cbp-hrsub-inner"> 
+                        <div>
+                            <h4>Learning & Games</h4>
+                            <ul>
+                                <li><a href="#">Catch the Bullet</a></li>
+                                <li><a href="#">Snoopydoo</a></li>
+                                <!-- ... -->
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Utilities</h4>
+                            <ul>
+                                <li><a href="#">Gadget Finder</a></li>
+                                <li><a href="#">Green Tree Express</a></li>
+                                <li><a href="#">Green Tree Pro</a></li>
+                                <li><a href="#">Wobbler 3.0</a></li>
+                                <li><a href="#">Coolkid</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <!-- ... -->
+                        </div>
+                    </div><!-- /cbp-hrsub-inner -->
+                </div><!-- /cbp-hrsub -->
+            </li>
+            <li><!-- ... --></li>
+            <li><!-- ... --></li>
+            <!-- ... -->
+        </ul>
+    </nav>
+    <div class="clear"></div>
     @yield('featured-top')
     
     <div class="content">
@@ -104,18 +150,13 @@
                 <div class="col-md-3">
                     <h3>Community</h3>
                     <ul>
-                        <li><a href="#">Youtube</a></li>
-                        <li><a href="#">Forums</a></li>
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="#">link</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h3>Links</h3>
                     <ul>
                         <li><a href="#">Learning LWJGL 3</a></li>
-                        <li><a href="#">Learning Laravel 5</a></li>
-                        <li><a href="/Programming_Design_Patterns">Programming Design Concepts</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -140,6 +181,12 @@
     
     <!-- Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js" </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="{{ asset('/js/horizontalMenu.js') }}"></script>
+		<script>
+			$(function() {
+				cbpHorizontalMenu.init();
+			});
+		</script>
     </body>
 </html>
