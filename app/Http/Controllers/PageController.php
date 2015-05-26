@@ -15,9 +15,9 @@ class PageController extends Controller {
 	public function index()
 	{
 		//
-        $courses = Course::all();
+//        $courses = Course::all();
         
-        return view('index', compact('courses'));
+        return view('index');
 	}
     
     public function single()
