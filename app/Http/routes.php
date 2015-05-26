@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'PageController@index');
+Route::get('/Programming_Design_Patterns/{id}', 'PageController@show'); 
 Route::get('single', 'PageController@single');
 
 Route::get('home', 'HomeController@index');

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Tutorial-Edge.com | Learn to Program here!</title>
+    <title>TutorialEdge.net | Learn to Program here!</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -15,7 +15,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="logo"><a href="/">Tutorial-Edge.com</a></div>
+                    <div class="logo"><a href="/">Tutorialedge.net</a></div>
                 </div>
                 <div class="nav col-md-8">
                    

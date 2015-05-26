@@ -3,6 +3,8 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use DB;
+
 use Illuminate\Http\Request;
 
 class PageController extends Controller {
@@ -15,9 +17,9 @@ class PageController extends Controller {
 	public function index()
 	{
 		//
-//        $courses = Course::all();
-        
-        return view('index');
+        $courses = DB::table('articles')->get();
+//        dd($courses);
+        return view('index', compact('courses'));
 	}
     
     public function single()
@@ -51,9 +53,11 @@ class PageController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($slug)
 	{
 		//
+        $article = DB::table('articles')->find($slug);
+        return view('static.single', compact('article'));
 	}
 
 	/**
