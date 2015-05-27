@@ -60,45 +60,24 @@
 								<!-- TOP MENU -->
 								<nav id="main-nav">
 									<ul class="sf-menu clearfix">
-										<li ><a href="http://www.techandall.com/">Home</a>
+										<li class="current"><a href="/">Home</a></li>
+										<li ><a href="elements.html">Game Development Tutorials</a>
 											<ul>
-												<li><a href="http://www.techandall.com/">Home Dropdown</a></li>
-												<li><a href="http://www.techandall.com/">Home Dropdown</a></li>
-												<li><a href="http://www.techandall.com/">Home Dropdown4</a></li>
-												<li><a href="http://www.techandall.com/">Home Dropdown</a></li>
+												<li><a href="/">LWJGL 3</a></li>
+												<li><a href="/">LibGDX</a></li>
 											</ul>
 										</li>
-										<li ><a href="elements.html">Web Designs & PSD</a>
+										<li><a href="portfolio.html">Courses</a>
 											<ul>
-												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
-												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
-												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
-												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
-												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
-											
-
-											</ul>
-										</li>
-										<li><a href="portfolio.html">Scripts</a>
-											<ul>
-												<li><a href="http://www.techandall.com/">Scripts </a></li>
-												<li><a href="http://www.techandall.com/">Scripts </a></li>
-												<li><a href="http://www.techandall.com/">Scripts </a></li>
-												<li><a href="http://www.techandall.com/">Scripts </a></li>
-												<li><a href="#">Scripts DropDown ></a>
+												<li><a href="/">Programming Design Concepts</a></li>
+												<li><a href="#">Python Tutorials</a>
 													<ul>
-														<li><a href="http://www.techandall.com/">Scripts DropDown</a></li>
-														<li><a href="http://www.techandall.com/">Scripts DropDown</a></li>
+														<li><a href="/">Networking Tutorials</a></li>
 													</ul>
 												</li>
 											</ul>
 										</li>
-										<li class="current" ><a href="http://www.techandall.com/">LifeStyle & Tech</a>
-											<ul>
-												<li><a href="http://www.techandall.com/">DIY</a></li>
-											</ul>
-										</li>
-										<li ><a href="http://www.techandall.com/">Contact</a></li>
+										<li ><a href="">Contact</a></li>
 										
 								  </ul>
 								</nav>
