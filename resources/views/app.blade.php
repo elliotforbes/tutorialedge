@@ -6,11 +6,16 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!--    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">-->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{{ asset('/css/front-end.css') }}">
 </head>
 
 <body>
+<!--
     <div class="header">
         <div class="container">
             <div class="row">
@@ -40,7 +45,70 @@
             </div>
         </div>
     </div>
-    
+-->
+						<div class="header-container m-top-30 clearfix">
+				
+							<div class="header-logo-container ">
+								<div class="logo-container">	
+									<a href="/" class="logo">
+										TutorialEdge.net
+									</a>
+								</div>
+							</div>
+
+							<div class="header-menu-container right">
+								<!-- TOP MENU -->
+								<nav id="main-nav">
+									<ul class="sf-menu clearfix">
+										<li ><a href="http://www.techandall.com/">Home</a>
+											<ul>
+												<li><a href="http://www.techandall.com/">Home Dropdown</a></li>
+												<li><a href="http://www.techandall.com/">Home Dropdown</a></li>
+												<li><a href="http://www.techandall.com/">Home Dropdown4</a></li>
+												<li><a href="http://www.techandall.com/">Home Dropdown</a></li>
+											</ul>
+										</li>
+										<li ><a href="elements.html">Web Designs & PSD</a>
+											<ul>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+											
+
+											</ul>
+										</li>
+										<li><a href="portfolio.html">Scripts</a>
+											<ul>
+												<li><a href="http://www.techandall.com/">Scripts </a></li>
+												<li><a href="http://www.techandall.com/">Scripts </a></li>
+												<li><a href="http://www.techandall.com/">Scripts </a></li>
+												<li><a href="http://www.techandall.com/">Scripts </a></li>
+												<li><a href="#">Scripts DropDown ></a>
+													<ul>
+														<li><a href="http://www.techandall.com/">Scripts DropDown</a></li>
+														<li><a href="http://www.techandall.com/">Scripts DropDown</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="current" ><a href="http://www.techandall.com/">LifeStyle & Tech</a>
+											<ul>
+												<li><a href="http://www.techandall.com/">DIY</a></li>
+											</ul>
+										</li>
+										<li ><a href="http://www.techandall.com/">Contact</a></li>
+										
+								  </ul>
+								</nav>
+								
+							</div>
+							
+						</div>
+
+   
+   
     @yield('featured-top')
     
     <div class="content">
@@ -104,18 +172,13 @@
                 <div class="col-md-3">
                     <h3>Community</h3>
                     <ul>
-                        <li><a href="#">Youtube</a></li>
-                        <li><a href="#">Forums</a></li>
-                        <li><a href="#">Register</a></li>
-                        <li><a href="#">Login</a></li>
+                        <li><a href="#">link</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
                     <h3>Links</h3>
                     <ul>
                         <li><a href="#">Learning LWJGL 3</a></li>
-                        <li><a href="#">Learning Laravel 5</a></li>
-                        <li><a href="/Programming_Design_Patterns">Programming Design Concepts</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
@@ -140,6 +203,12 @@
     
     <!-- Scripts -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js" </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		<script src="{{ asset('/js/horizontalMenu.js') }}"></script>
+		<script>
+			$(function() {
+				cbpHorizontalMenu.init();
+			});
+		</script>
     </body>
 </html>
