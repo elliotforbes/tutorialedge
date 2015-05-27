@@ -9,11 +9,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <!-- Latest compiled and minified JavaScript -->
     <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!--    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{{ asset('/css/front-end.css') }}">
 </head>
 
@@ -49,44 +46,69 @@
         </div>
     </div>
 -->
+						<div class="header-container m-top-30 clearfix">
+				
+							<div class="header-logo-container ">
+								<div class="logo-container">	
+									<a href="/" class="logo">
+										TutorialEdge.net
+									</a>
+								</div>
+							</div>
+
+							<div class="header-menu-container right">
+								<!-- TOP MENU -->
+								<nav id="main-nav">
+									<ul class="sf-menu clearfix">
+										<li ><a href="http://www.techandall.com/">Home</a>
+											<ul>
+												<li><a href="http://www.techandall.com/">Home Dropdown</a></li>
+												<li><a href="http://www.techandall.com/">Home Dropdown</a></li>
+												<li><a href="http://www.techandall.com/">Home Dropdown4</a></li>
+												<li><a href="http://www.techandall.com/">Home Dropdown</a></li>
+											</ul>
+										</li>
+										<li ><a href="elements.html">Web Designs & PSD</a>
+											<ul>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+												<li><a href="http://www.techandall.com/">Web DropDown</a></li>
+											
+
+											</ul>
+										</li>
+										<li><a href="portfolio.html">Scripts</a>
+											<ul>
+												<li><a href="http://www.techandall.com/">Scripts </a></li>
+												<li><a href="http://www.techandall.com/">Scripts </a></li>
+												<li><a href="http://www.techandall.com/">Scripts </a></li>
+												<li><a href="http://www.techandall.com/">Scripts </a></li>
+												<li><a href="#">Scripts DropDown ></a>
+													<ul>
+														<li><a href="http://www.techandall.com/">Scripts DropDown</a></li>
+														<li><a href="http://www.techandall.com/">Scripts DropDown</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="current" ><a href="http://www.techandall.com/">LifeStyle & Tech</a>
+											<ul>
+												<li><a href="http://www.techandall.com/">DIY</a></li>
+											</ul>
+										</li>
+										<li ><a href="http://www.techandall.com/">Contact</a></li>
+										
+								  </ul>
+								</nav>
+								
+							</div>
+							
+						</div>
+
    
-       <nav id="cbp-hrmenu" class="cbp-hrmenu">
-        <ul>
-            <li><a href="/">TutorialEdge.net</a></li>
-            <li>
-                <a href="#">Products</a>
-                <div class="cbp-hrsub">
-                    <div class="cbp-hrsub-inner"> 
-                        <div>
-                            <h4>Learning & Games</h4>
-                            <ul>
-                                <li><a href="#">Catch the Bullet</a></li>
-                                <li><a href="#">Snoopydoo</a></li>
-                                <!-- ... -->
-                            </ul>
-                        </div>
-                        <div>
-                            <h4>Utilities</h4>
-                            <ul>
-                                <li><a href="#">Gadget Finder</a></li>
-                                <li><a href="#">Green Tree Express</a></li>
-                                <li><a href="#">Green Tree Pro</a></li>
-                                <li><a href="#">Wobbler 3.0</a></li>
-                                <li><a href="#">Coolkid</a></li>
-                            </ul>
-                        </div>
-                        <div>
-                            <!-- ... -->
-                        </div>
-                    </div><!-- /cbp-hrsub-inner -->
-                </div><!-- /cbp-hrsub -->
-            </li>
-            <li><!-- ... --></li>
-            <li><!-- ... --></li>
-            <!-- ... -->
-        </ul>
-    </nav>
-    <div class="clear"></div>
+   
     @yield('featured-top')
     
     <div class="content">
