@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>TutorialEdge.net | Learn to Program here!</title>
+    <title>TutorialEdge.net | The Definitive Repo for Programming Resources &pound; Tutorials</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -20,9 +20,7 @@
 
         <div class="header-logo-container ">
             <div class="logo-container">
-                <a href="/" class="logo">
-										TutorialEdge.net
-									</a>
+                <a href="/" class="logo">TutorialEdge.net</a>
             </div>
         </div>
 
@@ -32,17 +30,19 @@
                 <ul class="sf-menu clearfix">
                     <li class="current"><a href="/">Home</a>
                     </li>
-                    <li><a href="elements.html">Game Development Tutorials</a>
+                    <li><a href="#">Programming Tutorials</a>
                         <ul>
-                            <li><a href="/">LWJGL 3</a>
+                            <li><a href="/LWJGL3">LWJGL 3</a>
                             </li>
+<!--
                             <li><a href="/">LibGDX</a>
                             </li>
+-->
                         </ul>
                     </li>
-                    <li><a href="portfolio.html">Courses</a>
+                    <li><a href="#">Courses</a>
                         <ul>
-                            <li><a href="/">Programming Design Concepts</a>
+                            <li><a href="/Programming_Design_Patterns">Programming Design Concepts</a>
                             </li>
                             <li><a href="#">Python Tutorials</a>
                                 <ul>

@@ -21,6 +21,7 @@ class CreateArticlesTable extends Migration {
             $table->timestamp('published_at');
             $table->text('excerpt');
             $table->string('slug');
+            $table->string('cat_id');
 		});
 	}
 

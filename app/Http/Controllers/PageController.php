@@ -19,14 +19,14 @@ class PageController extends Controller {
 	public function index()
 	{
 		//
-        $categories = DB::table('categories')->get();
+        $categories = Article::get();
 //        dd($courses);
         return view('index', compact('categories'));
 	}
     
-    public function design()
+    public function designpatternsindex()
     {
-        $articles = Article::all();
+        $articles = Article::get();
         
         return view('static.category', compact('articles'));
     }
@@ -85,7 +85,7 @@ class PageController extends Controller {
 	public function show($id)
 	{
 		//
-        $article = Article::find($id);
+//        $article = DB::table->select('articles.*'
         
         if(is_null($article))
         {
@@ -94,6 +94,24 @@ class PageController extends Controller {
         
         return view('static.single', compact('article'));
 	}
+    
+    public function lwjglindex()
+    {
+        $articles = Article::get();
+        $course = "LWJGL 3";
+        
+        return view('static.category', compact('articles'));
+        
+    }
+    
+    public function showdesignpatterns($slug)
+    {
+        $article = Article::whereSlug($slug)->first();
+        $course = "Programming Design Patterns";
+        
+        return view('static.single', compact('article'));
+    }
+            
 
 	/**
 	 * Show the form for editing the specified resource.
