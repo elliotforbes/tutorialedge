@@ -4,6 +4,8 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use DB;
+use App\Article;
+use App\Course;
 
 use Illuminate\Http\Request;
 
@@ -17,10 +19,24 @@ class PageController extends Controller {
 	public function index()
 	{
 		//
-        $courses = DB::table('articles')->get();
+        $courses = DB::table('courses')->get();
 //        dd($courses);
         return view('index', compact('courses'));
 	}
+    
+    public function design()
+    {
+        $articles = Article::all();
+        
+        return view('static.category', compact('articles'));
+    }
+    
+    public function showCat($id)
+    {
+        $courses = Course::find($id);
+        
+        return view('index', compact('courses'));
+    }
     
     public function single()
     {
@@ -34,7 +50,7 @@ class PageController extends Controller {
 	 */
 	public function create()
 	{
-		//
+		return view('admin.create');
 	}
 
 	/**
@@ -43,8 +59,21 @@ class PageController extends Controller {
 	 * @return Response
 	 */
 	public function store()
-	{
-		//
+	{	
+        $input = Request::all();
+        
+        $article = new Article;
+        
+        $article->title = $input['title'];
+        $article->body = $input['body'];
+        $article->excerpt = $input['excerpt'];
+        $article->published_at = time();
+        $article->slug = "slug";
+        $article->cat_id = 1;
+        
+        $article->save();
+        
+        return redirect('Programming_Design_Patterns');
 	}
 
 	/**
@@ -53,10 +82,16 @@ class PageController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($slug)
+	public function show($id)
 	{
 		//
-        $article = DB::table('articles')->find($slug);
+        $article = Article::find($id);
+        
+        if(is_null($article))
+        {
+            abort(404);   
+        }
+        
         return view('static.single', compact('article'));
 	}
 
@@ -91,6 +126,8 @@ class PageController extends Controller {
 	public function destroy($id)
 	{
 		//
+        $course = DB::table('courses')->find($id);
+        $course->delete();
 	}
 
 }
