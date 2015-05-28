@@ -19,9 +19,9 @@ class PageController extends Controller {
 	public function index()
 	{
 		//
-        $courses = DB::table('courses')->get();
+        $categories = DB::table('categories')->get();
 //        dd($courses);
-        return view('index', compact('courses'));
+        return view('index', compact('categories'));
 	}
     
     public function design()

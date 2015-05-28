@@ -5,13 +5,13 @@
        <h2>Popular Courses</h2>
         <div class="row"> 
            
-           @foreach ($courses as $course)
+           @foreach ($categories as $category)
             <div class="col-md-3">
                <div class="course-box">
-                    <img class="img-responsive image-responsive-centered" alt="{{ $course->slug }}" title="{{ $course->slug }}" src="//lh5.ggpht.com/bkmfzv_U-lHdif9miQDh9bquTN-d35VM6c1TGIHJmmCr7YzFmgWB0EtawFh4zadk02BDo5VP2zmCdfOc9g=s355#w=1724&amp;h=1060" />
-                    <h3><a href="/Programming_Design_Patterns/{{ $course->id }}">{{ $course->title }}</a></h3>
+                    <img class="img-responsive image-responsive-centered" alt="{{ $category->slug }}" title="{{ $category->slug }}" src="//lh5.ggpht.com/bkmfzv_U-lHdif9miQDh9bquTN-d35VM6c1TGIHJmmCr7YzFmgWB0EtawFh4zadk02BDo5VP2zmCdfOc9g=s355#w=1724&amp;h=1060" />
+                    <h3><a href="/{{ $category->id }}">{{ $category->title }}</a></h3>
                     <div>
-                        {{ $course->excerpt }}
+                        {{ $category->excerpt }}
                     </div>
                 </div>
             </div>
