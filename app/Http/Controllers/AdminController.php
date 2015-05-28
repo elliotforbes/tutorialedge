@@ -26,6 +26,7 @@ class AdminController extends Controller {
 	public function create()
 	{
 		//
+        return view('admin.create');
 	}
 
 	/**
@@ -35,7 +36,20 @@ class AdminController extends Controller {
 	 */
 	public function store()
 	{
-		//
+		$input = Request::all();
+        
+        $article = new Article;
+        
+        $article->title = $input['title'];
+        $article->body = $input['body'];
+        $article->excerpt = $input['excerpt'];
+        $article->published_at = time();
+        $article->slug = "slug";
+        $article->cat_id = 1;
+        
+        $article->save();
+        
+        return redirect('admin');
 	}
 
 	/**

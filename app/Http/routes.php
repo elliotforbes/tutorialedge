@@ -14,12 +14,28 @@
 Route::get('/', 'PageController@index');
 Route::get('single', 'PageController@single');
 Route::get('/contact', 'PageController@contact');
-Route::get('/Programming_Design_Patterns', 'PageController@design');
 
-Route::get('/Programming_Design_Patterns/{id}', 'PageController@show'); 
+/*
+* Routes for select courses:
+* LWJGL3 
+* Programming Design Patterns
+*/
+Route::get('/LWJGL3', 'PageController@lwjglindex');
+Route::get('/LWJGL3/{slug}', 'PageController@showlwjgl');
+
+Route::get('/Programming_Design_Patterns', 'PageController@designpatternsindex');
+Route::get('/Programming_Design_Patterns/{slug}', 'PageController@showdesignpatterns'); 
+
+
+
 //Route::get('/tutorials/{id}', 'PageController@show');
 Route::get('single', 'PageController@single');
+
+
+
 Route::get('/admin', 'AdminController@index');
+Route::get('/admin/create', 'AdminController@index');
+Route::post('/admin/create', 'AdminController@store');
 
 Route::get('home', 'HomeController@index');
 
