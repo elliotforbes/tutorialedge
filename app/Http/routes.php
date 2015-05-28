@@ -12,8 +12,14 @@
 */
 
 Route::get('/', 'PageController@index');
-Route::get('/Programming_Design_Patterns/{id}', 'PageController@show'); 
 Route::get('single', 'PageController@single');
+Route::get('/contact', 'PageController@contact');
+Route::get('/Programming_Design_Patterns', 'PageController@design');
+
+Route::get('/Programming_Design_Patterns/{id}', 'PageController@show'); 
+//Route::get('/tutorials/{id}', 'PageController@show');
+Route::get('single', 'PageController@single');
+Route::get('/admin', 'AdminController@index');
 
 Route::get('home', 'HomeController@index');
 
@@ -21,3 +27,8 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::get('post/{id}', function($id)
+           {
+                return 'post' . $id;  
+           });
