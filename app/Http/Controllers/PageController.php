@@ -7,6 +7,7 @@ use DB;
 use App\Article;
 use App\Category;
 use App\Course;
+use App\Page;
 
 use Illuminate\Http\Request;
 
@@ -20,6 +21,7 @@ class PageController extends Controller {
 	public function index()
 	{
 		//
+        
         $categories = Category::get();
         return view('index', compact('categories'));
 	}
@@ -41,6 +43,12 @@ class PageController extends Controller {
     public function single()
     {
         return view('static.single2');   
+    }
+    
+    public function show($slug = 'home')
+    {
+        $page = page::whereSlug($slug)->get();
+        return view('page.index', compact('page'));
     }
     
 	/**
@@ -81,19 +89,19 @@ class PageController extends Controller {
 	 *
 	 * @param  int  $id
 	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-//        $article = DB::table->select('articles.*'
-        
-        if(is_null($article))
-        {
-            abort(404);   
-        }
-        
-        return view('static.single', compact('article'));
-	}
+//	 */
+//	public function show($id)
+//	{
+//		//
+////        $article = DB::table->select('articles.*'
+//        
+//        if(is_null($article))
+//        {
+//            abort(404);   
+//        }
+//        
+//        return view('static.single', compact('article'));
+//	}
     
     public function lwjglindex()
     {
