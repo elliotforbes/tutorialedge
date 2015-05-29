@@ -27,7 +27,7 @@ Route::get('/Programming_Design_Patterns', 'PageController@designpatternsindex')
 Route::get('/Programming_Design_Patterns/{slug}', 'PageController@showdesignpatterns'); 
 
 
-Route::get('/{slug}', array('as' => 'page.show', 'uses' => 'PageController@show'));
+Route::get('/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
 
 
 
