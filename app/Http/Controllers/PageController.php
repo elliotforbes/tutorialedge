@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 
 use DB;
 use App\Article;
+use App\Category;
 use App\Course;
 
 use Illuminate\Http\Request;
@@ -19,8 +20,7 @@ class PageController extends Controller {
 	public function index()
 	{
 		//
-        $categories = Article::get();
-//        dd($courses);
+        $categories = Category::get();
         return view('index', compact('categories'));
 	}
     
