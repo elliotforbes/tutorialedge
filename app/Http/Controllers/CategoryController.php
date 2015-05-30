@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Page;
 use App\Article;
+use DB;
 
 class CategoryController extends Controller {
 
@@ -50,12 +51,12 @@ class CategoryController extends Controller {
     {
         $page = page::whereSlug($slug)->get();
         if($slug == "LWJGL3"){
-            $articles = Article::get()->where('cat_id', '=', 2);
+            $articles = DB::select(DB::raw('select * from articles where cat_id = 2;'));
         } 
-        else if($slug == "Programming_Design_Patterns"){
-            $articles = Article::get()->where('cat_id', '=', 1);   
+        else if($slug == "programming_design_concepts"){
+           $articles = DB::select(DB::raw('select * from articles where cat_id = 1;'));
         }
-            return view('page.index', compact('page', 'articles'));
+        return view('page.index', compact('articles', 'page'));
     }
 
     public function showArticle($slug, $slug2)
