@@ -46,13 +46,25 @@ class CategoryController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($slug = 'home')
+	public function show($slug)
     {
         $page = page::whereSlug($slug)->get();
-        $articles = Article::get();
-        return view('page.index', compact('page', 'articles'));
+        if($slug == "LWJGL3"){
+            $articles = Article::get()->where('cat_id', '=', 2);
+        } 
+        else if($slug == "Programming_Design_Patterns"){
+            $articles = Article::get()->where('cat_id', '=', 1);   
+        }
+            return view('page.index', compact('page', 'articles'));
     }
 
+    public function showArticle($slug, $slug2)
+    {
+        $page = page::whereSlug($slug)->get();
+        $article = Article::whereSlug($slug2)->get();
+        return view('static.single', compact('article'));
+    }
+    
 	/**
 	 * Show the form for editing the specified resource.
 	 *

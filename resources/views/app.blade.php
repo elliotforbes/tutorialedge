@@ -32,7 +32,7 @@
                     </li>
                     <li><a href="#">Programming Tutorials</a>
                         <ul>
-                            <li><a href="/LWJGL3">LWJGL 3</a>
+                            <li><a href="/course/LWJGL3">LWJGL 3</a>
                             </li>
 <!--
                             <li><a href="/">LibGDX</a>
@@ -42,7 +42,7 @@
                     </li>
                     <li><a href="#">Courses</a>
                         <ul>
-                            <li><a href="/Programming_Design_Patterns">Programming Design Concepts</a>
+                            <li><a href="/course/Programming_Design_Patterns">Programming Design Concepts</a>
                             </li>
                             <li><a href="#">Python Tutorials</a>
                                 <ul>

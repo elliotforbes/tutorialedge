@@ -20,16 +20,8 @@ Route::get('/contact', 'PageController@contact');
 * LWJGL3 
 * Programming Design Patterns
 */
-Route::get('/LWJGL3', 'PageController@lwjglindex');
-Route::get('/LWJGL3/{slug}', 'PageController@showlwjgl');
-
-Route::get('/Programming_Design_Patterns', 'PageController@designpatternsindex');
-Route::get('/Programming_Design_Patterns/{slug}', 'PageController@showdesignpatterns'); 
-
-
-Route::get('/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
-
-
+Route::get('/course/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
+Route::get('/{slug}', 'PageController@show');
 
 //Route::get('/tutorials/{id}', 'PageController@show');
 Route::get('single', 'PageController@single');
