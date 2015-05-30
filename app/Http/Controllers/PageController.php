@@ -45,11 +45,7 @@ class PageController extends Controller {
         return view('static.single2');   
     }
     
-    public function show($slug = 'home')
-    {
-        $page = page::whereSlug($slug)->get();
-        return view('page.index', compact('page'));
-    }
+    
     
 	/**
 	 * Show the form for creating a new resource.
@@ -89,37 +85,18 @@ class PageController extends Controller {
 	 *
 	 * @param  int  $id
 	 * @return Response
-//	 */
-//	public function show($id)
-//	{
-//		//
-////        $article = DB::table->select('articles.*'
-//        
-//        if(is_null($article))
-//        {
-//            abort(404);   
-//        }
-//        
-//        return view('static.single', compact('article'));
-//	}
-    
-    public function lwjglindex()
-    {
-        $articles = Article::get();
-        $course = "LWJGL 3";
+	 */
+	public function show($slug)
+	{
+		$article = Article::whereSlug($slug)->get()->first();
         
-        return view('static.category', compact('articles'));
-        
-    }
-    
-    public function showdesignpatterns($slug)
-    {
-        $article = Article::whereSlug($slug)->first();
-        $course = "Programming Design Patterns";
+        if(is_null($article))
+        {
+            abort(404);   
+        }
         
         return view('static.single', compact('article'));
-    }
-            
+	}            
 
 	/**
 	 * Show the form for editing the specified resource.
