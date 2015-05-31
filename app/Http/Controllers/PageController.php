@@ -77,7 +77,7 @@ class PageController extends Controller {
         
         $article->save();
         
-        return redirect('Programming_Design_Patterns');
+        return redirect('admin.index');
 	}
 
 	/**

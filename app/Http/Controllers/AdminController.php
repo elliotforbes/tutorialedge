@@ -5,6 +5,10 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use App\Article;
+use App\Page;
+use App\User;
+
 class AdminController extends Controller {
 
 	/**
@@ -18,6 +22,24 @@ class AdminController extends Controller {
 //        return "hello";
         return view('admin.index');
 	}
+    
+    public function articles()
+    {
+        $articles = Article::get();
+        return view('admin.articles', compact('articles'));   
+    }
+    
+    public function pages()
+    {
+        $pages = Page::get();
+        return view('admin.pages', compact('pages'));
+    }
+    
+    public function users()
+    {
+        $users = User::get();
+        return view('admin.users', compact('users'));
+    }
 
 	/**
 	 * Show the form for creating a new resource.
