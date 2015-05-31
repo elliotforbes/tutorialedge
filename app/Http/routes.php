@@ -19,6 +19,10 @@ Route::get('/contact', 'PageController@contact');
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/create', 'AdminController@index');
 Route::post('/admin/create', 'AdminController@store');
+
+Route::get('/admin/articles', 'AdminController@articles');
+Route::get('/admin/pages', 'AdminController@pages');
+Route::get('/admin/users', 'AdminController@users');
 /*
 * Routes for select courses:
 * LWJGL3 
