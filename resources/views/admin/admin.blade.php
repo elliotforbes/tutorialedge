@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="{{ asset('/css/admin.css') }}">
 </head>
     <body>
+       
+       <div class="nav-top">
+           
+       </div>
+       
         <div class="container">
             @yield('content')
         </div>

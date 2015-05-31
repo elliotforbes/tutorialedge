@@ -22,8 +22,8 @@ class PageController extends Controller {
 	{
 		//
         
-        $categories = Category::get();
-        return view('index', compact('categories'));
+        $courses = Page::get();
+        return view('index', compact('courses'));
 	}
     
     public function designpatternsindex()
