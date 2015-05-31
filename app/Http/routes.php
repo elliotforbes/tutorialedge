@@ -15,6 +15,10 @@ Route::get('/', 'PageController@index');
 Route::get('single', 'PageController@single');
 Route::get('/contact', 'PageController@contact');
 
+
+Route::get('/admin', 'AdminController@index');
+Route::get('/admin/create', 'AdminController@index');
+Route::post('/admin/create', 'AdminController@store');
 /*
 * Routes for select courses:
 * LWJGL3 
@@ -28,11 +32,9 @@ Route::get('single', 'PageController@single');
 
 
 
-Route::get('/admin', 'AdminController@index');
-Route::get('/admin/create', 'AdminController@index');
-Route::post('/admin/create', 'AdminController@store');
 
-Route::get('home', 'HomeController@index');
+
+Route::get('home', 'PageController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

@@ -49,13 +49,12 @@ class CategoryController extends Controller {
 	 */
 	public function show($slug)
     {
-        $page = page::whereSlug($slug)->get();
-        if($slug == "LWJGL3"){
-            $articles = DB::select(DB::raw('select * from articles where cat_id = 2;'));
-        } 
-        else if($slug == "programming_design_concepts"){
-           $articles = DB::select(DB::raw('select * from articles where cat_id = 1;'));
-        }
+        $page = page::whereSlug($slug)->get()->first();
+        // get page's cat_id and then left join articles
+        // on cat_id.
+//        var_dump($page);
+        $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $page->cat_id . ';'));
+        
         return view('page.index', compact('articles', 'page'));
     }
 

@@ -42,8 +42,10 @@
                     </li>
                     <li><a href="#">Courses</a>
                         <ul>
-                            <li><a href="/course/Programming_Design_Patterns">Programming Design Concepts</a>
+                            @foreach ($courses as $course)
+                            <li><a href="/course/{{ $course->slug }}">{{ $course->title }}</a>
                             </li>
+                            @endforeach
                             <li><a href="#">Python Tutorials</a>
                                 <ul>
                                     <li><a href="/">Networking Tutorials</a>
