@@ -33,16 +33,16 @@
                 <ul class="sf-menu clearfix">
                     <li class="current"><a href="/">Home</a>
                     </li>
+<!--
                     <li><a href="#">Programming Tutorials</a>
                         <ul>
                             <li><a href="/course/LWJGL3">LWJGL 3</a>
                             </li>
-<!--
                             <li><a href="/">LibGDX</a>
                             </li>
--->
                         </ul>
                     </li>
+-->
                     <li><a href="#">Courses</a>
                         <ul>
                             <li><a href="/course/programming_design_patterns">Programming Design Concepts</a>
