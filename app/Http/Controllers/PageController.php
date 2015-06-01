@@ -79,6 +79,11 @@ class PageController extends Controller {
         
         return redirect('admin.index');
 	}
+    
+    public function contact()
+    {
+        return view('static.contact');   
+    }
 
 	/**
 	 * Display the specified resource.

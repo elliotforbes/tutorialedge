@@ -33,16 +33,16 @@
                 <ul class="sf-menu clearfix">
                     <li class="current"><a href="/">Home</a>
                     </li>
+<!--
                     <li><a href="#">Programming Tutorials</a>
                         <ul>
                             <li><a href="/course/LWJGL3">LWJGL 3</a>
                             </li>
-<!--
                             <li><a href="/">LibGDX</a>
                             </li>
--->
                         </ul>
                     </li>
+-->
                     <li><a href="#">Courses</a>
                         <ul>
                             <li><a href="/course/programming_design_patterns">Programming Design Concepts</a>
@@ -54,8 +54,6 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li><a href="">Contact</a>
                     </li>
                     @if (Auth::guest())
                     <li><a href="{{ url('/auth/login') }}">Login</a>
@@ -150,8 +148,7 @@
                 <div class="col-md-3">
                     <h3>Links</h3>
                     <ul>
-                        <li><a href="#">Learning LWJGL 3</a>
-                        </li>
+                        <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
