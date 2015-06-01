@@ -13,7 +13,7 @@
                 </div>
                 
                 <div class="post-content">
-                    {{ $article->body }}
+                    {{ nl2br($article->body) }}
                 </div>
                 
                 
