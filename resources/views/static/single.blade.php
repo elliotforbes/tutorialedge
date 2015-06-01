@@ -24,11 +24,9 @@
                 <p>All programmers should be trying to write beautiful code and this course is designed to give you a brief overview of most of the potential design patterns that you can utilize when building your next projects. </p>
                 <h3>Table of Contents</h3>
                 <ul>
-                    <li>Abstract Classes and Interfaces</li>
-                    <li>Factory Design Method</li>
-                    <li>Singleton</li>
-                    <li>State</li>
-                    <li>Decorator</li>
+                   @foreach ($articles as $single)
+                    <li><a href="{{ $single->slug }}">{{ $single->title }}</a></li>
+                    @endforeach
                 </ul>
                 </div>
             </div>

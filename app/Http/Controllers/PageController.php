@@ -89,13 +89,14 @@ class PageController extends Controller {
 	public function show($slug)
 	{
 		$article = Article::whereSlug($slug)->get()->first();
+        $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ';'));
         
         if(is_null($article))
         {
             abort(404);   
         }
         
-        return view('static.single', compact('article'));
+        return view('static.single', compact('article', 'articles'));
 	}            
 
 	/**
