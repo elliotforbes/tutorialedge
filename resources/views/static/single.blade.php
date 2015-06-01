@@ -13,6 +13,17 @@
                 </div>
                 
                 <div class="post-content">
+                   
+                    <div id="code" class="java">public static void main(String args[]){
+                        *tab*System.out.println("hello world");
+                        *tab*int someString = 10;
+                        *tab*double someDouble = 10.0;
+                        *tab*boolean somebool = false;
+                        *tab*// This is a comment
+                        *tab*String stuff = "Hello World"; // also is also a comment
+                        *tab*System.out.println(stuff);
+                    }
+                    </div>
                     {!! nl2br($article->body) !!}
                 </div>
                 
