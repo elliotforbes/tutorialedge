@@ -303,6 +303,13 @@ body{
 
 /* FEATURE BOX */
 
+pre{
+     margin: 0;
+    padding: 0;
+    border: none;
+    text-align: left;
+}
+
 .featured-top{
      width: 100%;
     height: 300px;
