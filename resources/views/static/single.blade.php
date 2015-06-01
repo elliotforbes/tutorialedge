@@ -13,11 +13,7 @@
                 </div>
                 
                 <div class="post-content">
-                   <pre><code class="java">
-                       public static void main(String args[]){
-                           System.out.println("hello world");d
-                       }
-                   </code></pre>
+                    {!! nl2br($article->body) !!}
                 </div>
                 
                 
