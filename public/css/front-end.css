@@ -395,8 +395,8 @@ pre{
 }
 
 .featured-image img {
-    width: 529px;
-    margin-top: 128p;x
+    width: 100%;
+    margin-top: 128px;
     height: auto;
 }
 /*This is the container for both post and sidebar*/
