@@ -273,24 +273,6 @@ body{
     
 }
 
-.author-bar{
-   font-size: 14px;
-  color: #bbb;
-  margin: 0 0 17px; 
-    border-bottom: 1px solid #eee;
-    margin-bottom: 40px;
-}
-
-.author-bar img{
-    margin-right: 10px;   
-    border-radius: 16px;
-}
-
-.separator{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
 /*
 .logo a{
      color: #fff;
@@ -426,6 +408,29 @@ pre{
     font-family: bitter, 'Helvetica-neue', helvetica, sans-serif;
 }
 
+.post-social{
+    margin-bottom: 20px;   
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.author-bar{
+   font-size: 14px;
+  color: #bbb;
+  margin: 0 0 17px; 
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.author-bar img{
+    margin-right: 10px;   
+    border-radius: 16px;
+}
+
+.separator{
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 
 /*SIDEBAR*/

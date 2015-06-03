@@ -18,6 +18,10 @@
 </head>
 
 <body>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->                    
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
 
     <div class="header-container m-top-30 clearfix">
 
@@ -180,7 +184,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
     
     <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
-    
+     
     <script>hljs.initHighlightingOnLoad();</script>
     <script src="{{ asset('/js/horizontalMenu.js') }}"></script>
     <script>
