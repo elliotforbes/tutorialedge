@@ -372,13 +372,9 @@ pre{
  letter-spacing: 2px;   
 }
 
-.post-cont h1,h2{
-    font-family: dense, 'Helvetica-neue', helvetica, sans-serif;
-}
-
-.post-cont h3,h4,h5,h6{
+.post-cont h1,h2,h3,h4,h5,h6{
     font-family: bitter, 'Helvetica-neue', helvetica, sans-serif;
-}    
+}
 
 .latest-posts h2{
     margin-top: 0;
