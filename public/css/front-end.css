@@ -335,10 +335,74 @@ pre{
     line-height: 25px;   
 }
 
+.top-featured{
+    width: 100%;
+    height: 400px;
+    position:relative;
+}
+
+.top-featured:after{
+     content: '';   
+    background-image: url(../images/book-repeat.jpg);
+    background-size: 200px 200px;
+     background-repeat: repeat-x repeat-y;
+    opacity: 0.5;
+    
+    width: 100%;
+    height: 400px;
+}
+
+.featured{
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+        
+}
+
+.top-featured h1{
+    color: black;   
+}
+
+.parent{
+    position: relative;
+}
+
+.parent:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+
+    opacity: 0.2;
+    width: 100%;
+    height: 400px;
+    background: url(../images/book-repeat.jpg) repeat 0 0; 
+    background-color: #2aa6fb;
+    background-size: 200px 200px;
+}
+
+.child{
+    Color:black;
+    padding: 40px;
+    height: 400px;
+}
+
+.child h1{
+    color: #085C95;
+    font-family: bitter;
+    font-size: 60px;
+}
+
+.featured-image img {
+    width: 529px;
+    margin-top: 128px;
+    height: auto;
+}
 /*This is the container for both post and sidebar*/
 
 .content{
-    border-top: 80px solid #aadcfe;
+/*    border-top: 80px solid #aadcfe;*/
     background-color: #fff;
 }
 .post-cont{
