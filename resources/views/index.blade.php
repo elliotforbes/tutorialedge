@@ -1,5 +1,30 @@
 @extends('app')
 
+
+@section('featured-top')
+
+<div class="parent">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-6">
+               <div class="child">
+                   <h1>Welcome to the new home of programming tutorials</h1>
+               </div>
+           </div>
+           <div class="col-lg-6">
+               <div class="child">
+                   <div class="featured-image">
+                       <img src="{{ asset('/images/featured-img.png') }}" alt="TutorialEdge.net | Programming Tutorials">
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+
+@endsection
+
 @section('content')
      <div class="latest-posts">
        <h2>Popular Courses</h2>
