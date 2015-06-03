@@ -8,7 +8,7 @@
        <div class="row">
            <div class="col-lg-6 col-md-6 col-sm-6 col-sx-6">
                <div class="child">
-                   <h1>In-depth Game Development Tutorials</h1>
+                   <h1>In-Depth Programming Tutorials for All Skill Levels</h1>
                </div>
            </div>
            <div class="col-lg-6 col-md-6 col-sm-6 col-sx-6">
