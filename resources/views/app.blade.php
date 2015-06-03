@@ -182,8 +182,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
     
     <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
-     
-    <script>hljs.initHighlightingOnLoad();</script>
     <script src="{{ asset('/js/horizontalMenu.js') }}"></script>
     <script src="{{ asset('/js/prism.js') }}"></script>
     <script>
