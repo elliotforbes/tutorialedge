@@ -17,7 +17,7 @@
     background-color: #EFEFEF;
 }
 .dark-grey-bg {
-    background-color: #294860;
+    background-color: #085c95 ;
 }
 .light-grey-bg {
     background-color: #EFEFEF;
@@ -52,7 +52,7 @@
     z-index: 99999;
 }
 .header-container {
-    background-color: #294860;
+    background-color: #085c95;
 }
 .logo-footer-container {
     background-color: #565A60;
@@ -99,10 +99,10 @@ nav#main-nav select {
 }
 #main-nav .current > a {
     background-color: #fff;
-    color: #294860;
+    color: #085c95;
 }
 #main-nav .current li.current a, #main-nav .current li.current li.current a {
-    background-color: #294860;
+    background-color: #085c95;
     border-top: medium none;
     color: #fff !important;
     margin-top: 0;
@@ -110,7 +110,7 @@ nav#main-nav select {
 }
 #main-nav a:hover {
     background-color: #fff;
-    color: #294860;
+    color: #085c95;
     text-shadow: none;
 }
 #main-nav a {
@@ -205,7 +205,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li li a:hover {
     background: none repeat scroll 0 0 #fff !important;
-    color: #294860 !important;
+    color: #085c95 !important;
 }
 .block-0-content-container {
     background-color: #FFFFFF;
@@ -273,36 +273,6 @@ body{
     
 }
 
-/*
-.logo a{
-     color: #fff;
-    margin-top: 8px;
-    padding-top: 8px;
-    font-size: 23px;
-}
-
-.logo a:hover{
-     text-decoration: none;   
-}
-*/
-
-/*
-.nav ul{
-    margin-top: 8px;   
-}
-
-.nav ul li{
-     display: inline;   
-    padding-left: 40px;
-    padding-top: 10px;
-}
-
-.nav ul li a{
-    margin-top: 8px;
-    font-weight: 400;
-     color: #f2f2f2;   
-}
-*/
 
 /* END OF TOP NAVIGATION */
 
@@ -368,7 +338,7 @@ pre{
 /*This is the container for both post and sidebar*/
 
 .content{
-    border-top: 60px solid #f3f3f3;
+    border-top: 80px solid #2aa6fb;
 }
 .post-cont{
     background-color: #fff;
