@@ -14,7 +14,7 @@
    
     <link rel="stylesheet" href="{{ asset('/highlight/styles/default.css') }}">
     <script src="{{ asset('/highlight/highlight.pack.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('/css/front-end.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=1') }}">
 </head>
 
 <body>
