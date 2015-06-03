@@ -11,9 +11,7 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-   
-    <link rel="stylesheet" href="{{ asset('/highlight/styles/default.css') }}">
-    <script src="{{ asset('/highlight/highlight.pack.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=1') }}">
 </head>
 
@@ -184,9 +182,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
     
     <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
-     
-    <script>hljs.initHighlightingOnLoad();</script>
     <script src="{{ asset('/js/horizontalMenu.js') }}"></script>
+    <script src="{{ asset('/js/prism.js') }}"></script>
     <script>
         $(function () {
             cbpHorizontalMenu.init();
