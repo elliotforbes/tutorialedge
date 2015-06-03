@@ -7,7 +7,7 @@
 
 @font-face {
      font-family: bitter;
-    src: url(../fonts/bitter.otf);
+    src: url(../fonts/bitter-regular.otf);
 }
 
 #mainwrap.boxed {
@@ -372,10 +372,13 @@ pre{
  letter-spacing: 2px;   
 }
 
-.post-cont h1,h2,h3,h4,h5,h6{
+.post-content h1,h2,h3,h4,h5,h6{
     font-family: bitter, 'Helvetica-neue', helvetica, sans-serif;
 }
 
+.sidebar h1,h2,h3,h4,h5,h6{
+    font-family: dense, 'Helvetica-neue', helvetica, sans-serif;
+}
 .latest-posts h2{
     margin-top: 0;
     padding-top: 0;
