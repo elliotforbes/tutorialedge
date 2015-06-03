@@ -8,3 +8,13 @@
 .admin{
     margin-top: 40px;   
 }
+
+.login-form{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    margin-top: 160px;
+}

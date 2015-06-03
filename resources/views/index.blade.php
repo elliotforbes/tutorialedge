@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('title')
+In-depth game programming courses
+@endsection
+
 
 @section('featured-top')
 

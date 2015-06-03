@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('title')
+{{ $article->title }}
+@endsection
+
 @section('content')
     <div class="post-cont">
         <div class="row">

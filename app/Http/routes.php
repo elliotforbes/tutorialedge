@@ -15,7 +15,15 @@ Route::get('/', 'PageController@index');
 Route::get('single', 'PageController@single');
 Route::get('/contact', 'PageController@contact');
 
+Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
+             {
+                Route::get('/admin', function()
+                           {
+                              // can only access this if type == A 
+                           });
+             });
 
+Route::get('/login', 'AdminController@login');
 Route::get('/admin', 'AdminController@index');
 Route::get('/admin/create', 'AdminController@index');
 Route::post('/admin/create', 'AdminController@store');
