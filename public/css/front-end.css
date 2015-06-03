@@ -372,13 +372,7 @@ pre{
  letter-spacing: 2px;   
 }
 
-.post-content h1,h2,h3,h4,h5,h6{
-    font-family: bitter, 'Helvetica-neue', helvetica, sans-serif;
-}
 
-.sidebar h1,h2,h3,h4,h5,h6{
-    font-family: dense, 'Helvetica-neue', helvetica, sans-serif;
-}
 .latest-posts h2{
     margin-top: 0;
     padding-top: 0;
@@ -403,12 +397,6 @@ pre{
     margin-bottom: 40px;
 }
 
-article{
-    color: #515862;
-  font-size: 16px;
-  line-height: 1.7;   
-}
-
 .post-title h2{
     padding-top: 0;
     font-weight: 100 !important;
@@ -424,9 +412,6 @@ article{
     letter-spacing: 2px;
 }
 
-.post-cont h4,h5,h6{
-    font-family: dense, 'Helvetica-neue', helvetica, sans-serif;
-}
 .post-title p{
     color: #aaa;
     padding-bottom: 20px;
@@ -437,8 +422,17 @@ article{
     z-index: 10;
 }
 
+.post-content h1,h2,h3,h4,h5,h6{
+    font-family: bitter, 'Helvetica-neue', helvetica, sans-serif;
+}
+
+
 
 /*SIDEBAR*/
+
+.sidebar h1,h2,h3,h4,h5,h6{
+    font-family: dense, 'Helvetica-neue', helvetica, sans-serif;
+}
 
 .sidebar{
     border-left: 1px solid #f3f3f3;   
