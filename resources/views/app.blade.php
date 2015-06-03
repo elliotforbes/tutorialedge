@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>TutorialEdge.net | The Definitive Repo for Programming Resources &pound; Tutorials</title>
+    <title>@yield('title') | TutorialEdge.net</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -78,8 +78,6 @@
 
     </div>
 
-
-
     @yield('featured-top')
 
     <div class="content">
@@ -89,47 +87,6 @@
 
         </div>
     </div>
-
-    <!--
-    <div class="latest-posts">
-        <div class="container">
-           <h2>Featured Tutorials</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <img class="img-responsive image-responsive-centered" alt="Woman writing in a notebook" title="Woman writing in a notebook" src="//lh5.ggpht.com/bkmfzv_U-lHdif9miQDh9bquTN-d35VM6c1TGIHJmmCr7YzFmgWB0EtawFh4zadk02BDo5VP2zmCdfOc9g=s355#w=1724&amp;h=1060">
-                    <h3>Learn Javascript in your Lunch hour!</h3>
-                    <div>
-						See how to build a career in <a href="http://blog.udacity.com/front-end-web-developer-career-guide" target="_blank">front end web development</a>.
-					</div>
-                </div>
-                <div class="col-md-3">
-                    <img class="img-responsive image-responsive-centered" alt="iOS Nanodegree" title="iOS Nanodegree" src="https://lh3.ggpht.com/mgyUnDEyRP_1SWyCqRVLV7YyxXQFIalWcMNHX0n3iL1ohlIfjI_BGnYttbZphiOPK3rbVUy2HJ5Q4SiNeeE=s355#w=1090&amp;h=670">
-                    <h3>What skills to learn?</h3>
-                    <div>
-						See how to build a career in <a href="http://blog.udacity.com/front-end-web-developer-career-guide" target="_blank">front end web development</a>.
-					</div>
-                </div>
-                <div class="col-md-3">
-                    <img class="img-responsive image-responsive-centered" alt="Two guys talking in front of a wall covered in different sized devices" title="Two guys talking in front of a wall covered in different sized devices" src="//lh6.ggpht.com/UfMbnNAjbz9gpWVzFhmYyOJg-5paoozIIkVhKWHAGNLpfaptKrysZxyuiQlqVkYiCHhyBBlJiowyxzHStn0P=s355#w=1748&amp;h=1075">
-                    <h3>What skills to learn?</h3>
-                    <div>
-						See how to build a career in <a href="http://blog.udacity.com/front-end-web-developer-career-guide" target="_blank">front end web development</a>.
-					</div>
-                </div>
-                <div class="col-md-3">
-                    <img class="img-responsive image-responsive-centered" alt="Strategy" title="Strategy" src="//lh3.googleusercontent.com/yu522724UipioJRuWX5524X3yeeYHFx5pJxQF7_fTvuA309WXHB6NYt2VtBkVEZ_kuLk-7UJ-N2BF7RJHENM=s355#w=436&amp;h=268">
-                    <h3>What skills to learn?</h3>
-                    <div>
-						See how to build a career in <a href="http://blog.udacity.com/front-end-web-developer-career-guide" target="_blank">front end web development</a>.
-					</div>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-    
--->
-
 
     <div class="footer">
         <div class="container">

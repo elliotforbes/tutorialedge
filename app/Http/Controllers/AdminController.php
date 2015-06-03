@@ -29,6 +29,11 @@ class AdminController extends Controller {
         return view('admin.articles', compact('articles'));   
     }
     
+    public function login()
+    {
+        return view('admin.login');   
+    }
+    
     public function pages()
     {
         $pages = Page::get();
