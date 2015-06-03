@@ -6,12 +6,12 @@
 <div class="parent">
    <div class="container">
        <div class="row">
-           <div class="col-lg-6">
+           <div class="col-lg-6 col-md-6 col-sm-6 col-sx-6">
                <div class="child">
-                   <h1>Welcome to the new home of programming tutorials</h1>
+                   <h1>In-depth Game Development Tutorials</h1>
                </div>
            </div>
-           <div class="col-lg-6">
+           <div class="col-lg-6 col-md-6 col-sm-6 col-sx-6">
                <div class="child">
                    <div class="featured-image">
                        <img src="{{ asset('/images/featured-img.png') }}" alt="TutorialEdge.net | Programming Tutorials">
@@ -31,7 +31,7 @@
         <div class="row"> 
            
            @foreach ($courses as $course)
-            <div class="col-md-3">
+            <div class="col-md-3 ">
                <div class="course-box">
                     <img class="img-responsive image-responsive-centered" alt="{{ $course->slug }}" title="{{ $course->slug }}" src="//lh5.ggpht.com/bkmfzv_U-lHdif9miQDh9bquTN-d35VM6c1TGIHJmmCr7YzFmgWB0EtawFh4zadk02BDo5VP2zmCdfOc9g=s355#w=1724&amp;h=1060" />
                     <h3><a href="/course/{{ $course->slug }}">{{ $course->title }}</a></h3>
