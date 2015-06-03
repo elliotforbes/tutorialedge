@@ -9,8 +9,10 @@
                </div>
                 <div class="post-title">
                    <h2>{{ $article->title }}</h2>
-                   <p>Author: Elliot Forbes | Views: 583 | Posted: 25th March, 2015</p>
-                </div>
+                   <p class="author-bar"><img alt="" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/061/3bf/0bc92cc.jpg" srcset="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/061/3bf/0bc92cc.jpg" class="avatar avatar-32 photo" height="32" width="32"> 
+                   By Elliot Forbes  <span class="separator">•</span>   On {{ date("d M, Y",strtotime($article->published_at)) }}  <span class="separator">•</span>   In Programming Design Patterns</p>
+                   
+                 </div>
                 
                 <div class="post-content">
                     {!! nl2br($article->body) !!}

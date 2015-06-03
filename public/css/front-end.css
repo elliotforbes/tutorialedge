@@ -5,6 +5,11 @@
     src: url(../fonts/Dense-Regular.otf);
 }
 
+@font-face {
+     font-family: bitter;
+    src: url(../fonts/bitter.otf);
+}
+
 #mainwrap.boxed {
     background: none repeat scroll 0 0 #FFFFFF;
 }
@@ -63,7 +68,7 @@
     margin-left: 27px;
     margin-top: 17px;
     width: 200px;
-	font-family: 'Oswald',Arial,Helvetica,sans-serif;
+	font-family: bitter ,Arial,Helvetica,sans-serif;
     font-size: 23px;
     color: #fff;
 }
@@ -266,6 +271,24 @@ body{
     height: 40px;
     background-color: #294860;
     
+}
+
+.author-bar{
+   font-size: 14px;
+  color: #bbb;
+  margin: 0 0 17px; 
+    border-bottom: 1px solid #eee;
+    margin-bottom: 40px;
+}
+
+.author-bar img{
+    margin-right: 10px;   
+    border-radius: 16px;
+}
+
+.separator{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /*
