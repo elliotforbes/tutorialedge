@@ -46,6 +46,11 @@ class AdminController extends Controller {
         return view('admin.users', compact('users'));
     }
 
+    public function loginController()
+    {
+           
+    }
+    
 	/**
 	 * Show the form for creating a new resource.
 	 *
