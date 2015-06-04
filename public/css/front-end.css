@@ -1,3 +1,18 @@
+Skip to content
+This repository  
+Explore
+Gist
+Blog
+Help
+@emforce emforce
+ 
+ Unwatch 1
+  Star 0
+ Fork 0emforce/tutorialedge
+ tree: c0d862c437  tutorialedge/public/css/front-end.css
+@emforceemforce 3 hours ago front-page is full responsive now
+1 contributor
+RawBlameHistory    647 lines (560 sloc)  11.984 kB
 /* GLOBAL CHANGES */
 
 @font-face {
@@ -503,7 +518,7 @@ pre{
         .child h1{
             color: #085C95;
             font-family: dense;
-            font-size: 72px;
+            font-size: 86px;
         }
     }
 
