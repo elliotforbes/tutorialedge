@@ -1,18 +1,3 @@
-Skip to content
-This repository  
-Explore
-Gist
-Blog
-Help
-@emforce emforce
- 
- Unwatch 1
-  Star 0
- Fork 0emforce/tutorialedge
- tree: c0d862c437  tutorialedge/public/css/front-end.css
-@emforceemforce 3 hours ago front-page is full responsive now
-1 contributor
-RawBlameHistory    647 lines (560 sloc)  11.984 kB
 /* GLOBAL CHANGES */
 
 @font-face {
@@ -351,35 +336,6 @@ pre{
     line-height: 25px;   
 }
 
-.top-featured{
-    width: 100%;
-    height: 400px;
-    position:relative;
-}
-
-.top-featured:after{
-     content: '';   
-    background-image: url(../images/book-repeat.jpg);
-    background-size: 200px 200px;
-     background-repeat: repeat-x repeat-y;
-    opacity: 0.5;
-    
-    width: 100%;
-    height: 400px;
-}
-
-.featured{
-    opacity: 1;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-        
-}
-
-.top-featured h1{
-    color: black;   
-}
 
     /* Custom, iPhone Retina */ 
     @media only screen and (min-width : 320px) {
@@ -437,7 +393,7 @@ pre{
 
             opacity: 0.2;
             width: 100%;
-            height: 400px;
+            height: 500px;
             background: url(../images/book-repeat.jpg) repeat 0 0; 
             background-color: #2aa6fb;
             background-size: 200px 200px;
@@ -446,13 +402,16 @@ pre{
         .child{
             Color:black;
             padding: 40px;
-            height: 400px;
+        }
+        
+        .child img{
+             display: none;   
         }
 
         .child h1{
             color: #085C95;
             font-family: dense;
-            font-size: 68px;
+            font-size: 58px;
         }
     }
 
@@ -481,11 +440,15 @@ pre{
             padding: 40px;
             height: 400px;
         }
+        
+        .child img{
+             display: block;   
+        }
 
         .child h1{
             color: #085C95;
             font-family: dense;
-            font-size: 70px;
+            font-size: 58px;
         }
     }
 
@@ -518,7 +481,7 @@ pre{
         .child h1{
             color: #085C95;
             font-family: dense;
-            font-size: 86px;
+            font-size: 68px;
         }
     }
 
