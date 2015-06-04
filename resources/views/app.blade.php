@@ -49,11 +49,13 @@
                         <ul>
                             <li><a href="/course/programming_design_patterns">Programming Design Concepts</a>
                             </li>
-                            <li><a href="#">Python Tutorials</a>
+                            <li><a href="/course/python">Python Tutorials</a>
+<!--
                                 <ul>
                                     <li><a href="/">Networking Tutorials</a>
                                     </li>
                                 </ul>
+-->
                             </li>
                         </ul>
                     </li>
