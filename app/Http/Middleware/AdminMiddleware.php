@@ -1,6 +1,7 @@
 <?php namespace App\Http\Middleware;
 
 use Closure;
+use Log;
 
 class AdminMiddleware {
 
@@ -13,12 +14,12 @@ class AdminMiddleware {
 	 */
 	public function handle($request, Closure $next)
 	{
-        if ($request->user()->type != 'A')
-        {
-            return redirect('index');   
+        if($request->user()){
+            return $request;   
+        } else {
+            return redirect('login');   
         }
-        
-		return $next($request);
+
 	}
 
 }

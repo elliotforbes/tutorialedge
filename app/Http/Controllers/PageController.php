@@ -45,6 +45,11 @@ class PageController extends Controller {
         return view('static.single2');   
     }
     
+    public function login()
+    {
+        return view('login');   
+    }
+    
     
     
 	/**

@@ -14,24 +14,14 @@
 Route::get('/', 'PageController@index');
 Route::get('single', 'PageController@single');
 Route::get('/contact', 'PageController@contact');
+Route::get('/login', 'PageController@login');
 
-Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
-             {
-                Route::get('/admin', function()
-                           {
-                              // can only access this if type == A 
-                               
-                           });
-             });
-
-Route::get('/login', 'AdminController@login');
-Route::get('/admin', 'AdminController@index');
-Route::get('/admin/create', 'AdminController@index');
-Route::post('/admin/create', 'AdminController@store');
-
-Route::get('/admin/articles', 'AdminController@articles');
-Route::get('/admin/pages', 'AdminController@pages');
-Route::get('/admin/users', 'AdminController@users');
+Route::get('admin', ['middleware' => 'auth', 'uses' => 'AdminController@index']);
+Route::get('/admin/create', ['middleware' => 'auth', 'uses' => 'AdminController@index']);
+Route::post('/admin/create', ['middleware' => 'auth', 'uses' => 'AdminController@store']);
+Route::get('/admin/articles', ['middleware' => 'auth', 'uses' => 'AdminController@articles']);
+Route::get('/admin/pages', ['middleware' => 'auth', 'uses' => 'AdminController@pages']);
+Route::get('/admin/users', ['middleware' => 'auth', 'uses' => 'AdminController@users']);
 /*
 * Routes for select courses:
 * LWJGL3 
@@ -47,14 +37,9 @@ Route::get('single', 'PageController@single');
 
 
 
-Route::get('home', 'PageController@index');
+//Route::get('home', 'PageController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
-
-Route::get('post/{id}', function($id)
-           {
-                return 'post' . $id;  
-           });
