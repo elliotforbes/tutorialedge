@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use Auth;
 use App\Article;
 use App\Page;
 use App\User;
@@ -18,8 +19,6 @@ class AdminController extends Controller {
 	 */
 	public function index()
 	{
-		// returns the admin homepage
-//        return "hello";
         return view('admin.index');
 	}
     
