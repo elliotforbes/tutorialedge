@@ -34,6 +34,8 @@
                     <li><a href="/admin/articles">Articles</a></li>
                     <li><a href="/admin/pages">Pages</a></li>
                     <li><a href="/admin/users">Users</a></li>
+                    <li><a href="/admin/create">New Article</a></li>
+<!--
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Create <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -45,6 +47,7 @@
                             </li>
                         </ul>
                     </li>
+-->
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="">Stats</a>
