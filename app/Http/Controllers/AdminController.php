@@ -99,9 +99,12 @@ class AdminController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function editArticle($slug)
 	{
 		//
+        $article = Article::whereSlug($slug)->get()->first();
+        
+        return view('admin/edit', compact('article'));
 	}
 
 	/**
@@ -110,20 +113,25 @@ class AdminController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($slug)
 	{
-		//
+		$article = Article::whereSlug($slug)->get()->first();
+        $input = Request::all();
+        
+        $article->fill($input)->save();
+        
+        return redirect('admin/articles');
+        
 	}
+    
+    public function destroy($slug)
+    {
+        $article = Article::whereSlug($slug)->get()->first();
+        
+        $article->delete();
+        
+        return redirect('admin/articles');
+    }
 
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
 
 }

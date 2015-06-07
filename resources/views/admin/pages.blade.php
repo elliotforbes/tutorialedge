@@ -11,6 +11,8 @@
                      <th>Title</th>
                      <th>slug</th>
                      <th>cat_id</th>
+                     <th>edit</th>
+                     <th>delete</th>
                  </tr>
              </thead>
              <tbody>
@@ -20,6 +22,8 @@
                      <td>{{ $page->title }}</td>
                      <td>{{ $page->slug }}</td>
                      <td>{{ $page->cat_id }}</td>
+                     <td><button class="btn btn-default">Edit</button></td>
+                     <td><button class="btn btn-error">delete</button></td>
                  </tr>
              @endforeach
              </tbody>

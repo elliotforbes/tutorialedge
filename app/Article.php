@@ -9,7 +9,10 @@ class Article extends Model {
         'title',
         'body',
         'excerpt',
-        'published_at'
+        'published_at',
+        'slug',
+        'image_url',
+        'cat_id',
     ];
     
 }
