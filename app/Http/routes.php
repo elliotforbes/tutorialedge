@@ -18,6 +18,10 @@ Route::get('/login', 'PageController@login');
 
 Route::get('admin', ['middleware' => 'admin', 'uses' => 'AdminController@index']);
 Route::get('/admin/create', ['middleware' => 'admin', 'uses' => 'AdminController@addArticle']);
+Route::get('/admin/edit/{slug}', ['middleware' => 'admin', 'uses' => 'AdminController@editArticle']);
+Route::patch('admin/edit/{slug}', ['middleware' => 'admin', 'uses' => 'AdminController@update']);
+Route::delete('admin/edit/{slug}', ['middleware' => 'admin', 'uses' => 'AdminController@destroy']);
+
 Route::post('/admin/article_store', ['as' => 'article_store', 'middleware' => 'admin', 'uses' => 'AdminController@store']);
 Route::get('/admin/articles', ['middleware' => 'admin', 'uses' => 'AdminController@articles']);
 Route::get('/admin/pages', ['middleware' => 'admin', 'uses' => 'AdminController@pages']);

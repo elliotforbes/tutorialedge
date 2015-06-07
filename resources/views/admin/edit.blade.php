@@ -1,0 +1,65 @@
+@extends('admin.admin')
+
+
+@section('content')
+
+{!! Form::model($article, ['url' => 'admin/edit/' . $article->slug, 'method' => 'PATCH']) !!}
+    <div class="row">
+        <div class="col-lg-8">
+            <h2>Update: {{ $article->title }}</h2>
+             <div class="form-group">
+                    {!! Form::label('Post Title') !!}
+                    {!! Form::text('title', null,
+                        array('required', 
+                            'class'=>'form-control',
+                            'placeholder'=>'Post Title')) !!}
+                </div>
+                <div class="form-group">
+                    {!! Form::label('Excerpt') !!}
+                    {!! Form::textarea('excerpt', null,
+                        array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'Post Excerpt')) !!}
+                </div>
+                <div class="form-group">
+                    {!! Form::label('Article Body') !!}
+                    {!! Form::textarea('body', null,
+                        array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'Article Body')) !!}
+                </div>
+        </div>
+        <div class="col-lg-4">
+            <h2>Publishing Options</h2>
+            <div class="form-group">
+                {!! Form::label('Post Slug') !!}
+                {!! Form::text('slug', null,
+                    array('required',
+                        'class'=>'form-control',
+                        'placeholder'=>'slug')) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label('Image URL') !!}
+                {!! Form::text('image_url', null,
+                    array('required',
+                        'class'=>'form-control',
+                        'placeholder'=>'image url')) !!}
+            </div>
+           
+            <div class="form-group">
+                {!! Form::submit('Update Article', ['class'=>'btn btn-success']) !!}
+            </div>
+        </div>
+    </div>
+
+{!! Form::close() !!}
+
+<div class="delete">
+    {!! Form::open(['method' => 'DELETE', 'url' => 'admin/edit/' . $article->slug]) !!}
+        <div class="form-group">
+            {!! Form::submit('Delete', ['class'=>'btn btn-danger']) !!}
+        </div>
+    {!! Form::close() !!}
+</div>
+
+@stop
