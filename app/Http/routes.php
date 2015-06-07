@@ -17,8 +17,8 @@ Route::get('/contact', 'PageController@contact');
 Route::get('/login', 'PageController@login');
 
 Route::get('admin', ['middleware' => 'admin', 'uses' => 'AdminController@index']);
-Route::get('/admin/create', ['middleware' => 'admin', 'uses' => 'AdminController@index']);
-Route::post('/admin/create', ['middleware' => 'admin', 'uses' => 'AdminController@store']);
+Route::get('/admin/create', ['middleware' => 'admin', 'uses' => 'AdminController@addArticle']);
+Route::post('/admin/article_store', ['as' => 'article_store', 'middleware' => 'admin', 'uses' => 'AdminController@store']);
 Route::get('/admin/articles', ['middleware' => 'admin', 'uses' => 'AdminController@articles']);
 Route::get('/admin/pages', ['middleware' => 'admin', 'uses' => 'AdminController@pages']);
 Route::get('/admin/users', ['middleware' => 'admin', 'uses' => 'AdminController@users']);

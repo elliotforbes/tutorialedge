@@ -3,12 +3,14 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
 
 use Auth;
 use App\Article;
 use App\Page;
 use App\User;
+use App\Category;
+use Request;
 
 class AdminController extends Controller {
 
@@ -44,21 +46,16 @@ class AdminController extends Controller {
         $users = User::get();
         return view('admin.users', compact('users'));
     }
-
-    public function loginController()
-    {
-           
-    }
     
 	/**
 	 * Show the form for creating a new resource.
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function addArticle()
 	{
-		//
-        return view('admin.create');
+		$categories = Page::get();
+        return view('admin.create', compact('categories'));
 	}
 
 	/**
@@ -76,12 +73,13 @@ class AdminController extends Controller {
         $article->body = $input['body'];
         $article->excerpt = $input['excerpt'];
         $article->published_at = time();
-        $article->slug = "slug";
+        $article->image_url = $input["img_url"];
+        $article->slug = $input["slug"];
         $article->cat_id = 1;
         
         $article->save();
         
-        return redirect('admin');
+        return redirect('admin/articles');
 	}
 
 	/**
