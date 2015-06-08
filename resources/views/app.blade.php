@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>@yield('title') | TutorialEdge.net</title>
+    
+    @yeild('meta')
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content="A Tutorial site focused on bringing you high quality programming courses that will advance your knowledge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="author" href="https://plus.google.com/b/115194233692529836662">
+    <meta property="og:site_name" content="Tutorial-Edge.com"/>
+    
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">

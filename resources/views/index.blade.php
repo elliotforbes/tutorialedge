@@ -4,6 +4,12 @@
 In-depth game programming courses
 @endsection
 
+@section('meta')
+<meta name="description" content="A Tutorial site focused on bringing you high quality programming courses that will advance your knowledge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="author" href="https://plus.google.com/b/115194233692529836662">
+@endsection
+
 
 @section('featured-top')
 
