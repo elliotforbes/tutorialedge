@@ -27,7 +27,12 @@
                      <td>{{ $article->slug }}</td>
                      <td>{{ $article->cat_id }}</td>
                      <td><a href="/admin/edit/{{ $article->slug }}"><button class="btn btn-default">Edit</button></a></td>
-                     <td><a href="/admin/delete/{{ $article->slug }}"><button class="btn btn-danger">delete</button></a></td>
+                     <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/edit/' . $article->slug]) !!}
+                                <div class="form-group">
+                                    {!! Form::submit('Delete', ['class'=>'btn btn-danger']) !!}
+                                </div>
+                         {!! Form::close() !!}
+                     </td>
                  </tr>
              @endforeach
              </tbody>
