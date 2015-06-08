@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>@yield('title') | TutorialEdge.net</title>
+    @yeild('meta')
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="author" href="https://plus.google.com/b/115194233692529836662">
+    <meta property="og:site_name" content="Tutorial-Edge.com"/>
+    
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -50,6 +55,7 @@
                             <li><a href="/course/programming_design_patterns">Programming Design Concepts</a>
                             </li>
                             <li><a href="/course/python">Python Tutorials</a>
+                            <li><a href="/course/lwjgl3">LWJGL 3 Tutorials</a></li>
 <!--
                                 <ul>
                                     <li><a href="/">Networking Tutorials</a>

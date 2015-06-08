@@ -54,12 +54,4 @@
 
 {!! Form::close() !!}
 
-<div class="delete">
-    {!! Form::open(['method' => 'DELETE', 'url' => 'admin/edit/' . $article->slug]) !!}
-        <div class="form-group">
-            {!! Form::submit('Delete', ['class'=>'btn btn-danger']) !!}
-        </div>
-    {!! Form::close() !!}
-</div>
-
 @stop

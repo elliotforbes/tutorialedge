@@ -4,6 +4,10 @@
 {{ $article->title }}
 @endsection
 
+@section('meta')
+<meta name="description" content="{{ $article->excerpt }}">
+@endsection
+
 @section('content')
     <div class="post-cont">
         <div class="row">
