@@ -14,7 +14,8 @@
 Route::get('/', 'PageController@index');
 Route::get('single', 'PageController@single');
 Route::get('/contact', 'PageController@contact');
-Route::get('/login', 'PageController@login');
+Route::get('home', 'PageController@index');
+
 
 Route::get('admin', ['middleware' => 'admin', 'uses' => 'AdminController@index']);
 Route::get('/admin/create', ['middleware' => 'admin', 'uses' => 'AdminController@addArticle']);
@@ -41,7 +42,6 @@ Route::get('single', 'PageController@single');
 
 
 
-//Route::get('home', 'PageController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
