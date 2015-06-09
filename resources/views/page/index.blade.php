@@ -1,5 +1,9 @@
 @extends('app')
 
+@section('featured-top')
+
+@endsection
+
 @section('content')
      <div class="latest-posts">
        <h2>Category Homepage</h2>
