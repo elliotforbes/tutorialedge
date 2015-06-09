@@ -101,7 +101,6 @@ class PageController extends Controller {
 		$article = Article::whereSlug($slug)->get()->first();
         $page = DB::select(DB::raw('select * from pages where id = ' . $article->cat_id . ';'));
         $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ' ORDER BY title;'));
-        
         if(is_null($article))
         {
             abort(404);   
