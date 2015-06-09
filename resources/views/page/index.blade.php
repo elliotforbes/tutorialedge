@@ -1,7 +1,9 @@
 @extends('app')
 
 @section('featured-top')
-
+<div class="gray-padding">
+    
+</div>
 @endsection
 
 @section('content')
