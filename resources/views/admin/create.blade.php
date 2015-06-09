@@ -46,12 +46,11 @@
                         'placeholder'=>'Post_slug')) !!}
             </div>
             <div class="form-group">
-              <label for="catSelect">Category ID</label>
-              <select class="form-control" id="catSelect">
-                @foreach($categories as $cat)
-                    <option value="{{ $cat->id }}">{{ $cat->id }}</option>
-                @endforeach
-              </select>
+                {!! Form::label('Category ID') !!}
+                {!! Form::text('cat_id', null,
+                    array('required',
+                        'class'=>'form-control',
+                        'placeholder'=>'cat_id')) !!}
             </div>
             <div class="form-group">
                 {!! Form::submit('Submit',
