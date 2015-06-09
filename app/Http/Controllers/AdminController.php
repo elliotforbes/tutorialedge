@@ -21,13 +21,30 @@ class AdminController extends Controller {
 	 */
 	public function index()
 	{
-        return view('admin.index');
-	}
+        $user = \Auth::user();
+        if($this->isAdmin())
+            return view('admin.index');
+        else
+            return redirect('');
+    }
+    
+    public function isAdmin()
+    {
+        $user = \Auth::user();
+        
+        if($user->type == 1)
+            return true;
+        else
+            return false;
+    }
     
     public function articles()
     {
         $articles = Article::get();
-        return view('admin.articles', compact('articles'));   
+        if($this->isAdmin())
+            return view('admin.articles', compact('articles'));   
+        else
+            return redirect('');
     }
     
     public function login()
@@ -38,13 +55,19 @@ class AdminController extends Controller {
     public function pages()
     {
         $pages = Page::get();
-        return view('admin.pages', compact('pages'));
+        if($this->isAdmin())
+            return view('admin.pages', compact('pages'));
+        else
+            return redirect('');
     }
     
     public function users()
     {
         $users = User::get();
-        return view('admin.users', compact('users'));
+        if($this->isAdmin())
+            return view('admin.users', compact('users'));
+        else
+            return redirect('');
     }
     
 	/**
@@ -55,8 +78,11 @@ class AdminController extends Controller {
 	public function addArticle()
 	{
 		$categories = Page::get();
-        return view('admin.create', compact('categories'));
-	}
+        if($this->isAdmin())
+            return view('admin.create', compact('categories'));
+	    else
+            return redirect('');
+    }
 
 	/**
 	 * Store a newly created resource in storage.
@@ -77,10 +103,15 @@ class AdminController extends Controller {
         $article->slug = $input["slug"];
         $article->cat_id = 1;
         
-        $article->save();
-        
-        return redirect('admin/articles');
-	}
+        if($this->isAdmin())
+        {
+            $article->save();
+
+            return redirect('admin/articles');
+        }
+        else
+            return redirect('');
+    }
 
 	/**
 	 * Display the specified resource.
@@ -103,9 +134,11 @@ class AdminController extends Controller {
 	{
 		//
         $article = Article::whereSlug($slug)->get()->first();
-        
-        return view('admin/edit', compact('article'));
-	}
+        if($this->isAdmin())
+            return view('admin/edit', compact('article'));
+	    else
+            return redirect('');
+    }
 
 	/**
 	 * Update the specified resource in storage.
@@ -118,19 +151,26 @@ class AdminController extends Controller {
 		$article = Article::whereSlug($slug)->get()->first();
         $input = Request::all();
         
-        $article->fill($input)->save();
-        
-        return redirect('admin/articles');
-        
+        if($this->isAdmin())
+        {
+            $article->fill($input)->save();
+            return redirect('admin/articles');
+        } else {
+            return redirect('');   
+        }
 	}
     
     public function destroy($slug)
     {
         $article = Article::whereSlug($slug)->get()->first();
         
-        $article->delete();
-        
-        return redirect('admin/articles');
+        if($this->isAdmin()){
+            $article->delete();
+
+            return redirect('admin/articles');
+        } else {
+            return redirect('');   
+        }
     }
 
 
