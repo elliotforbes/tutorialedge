@@ -107,7 +107,7 @@ class PageController extends Controller {
             abort(404);   
         }
         
-        return view('static.single', compact('article', 'articles'));
+        return view('static.single', compact('article', 'articles', 'page'));
 	}            
 
 	/**
