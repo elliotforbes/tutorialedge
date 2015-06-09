@@ -105,7 +105,7 @@ class PageController extends Controller {
 //        {
 //            abort(404);   
 //        }
-        $page = Page::where('cat_id', '=', $article->cat_id)->get();
+        $page = Page::where('cat_id', '=', $article->cat_id)->get()->first();
 //        $page = DB::select(DB::raw('select * from pages where cat_id = ' . $article->cat_id . ';'));
        
         
