@@ -105,8 +105,8 @@ class PageController extends Controller {
 //        {
 //            abort(404);   
 //        }
-        $page = Page::get()->first();
-//        $page = DB::select(DB::raw('select 1 from pages where cat_id = ' . $article->cat_id . ';'));
+//        $page = Page::get()->first();
+        $page = DB::select(DB::raw('select 1 from pages where cat_id = ' . $article->cat_id . ';'));
        
         
         return view('static.single', compact('article', 'articles', 'page'));
