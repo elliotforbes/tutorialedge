@@ -34,7 +34,7 @@
             </div>
             <div class="col-md-3">
                 <div class="sidebar">
-                <h2></h2>
+                <h2>{{ $page->title }}</h2>
                 <p>{{ $page->info }}</p>
                 <h3>Table of Contents</h3>
                 <ul>
