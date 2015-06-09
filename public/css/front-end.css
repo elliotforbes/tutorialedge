@@ -630,3 +630,8 @@ pre{
      display: inline;
     margin-right: 10px;
 }
+
+.article-info{
+     height: 100px;
+    text-overflow: ellipsis;
+}
