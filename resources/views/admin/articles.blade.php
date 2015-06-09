@@ -13,6 +13,7 @@
                      <th>excerpt</th>
                      <th>slug</th>
                      <th>cat_id</th>
+                     <th>view</th>
                      <th>edit</th>
                      <th>delete</th>
                  </tr>
@@ -26,6 +27,7 @@
                      <td>{{ $article->excerpt }}</td>
                      <td>{{ $article->slug }}</td>
                      <td>{{ $article->cat_id }}</td>
+                     <td><a href="/{{ $article->slug }"><button class="btn btn-default"></button></a></td>
                      <td><a href="/admin/edit/{{ $article->slug }}"><button class="btn btn-default">Edit</button></a></td>
                      <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/edit/' . $article->slug]) !!}
                                 <div class="form-group">
