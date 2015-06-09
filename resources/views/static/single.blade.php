@@ -34,8 +34,8 @@
             </div>
             <div class="col-md-3">
                 <div class="sidebar">
-                <h2>Programming Design Concepts</h2>
-                <p>All programmers should be trying to write beautiful code and this course is designed to give you a brief overview of most of the potential design patterns that you can utilize when building your next projects. </p>
+                <h2>{{ $page->title }}</h2>
+                <p>{{ $page->info }}</p>
                 <h3>Table of Contents</h3>
                 <ul>
                    @foreach ($articles as $single)
