@@ -45,6 +45,13 @@
                         'class'=>'form-control',
                         'placeholder'=>'image url')) !!}
             </div>
+            <div class="form-group">
+                {!! Form::label('Category ID') !!}
+                {!! Form::text('cat_id', null,
+                    array('required',
+                        'class'=>'form-control',
+                        'placeholder'=>'cat_id')) !!}
+            </div>
            
             <div class="form-group">
                 {!! Form::submit('Update Article', ['class'=>'btn btn-success']) !!}
