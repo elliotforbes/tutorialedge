@@ -568,6 +568,11 @@ pre{
 */
 }
 
+.post-content img{
+     max-width: 100%;
+    height: auto;
+}
+
 .post-social{
     margin-bottom: 20px;   
     border-bottom: 1px solid #eee;
