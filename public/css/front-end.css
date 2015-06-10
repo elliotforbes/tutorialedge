@@ -519,9 +519,8 @@ pre{
     padding-top: 0;
     font-weight: 100 !important;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 50px;
-    line-height: 40px;
       letter-spacing: 2px;
     color: #333;
 }
@@ -532,11 +531,11 @@ pre{
 
 .post-title p{
     color: #aaa;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .post-image img{
-     margin-bottom: 20px;   
+     margin-bottom: 10px;   
     z-index: 10;
 }
 
@@ -544,8 +543,10 @@ pre{
     font-family: bitter, 'Helvetica-neue', helvetica, sans-serif;
     margin: 0;
     padding: 0;
+/*
     margin-bottom: 10px;
     margin-top: 10px;
+*/
 }
 
 .post-social{
