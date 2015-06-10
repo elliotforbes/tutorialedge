@@ -30,12 +30,13 @@ class AdminController extends Controller {
     
     public function isAdmin()
     {
-        $user = \Auth::user();
-        
-        if($user->type == 1)
-            return true;
-        else
-            return false;
+//        $user = \Auth::user();
+//        
+//        if($user->type == 1)
+//            return true;
+//        else
+//            return false;
+        return true;
     }
     
     public function articles()
@@ -89,7 +90,7 @@ class AdminController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 		$input = Request::all();
         
@@ -102,6 +103,11 @@ class AdminController extends Controller {
         $article->image_url = $input["img_url"];
         $article->slug = $input["slug"];
         $article->cat_id = 1;
+        
+        $file = Request::file('image');
+        $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
+        
+        Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
         
         if($this->isAdmin())
         {

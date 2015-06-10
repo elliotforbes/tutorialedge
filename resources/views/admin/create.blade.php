@@ -3,7 +3,7 @@
 
 @section('content')
 
-{!! Form::open(array('route' => 'article_store', 'class' => 'form')) !!}
+{!! Form::open(array('route' => 'article_store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
     <div class="row">
         <div class="col-lg-8">
            <h2>Write a new Article</h2>
@@ -51,6 +51,10 @@
                     array('required',
                         'class'=>'form-control',
                         'placeholder'=>'cat_id')) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label('Post Image') !!}
+                {!! Form::file('image', null) !!}
             </div>
             <div class="form-group">
                 {!! Form::submit('Submit',
