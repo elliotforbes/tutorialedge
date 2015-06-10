@@ -39,18 +39,18 @@
                         'placeholder'=>'Post_slug')) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('Image URL') !!}
-                {!! Form::text('img_url', null,
-                    array('required',
-                        'class'=>'form-control',
-                        'placeholder'=>'Post_slug')) !!}
-            </div>
-            <div class="form-group">
                 {!! Form::label('Category ID') !!}
                 {!! Form::text('cat_id', null,
                     array('required',
                         'class'=>'form-control',
                         'placeholder'=>'cat_id')) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label('Image URL') !!}
+                {!! Form::text('image_url', null,
+                    array('required',
+                        'class'=>'form-control',
+                        'placeholder'=>'Post_slug')) !!}
             </div>
             <div class="form-group">
                 {!! Form::label('Post Image') !!}
