@@ -29,9 +29,9 @@
                      <td>{{ $article->cat_id }}</td>
                      <td><a href="/{{ $article->slug }}"><button class="btn btn-default">View</button></a></td>
                      <td><a href="/admin/edit/{{ $article->slug }}"><button class="btn btn-default">Edit</button></a></td>
-                     <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/edit/' . $article->slug]) !!}
+                     <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/edit/' . $article->slug, 'onsubmit' => 'return ConfirmDelete()']) !!}
                                 <div class="form-group">
-                                    {!! Form::submit('Delete', ['class'=>'btn btn-danger']) !!}
+                                    {!! Form::submit('Delete', ['class'=>'btn btn-danger', ]) !!}
                                 </div>
                          {!! Form::close() !!}
                      </td>
@@ -40,4 +40,16 @@
              </tbody>
          </table>
      </div>
+     
+<!--Adds confirmation popup to delete buttons so that accidental deletion doesn't take place-->
+<script>
+    function ConfirmDelete()
+    {
+        var x = confirm("Are you sure you want to delete?");
+        if (x)
+            return true;
+        else
+            return false;
+    }
+</script>
 @endsection
