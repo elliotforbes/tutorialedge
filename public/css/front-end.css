@@ -386,9 +386,12 @@ pre{
                 
         }
         
+        
         .header-logo-container{
-             width: auto;   
+             width: 100%;
+            margin-bottom: 20px;
         }
+        
         
         
         .child h1{
@@ -424,6 +427,10 @@ pre{
         
         .child img{
              display: none;   
+        }
+        
+        .header-logo-container{
+             width: auto;   
         }
 
         .child h1{
