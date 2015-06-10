@@ -3,7 +3,7 @@
 
 @section('content')
 
-{!! Form::model($article, ['url' => 'admin/edit/' . $article->slug, 'method' => 'PATCH']) !!}
+{!! Form::model($article, ['url' => 'admin/edit/' . $article->slug, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
     <div class="row">
         <div class="col-lg-8">
             <h2>Update: {{ $article->title }}</h2>
@@ -39,19 +39,24 @@
                         'placeholder'=>'slug')) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('Image URL') !!}
-                {!! Form::text('image_url', null,
-                    array('required',
-                        'class'=>'form-control',
-                        'placeholder'=>'image url')) !!}
-            </div>
-            <div class="form-group">
                 {!! Form::label('Category ID') !!}
                 {!! Form::text('cat_id', null,
                     array('required',
                         'class'=>'form-control',
                         'placeholder'=>'cat_id')) !!}
             </div>
+            <div class="form-group">
+                {!! Form::label('Image URL') !!}
+                {!! Form::text('img_url', null,
+                    array('required',
+                        'class'=>'form-control',
+                        'placeholder'=>'Post_slug')) !!}
+            </div>
+            <div class="form-group">
+                {!! Form::label('Post Image') !!}
+                {!! Form::file('image', null) !!}
+            </div>
+            
            
             <div class="form-group">
                 {!! Form::submit('Update Article', ['class'=>'btn btn-success']) !!}
