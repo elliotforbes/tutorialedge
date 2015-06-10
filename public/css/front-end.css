@@ -386,6 +386,11 @@ pre{
                 
         }
         
+        .header-logo-container{
+             width: auto;   
+        }
+        
+        
         .child h1{
             font-size: 38px;
             padding: 40px;
