@@ -47,7 +47,7 @@
             </div>
             <div class="form-group">
                 {!! Form::label('Image URL') !!}
-                {!! Form::text('imagg_url', null,
+                {!! Form::text('image_url', null,
                     array('required',
                         'class'=>'form-control',
                         'placeholder'=>'Post_slug')) !!}
