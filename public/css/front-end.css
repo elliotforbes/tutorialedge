@@ -360,6 +360,13 @@ pre{
              display: none;   
         }
         
+        .header-logo-container{
+             width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        
+        
     }
 
     /* Extra Small Devices, Phones */ 
