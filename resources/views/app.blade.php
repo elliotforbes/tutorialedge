@@ -16,15 +16,15 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/prism (1).css') }}">
     <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=3') }}">
 </head>
 
 <body>
     <!-- Go to www.addthis.com/dashboard to customize your tools -->                    
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
 
     <div class="header-container m-top-30 clearfix">
 
