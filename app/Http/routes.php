@@ -18,10 +18,18 @@ Route::get('home', 'PageController@index');
 
 
 Route::get('admin', ['middleware' => 'admin', 'uses' => 'AdminController@index']);
+
 Route::get('/admin/create', ['middleware' => 'admin', 'uses' => 'AdminController@addArticle']);
 Route::get('/admin/edit/{slug}', ['middleware' => 'admin', 'uses' => 'AdminController@editArticle']);
 Route::patch('admin/edit/{slug}', ['middleware' => 'admin', 'uses' => 'AdminController@update']);
 Route::delete('admin/edit/{slug}', ['middleware' => 'admin', 'uses' => 'AdminController@destroy']);
+
+Route::get('/admin/createcourse', ['middleware' => 'admin', 'uses' => 'AdminController@addCourse']);
+Route::get('/admin/editpage/{slug}', ['middleware' => 'admin', 'uses' => 'AdminController@editCourse']);
+Route::patch('admin/editpage/{slug}', ['middleware' => 'admin', 'uses' => 'AdminController@updateCourse']);
+Route::delete('admin/editpage/{slug}', ['middleware' => 'admin', 'uses' => 'AdminController@destroyCourse']);
+Route::post('/admin/course_store', ['as' => 'course_store', 'middleware' => 'admin', 'uses' => 'AdminController@storeCourse']);
+
 
 Route::post('/admin/article_store', ['as' => 'article_store', 'middleware' => 'admin', 'uses' => 'AdminController@store']);
 Route::get('/admin/articles', ['middleware' => 'admin', 'uses' => 'AdminController@articles']);

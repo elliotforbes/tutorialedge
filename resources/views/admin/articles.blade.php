@@ -4,6 +4,8 @@
      <div class="latest-posts">
          <h2>Admin Stuff</h2>  
          
+         <a href="/admin/create"><button class="btn btn-default">New Article</button></a>
+         
          <table class="table table-striped">
              <thead>
                  <tr>

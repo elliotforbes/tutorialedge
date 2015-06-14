@@ -118,6 +118,27 @@ class AdminController extends Controller {
         else
             return redirect('');
     }
+    
+    public function storeCourse(Request $request)
+    {
+        $input = Request::all();
+        
+        $course = new Page;
+        
+        $course->title = $input['title'];
+        $course->info = $input['info'];
+        $course->slug = $input["slug"];
+        $course->cat_id = $input['cat_id'];
+        
+        if($this->isAdmin())
+        {
+            $course->save();
+
+            return redirect('admin/pages');
+        }
+        else
+            return redirect('');   
+    }
 
 	/**
 	 * Display the specified resource.
@@ -129,19 +150,52 @@ class AdminController extends Controller {
 	{
 		//
 	}
+    
+    public function addCourse(){
+        $categories = Page::get();
+        if($this->isAdmin())
+            return view('admin.createpage', compact('categories'));
+	    else
+            return redirect('');
+    }
+    
+    public function updateCourse(){
+        $article = Article::whereSlug($slug)->get()->first();
+        $input = Request::all();
+        
+        if($this->isAdmin())
+        {
+            $article->fill($input)->save();
+            return redirect('admin/articles');
+        } else {
+            return redirect('');   
+        }
+    }
+    
+    public function destroyCourse(){
+        $page = Page::whereSlug($slug)->get()->first();
+        
+        if($this->isAdmin()){
+            $page->delete();
 
+            return redirect('admin/articles');
+        } else {
+            return redirect('');   
+        }
+    }
+    
 	/**
 	 * Show the form for editing the specified resource.
 	 *
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function editArticle($slug)
+	public function editCourse($slug)
 	{
 		//
-        $article = Article::whereSlug($slug)->get()->first();
+        $page = Page::whereSlug($slug)->get()->first();
         if($this->isAdmin())
-            return view('admin/edit', compact('article'));
+            return view('admin/editcourse', compact('page'));
 	    else
             return redirect('');
     }
