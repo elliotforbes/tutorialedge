@@ -16,7 +16,7 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="{{ asset('/css/prism (1).css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/prismnew.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=3') }}">
 </head>
 
@@ -146,7 +146,7 @@
     
     <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
     <script src="{{ asset('/js/horizontalMenu.js') }}"></script>
-    <script src="{{ asset('/js/prism (1).js') }}"></script>
+    <script src="{{ asset('/js/prismnew.js') }}"></script>
     <script>
         $(function () {
             cbpHorizontalMenu.init();
