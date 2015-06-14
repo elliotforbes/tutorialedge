@@ -89,7 +89,8 @@ class PageController extends Controller {
 	{
 		$article = Article::whereSlug($slug)->get()->first();
         $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ' ORDER BY title;'));
-        
+        $prevArt = DB::select(DB::raw('select 1 from articles where cat_id = ' . $article->cat_id . ' AND id < ' . $article->id . ';'));
+        $nextArt = DB::select(DB::raw('select 1 from articles where cat_id = ' . $article->cat_id . ' AND id > ' . $article->id . ';'));
 //        if(is_null($article))
 //        {
 //            abort(404);   
@@ -98,7 +99,7 @@ class PageController extends Controller {
 //        $page = DB::select(DB::raw('select * from pages where cat_id = ' . $article->cat_id . ';'));
        
         
-        return view('static.single', compact('article', 'articles', 'page'));
+        return view('static.single', compact('article', 'articles', 'page', 'nextArt', 'prevArt'));
 	}            
 
 	/**

@@ -674,3 +674,39 @@ pre{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.back-forward{
+     margin-top: 20px;   
+}
+
+.back-forward img{
+    width: 60%;
+    height: auto;
+}
+
+.back-forward h3{
+     margin-bottom: 10px;   
+}
+
+.forward-article h3{
+     float: right;   
+}
+
+.forward-article img{
+     float:right;   
+}
+
+.back-article{
+    width: 100%;
+    height: 120px;
+    float:left;
+}
+
+.back-article img{
+    width: 60%;
+    height: auto;
+}
+
+.clear{
+     clear:both;   
+}
