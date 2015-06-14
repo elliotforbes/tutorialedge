@@ -146,7 +146,7 @@
     
     <!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
     <script src="{{ asset('/js/horizontalMenu.js') }}"></script>
-    <script src="{{ asset('/js/prism.js') }}"></script>
+    <script src="{{ asset('/js/prism (1).js') }}"></script>
     <script>
         $(function () {
             cbpHorizontalMenu.init();
