@@ -38,7 +38,7 @@
                 <p>{{ $page->info }}</p>
                 <h3>Table of Contents</h3>
                 <br/>
-                <table class="table table-striped">
+                <table class="table">
                     <tbody>
                         @foreach ($articles as $single)
                         <tr>
