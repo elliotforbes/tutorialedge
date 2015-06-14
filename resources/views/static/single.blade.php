@@ -37,11 +37,15 @@
                 <h2>{{ $page->title }}</h2>
                 <p>{{ $page->info }}</p>
                 <h3>Table of Contents</h3>
-                <ul>
-                   @foreach ($articles as $single)
-                    <li><a href="{{ $single->slug }}">{{ $single->title }}</a></li>
-                    @endforeach
-                </ul>
+                <table class="table table-striped">
+                    <tbody>
+                        @foreach ($articles as $single)
+                        <tr>
+                            <td><a href="{{ $single->slug }}">{{ $single->title }}</a></td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
                 </div>
             </div>
         </div>
