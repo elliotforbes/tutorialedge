@@ -39,7 +39,7 @@
                             <div class="back-article">
                                 <h3><i class="fa fa-chevron-left"></i>  Previous Tutorial</h3>
                                 <img class="img-responsive image-responsive-centered" alt="Woman writing in a notebook" title="Woman writing in a notebook" src="/uploads/articles/woman.jpg">
-                                <h4><a href="{{ $prev->slug }}">{{ $prev->title }}</a></h4>
+                                <h4><a href="{{ $prev['slug'] }}">{{ $prev['title'] }}</a></h4>
                             </div>
                             @endforeach
                             @endif
@@ -51,7 +51,7 @@
                                <h3>Next Tutorial  <i class="fa fa-chevron-right"></i></h3>
                                <div class="clear"></div>
                                 <img class="img-responsive image-responsive-centered" alt="Woman writing in a notebook" title="Woman writing in a notebook" src="/uploads/articles/woman.jpg">
-                                <h4><a href="{{ $next->slug }}">{{ $next->title }}</a></h4>
+                                <h4><a href="{{ $next['slug'] }}">{{ $next['title'] }}</a></h4>
                             </div>
                             @endforeach
                             @endif
