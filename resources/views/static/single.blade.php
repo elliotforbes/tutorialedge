@@ -39,6 +39,7 @@
                             <div class="back-article">
                                 <h3><i class="fa fa-chevron-left"></i>  Previous Tutorial</h3>
                                 <img class="img-responsive image-responsive-centered" alt="Woman writing in a notebook" title="Woman writing in a notebook" src="/uploads/articles/woman.jpg">
+                                {{ $prev }}
                             </div>
                             @endforeach
                             @endif
@@ -50,7 +51,7 @@
                                <h3>Next Tutorial  <i class="fa fa-chevron-right"></i></h3>
                                <div class="clear"></div>
                                 <img class="img-responsive image-responsive-centered" alt="Woman writing in a notebook" title="Woman writing in a notebook" src="/uploads/articles/woman.jpg">
-                                
+                                {{ $next }} 
                             </div>
                             @endforeach
                             @endif
