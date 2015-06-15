@@ -119,6 +119,14 @@ class AdminController extends Controller {
             return redirect('');
     }
     
+    public function editArticle($slug)
+ 	{
+ 		//
+        $article = Article::whereSlug($slug)->get()->first();
+        
+        return view('admin/edit', compact('article'));
+    }
+    
     public function storeCourse(Request $request)
     {
         $input = Request::all();
