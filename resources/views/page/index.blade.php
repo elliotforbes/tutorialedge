@@ -8,7 +8,7 @@
 
 @section('content')
      <div class="latest-posts">
-       <h2>Category Homepage</h2>
+       <h2>{{ $page->title }}</h2>
         <div class="row">
            @foreach ($articles as $article)
            <div class="article-box">
