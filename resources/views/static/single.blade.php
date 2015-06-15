@@ -30,33 +30,7 @@
                     {!! nl2br($article->body) !!}
                 </div>
             
-                
-<!--
-                <div class="back-forward">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="back-article">
-                                <h3><i class="fa fa-chevron-left"></i>  Previous Tutorial</h3>
-                                <img class="img-responsive image-responsive-centered" alt="Woman writing in a notebook" title="Woman writing in a notebook" src="/uploads/articles/woman.jpg">
-                                
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="forward-article">
-                               <h3>Next Tutorial  <i class="fa fa-chevron-right"></i></h3>
-                               <div class="clear"></div>
-                                <img class="img-responsive image-responsive-centered" alt="Woman writing in a notebook" title="Woman writing in a notebook" src="/uploads/articles/woman.jpg">
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>    
--->
-                
             </div>
-            
-            
-            
             
             <div class="col-md-3">
                 <div class="sidebar">
@@ -73,6 +47,19 @@
                         @endforeach
                     </tbody>
                 </table>
+                
+                <div class="ad-widget">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- TutsEdgeSidebar1 -->
+                    <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-6782067367590597"
+                         data-ad-slot="3587744083"
+                         data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
                 </div>
             </div>
         </div>

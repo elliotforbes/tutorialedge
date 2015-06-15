@@ -532,6 +532,13 @@ pre{
     padding-bottom: 40px;
     margin-bottom: 40px;
     padding: 40px;
+      font-size: 16px;
+  line-height: 1.8;
+  color: #737C7F;
+}
+
+.post-cont h2, h3, h4, h5,h6{
+     color: #000;   
 }
 
 .post-title h2{
@@ -559,7 +566,7 @@ pre{
 }
 
 .post-content h1,h2,h3,h4,h5,h6{
-    font-family: bitter, 'Helvetica-neue', helvetica, sans-serif;
+    font-family: 'Helvetica-neue', helvetica, sans-serif;
     margin: 0;
     padding: 0;
 /*
@@ -601,7 +608,7 @@ pre{
 /*SIDEBAR*/
 
 .sidebar h1,h2,h3,h4,h5,h6{
-    font-family: dense, 'Helvetica-neue', helvetica, sans-serif;
+    font-family: 'Helvetica-neue', helvetica, sans-serif;
 }
 
 .sidebar{

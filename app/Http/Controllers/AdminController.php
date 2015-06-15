@@ -105,9 +105,11 @@ class AdminController extends Controller {
         $article->cat_id = 1;
         
         $file = Request::file('image');
-        $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
         
-        Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
+        if($file){
+            $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
+            Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
+        }
         
         if($this->isAdmin())
         {
@@ -222,7 +224,7 @@ class AdminController extends Controller {
         if($this->isAdmin())
         {
             $article->fill($input)->save();
-            return redirect('admin/articles');
+            return redirect('admin/edit/' . $slug);
         } else {
             return redirect('');   
         }
