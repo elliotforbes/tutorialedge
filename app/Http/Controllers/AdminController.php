@@ -172,7 +172,7 @@ class AdminController extends Controller {
         }
     }
     
-    public function destroyCourse(){
+    public function destroyCourse($slug){
         $page = Page::whereSlug($slug)->get()->first();
         
         if($this->isAdmin()){

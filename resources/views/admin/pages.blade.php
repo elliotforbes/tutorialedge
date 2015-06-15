@@ -12,6 +12,7 @@
                      <th>Title</th>
                      <th>slug</th>
                      <th>cat_id</th>
+                     <th>view</th>
                      <th>edit</th>
                      <th>delete</th>
                  </tr>

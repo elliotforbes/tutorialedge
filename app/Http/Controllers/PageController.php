@@ -26,12 +26,6 @@ class PageController extends Controller {
         return view('index', compact('courses'));
 	}
     
-    public function designpatternsindex()
-    {
-        $articles = Article::get();
-        
-        return view('static.category', compact('articles'));
-    }
     
     public function showCat($id)
     {
@@ -91,10 +85,10 @@ class PageController extends Controller {
         $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ' ORDER BY title;'));
         $prevArt = DB::select(DB::raw('select 1 from articles where cat_id = ' . $article->cat_id . ' AND id < ' . $article->id . ';'));
         $nextArt = DB::select(DB::raw('select 1 from articles where cat_id = ' . $article->cat_id . ' AND id > ' . $article->id . ';'));
-//        if(is_null($article))
-//        {
-//            abort(404);   
-//        }
+        if(is_null($article))
+        {
+            abort(404);   
+        }
         $page = Page::where('cat_id', '=', $article->cat_id)->get()->first();
 //        $page = DB::select(DB::raw('select * from pages where cat_id = ' . $article->cat_id . ';'));
        
