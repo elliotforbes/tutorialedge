@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+e<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>@yield('title') | TutorialEdge.net</title>
@@ -93,6 +93,8 @@
 
         </div>
     </div>
+    
+    @yield('home-content')
 
     <div class="footer">
         <div class="container">

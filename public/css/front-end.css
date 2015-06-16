@@ -724,3 +724,59 @@ pre{
 .social-widget h3{
      margin-bottom: 20px;   
 }
+
+.banner{
+    border-top: 60px solid #e3e3e3;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 20px;
+     width: 100%;
+    height: 382px;
+    background-color: white;
+}
+.banner h2{
+     margin-bottom: 20px;   
+}
+.banner p{
+     font-size: 16px;   
+}
+
+.circle-bg{
+     margin:auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #39ADD1;
+    color: #fff;
+}
+
+.circle-bg {
+    text-align: center;  
+    font-size: 30px;
+}
+
+.circle-bg .fa{
+     margin-top: 40px;   
+}
+
+.grey-banner{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 20px;
+     width: 100%;
+    height: 382px;
+    background-color: #f3f3f3;
+    overflow: hidden;
+}
+
+.grey-banner h2{
+     margin-bottom: 20px;
+}
+
+.grey-banner p{
+     font-size: 16px;   
+}
+
+.grey-banner img{
+        
+}
