@@ -726,10 +726,8 @@ pre{
 }
 
 .banner{
-    border-top: 60px solid #e3e3e3;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-top: 20px;
      width: 100%;
     height: 382px;
     background-color: white;
@@ -750,6 +748,18 @@ pre{
     color: #fff;
 }
 
+.yellow{
+     background-color: #FFD466 !important;   
+}
+
+.green{
+     background-color: #5FCF80 !important;   
+}
+
+.orange{
+     background-color: #F9845B !important;   
+}
+
 .circle-bg {
     text-align: center;  
     font-size: 30px;
@@ -758,7 +768,11 @@ pre{
 .circle-bg .fa{
      margin-top: 40px;   
 }
-
+.gray-padding{
+     width: 100%;
+    height: 60px;
+    background-color: #f3f3f3;
+}
 .grey-banner{
     padding-top: 60px;
     padding-bottom: 60px;

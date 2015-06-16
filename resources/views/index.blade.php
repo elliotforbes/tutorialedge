@@ -51,9 +51,14 @@ In-depth game programming courses
             
         </div>
     </div>
+    
+    
 @endsection
 
 @section('home-content')
+
+<div class="gray-padding"></div>
+
 <div class="banner">
     <div class="container">
         <div class="row">
@@ -81,6 +86,22 @@ In-depth game programming courses
                 <div class="code-image">
                     <img src="{{ asset('/images/featured-img.png') }}" alt="">
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="circle-bg orange">
+                    <i class="fa fa-briefcase fa-4x"></i>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Develop New Skills</h2>
+                <p>Enhance your existing programming skills and pad out your github account with interesting projects that will ultimately help you get the job of your dreams.</p>
             </div>
         </div>
     </div>
