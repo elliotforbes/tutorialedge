@@ -36,10 +36,10 @@
                 <div class="sidebar">
                 <div class="social-widget">
                    <h3>Follow Us</h3>
-                    <i class="fa fa-facebook-square fa-2x"></i>
-                    <i class="fa fa-twitter-square fa-2x"></i>
-                    <i class="fa fa-google-plus-square fa-2x"></i>
-                    <i class="fa fa-linkedin-square fa-2x"></i>
+                    <a href="https://www.facebook.com/tutorialedge"><i class="fa fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.twitter.com/tutorialedge"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    <a href="https://www.facebook.com/tutorialedge"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    <a href="https://github.com/emforce"><i class="fa fa-linkedin-square fa-2x"></i></a>
                 </div>
                 <h2>{{ $page->title }}</h2>
                 <p>{{ $page->info }}</p>
