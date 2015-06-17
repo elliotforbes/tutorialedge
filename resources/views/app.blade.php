@@ -18,6 +18,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{{ asset('/css/prismnew.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=61') }}">
+    <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
 </head>
 
 <body>
