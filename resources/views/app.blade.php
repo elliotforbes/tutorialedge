@@ -21,11 +21,6 @@
 </head>
 
 <body>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->                    
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
-
     <div class="header-container m-top-30 clearfix">
 
         <div class="header-logo-container ">
