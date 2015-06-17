@@ -17,7 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{{ asset('/css/prismnew.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=12') }}">
+    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=13') }}">
     <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
