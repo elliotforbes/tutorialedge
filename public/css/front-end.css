@@ -349,175 +349,6 @@ pre{
     height: 150px;
 }
 
-
-    /* Custom, iPhone Retina */ 
-    @media only screen and (min-width : 320px) {
-        
-        .parent:before{
-            height: 600px;
-                
-        }
-        
-        .child h1{
-            color: #085C95;
-            font-family: dense;
-        }
-        
-        .child img{
-             display: none;   
-        }
-        
-        .header-logo-container{
-             width: 100%;
-            margin-bottom: 20px;
-        }
-        
-        
-        
-    }
-
-    /* Extra Small Devices, Phones */ 
-    @media only screen and (min-width : 480px) {
-        .parent:before{
-            height: 600px;
-            z-index: -1;
-            content: '';
-            position: absolute;
-
-            opacity: 0.2;
-            width: 100%;
-            height: 400px;
-            background: url(../images/book-repeat.jpg) repeat 0 0; 
-            background-color: #2aa6fb;
-            background-size: 200px 200px;
-                
-        }
-        
-        
-        .header-logo-container{
-             width: 100%;
-            margin-bottom: 20px;
-        }
-        
-        
-        
-        .child h1{
-            font-size: 38px;
-            padding: 40px;
-        }
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-        
-        .parent{
-            position: relative;
-        }
-
-        .parent:before {
-            z-index: -1;
-            content: '';
-            position: absolute;
-
-            opacity: 0.2;
-            width: 100%;
-            height: 500px;
-            background: url(../images/book-repeat.jpg) repeat 0 0; 
-            background-color: #2aa6fb;
-            background-size: 200px 200px;
-        }
-
-        .child{
-            Color:black;
-            padding: 40px;
-        }
-        
-        .child img{
-             display: none;   
-        }
-        
-        .header-logo-container{
-             width: auto;   
-        }
-
-        .child h1{
-            color: #085C95;
-            font-family: dense;
-            font-size: 58px;
-        }
-    }
-
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
-        
-        .parent{
-            position: relative;
-        }
-
-        .parent:before {
-            z-index: -1;
-            content: '';
-            position: absolute;
-
-            opacity: 0.2;
-            width: 100%;
-            height: 400px;
-            background: url(../images/book-repeat.jpg) repeat 0 0; 
-            background-color: #2aa6fb;
-            background-size: 200px 200px;
-        }
-
-        .child{
-            Color:black;
-            padding: 40px;
-            height: 400px;
-        }
-        
-        .child img{
-             display: block;   
-        }
-
-        .child h1{
-            color: #085C95;
-            font-family: dense;
-            font-size: 58px;
-        }
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-
-        .parent{
-            position: relative;
-        }
-
-        .parent:before {
-            z-index: -1;
-            content: '';
-            position: absolute;
-
-            opacity: 0.2;
-            width: 100%;
-            height: 400px;
-            background: url(../images/book-repeat.jpg) repeat 0 0; 
-            background-color: #2aa6fb;
-            background-size: 200px 200px;
-        }
-
-        .child{
-            Color:black;
-            padding: 40px;
-            height: 400px;
-        }
-
-        .child h1{
-            color: #085C95;
-            font-family: dense;
-            font-size: 68px;
-        }
-    }
-
-
 .featured-image img {
     width: 100%;
     margin-top: 128px;
@@ -808,4 +639,185 @@ pre{
 
 .grey-banner img{
         
+}
+
+
+
+/********************************/
+/********************************/
+/*MOBILE AND TABLET CODE GOES HERE*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+    .parent:before{
+        height: 600px;
+
+    }
+
+    .child h1{
+        color: #085C95;
+        font-family: dense;
+    }
+
+    .child img{
+         display: none;   
+    }
+
+    .header-logo-container{
+         width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+    .parent:before{
+        height: 600px;
+        z-index: -1;
+        content: '';
+        position: absolute;
+
+        opacity: 0.2;
+        width: 100%;
+        height: 400px;
+        background: url(../images/book-repeat.jpg) repeat 0 0; 
+        background-color: #2aa6fb;
+        background-size: 200px 200px;
+
+    }
+
+
+    .header-logo-container{
+         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .banner{
+         height: auto;   
+    }
+
+
+    .child h1{
+        font-size: 38px;
+        padding: 40px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .parent{
+        position: relative;
+    }
+
+    .parent:before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+
+        opacity: 0.2;
+        width: 100%;
+        height: 500px;
+        background: url(../images/book-repeat.jpg) repeat 0 0; 
+        background-color: #2aa6fb;
+        background-size: 200px 200px;
+    }
+
+    .child{
+        Color:black;
+        padding: 40px;
+    }
+
+    .child img{
+         display: none;   
+    }
+
+    .header-logo-container{
+         width: auto;   
+    }
+
+    .child h1{
+        color: #085C95;
+        font-family: dense;
+        font-size: 58px;
+    }
+    
+    .banner{
+         height: auto;
+        
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+    .parent{
+        position: relative;
+    }
+
+    .parent:before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+
+        opacity: 0.2;
+        width: 100%;
+        height: 400px;
+        background: url(../images/book-repeat.jpg) repeat 0 0; 
+        background-color: #2aa6fb;
+        background-size: 200px 200px;
+    }
+
+    .child{
+        Color:black;
+        padding: 40px;
+        height: 400px;
+    }
+
+    .child img{
+         display: block;   
+    }
+
+    .child h1{
+        color: #085C95;
+        font-family: dense;
+        font-size: 58px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    .parent{
+        position: relative;
+    }
+
+    .parent:before {
+        z-index: -1;
+        content: '';
+        position: absolute;
+
+        opacity: 0.2;
+        width: 100%;
+        height: 400px;
+        background: url(../images/book-repeat.jpg) repeat 0 0; 
+        background-color: #2aa6fb;
+        background-size: 200px 200px;
+    }
+
+    .child{
+        Color:black;
+        padding: 40px;
+        height: 400px;
+    }
+
+    .child h1{
+        color: #085C95;
+        font-family: dense;
+        font-size: 68px;
+    }
 }
