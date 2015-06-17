@@ -683,6 +683,9 @@ pre{
     background-color: #eee;
 }
 
+.article-box{
+     min-height: 300px;   
+}
 
 .article-box h3{
     margin-top: 20px;
