@@ -339,6 +339,7 @@ pre{
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 40px;
+    font-weight: 100;
     color: #307699;
 }
 .latest-posts h3{
@@ -482,6 +483,7 @@ pre{
     font-size: 26px;   
     letter-spacing: 2px;
     margin-bottom: 20px;
+    font-weight: 100;
 }
 
 .footer ul{
@@ -582,6 +584,7 @@ pre{
 }
 .banner h2{
      margin-bottom: 20px;   
+    font-weight: 100;
 }
 .banner p{
      font-size: 16px;   
@@ -633,6 +636,7 @@ pre{
 
 .grey-banner h2{
      margin-bottom: 20px;
+    font-weight: 100;
 }
 
 .grey-banner p{
