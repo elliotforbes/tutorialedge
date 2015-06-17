@@ -27,7 +27,7 @@
                 </div>
                 
                 <div class="post-content">
-                    {!! nl2br($article->body) !!}
+                    {!! $article->body !!}
                 </div>
             
             </div>
