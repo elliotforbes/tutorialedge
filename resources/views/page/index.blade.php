@@ -9,7 +9,7 @@
 @section('content')
      <div class="latest-posts">
        <h2>{{ $page->title }}</h2>
-        <div class="row equal-height">
+        <div class="row">
            @foreach ($articles as $article)
            <div class="article-box">
                 <div class="col-sm-6 col-xs-12 col-lg-3 col-md-4">
