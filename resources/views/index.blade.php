@@ -20,7 +20,7 @@ In-depth game programming courses
 @section('content')
      <div class="latest-posts">
        <h2>Popular Courses</h2>
-        <div class="row equal-height"> 
+        <div class="row"> 
            
            @foreach ($courses as $course)
             <div class="col-md-3 col-sm-6 col-sx-12">
