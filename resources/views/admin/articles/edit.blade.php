@@ -3,7 +3,7 @@
 
 @section('content')
 
-{!! Form::model($article, ['url' => 'admin/edit/' . $article->slug, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
+{!! Form::model($article, ['url' => 'admin/articles/' . $article->slug, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
     <div class="row">
         <div class="col-lg-8">
             <h2>Update: {{ $article->title }}</h2>

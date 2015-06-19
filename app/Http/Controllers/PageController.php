@@ -20,8 +20,7 @@ class PageController extends Controller {
 	 */
 	public function index()
 	{
-		//
-        
+		// HOME PAGE        
         $courses = Page::get();
         return view('index', compact('courses'));
 	}
@@ -30,7 +29,6 @@ class PageController extends Controller {
     public function showCat($id)
     {
         $courses = Course::find($id);
-        
         return view('index', compact('courses'));
     }
     
@@ -43,30 +41,6 @@ class PageController extends Controller {
     {
         return view('login');   
     }
-    
-    
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{	
-        $input = Request::all();
-        
-        $article = new Article;
-        
-        $article->title = $input['title'];
-        $article->body = $input['body'];
-        $article->excerpt = $input['excerpt'];
-        $article->published_at = time();
-        $article->slug = "slug";
-        $article->cat_id = 1;
-        
-        $article->save();
-        
-        return redirect('admin.index');
-	}
     
     public function contact()
     {
@@ -83,8 +57,8 @@ class PageController extends Controller {
 	{
 		$article = Article::whereSlug($slug)->get()->first();
         $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ' ORDER BY title;'));
-        $prevArt = DB::select(DB::raw('select 1 from articles where cat_id = ' . $article->cat_id . ' AND id < ' . $article->id . ';'));
-        $nextArt = DB::select(DB::raw('select 1 from articles where cat_id = ' . $article->cat_id . ' AND id > ' . $article->id . ';'));
+//        $prevArt = DB::select(DB::raw('select 1 from articles where cat_id = ' . $article->cat_id . ' AND id < ' . $article->id . ';'));
+//        $nextArt = DB::select(DB::raw('select 1 from articles where cat_id = ' . $article->cat_id . ' AND id > ' . $article->id . ';'));
         if(is_null($article))
         {
             abort(404);   

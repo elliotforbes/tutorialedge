@@ -3,7 +3,7 @@
 
 @section('content')
 
-{!! Form::open(array('route' => 'article_store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
+{!! Form::open(array('route' => 'admin.articles.store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
     <div class="row">
         <div class="col-lg-8">
            <h2>Write a new Article</h2>

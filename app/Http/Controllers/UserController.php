@@ -16,7 +16,7 @@ class UserController extends Controller {
 	public function index()
 	{
 		$users = User::get();
-        return view('admin.users', compact('users'));
+        return view('admin/users/index', compact('users'));
 	}
 
 	/**
@@ -51,7 +51,7 @@ class UserController extends Controller {
 	{
         // TODO
         $users = User::get();
-		return view('admin.users', compact('users'));
+		return view('admin/users/index', compact('users'));
 	}
 
 	/**

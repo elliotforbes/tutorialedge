@@ -3,10 +3,11 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
 
 use App\Article;
 use App\Page;
+use Request;
 
 class ArticleController extends Controller {
 
@@ -18,7 +19,7 @@ class ArticleController extends Controller {
 	public function index()
 	{
 		$articles = Article::get();
-        return view('admin.articles', compact('articles'));
+        return view('admin/articles/index', compact('articles'));
 	}
 
 	/**
@@ -29,7 +30,7 @@ class ArticleController extends Controller {
 	public function create()
 	{
         $categories = Page::get();
-        return view('admin.create', compact('categories'));
+        return view('admin/articles/create', compact('categories'));
 	}
 
 	/**
@@ -37,9 +38,30 @@ class ArticleController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		//
+		$input = Request::all();
+        
+        $article = new Article;
+        
+        $article->title = $input['title'];
+        $article->body = $input['body'];
+        $article->excerpt = $input['excerpt'];
+        $article->published_at = time();
+        $article->image_url = $input["image_url"];
+        $article->slug = $input["slug"];
+        $article->cat_id = 1;
+        
+        $file = Request::file('image');
+        
+        if($file){
+            $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
+            Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
+        }
+        
+        $article->save();
+        
+        return redirect('admin/articles');
 	}
 
 	/**
@@ -50,7 +72,15 @@ class ArticleController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+        $article = Article::whereSlug($slug)->get()->first();
+        $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ' ORDER BY title;'));
+        if(is_null($article))
+        {
+            abort(404);   
+        }
+        $page = Page::where('cat_id', '=', $article->cat_id)->get()->first();       
+        return view('static.single', compact('article', 'articles', 'page'));
+	
 	}
 
 	/**
@@ -59,9 +89,11 @@ class ArticleController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($slug)
 	{
-		//
+		$article = Article::whereSlug($slug)->get()->first();
+        
+        return view('admin/articles/edit', compact('article'));
 	}
 
 	/**
@@ -70,9 +102,12 @@ class ArticleController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($slug)
 	{
-		//
+		$article = Article::whereSlug($slug)->get()->first();
+        $input = Request::all();
+        $article->fill($input)->save();
+        return redirect('admin/articles/' . $slug . '/edit');
 	}
 
 	/**

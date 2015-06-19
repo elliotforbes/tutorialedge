@@ -17,7 +17,7 @@ class CourseController extends Controller {
 	public function index()
 	{
 		$pages = Page::get();
-        return view('admin/pages', compact('pages'));
+        return view('admin/courses/index', compact('pages'));
 	}
 
 	/**
@@ -28,7 +28,7 @@ class CourseController extends Controller {
 	public function create()
 	{
 		$categories = Page::get();
-        return view('admin/createpage', compact('categories'));
+        return view('admin/courses/create', compact('categories'));
 	}
 
 	/**

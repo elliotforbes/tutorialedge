@@ -58,10 +58,10 @@ Route::group(['prefix' => 'admin', 'as'], function() {
 */
 
 //Route::get('/tutorials/{id}', 'PageController@show');
-Route::get('single', 'PageController@single');
+//Route::get('single', 'PageController@single');
 
 Route::get('/course/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
-Route::get('/{slug}', 'PageController@show');
+Route::get('/{slug}', 'ArticleController@show');
 
 
 
