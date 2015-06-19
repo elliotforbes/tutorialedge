@@ -30,13 +30,12 @@ class AdminController extends Controller {
     
     public function isAdmin()
     {
-//        $user = \Auth::user();
-//        
-//        if($user->type == 1)
-//            return true;
-//        else
-//            return false;
-        return true;
+        $user = \Auth::user();
+        
+        if($user->type == 1)
+            return true;
+        else
+            return false;
     }
     
     public function articles()
