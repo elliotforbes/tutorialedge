@@ -17,9 +17,6 @@ Route::get('/contact', 'PageController@contact');
 Route::get('home', 'PageController@index');
 
 
-Route::get('/course/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
-Route::get('/{slug}', 'ArticleController@show');
-
 Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     
     Route::get('index', 'AdminController@index');
@@ -29,6 +26,10 @@ Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     Route::resource('articles', 'ArticleController');
     
 });
+
+
+Route::get('/course/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
+Route::get('/{slug}', 'ArticleController@show');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
