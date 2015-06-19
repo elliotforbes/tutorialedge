@@ -4,7 +4,7 @@
      <div class="latest-posts">
          <h2>Admin Stuff</h2>  
          
-         <a href="/admin/create"><button class="btn btn-default">New Article</button></a>
+         <a href="/admin/articles/create"><button class="btn btn-default">New Article</button></a>
          
          <table class="table table-striped">
              <thead>
@@ -30,8 +30,8 @@
                      <td>{{ $article->slug }}</td>
                      <td>{{ $article->cat_id }}</td>
                      <td><a href="/{{ $article->slug }}"><button class="btn btn-default">View</button></a></td>
-                     <td><a href="/admin/edit/{{ $article->slug }}"><button class="btn btn-default">Edit</button></a></td>
-                     <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/edit/' . $article->slug, 'onsubmit' => 'return ConfirmDelete()']) !!}
+                     <td><a href="/admin/{{ $article->slug }}/edit"><button class="btn btn-default">Edit</button></a></td>
+                     <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/' . $article->slug .'/edit' , 'onsubmit' => 'return ConfirmDelete()']) !!}
                                 <div class="form-group">
                                     {!! Form::submit('Delete', ['class'=>'btn btn-danger', ]) !!}
                                 </div>
