@@ -3,7 +3,7 @@
 @section('content')
      <div class="latest-posts">
          <h2>All Courses</h2>  
-         <a href="/admin/createcourse"><button class="btn btn-default">New Course</button></a>
+         <a href="/admin/pages/create"><button class="btn btn-default">New Course</button></a>
          
          <table class="table table-striped">
              <thead>
