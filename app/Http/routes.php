@@ -19,7 +19,7 @@ Route::get('home', 'PageController@index');
 
 Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     
-    Route::get('index', 'AdminController@index');
+    Route::get('', 'AdminController@index');
     
     Route::resource('users', 'UserController');
     Route::resource('pages', 'CourseController');

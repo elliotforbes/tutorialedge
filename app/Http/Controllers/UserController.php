@@ -50,8 +50,8 @@ class UserController extends Controller {
 	public function show($id)
 	{
         // TODO
-        $users = User::get();
-		return view('admin/users/index', compact('users'));
+//        $users = User::get();
+//		return view('admin/users/index', compact('users'));
 	}
 
 	/**
