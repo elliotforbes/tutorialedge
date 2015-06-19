@@ -17,7 +17,7 @@ class CourseController extends Controller {
 	public function index()
 	{
 		$pages = Page::get();
-        return view('admin/courses/index', compact('pages'));
+        return view('admin/Courses/index', compact('pages'));
 	}
 
 	/**
@@ -28,7 +28,7 @@ class CourseController extends Controller {
 	public function create()
 	{
 		$categories = Page::get();
-        return view('admin/courses/create', compact('categories'));
+        return view('admin/Courses/create', compact('categories'));
 	}
 
 	/**
@@ -47,7 +47,7 @@ class CourseController extends Controller {
         $course->cat_id = $input['cat_id'];
         
         $course->save();
-        return redirect('admin/pages');
+        return redirect('admin/Courses/index');
 	}
 
 	/**
