@@ -3,7 +3,7 @@
 
 @section('content')
 
-{!! Form::open(array('route' => 'course_store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
+{!! Form::open(array('route' => 'admin.pages.store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
     <div class="row">
         <div class="col-lg-8">
            <h2>Create a New Course</h2>
