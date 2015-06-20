@@ -59,6 +59,7 @@
                             <li><a href="/course/python">Python Tutorials</a>
                             <li><a href="/course/lwjgl3">LWJGL 3 Tutorials</a></li>
                             <li><a href="/course/laravel-5">Laravel 5 Tutorials</a></li>
+                            <li><a href="/course/artificial-intelligence">Artificial Intelligence</a></li>
 <!--
                                 <ul>
                                     <li><a href="/">Networking Tutorials</a>
