@@ -46,6 +46,13 @@
                         'placeholder'=>'cat_id')) !!}
             </div>
             <div class="form-group">
+                {!! Form::label('Post Status') !!}
+                {!! Form::text('post_status', null
+                    array('required',
+                        'class'=>'form-control',
+                        'placeholder'=>'published || draft !!}
+            </div>
+            <div class="form-group">
                 {!! Form::label('Image URL') !!}
                 {!! Form::text('image_url', null,
                     array('required',
