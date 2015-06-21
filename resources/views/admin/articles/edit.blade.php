@@ -50,7 +50,7 @@
                 {!! Form::text('post_status', null,
                     array('required',
                         'class'=>'form-control',
-                        'placeholder'=>'published || draft !!}
+                        'placeholder'=>'published || draft' !!}
             </div>
             <div class="form-group">
                 {!! Form::label('Image URL') !!}
