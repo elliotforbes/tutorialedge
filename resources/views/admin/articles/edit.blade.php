@@ -47,7 +47,7 @@
             </div>
             <div class="form-group">
                 {!! Form::label('Post Status') !!}
-                {!! Form::text('post_status', null
+                {!! Form::text('post_status', null,
                     array('required',
                         'class'=>'form-control',
                         'placeholder'=>'published || draft !!}
