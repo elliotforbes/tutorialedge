@@ -48,9 +48,10 @@ class ArticleController extends Controller {
         $article->body = $input['body'];
         $article->excerpt = $input['excerpt'];
         $article->published_at = time();
+        $article->created_at = time();
         $article->image_url = $input["image_url"];
         $article->slug = $input["slug"];
-        $article->cat_id = 1;
+        $article->cat_id = $input['cat_id'];
         
         $file = Request::file('image');
         
