@@ -8,6 +8,7 @@ class Article extends Model {
     protected $fillable = [
         'title',
         'body',
+        'post_status', 
         'excerpt',
         'published_at',
         'slug',

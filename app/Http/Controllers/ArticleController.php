@@ -74,7 +74,7 @@ class ArticleController extends Controller {
 	{
         $article = Article::whereSlug($slug)->get()->first();
         $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ' ORDER BY title;'));
-        if(is_null($article))
+        if(is_null($article) || $article->post_status)
         {
             abort(404);   
         }
