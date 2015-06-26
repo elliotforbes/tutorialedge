@@ -55,18 +55,6 @@
                     </tbody>
                 </table>
                 
-                <div class="ad-widget">
-                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                    <!-- TutsEdgeSidebar1 -->
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-6782067367590597"
-                         data-ad-slot="3587744083"
-                         data-ad-format="auto"></ins>
-                    <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
                 </div>
             </div>
         </div>
