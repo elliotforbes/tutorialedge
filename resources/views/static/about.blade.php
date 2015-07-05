@@ -8,7 +8,7 @@
                    
                </div>
                 <div class="post-title">
-                   <h2>Our Story</h2>
+                   <h2 class="center">Our Story</h2>
                 </div>
                 
                 <div class="post-content">
