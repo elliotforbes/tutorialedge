@@ -27,6 +27,11 @@ class FrontendController extends Controller {
         return view('static.contact');   
     }
     
+    public function about()
+    {
+        return view('static.about');   
+    }
+    
 	/**
 	 * Show the form for creating a new resource.
 	 *
