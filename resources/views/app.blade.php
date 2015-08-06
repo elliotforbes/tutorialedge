@@ -127,7 +127,8 @@
                     <h3>Follow Us!</h3> 
                     <p>If you have found any of the content on this website useful then help the site out by following us on your preferred social media channel!</p>
                     <ul class="footer-connect">
-                        <li><a href="https://www.facebook.com/tutorialedge"><i class="fa fa-facebook-square fa-3x"></i></a>
+                        <li><a href="https://www.facebook.com/tutorialedgegit status
+                        "><i class="fa fa-facebook-square fa-3x"></i></a>
                         </li>
                         <li><a href="http://twitter.com/Tutorialedge"><i class="fa fa-twitter-square fa-3x"></i></a>
                         </li>
