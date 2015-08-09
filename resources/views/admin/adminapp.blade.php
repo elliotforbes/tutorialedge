@@ -21,15 +21,8 @@
                         <li><a href="/admin/pages">Courses</a></li>
                         <li><a href="/admin/users">Users</a></li>
                         <li><a href="/admin/create">New Article</a></li>
-                        
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Settings</a></li>
-                                <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
-                            </ul>
-                        </li>
-                        
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
                     </ul>
                     
                     
