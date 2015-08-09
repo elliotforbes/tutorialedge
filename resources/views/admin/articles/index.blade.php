@@ -39,7 +39,7 @@
              @endforeach
              </tbody>
          </table>
-         <div class="pagination"> {{ $users->links() }} </div>
+         <div class="pagination"> {{ $articles->render() }} </div>
      </div>
      
 <!--Adds confirmation popup to delete buttons so that accidental deletion doesn't take place-->
