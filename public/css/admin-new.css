@@ -27,6 +27,9 @@ body {
 .sidebar ul a {
   color: rgba(163, 175, 183, 0.9);
 }
+.sidebar ul a:hover {
+  background-color: #242F35;
+}
 .content {
   padding-left: 60px;
   padding-right: 60px;
