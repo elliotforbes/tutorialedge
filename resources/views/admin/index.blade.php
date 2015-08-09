@@ -20,8 +20,7 @@
 
         <div class="col-lg-4">
             <div class="info-box">
-                <h2>Subscriber Count:</h2>
-                <p>{{ $userCount }}</p>
+                <h2>Subscriber Count : {{ $userCount }}</h2>
             </div>
         </div>
         <div class="col-lg-4">
