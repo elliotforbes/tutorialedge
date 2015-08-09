@@ -18,7 +18,7 @@
                 <div class="col-lg-2 sidebar">
                     <h2>Main Nav</h2>
                     <ul class="nav nav-sidebar">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/admin/">Home</a></li>
                         <li><a href="/admin/articles">Articles</a></li>
                         <li><a href="/admin/pages">Courses</a></li>
                         <li><a href="/admin/users">Users</a></li>
