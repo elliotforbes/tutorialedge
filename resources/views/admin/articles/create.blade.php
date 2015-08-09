@@ -10,7 +10,7 @@
            <div class="info-box">
             <h2>Write a new Article</h2>
                 <div class="form-group">
-                    {!! Form::label('Post Title') !!}
+                   <h2>Post Title</h2>
                     {!! Form::text('title', null,
                         array('required', 
                             'class'=>'form-control',
@@ -18,7 +18,6 @@
                 </div>
                 <div class="form-group">
                    <h2>Excerpt</h2>
-                    {!! Form::label('Excerpt') !!}
                     {!! Form::textarea('excerpt', null,
                         array('required',
                             'class'=>'form-control',
@@ -26,7 +25,6 @@
                 </div>
                 <div class="form-group">
                    <h2>Article Body</h2>
-                    {!! Form::label('Article Body') !!}
                     {!! Form::textarea('body', null,
                         array('required',
                             'class'=>'form-control',
