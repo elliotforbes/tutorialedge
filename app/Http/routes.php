@@ -17,7 +17,7 @@ Route::get('/contact', 'FrontendController@contact');
 Route::get('/about', 'FrontendController@about');
 
 Route::get('/profile/{slug}', 'ProfileController@index');
-Route::get('adminnew', 'AdminController@newDesign');
+//Route::get('adminnew', 'AdminController@newDesign');
 
 
 Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {

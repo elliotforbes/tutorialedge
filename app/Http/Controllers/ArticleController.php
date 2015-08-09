@@ -18,8 +18,8 @@ class ArticleController extends Controller {
 	 */
 	public function index()
 	{
-		$articles = Article::get();
-        return view('admin/articles/index', compact('articles'));
+		$articles = Article::paginate(20);
+        return View::make('admin/articles/index', compact('articles'));
 	}
 
 	/**
