@@ -9,6 +9,7 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ asset('/css/admin-new.css') }}">
+        <script src="{{ asset('/js/dropzone.js') }}"></script>
         <script src="{{ asset('/js/ckeditor.js') }}"></script>
     </head>
     <body>
@@ -21,6 +22,7 @@
                         <li><a href="/admin/articles">Articles</a></li>
                         <li><a href="/admin/pages">Courses</a></li>
                         <li><a href="/admin/users">Users</a></li>
+                        <li><a href="/admin/videos">Videos</a></li>
                         <li><a href="/admin/settings">Settings</a></li>
                         <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
                     </ul>

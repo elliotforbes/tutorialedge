@@ -17,6 +17,7 @@
                             'placeholder'=>'Post Title')) !!}
                 </div>
                 <div class="form-group">
+                   <h2>Excerpt</h2>
                     {!! Form::label('Excerpt') !!}
                     {!! Form::textarea('excerpt', null,
                         array('required',
@@ -24,6 +25,7 @@
                             'placeholder'=>'Post Excerpt')) !!}
                 </div>
                 <div class="form-group">
+                   <h2>Article Body</h2>
                     {!! Form::label('Article Body') !!}
                     {!! Form::textarea('body', null,
                         array('required',
@@ -61,6 +63,13 @@
                 {!! Form::file('image', null) !!}
             </div>
             <div class="form-group">
+                {!! Form::label('Meta Description') !!}
+                {!! Form::text('slug', null,
+                    array('required',
+                        'class'=>'form-control',
+                        'placeholder'=>'Meta Description')) !!}
+            </div>
+            <div class="form-group">
                 {!! Form::submit('Submit',
                     array('class'=>'btn btn-primary')) !!}
             </div>
@@ -68,18 +77,14 @@
         </div>
         
         <div class="clear"></div>
-        <div class="col-lg-6">
-            <div class="info-box">
-                {!! Form::label('Meta Description') !!}
-                {!! Form::text('slug', null,
-                    array('required',
-                        'class'=>'form-control',
-                        'placeholder'=>'Meta Description')) !!}
-            </div>
-        </div>
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <div class="info-box">
                 <h2>Image Uploader</h2>
+                <form action="/file-upload" class="dropzone">
+                  <div class="fallback">
+                    <input name="file" type="file" multiple />
+                  </div>
+                </form>
             </div>
         </div>
         
