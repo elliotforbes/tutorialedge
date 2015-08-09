@@ -14,7 +14,7 @@
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3 sidebar">
+                <div class="col-lg-2 sidebar">
                     <h2>Main Nav</h2>
                     <ul class="nav nav-sidebar">
                         <li><a href="#">Home</a></li>
@@ -27,7 +27,7 @@
                     
                     
                 </div>
-                <div class="col-sm-offset-3 col-lg-9 content">
+                <div class="col-sm-offset-2 col-lg-10 content">
                      @yield('content')
                 </div>
             </div>
