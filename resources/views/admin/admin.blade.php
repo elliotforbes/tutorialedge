@@ -17,9 +17,22 @@
                     <h2>Main Nav</h2>
                     <ul class="nav nav-sidebar">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Posts</a></li>
-                        <li><a href="#">Videos</a></li>
+                        <li><a href="/admin/articles">Articles</a></li>
+                        <li><a href="/admin/pages">Courses</a></li>
+                        <li><a href="/admin/users">Users</a></li>
+                        <li><a href="/admin/create">New Article</a></li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+                            </ul>
+                        </li>
+                        
                     </ul>
+                    
+                    
                 </div>
                 <div class="col-sm-offset-3 col-lg-9 content">
                      @yield('content')
