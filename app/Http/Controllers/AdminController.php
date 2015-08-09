@@ -28,6 +28,11 @@ class AdminController extends Controller {
             return redirect('');
     }
     
+    public function newDesign()
+    {
+        return view('admin.new');
+    }
+    
     public function isAdmin()
     {
         $user = \Auth::user();
