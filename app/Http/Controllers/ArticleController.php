@@ -19,7 +19,7 @@ class ArticleController extends Controller {
 	public function index()
 	{
 		$articles = Article::paginate(20);
-        return view::make('admin/articles/index', compact('articles'));
+        return view('admin/articles/index', compact('articles'));
 	}
 
 	/**
