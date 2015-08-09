@@ -21,6 +21,7 @@
                         <li><a href="/admin/pages">Courses</a></li>
                         <li><a href="/admin/users">Users</a></li>
                         <li><a href="/admin/create">New Article</a></li>
+<<<<<<< HEAD
                         
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
@@ -30,6 +31,10 @@
                             </ul>
                         </li>
                         
+=======
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+>>>>>>> dd6dac9950941e48adb77aacead01734c2c28a5c
                     </ul>
                     
                     
