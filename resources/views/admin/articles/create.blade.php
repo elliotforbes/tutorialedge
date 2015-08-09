@@ -66,6 +66,23 @@
             </div>
             </div>
         </div>
+        
+        <div class="clear"></div>
+        <div class="col-lg-6">
+            <div class="info-box">
+                {!! Form::label('Meta Description') !!}
+                {!! Form::text('slug', null',
+                    array('required',
+                        'class'=>'form-control',
+                        'placeholder'=>'Meta Description')) !!}
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="info-box">
+                <h2>Image Uploader</h2>
+            </div>
+        </div>
+        
     </div>
 {!! Form::close() !!}
 
