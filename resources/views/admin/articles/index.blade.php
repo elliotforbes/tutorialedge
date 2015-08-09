@@ -1,8 +1,14 @@
 @extends('admin.admin')
 
 @section('content')
+<<<<<<< HEAD
      <div class="info-box">
          <h2>Admin Stuff</h2>  
+=======
+    
+     <h2>All Articles</h2> 
+     <div class="info-box"> 
+>>>>>>> 1002035d971d88631b0093864e34fb2b5fceeab4
          
          <a href="/admin/articles/create"><button class="btn btn-default">New Article</button></a>
          

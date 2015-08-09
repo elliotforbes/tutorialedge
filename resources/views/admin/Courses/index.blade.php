@@ -1,8 +1,14 @@
 @extends('admin.admin')
 
 @section('content')
+<<<<<<< HEAD
      <div class="info-box">
          <h2>All Courses</h2>  
+=======
+     
+     <h2>All Courses</h2>  
+     <div class="info-box">
+>>>>>>> 1002035d971d88631b0093864e34fb2b5fceeab4
          <a href="/admin/pages/create"><button class="btn btn-default">New Course</button></a>
          
          <table class="table table-striped">
