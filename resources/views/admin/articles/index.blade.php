@@ -1,7 +1,7 @@
 @extends('admin.admin')
 
 @section('content')
-     <div class="latest-posts">
+     <div class="info-box">
          <h2>Admin Stuff</h2>  
          
          <a href="/admin/articles/create"><button class="btn btn-default">New Article</button></a>

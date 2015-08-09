@@ -1,7 +1,7 @@
 @extends('admin.admin')
 
 @section('content')
-     <div class="latest-posts">
+     <div class="info-box">
          <h2>Admin Stuff</h2>  
          
          <table class="table table-striped">
