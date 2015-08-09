@@ -311,6 +311,35 @@ pre{
 
 /* END OF FEATURE BOX */
 
+/* VIDEO CONT CODE*/
+.video-cont{
+    background-color: #EEEEEE;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: black;
+}
+.video-cont iframe{
+    width: 100%;
+    margin: auto;
+    min-height: 480px;
+    height: auto;
+}
+
+.video-playlist{
+    color: #A7B3C2;   
+}
+
+.video-table td{
+    padding-top: 5px !important;   
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 20px;
+    
+}
+
+/*END OF VIDEO CONT CODE*/
 /* Content code */
 
 .post-box{
