@@ -1,6 +1,8 @@
 @extends('admin.admin')
 
 @section('content')
+     <h2>Admin Dashboard</h2>
+
      <div class="row">
         <div class="col-lg-6">
             <div class="info-box">
