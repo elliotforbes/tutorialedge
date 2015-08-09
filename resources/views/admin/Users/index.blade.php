@@ -1,9 +1,9 @@
 @extends('admin.admin')
 
 @section('content')
-     <div class="info-box">
-         <h2>Admin Stuff</h2>  
-         
+     
+     <h2>All Users</h2>  
+     <div class="info-box">    
          <table class="table table-striped">
              <thead>
                  <tr>
