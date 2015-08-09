@@ -4,7 +4,7 @@
 
      <h2>All Articles</h2> 
      <div class="info-box"> 
-         <a href="/admin/articles/create"><button class="btn btn-default">New Article</button></a>
+         <a href="/admin/articles/create"><button class="btn btn-default btn-new">New Article</button></a>
          
          <table class="table table-striped">
              <thead>
