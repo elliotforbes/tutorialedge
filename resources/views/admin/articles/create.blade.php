@@ -4,9 +4,11 @@
 @section('content')
 
 {!! Form::open(array('route' => 'admin.articles.store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
+    
     <div class="row">
         <div class="col-lg-8">
-           <h2>Write a new Article</h2>
+           <div class="info-box">
+            <h2>Write a new Article</h2>
                 <div class="form-group">
                     {!! Form::label('Post Title') !!}
                     {!! Form::text('title', null,
@@ -28,8 +30,10 @@
                             'class'=>'form-control',
                             'placeholder'=>'Article Body')) !!}
                 </div>
+            </div>
         </div>
         <div class="col-lg-4">
+           <div class="info-box">
             <h2>Publishing Options</h2>
             <div class="form-group">
                 {!! Form::label('Post Slug') !!}
@@ -59,6 +63,7 @@
             <div class="form-group">
                 {!! Form::submit('Submit',
                     array('class'=>'btn btn-primary')) !!}
+            </div>
             </div>
         </div>
     </div>
