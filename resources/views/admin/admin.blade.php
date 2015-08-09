@@ -9,6 +9,7 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{{ asset('/css/admin-new.css') }}">
+        <script src="{{ asset('/js/ckeditor.js') }}"></script>
     </head>
     <body>
         <div class="container-fluid">
