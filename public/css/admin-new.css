@@ -38,6 +38,7 @@ body {
 .info-box {
   width: 100%;
   height: auto;
+  margin-top: 40px;
   padding: 20px;
   background-color: white;
   margin-bottom: 40px;
