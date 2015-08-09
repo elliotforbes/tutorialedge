@@ -19,7 +19,10 @@
         <div class="clear"></div>
 
         <div class="col-lg-4">
-            <div class="info-box"></div>
+            <div class="info-box">
+                <h2>Subscriber Count:</h2>
+                <p>{{ $users }}</p>
+            </div>
         </div>
         <div class="col-lg-4">
             <div class="info-box"></div>

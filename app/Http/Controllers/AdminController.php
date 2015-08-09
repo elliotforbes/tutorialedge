@@ -22,8 +22,9 @@ class AdminController extends Controller {
 	public function index()
 	{
         $user = \Auth::user();
+        $userCount = User::count();
         if($this->isAdmin())
-            return view('admin.index');
+            return view('admin.index', compact('userCount'));
         else
             return redirect('');
     }
