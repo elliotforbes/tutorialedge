@@ -60,7 +60,6 @@
         </div>
         
         <div class="padding-top"></div>
-        <div class="padding-top"></div>
         
         <div id="disqus_thread"></div>
         <script type="text/javascript">

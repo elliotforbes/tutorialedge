@@ -91,6 +91,8 @@
 
     @yield('featured-top')
 
+    @yield('video-content')
+   
     <div class="content">
         <div class="container">
 

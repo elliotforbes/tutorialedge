@@ -492,3 +492,9 @@ nav a:hover{
     background-color: #FF3366 !important;
     color: white !important;
 }
+
+.video-cont{
+    background-color: #080808;
+    width: 100%;
+    height: auto;
+}
