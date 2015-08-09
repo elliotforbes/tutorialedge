@@ -71,7 +71,7 @@
         <div class="col-lg-6">
             <div class="info-box">
                 {!! Form::label('Meta Description') !!}
-                {!! Form::text('slug', null',
+                {!! Form::text('slug', null,
                     array('required',
                         'class'=>'form-control',
                         'placeholder'=>'Meta Description')) !!}
