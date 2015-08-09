@@ -4,8 +4,8 @@
 @section('content')
 
 {!! Form::open(array('route' => 'admin.pages.store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
-    <div class="row">
-       <div class="info-box">
+    <div class="info-box">
+      <div class="row">
             <div class="col-lg-8">
                <h2>Create a New Course</h2>
                     <div class="form-group">
@@ -24,8 +24,6 @@
                                 'placeholder'=>'Article Body')) !!}
                     </div>
             </div>
-        </div>
-        <div class="info-box">
             <div class="col-lg-4">
                 <h2>Publishing Options</h2>
                 <div class="form-group">
