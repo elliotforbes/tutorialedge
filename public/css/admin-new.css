@@ -1,0 +1,51 @@
+body {
+  background-color: #f1f4f5;
+  font-family: Roboto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 20px;
+  border-right: 1px solid #eee;
+  background-color: #263238;
+}
+.sidebar h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.sidebar ul {
+  margin-right: -21px;
+  margin-left: -20px;
+}
+.sidebar ul a {
+  color: rgba(163, 175, 183, 0.9);
+}
+.content {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.content h2 {
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+.content .clear {
+  clear: both;
+}
+.info-box {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+.info-box h2 {
+  font-weight: 100;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/*# sourceMappingURL=admin-new.css.map */
