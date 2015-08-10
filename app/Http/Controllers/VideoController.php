@@ -44,12 +44,7 @@ class VideoController extends Controller {
         
         $video = new Video;
         $input = Request::all();
-        $file = Request::file('image');
-        
-        if($file){
-            $imageName = $video->image_url . '.' . Request::file('image')->getClientOriginalExtension();
-            Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
-        }
+
         
         $video->published_at = Carbon::now();
         $video->fill($input)->save();
@@ -71,12 +66,13 @@ class VideoController extends Controller {
 	public function show($slug)
 	{
 		$video = Video::whereSlug($slug)->get()->first();
+        $videos = DB::select(DB::raw('select * from videos where course_id = ' . $video->course_id . ' ORDER BY published_at;'));
         if(is_null($video))
         {
             abort(404);
         }
         
-        return view('static.video', compact('video'));
+        return view('static.video', compact('video', 'videos'));
 	}
 
 	/**

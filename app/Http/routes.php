@@ -31,7 +31,7 @@ Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
 });
 
 //Route::get('video', 'VideoController@single');
-Route::get('/videos/{slug}', array('as' => 'video.show', 'uses' => 'VideoController@show'));
+Route::get('/video/{slug}', array('as' => 'video.show', 'uses' => 'VideoController@show'));
 
 Route::get('/course/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
 Route::get('/{slug}', 'FrontendController@show');

@@ -17,16 +17,14 @@
             <div class="col-lg-3">
                 <div class="video-playlist">
                     <ul class="list-group">
-                        <li class="list-group-item">#1 Getting The Environment Setup</li>
-                        <li class="list-group-item">#2 Creating our Game Window</li>
-                        <li class="list-group-item">#3 Creating a Square</li>
-                        <li class="list-group-item">#4 Initializing OpenGL</li>
-                        <li class="list-group-item">#5 Creating our Paddles</li>
+                        @foreach($videos as $video)
+                        <li class="list-group-item"><a href="/video/{{ $video->url }}">{{ $video->title }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
         </div>
-        <h2>Hello World <small><br>Published on July 13th, 2015</small></h2>
+        <h2>{{ $video->title }} <small><br>Published on {{ $video->published_at }}</small></h2>
     </div>
 </div>
 
