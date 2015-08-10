@@ -20,7 +20,9 @@ class FrontendController extends Controller {
 	{
 		$courses = Page::get();
         $articles = Article::orderBy('id', 'DESC')->take(8)->get();
-        return view('index', compact('courses', 'articles'));
+        $artCount = Article::count();
+        $userCount = User::count();
+        return view('index', compact('courses', 'articles', 'artCount', 'userCount'));
 	}
     
     public function contact()

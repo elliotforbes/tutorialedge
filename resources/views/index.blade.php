@@ -136,15 +136,15 @@ In-depth game programming courses
         <div class="row">
             <div class="col-lg-4">
                 <div class="red-circle-bg">
-                    39
+                    {{ $artCount }}
                 </div>
                 <h2>Tutorials</h2>
             </div>
             <div class="col-lg-4">
                 <div class="red-circle-bg">
-                    17
+                    {{ $userCount }}
                 </div>
-                <h2>Video Tutorials</h2>
+                <h2>Total Users</h2>
             </div>
             <div class="col-lg-4">
                 <div class="red-circle-bg">
