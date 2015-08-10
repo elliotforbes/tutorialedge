@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use DB;
 use Carbon\Carbon;
 use App\Video;
+use Request;
 
 class VideoController extends Controller {
 
