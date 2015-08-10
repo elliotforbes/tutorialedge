@@ -18,8 +18,8 @@ class VideoController extends Controller {
 	 */
 	public function index()
 	{
-		$articles = Article::orderBy('id', 'DESC')->paginate(15);
-        return view('admin/videos/index', compact('articles'));
+		$videos = Video::orderBy('id', 'DESC')->paginate(15);
+        return view('admin/videos/index', compact('videos'));
 	}
 
 	/**
@@ -46,12 +46,12 @@ class VideoController extends Controller {
         $file = Request::file('image');
         
         if($file){
-            $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
+            $imageName = $video->image_url . '.' . Request::file('image')->getClientOriginalExtension();
             Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
         }
         
-        $article->published_at = Carbon::now();
-        $article->fill($input)->save();
+        $video->published_at = Carbon::now();
+        $video->fill($input)->save();
         
         return redirect('admin/videos');
 	}
@@ -70,7 +70,7 @@ class VideoController extends Controller {
 	public function show($slug)
 	{
 		$video = Video::whereSlug($slug)->get()->first();
-        if(is_null($article) || $article->post_status)
+        if(is_null($video))
         {
             abort(404);
         }
