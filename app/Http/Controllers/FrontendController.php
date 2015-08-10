@@ -19,7 +19,7 @@ class FrontendController extends Controller {
 	public function index()
 	{
 		$courses = Page::get();
-        $articles = Article::orderBy('id', 'DESC')->get(8);
+        $articles = Article::orderBy('id', 'DESC')->get();
         return view('index', compact('courses', 'articles'));
 	}
     
