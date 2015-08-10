@@ -13,9 +13,7 @@ In-depth game programming courses
 
 @section('featured-top')
 
-<div class="featured-banner">
-    
-</div>
+
 
 @endsection
 
@@ -59,35 +57,45 @@ In-depth game programming courses
     </div>
 </div>
 
-<div class="grey-banner">
+<div class="featured-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="red-circle-bg">
+                    39
+                </div>
+                <h2>Tutorials</h2>
+            </div>
+            <div class="col-lg-4">
+                <div class="red-circle-bg">
+                    17
+                </div>
+                <h2>Video Tutorials</h2>
+            </div>
+            <div class="col-lg-4">
+                <div class="red-circle-bg">
+                    132
+                </div>
+                <h2>YouTube Subscribers</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h2>Learn by Example</h2>
-                <p>Take advantage of our programming tutorial courses and learn by doing. Create bigger and more complex software systems and learn the ins and outs of managing larger code bases.</p>
+                <h2>Develop New Skills</h2>
+                <p>Enhance your existing programming skills and pad out your github account with interesting projects that will ultimately help you get the job of your dreams.</p>
             </div>
             <div class="col-lg-6">
-                <div class="code-image">
-                    <img src="{{ asset('/images/featured-img.png') }}" alt="">
+                <div class="circle-bg orange">
+                    <i class="fa fa-briefcase fa-4x"></i>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="circle-bg orange">
-                    <i class="fa fa-briefcase fa-4x"></i>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <h2>Develop New Skills</h2>
-                <p>Enhance your existing programming skills and pad out your github account with interesting projects that will ultimately help you get the job of your dreams.</p>
-            </div>
-        </div>
-    </div>
-</div>
+
 @endsection
