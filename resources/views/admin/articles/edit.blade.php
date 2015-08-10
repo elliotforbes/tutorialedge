@@ -5,8 +5,8 @@
 
 {!! Form::model($article, ['url' => 'admin/articles/' . $article->slug, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
     <div class="row">
-        <div class="info-box">
-            <div class="col-lg-8">
+        <div class="col-lg-8">
+            <div class="info-box">
                 <h2>Update: {{ $article->title }}</h2>
                  <div class="form-group">
                         {!! Form::label('Post Title') !!}
@@ -30,10 +30,11 @@
                                 'placeholder'=>'Article Body')) !!}
                     </div>
             </div>
-            <div class="clear"></div>
         </div>
-        <div class="info-box">
-            <div class="col-lg-4">
+        
+        
+        <div class="col-lg-4">
+            <div class="info-box">
                 <h2>Publishing Options</h2>
                 <div class="form-group">
                     {!! Form::label('Post Slug') !!}
@@ -72,7 +73,6 @@
                 <div class="form-group">
                     {!! Form::submit('Update Article', ['class'=>'btn btn-success']) !!}
                 </div>
-                <div class="clear"></div>
             </div>
         </div>
     </div>
