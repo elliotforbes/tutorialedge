@@ -5,6 +5,10 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use DB:
+use Carbon\Carbon;
+use App\Video;
+
 class VideoController extends Controller {
 
 	/**
