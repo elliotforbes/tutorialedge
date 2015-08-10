@@ -16,7 +16,7 @@ Route::get('/home', 'FrontendController@index');
 Route::get('/contact', 'FrontendController@contact');
 Route::get('/about', 'FrontendController@about');
 
-Route::get('/profile/{slug}', 'ProfileController@index');
+Route::get('/profile/{slug}', 'ProfileController@show');
 //Route::get('adminnew', 'AdminController@newDesign');
 
 

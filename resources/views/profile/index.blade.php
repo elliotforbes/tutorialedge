@@ -8,7 +8,7 @@
                    
                </div>
                 <div class="post-title">
-                   <h2>Profile Page:</h2>
+                   <h2>{{ $user->name }}</h2>
                 </div>
                 
                 <div class="post-content">
