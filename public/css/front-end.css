@@ -866,6 +866,23 @@ pre{
     text-align: center;
 }
 
+.top-banner{
+    color: #fff;
+    margin-top: 0px;
+    width: 100%;
+    height: 400px;
+    background: url("https://laracasts.com/images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.top-banner h1{
+    font-size: 62px;
+    margin-top: 90px;
+    text-shadow: 2px 2px #000;
+}
+
 .featured-banner{
     color: white;
     margin-top: 0px;
@@ -902,4 +919,12 @@ pre{
 
 .featured-banner small{
     color: #f4f4f3;   
+}
+
+.top-banner form{
+    margin-top: 90px;   
+}
+
+.btn-register{
+    width: 100%;   
 }
