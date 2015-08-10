@@ -97,7 +97,7 @@ In-depth game programming courses
 
 <div class="gray-content">
     <div class="container">
-        <h2>Hello World!</h2>
+        <h2>Latest Articles</h2>
         <div class="row">
            @foreach($articles as $article)
             <div class="article-box">
