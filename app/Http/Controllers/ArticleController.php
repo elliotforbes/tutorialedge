@@ -117,7 +117,7 @@ class ArticleController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy($slug)
 	{
 		$article = Article::whereSlug($slug)->get()->first();
         

@@ -29,7 +29,7 @@
                      <td>{{ $article->cat_id }}</td>
                      <td><a href="/{{ $article->slug }}"><button class="btn btn-default">View</button></a></td>
                      <td><a href="/admin/articles/{{ $article->slug }}/edit"><button class="btn btn-default">Edit</button></a></td>
-                     <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/' . $article->slug .'/destroy' , 'onsubmit' => 'return ConfirmDelete()']) !!}
+                     <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/articles/' . $article->slug .'/destroy' , 'onsubmit' => 'return ConfirmDelete()']) !!}
                                 <div class="form-group">
                                     {!! Form::submit('Delete', ['class'=>'btn btn-danger', ]) !!}
                                 </div>
