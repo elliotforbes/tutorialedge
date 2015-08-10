@@ -30,6 +30,7 @@
                                 'placeholder'=>'Article Body')) !!}
                     </div>
             </div>
+            <div class="clear"></div>
         </div>
         <div class="info-box">
             <div class="col-lg-4">
@@ -71,6 +72,7 @@
                 <div class="form-group">
                     {!! Form::submit('Update Article', ['class'=>'btn btn-success']) !!}
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
