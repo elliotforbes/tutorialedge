@@ -8,7 +8,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{ asset('/css/admin-new.css?v=12') }}">
+        <link rel="stylesheet" href="{{ asset('/css/admin-new.css?v=123') }}">
         <script src="{{ asset('/js/dropzone.js') }}"></script>
         <script src="{{ asset('/js/ckeditor.js') }}"></script>
     </head>
