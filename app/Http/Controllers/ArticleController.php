@@ -50,6 +50,8 @@ class ArticleController extends Controller {
             $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
             Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
         }
+        
+        $article->published_at = Carbon::now();
         $article->fill($input)->save();
         
         return redirect('admin/articles');
