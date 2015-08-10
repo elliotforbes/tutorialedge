@@ -13,7 +13,9 @@ In-depth game programming courses
 
 @section('featured-top')
 
-
+<div class="featured-banner">
+    
+</div>
 
 @endsection
 
