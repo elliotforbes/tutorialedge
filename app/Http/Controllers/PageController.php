@@ -23,7 +23,7 @@ class PageController extends Controller {
 		// HOME PAGE        
         $courses = Page::get();
         $articles = Article::orderBy('id', 'DESC')->get(8);
-        return view('index', compact('courses'));
+        return view('index', compact('courses', 'articles'));
 	}
     
     
