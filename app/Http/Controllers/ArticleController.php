@@ -119,7 +119,15 @@ class ArticleController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		$article = Article::whereSlug($slug)->get()->first();
+        
+        if($this->isAdmin()){
+            $article->delete();
+
+            return redirect('admin/articles');
+        } else {
+            return redirect('');   
+        }
 	}
 
 }
