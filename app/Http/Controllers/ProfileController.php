@@ -48,7 +48,7 @@ class ProfileController extends Controller {
 	 */
 	public function show($name)
 	{
-		$user = User::where('name', '=', $article->name)->get()->first();
+		$user = User::where('name', '=', $name)->get()->first();
         return view('profile.index', compact('user'));
 	}
 
