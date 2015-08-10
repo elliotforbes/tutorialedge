@@ -14,7 +14,8 @@ class VideoController extends Controller {
 	 */
 	public function index()
 	{
-		//
+		$articles = Article::orderBy('id', 'DESC')->paginate(15);
+        return view('admin/videos/index', compact('articles'));
 	}
 
 	/**
@@ -34,7 +35,21 @@ class VideoController extends Controller {
 	 */
 	public function store()
 	{
-		//
+		$input = Request::all();
+        
+        $video = new Video;
+        $input = Request::all();
+        $file = Request::file('image');
+        
+        if($file){
+            $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
+            Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
+        }
+        
+        $article->published_at = Carbon::now();
+        $article->fill($input)->save();
+        
+        return redirect('admin/videos');
 	}
     
     public function single()

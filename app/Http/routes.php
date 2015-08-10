@@ -27,10 +27,10 @@ Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     Route::resource('users', 'UserController');
     Route::resource('pages', 'CourseController');
     Route::resource('articles', 'ArticleController');
-    
+    Route::resource('videos', 'VideoController');
 });
 
-Route::get('video', 'VideoController@single');
+//Route::get('video', 'VideoController@single');
 Route::get('/videos/{slug}', array('as' => 'video.show', 'uses' => 'VideoController@show'));
 
 Route::get('/course/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
