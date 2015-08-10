@@ -48,7 +48,7 @@ class VideoController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($slug)
 	{
 		$video = Video::whereSlug($slug)->get()->first();
         if(is_null($article) || $article->post_status)
