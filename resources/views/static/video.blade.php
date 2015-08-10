@@ -18,7 +18,7 @@
                 <div class="video-playlist">
                     <ul class="list-group">
                         @foreach($videos as $video)
-                        <li class="list-group-item"><a href="/video/{{ $video->url }}">{{ $video->title }}</a></li>
+                        <li class="list-group-item"><a href="/video/{{ $video->slug }}">{{ $video->title }}</a></li>
                         @endforeach
                     </ul>
                 </div>
