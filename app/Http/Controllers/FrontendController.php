@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Page;
 use App\Article;
+use App\User;
 
 class FrontendController extends Controller {
 
