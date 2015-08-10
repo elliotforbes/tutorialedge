@@ -7,7 +7,7 @@
 {!! Form::open(array('route' => 'admin.videos.store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
    
     <div class="row">
-        <div class="col-lg-8 col-md-offset-4">
+        <div class="col-lg-6 col-md-offset-2">
             <div class="info-box">
                 <h2>Add a New Video</h2>
                 <div class="form-group">
