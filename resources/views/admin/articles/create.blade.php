@@ -61,13 +61,6 @@
                 {!! Form::file('image', null) !!}
             </div>
             <div class="form-group">
-                {!! Form::label('Meta Description') !!}
-                {!! Form::text('slug', null,
-                    array('required',
-                        'class'=>'form-control',
-                        'placeholder'=>'Meta Description')) !!}
-            </div>
-            <div class="form-group">
                 {!! Form::submit('Submit',
                     array('class'=>'btn btn-primary')) !!}
             </div>
