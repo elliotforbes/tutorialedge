@@ -43,24 +43,32 @@ class ArticleController extends Controller {
 		$input = Request::all();
         
         $article = new Article;
-        
-        $article->title = $input['title'];
-        $article->body = $input['body'];
-        $article->excerpt = $input['excerpt'];
-        $article->published_at = time();
-        $article->created_at = time();
-        $article->image_url = $input["image_url"];
-        $article->slug = $input["slug"];
-        $article->cat_id = $input['cat_id'];
-        
+        $input = Request::all();
         $file = Request::file('image');
         
         if($file){
             $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
             Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
         }
+        $article->fill($input)->save();
+//        
+//        $article->title = $input['title'];
+//        $article->body = $input['body'];
+//        $article->excerpt = $input['excerpt'];
+//        $article->published_at = time();
+//        $article->created_at = time();
+//        $article->image_url = $input["image_url"];
+//        $article->slug = $input["slug"];
+//        $article->cat_id = $input['cat_id'];
         
-        $article->save();
+//        $file = Request::file('image');
+//        
+//        if($file){
+//            $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
+//            Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
+//        }
+//        
+//        $article->save();
         
         return redirect('admin/articles');
 	}
