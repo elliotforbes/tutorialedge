@@ -12,7 +12,7 @@
    <div class="container">
         <div class="row">
             <div class="col-lg-9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/_rjSel-6K38" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="{{ $video->video_url }}" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="col-lg-3">
                 <div class="video-playlist">
