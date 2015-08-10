@@ -4,7 +4,10 @@
 
      
      <h2>All Videos</h2>  
-     <div class="info-box">    
+     <div class="info-box"> 
+        
+        <a href="/admin/videos/create"><button class="btn btn-default btn-new">New Video</button></a>
+            
          <table class="table table-striped">
              <thead>
                  <tr>
