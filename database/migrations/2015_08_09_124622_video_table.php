@@ -21,7 +21,6 @@ class VideoTable extends Migration {
                            $table->string('video_url');
                            $table->integer('views');
                            $table->string('course_id');
-                           $table->timestamps();
                            $table->timestamp('published_at');
                            $table->string('slug');
                            $table->string('image_url'); 
