@@ -9,16 +9,20 @@
              <thead>
                  <tr>
                      <th>#</th>
-                     <th>Name</th>
-                     <th>Email</th>                     
+                     <th>title</th>
+                     <th>views</th>                     
+                     <th>slug</th>                     
+                     <th>course ID</th>                     
                  </tr>
              </thead>
              <tbody>
              @foreach ($videos as $video)
                  <tr>
                      <td>{{ $video->id }}</td>
-                     <td>{{ $video->name }}</td>
+                     <td>{{ $video->title }}</td>
                      <td>{{ $video->views }}</td>
+                     <td>{{ $video->slug }}</td>
+                     <td>{{ $video->course_id }}</td>
                  </tr>
              @endforeach
              </tbody>

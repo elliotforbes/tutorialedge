@@ -9,6 +9,7 @@
                </div>
                 <div class="col-md-4 post-title">
                    <h2>{{ $user->name }}</h2>
+                   <p>Joined: {{ $user->created_at }}</p>
                 </div>
                 
                 <div class="col-md-4 post-content">
