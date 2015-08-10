@@ -80,7 +80,6 @@
 {!! Form::close() !!}
 
 <script>
-CKEDITOR.replace('excerpt');
 CKEDITOR.replace('body');
 </script>
 
