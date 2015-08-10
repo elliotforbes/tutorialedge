@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                <div class="post-image">
-                   
+                   <img src="{{ asset('images/profile-placeholder.gif') }}" alt="">
                </div>
                 <div class="post-title">
                    <h2>{{ $user->name }}</h2>
