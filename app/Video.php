@@ -11,6 +11,7 @@ class Video extends Model {
         'course_id',
         'slug',
         'image_url',
+        'video_url'
     ];
 
 }
