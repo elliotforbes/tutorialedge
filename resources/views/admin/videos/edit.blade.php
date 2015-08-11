@@ -3,7 +3,7 @@
 
 @section('content')
 
-{!! Form::model($article, ['url' => 'admin/videos/' . $video->slug, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
+{!! Form::model($video, ['url' => 'admin/videos/' . $video->slug, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
     <div class="row">
         <div class="col-lg-8">
             <div class="info-box">
@@ -56,7 +56,7 @@
                         'placeholder'=>'Post_slug')) !!}
                 </div>
                 <div class="form-group">
-                    {!! Form::submit('Submit',
+                    {!! Form::submit('Update Video',
                         array('class'=>'btn btn-primary')) !!}
                 </div>
             </div>
