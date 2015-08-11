@@ -81,9 +81,11 @@ class VideoController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit($slug)
 	{
-		//
+		$video = Video::whereSlug($slug)->get()->first();
+        
+        return view('admin/videos/edit', compact('video'));
 	}
 
 	/**
