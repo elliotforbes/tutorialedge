@@ -69,6 +69,12 @@
                             </li>
                         </ul>
                     </li>
+                    <li><a href="#">Videos</a>
+                        <ul>
+                            <li><a href="/video/programming-2d-pong">Programming 2D Pong - LWJGL 3 + OpenGL</a></li>
+                        </ul>
+                    
+                    </li>
                     @if (Auth::guest())
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
 						<li><a href="{{ url('/auth/register') }}">Register</a></li>
