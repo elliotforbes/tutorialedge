@@ -26,9 +26,9 @@
                      <td>{{ $page->title }}</td>
                      <td>{{ $page->slug }}</td>
                      <td>{{ $page->cat_id }}</td>
-                     <td><a href="/{{ $page->slug }}"><button class="btn btn-default">View</button></a></td>
-                     <td><a href="/admin/{{ $page->slug }}/edit"><button class="btn btn-default">Edit</button></a></td>
-                     <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/' . {{ $page->slug }} . '/edit', 'onsubmit' => 'return ConfirmDelete()']) !!}
+                     <td><a href="/course/{{ $page->slug }}"><button class="btn btn-default">View</button></a></td>
+                     <td><a href="/admin/pages/{{ $page->slug }}/edit"><button class="btn btn-default">Edit</button></a></td>
+                     <td>{!! Form::open(['method' => 'DELETE', 'url' => 'admin/pages/' . $page->slug .'/edit' , 'onsubmit' => 'return ConfirmDelete()']) !!}
                                 <div class="form-group">
                                     {!! Form::submit('Delete', ['class'=>'btn btn-danger', ]) !!}
                                 </div>
