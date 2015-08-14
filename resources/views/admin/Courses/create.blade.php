@@ -40,7 +40,17 @@
                             'class'=>'form-control',
                             'placeholder'=>'cat_id')) !!}
                 </div>
-
+                <div class="form-group">
+                    {!! Form::label('Image URL') !!}
+                    {!! Form::text('image_url', null,
+                        array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'Post_slug')) !!}
+                </div>
+                <div class="form-group">
+                    {!! Form::label('Post Image') !!}
+                    {!! Form::file('image', null) !!}
+                </div>
                 <div class="form-group">
                     {!! Form::submit('Submit',
                         array('class'=>'btn btn-primary')) !!}
