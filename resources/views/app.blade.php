@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="https://plus.google.com/b/115194233692529836662">
-    <meta property="og:site_name" content="Tutorial-Edge.com"/>
+    <meta property="og:site_name" content="TutorialEdge.net"/>
     
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- Latest compiled and minified CSS -->
