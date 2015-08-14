@@ -16,7 +16,7 @@ class CourseController extends Controller {
 	 */
 	public function index()
 	{
-		$pages = Page::get();
+		$pages = Page::orderBy('id', 'DESC')->paginate(15);
         return view('admin/Courses/index', compact('pages'));
 	}
 
@@ -38,15 +38,9 @@ class CourseController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-		$input = Request::all();
-        
         $course = new Page;
-        $course->title = $input['title'];
-        $course->info = $input['info'];
-        $course->slug = $input['slug'];
-        $course->cat_id = $input['cat_id'];
-        
-        $course->save();
+        $input = Request::all();
+        $course->fill($input)->save();
         return redirect('admin/Courses/index');
 	}
 
@@ -56,9 +50,11 @@ class CourseController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($slug)
 	{
-		//
+		$page = page::whereSlug($slug)->get()->first();
+        $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $page->cat_id . ';'));
+        return view('page.index', compact('articles', 'page'));
 	}
 
 	/**
@@ -79,9 +75,12 @@ class CourseController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($slug)
 	{
-		
+		$article = Article::whereSlug($slug)->get()->first();
+        $input = Request::all();
+        $article->fill($input)->save();
+        return redirect('admin/articles/' . $slug . '/edit');
 	}
 
 	/**
@@ -90,7 +89,7 @@ class CourseController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy($slug)
 	{
 		$page = Page::whereSlug($slug)->get()->first();
         $page->delete();
