@@ -40,9 +40,7 @@ class ArticleController extends Controller {
 	 * @return Response
 	 */
 	public function store(Request $request)
-	{
-		$input = Request::all();
-        
+	{        
         $article = new Article;
         $input = Request::all();
         $file = Request::file('image');
