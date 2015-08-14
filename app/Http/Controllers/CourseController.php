@@ -3,7 +3,9 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use DB;
 use App\Page;
+use App\Article;
 use Request;
 
 class CourseController extends Controller {
@@ -16,7 +18,7 @@ class CourseController extends Controller {
 	public function index()
 	{
 		$pages = Page::orderBy('id', 'DESC')->paginate(15);
-        return view('admin/Courses/index', compact('pages'));
+        return view('admin/pages/index', compact('pages'));
 	}
 
 	/**
@@ -27,7 +29,7 @@ class CourseController extends Controller {
 	public function create()
 	{
 		$categories = Page::get();
-        return view('admin/Courses/create', compact('categories'));
+        return view('admin/pages/create', compact('categories'));
 	}
 
 	/**
@@ -40,7 +42,7 @@ class CourseController extends Controller {
         $course = new Page;
         $input = Request::all();
         $course->fill($input)->save();
-        return redirect('admin/Courses/index');
+        return redirect('admin/pages/index');
 	}
 
 	/**
@@ -64,8 +66,8 @@ class CourseController extends Controller {
 	 */
 	public function edit($slug)
 	{
-		$page = Page::whereSlug($slug)->get()->first();
-        return view('admin/editcourse', compact('page'));
+        $page = Article::whereSlug($slug)->get()->first();
+        return view('admin/articles/edit', compact('article'));
 	}
 
 	/**
