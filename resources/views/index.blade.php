@@ -102,7 +102,7 @@ In-depth game programming courses
            @foreach($articles as $article)
             <div class="article-box">
                 <div class="col-sm-6 col-xs-12 col-lg-3 col-md-4">
-                    <img class="img-responsive image-responsive-centered" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
+                    <img class="img-responsive image-responsive-centered article-image" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
                     <div class="article-info">
                         <h3><a href="/{{ $article->slug }}">{{ $article->title }}</a></h3>
                         <p>{{ $article->excerpt }} </p>

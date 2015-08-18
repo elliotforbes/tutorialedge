@@ -115,6 +115,9 @@ nav#main-nav select {
     color: #085c95;
     text-shadow: none;
 }
+.article-image{
+    min-height: 282px;   
+}
 #main-nav a {
     color: #FFFFFF;
     display: block;
