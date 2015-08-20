@@ -11,21 +11,17 @@
        <h2>{{ $page->title }}</h2>
         
           <div class="row">
-            @foreach ($articles as $article)
-              <div class="article-box">
+            @foreach($articles as $article)
+            <div class="article-box">
                 <div class="col-sm-6 col-xs-12 col-lg-3 col-md-4">
-                    <img class="img-responsive image-responsive-centered" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
-                    <h3><a href="/{{ $article->slug }}">{{ $article->title }}</a></h3>
-    <!--
+                    <img class="img-responsive image-responsive-centered article-image" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
                     <div class="article-info">
-                       <p>
-
-                        </p>
+                        <h3><a href="/{{ $article->slug }}">{{ $article->title }}</a></h3>
+                        <p>{{ $article->excerpt }} </p>
                     </div>
-    -->
                 </div>
             </div>
-        @endforeach
+            @endforeach
          </div>
     </div>
 @endsection
