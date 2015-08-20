@@ -105,7 +105,7 @@ In-depth Game Programming Tutorials and Courses
                     <img class="img-responsive image-responsive-centered article-image" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
                     <div class="article-info">
                         <h3><a href="/{{ $article->slug }}">{{ $article->title }}</a></h3>
-                        <p>{{ $article->excerpt }} </p>
+<!--                        <p></p>-->
                     </div>
                 </div>
             </div>
