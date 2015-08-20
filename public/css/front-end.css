@@ -974,19 +974,12 @@ pre{
     margin-bottom: 40px;
 }
 
-.article-info h3{
-    white-space: nowrap; 
-     height: 25px;   
+.article-info h3{ 
     margin-bottom: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
 
 }
 .article-info p{
-    white-space: nowrap; 
     height: 120px;
      color: #989898; 
-     overflow:hidden;
-    text-overflow: ellipsis;
 
 }
