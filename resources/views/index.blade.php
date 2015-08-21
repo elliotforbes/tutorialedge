@@ -74,19 +74,21 @@ In-depth Game Programming Tutorials and Courses
 @endsection
 
 @section('content')
-<div class="latest-posts">
-  <h2>Popular Courses</h2>
-    <div class="row"> 
+<div class="container">
+    <div class="latest-posts">
+      <h2>Popular Courses</h2>
+        <div class="row"> 
 
-       @foreach ($courses as $course)
-        <div class="col-md-3 col-sm-6 col-sx-12">
-           <div class="course-box">
-                <img class="img-responsive image-responsive-centered" alt="{{ $course->slug }}" title="{{ $course->slug }}" src="/uploads/articles/{{ $course->image_url }}" />
-                <h3><a href="/course/{{ $course->slug }}">{{ $course->title }}</a></h3>
+           @foreach ($courses as $course)
+            <div class="col-md-3 col-sm-6 col-sx-12">
+               <div class="course-box">
+                    <img class="img-responsive image-responsive-centered" alt="{{ $course->slug }}" title="{{ $course->slug }}" src="/uploads/articles/{{ $course->image_url }}" />
+                    <h3><a href="/course/{{ $course->slug }}">{{ $course->title }}</a></h3>
+                </div>
             </div>
-        </div>
-         @endforeach
+             @endforeach
 
+        </div>
     </div>
 </div>
     
@@ -148,7 +150,7 @@ In-depth Game Programming Tutorials and Courses
             </div>
             <div class="col-lg-4">
                 <div class="red-circle-bg">
-                    132
+                    157
                 </div>
                 <h2>YouTube Subscribers</h2>
             </div>

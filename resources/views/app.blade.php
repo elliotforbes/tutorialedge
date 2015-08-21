@@ -99,13 +99,9 @@
 
     @yield('video-content')
    
-    <div class="content">
-        <div class="container">
 
-            @yield('content')
+    @yield('content')
 
-        </div>
-    </div>
     
     @yield('home-content')
 

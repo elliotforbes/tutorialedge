@@ -26,6 +26,11 @@ class FrontendController extends Controller {
         return view('index', compact('courses', 'articles', 'artCount', 'userCount'));
 	}
     
+    public function single()
+    {
+        return view('static.proto');   
+    }
+    
     public function contact()
     {
         return view('static.contact');   
