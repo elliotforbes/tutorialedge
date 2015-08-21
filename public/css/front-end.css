@@ -448,7 +448,7 @@ pre{
 
 .title-container{
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     background-color: #EBEBEB; 
     text-align: center;
     padding-top: 40px;

@@ -13,6 +13,7 @@
        <h1>{{ $article->title }}</h1>
        <p class="author-bar"><img alt="" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/061/3bf/0bc92cc.jpg" srcset="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/061/3bf/0bc92cc.jpg" class="avatar avatar-32 photo" height="32" width="32"> 
                    By Elliot Forbes  <span class="separator">•</span>   On {{ date("d M, Y",strtotime($article->published_at)) }} <span class="separator">•</span>   In {{ $page->title }}</p>
+       <div class="clear"></div>
    </div>
    
     <div class="container">
