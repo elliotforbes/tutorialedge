@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-md-9">             
                 <div class="post-image">
-                   <img src="/uploads/articles/{{ $course->image_url }}" alt="{{ $article->excerpt }}">
+                   <img src="/uploads/articles/{{ $article->image_url }}" alt="{{ $article->excerpt }}">
                </div>
                 <div class="post-content">
                     {!! $article->body !!}
