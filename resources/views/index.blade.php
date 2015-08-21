@@ -80,7 +80,7 @@ In-depth Game Programming Tutorials and Courses
         <div class="row"> 
 
            @foreach ($courses as $course)
-            <div class="col-md-3 col-sm-6 col-sx-12">
+            <div class="col-md-4 col-sm-6 col-sx-12">
                <div class="course-box">
                     <img class="img-responsive image-responsive-centered" alt="{{ $course->slug }}" title="{{ $course->slug }}" src="/uploads/articles/{{ $course->image_url }}" />
                     <h3><a href="/course/{{ $course->slug }}">{{ $course->title }}</a></h3>
