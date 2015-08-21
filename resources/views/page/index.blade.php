@@ -7,6 +7,7 @@
 @endsection
 
 @section('content')
+    <div class="container">
      <div class="latest-posts">
        <h2>{{ $page->title }}</h2>
         
@@ -23,5 +24,6 @@
             </div>
             @endforeach
          </div>
+    </div>
     </div>
 @endsection
