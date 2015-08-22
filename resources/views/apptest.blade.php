@@ -18,6 +18,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{{ asset('/css/prismnew.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=1573') }}">
+    <link rel="stylesheet" href="{{ asset('/css/top-menu.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 </head>
@@ -28,73 +29,21 @@
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
 
-    <div class="header-container m-top-30 clearfix">
-
-        <div class="header-logo-container ">
-            <div class="logo-container">
-                <a href="/" class="logo">TutorialEdge.net</a>
-            </div>
+    <div class="navbar">
+        <div class="container">
+            <img src="{{ asset('/uploads/new-logo.png') }}" alt="">
         </div>
-
-        <div class="header-menu-container right">
-            <!-- TOP MENU -->
-            <nav id="main-nav">
-                <ul class="sf-menu clearfix">
-                    <li class="current"><a href="/">Home</a>
-                    </li>
-<!--
-                    <li><a href="#">Programming Tutorials</a>
-                        <ul>
-                            <li><a href="/course/LWJGL3">LWJGL 3</a>
-                            </li>
-                            <li><a href="/">LibGDX</a>
-                            </li>
-                        </ul>
-                    </li>
--->
-                    <li><a href="#">Courses</a>
-                        <ul>
-                            <li><a href="/course/programming_design_patterns">Programming Design Concepts</a>
-                            </li>
-                            <li><a href="/course/python">Python Tutorials</a>
-                            <li><a href="/course/lwjgl3">LWJGL 3 Tutorials</a></li>
-                            <li><a href="/course/laravel-5">Laravel 5 Tutorials</a></li>
-                            <li><a href="/course/artificial-intelligence">Artificial Intelligence</a></li>
-<!--
-                                <ul>
-                                    <li><a href="/">Networking Tutorials</a>
-                                    </li>
-                                </ul>
--->
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Videos</a>
-                        <ul>
-                            <li><a href="/video/programming-2d-pong">Programming 2D Pong - LWJGL 3 + OpenGL</a></li>
-                        </ul>
-                    
-                    </li>
-                    @if (Auth::guest())
-						<li><a href="{{ url('/auth/login') }}">Login</a></li>
-						<li><a href="{{ url('/auth/register') }}">Register</a></li>
-					@else
-						<li>
-							<a href="/profile/{{ Auth::user()->name }}">{{ Auth::user()->name }} <span class="caret"></span></a>
-							<ul>
-								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
-							</ul>
-						</li>
-					@endif
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/contact">Contact Us</a></li>      
-                </ul>
-            </nav>
-
-        </div>
-
     </div>
-
+    <div class="top-nav">
+        <div class="container">
+            <a href="#">Home</a>
+            <a href="#">Tutorials</a>
+            <a href="#">Videos</a>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </div>
+    
     @yield('featured-top')
 
     @yield('video-content')
@@ -105,7 +54,7 @@
     
     @yield('home-content')
 
-        <div class="footer">
+    <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">

@@ -41,6 +41,15 @@ class FrontendController extends Controller {
         return view('static.about');   
     }
 
+    public function test()
+    {
+        $courses = Page::get();
+        $articles = Article::orderBy('id', 'DESC')->take(8)->get();
+        $artCount = Article::count();
+        $userCount = User::count();
+        return view('newindex', compact('courses', 'articles', 'artCount', 'userCount'));
+//        return view('newindex');   
+    }
     
 	/**
 	 * Show the form for creating a new resource.

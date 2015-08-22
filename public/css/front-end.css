@@ -295,6 +295,19 @@ body{
 .social-box a{
     color: white;   
 }
+.facebook-icon{
+    color: #4D70A8 !important;   
+}
+.twitter-icon{
+    color: #01BAF2 !important;   
+}
+.github-icon{
+    color: #FEA501 !important;   
+}
+.youtube-icon{
+     color: #CB3737 !important;   
+}
+
 .facebook{
     background-color: #4D70A8;   
 }
@@ -561,15 +574,29 @@ pre{
     border-top: 60px solid #eee; 
     padding-top: 40px;
     height: auto;
-    background-color: #fff;
-    
+    background-color: #2D3339;
+    padding-bottom: 40px;
 }
 
 .footer h3{
     font-size: 26px;   
     letter-spacing: 2px;
-    margin-bottom: 20px;
-    font-weight: 100;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.footer h3:after {
+    content:' ';
+    position: absolute;
+    display:block;
+    width: 60px;
+    margin-top: 15px;
+    border:2px solid #575C61;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+     
 }
 
 .footer ul{
@@ -584,9 +611,18 @@ pre{
 }
 
 .footer p{
-    color: #b7b7b7;   
+    color: #999999;   
 }
 
+.footer-bottom{
+    background-color: #23272D;
+    width: 100%;
+    height: 120px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    color: #575c61;
+}
 .footer-connect li{
      display: inline;
     margin-right: 10px;
