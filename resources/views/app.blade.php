@@ -87,8 +87,9 @@
 						<li><a href="{{ url('/auth/register') }}">Register</a></li>
 					@else
 						<li>
-							<a href="/profile/{{ Auth::user()->name }}">{{ Auth::user()->name }} <span class="caret"></span></a>
-							<ul>
+							<a href="/profile/{{ Auth::user()->name }}">{{ Auth::user()->name }} <i class="fa fa-chevron-down"></i></a>
+							<span></span>
+							<ul class="subs">
 								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
 							</ul>
 						</li>
