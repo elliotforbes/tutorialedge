@@ -31,7 +31,7 @@
 
     <div class="navbar">
         <div class="container">
-            <img src="{{ asset('/images/new-logo.png') }}" alt="">
+            <a href="/"><img src="{{ asset('/images/new-logo.png') }}" alt="Home of high quality programming tutorials"></a>
             <form class="navbar-form navbar-right searchform" role="search">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search for a tutorial...">
