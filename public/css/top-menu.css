@@ -167,3 +167,28 @@
 /*    background-color: white;*/
     color: white;
 }
+
+/* responsive rules */
+@media all and (max-width : 980px) {
+    .navbar-links > li {
+        float: none;
+        border-bottom: 0;
+        margin-bottom: 0;
+    }
+    .navbar-links ul.subs {
+        position: relative;
+        top: 0;
+    }
+    .navbar-links li:hover ul.subs {
+        display: none;
+    }
+    .navbar-links li #s1:target + ul.subs,
+    .navbar-links li #s2:target + ul.subs {
+        display: block;
+    }
+
+    .navbar-links ul.subs > li {
+        display: block;
+        width: auto;
+    }
+}
