@@ -10,6 +10,11 @@
     src: url(../fonts/bitter-regular.otf);
 }
 
+@font-face {
+     font-family: bigjohn;
+    src: url(../fonts/BIG JOHN.otf);
+}
+
 #mainwrap.boxed {
     background: none repeat scroll 0 0 #FFFFFF;
 }
@@ -399,7 +404,7 @@ pre{
 
 .latest-posts{
     padding-top: 40px;
-    padding: 40px;
+    padding-bottom: 40px;
     width: 100%;
     height: auto;
     background-color: #Fff;
@@ -1040,6 +1045,7 @@ pre{
 }
 
 .btn-register{
+    border: none;
     width: 100%;   
 }
 

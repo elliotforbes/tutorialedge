@@ -31,18 +31,74 @@
 
     <div class="navbar">
         <div class="container">
-            <img src="{{ asset('/uploads/new-logo.png') }}" alt="">
+            <img src="{{ asset('/images/new-logo.png') }}" alt="">
+            <form class="navbar-form navbar-right searchform" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for a tutorial...">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </form>
+            <div class="pull-right navbar-links">              
+               <ul>
+                   <li class="active"><a href="/">Home</a></li>
+                   <li><a href="#">Courses <i class="fa fa-chevron-down"></i></a>
+                       <span></span>
+                       <ul class="subs">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h5>Courses</h5>
+                                    <ul>
+                                        
+                                        <li><a href="/course/lwjgl3">LWJGL 3 Tutorials</a></li>
+                                        <li><a href="/course/laravel-5">Laravel 5 Tutorials</a></li>
+                                        <li><a href="/course/python">Python Tutorials</a>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul>
+                                        <li><a href="/course/programming_design_patterns">Programming Design Concepts</a></li>
+                                        <li><a href="/course/artificial-intelligence">Artificial Intelligence</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                       </ul>
+                   </li>
+                   <li><a href="#">Videos <i class="fa fa-chevron-down"></i></a>
+                       <span></span>
+                       <ul class="subs">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h5>Video Series</h5>
+                                    <ul>
+                                        <li><a href="/video/programming-2d-pong">Programming 2D Pong - LWJGL 3 + OpenGL</a></li>
+                
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                   
+                                </div>
+                            </div>
+                       </ul>
+                   </li>
+                   @if (Auth::guest())
+						<li><a href="{{ url('/auth/login') }}">Login</a></li>
+						<li><a href="{{ url('/auth/register') }}">Register</a></li>
+					@else
+						<li>
+							<a href="/profile/{{ Auth::user()->name }}">{{ Auth::user()->name }} <span class="caret"></span></a>
+							<ul>
+								<li><a href="{{ url('/auth/logout') }}">Logout</a></li>
+							</ul>
+						</li>
+					@endif
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="top-nav">
-        <div class="container">
-            <a href="#">Home</a>
-            <a href="#">Tutorials</a>
-            <a href="#">Videos</a>
-            <a href="#">Login</a>
-            <a href="#">Register</a>
-        </div>
-    </div>
+    
+    <div class="clear"></div>
     
     @yield('featured-top')
 
