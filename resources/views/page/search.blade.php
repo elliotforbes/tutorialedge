@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6">
-                {!! Form::open(array('route' => 'queries.store', 'class' => 'form')) !!}
+                {!! Form::open(array('route' => 'queries.search', 'class' => 'form')) !!}
                     <div class="form-group">
                     {!! Form::text('search', null,
                         array('required',

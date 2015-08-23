@@ -32,7 +32,7 @@
     <div class="navbar">
         <div class="container">
             <a href="/"><img src="{{ asset('/images/new-logo.png') }}" alt="Home of high quality programming tutorials"></a>
-            {!! Form::open(array('route' => 'queries.store', 'class'=>'form navbar-form navbar-right searchform')) !!}
+            {!! Form::open(array('route' => 'queries.search', 'class'=>'form navbar-form navbar-right searchform')) !!}
             
                 <div class="input-group">
                    {!! Form::text('search', null,
