@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('content')
+   <div class="container">
     <div class="post-cont">
         <div class="row">
             <div class="col-md-12">
@@ -22,5 +23,6 @@
         <div class="padding-top"></div>
         <div class="padding-top"></div>
         
+    </div>
     </div>
 @endsection
