@@ -38,7 +38,7 @@
                 {!! Form::close() !!}
                 </div>
                 <div class="col-lg-3"></div>
-            @elseif (count($articles) > 1)
+            @elseif (count($articles) >= 1)
                <div class="search-title">
                     <h3>Search Results for: {{ $query }}</h3>
                 </div>
