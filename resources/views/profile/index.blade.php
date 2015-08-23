@@ -1,6 +1,9 @@
 @extends('app')
 
 @section('content')
+  
+  <div class="gray-padding"></div>
+  
    <div class="container">
     <div class="post-cont">
         <div class="row">

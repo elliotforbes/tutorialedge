@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="{{ asset('/css/admin.css') }}">
     </head>
     <body>
+        <div class="gray-padding"></div>
+        
         <div class="container">
             <div class="login-form">
                 <form action="">
