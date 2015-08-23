@@ -47,7 +47,7 @@ class QueryController extends Controller {
 	public function store(Request $request)
 	{
         $query = Request::input('search');
-        $articles = DB::table('articles')->where('title', 'LIKE', $query . '%')->paginate(10);
+        $articles = DB::table('articles')->where('title', 'LIKE', '%' . $query . '%')->paginate(10);
         
 		return view('page.search', compact('articles', 'query'));
 	}
