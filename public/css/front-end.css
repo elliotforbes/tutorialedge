@@ -550,6 +550,15 @@ pre{
     margin-right: 10px;
 }
 
+.search-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-btn{
+    width: 100%;
+}
+
 
 /*SIDEBAR*/
 

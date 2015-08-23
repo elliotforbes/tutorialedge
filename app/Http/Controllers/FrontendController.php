@@ -51,6 +51,13 @@ class FrontendController extends Controller {
 //        return view('newindex');   
     }
     
+    public function search()
+    {
+        $articles = Article::paginate(15);
+        
+        return view('page.search', compact('articles'));
+    }
+    
 	/**
 	 * Show the form for creating a new resource.
 	 *

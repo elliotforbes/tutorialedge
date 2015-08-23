@@ -15,7 +15,9 @@ Route::get('/', 'FrontendController@index');
 Route::get('/home', 'FrontendController@index');
 Route::get('/contact', 'FrontendController@contact');
 Route::get('/about', 'FrontendController@about');
-Route::get('/test', 'FrontendController@test');
+Route::get('/search', 'FrontendController@search');
+
+//Route::get('/test', 'FrontendController@test');
 
 Route::get('/profile/{slug}', 'ProfileController@show');
 //Route::get('adminnew', 'AdminController@newDesign');
@@ -30,6 +32,9 @@ Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     Route::resource('articles', 'ArticleController');
     Route::resource('videos', 'VideoController');
 });
+
+
+Route::resource('queries', 'QueryController');
 
 //Route::get('video', 'VideoController@single');
 Route::get('/video/{slug}', array('as' => 'video.show', 'uses' => 'VideoController@show'));

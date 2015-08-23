@@ -32,14 +32,20 @@
     <div class="navbar">
         <div class="container">
             <a href="/"><img src="{{ asset('/images/new-logo.png') }}" alt="Home of high quality programming tutorials"></a>
-            <form class="navbar-form navbar-right searchform" role="search">
+            {!! Form::open(array('route' => 'queries.store', 'class'=>'form navbar-form navbar-right searchform')) !!}
+            
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for a tutorial...">
+                   {!! Form::text('search', null,
+                           array('required',
+                                'class'=>'form-control',
+                                'placeholder'=>'Search for a tutorial...')) !!}
                     <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                        {!! Form::submit('Search',
+                                array('class'=>'btn btn-default')) !!}
+<!--                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>-->
                     </span>
                 </div>
-            </form>
+            {!! Form::close() !!}
             <div class="pull-right navbar-links">              
                <ul>
                    <li class="active"><a href="/">Home</a></li>
