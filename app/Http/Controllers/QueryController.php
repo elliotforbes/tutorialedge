@@ -9,6 +9,7 @@ use App\Query;
 use App\Article;
 use Carbon\Carbon;
 use Request;
+use DB;
 
 class QueryController extends Controller {
 
@@ -45,7 +46,8 @@ class QueryController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-        $articles = Article::all();
+        $query = Request::input('query');
+        $articles = DB::table('articles')->where('title', 'like', $query + '%')->get();
         
 		return view('page.search', compact('articles'));
 	}
