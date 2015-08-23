@@ -39,7 +39,9 @@
                 </div>
                 <div class="col-lg-3"></div>
             @elseif (count($articles) > 1)
-               
+               <div class="search-title">
+                    <h3>Search Results for: {{ $query }}</h3>
+                </div>
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6">
                 {!! Form::open(array('route' => 'queries.store', 'class' => 'form')) !!}
@@ -74,6 +76,8 @@
                     </div>
                 </div>
                 @endforeach
+                
+                <div class="pagination"> <?php echo $articles->render(); ?> </div>
             @endif
          </div>
     </div>
