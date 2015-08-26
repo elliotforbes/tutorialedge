@@ -12,6 +12,9 @@
     .form-control{
          border: none;   
     }
+    .dropdown-menu{
+         background-color: #fff !important;   
+    }
   .navbar img {
     height: auto;
     width: 165px;
