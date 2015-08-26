@@ -3,34 +3,12 @@
     src: url('http://tutorialedge.net/fonts/BIG JOHN.otf');
 }
 
-/* responsive rules */
-@media all and (max-width : 980px) {
-    .navbar-links > li {
-        float: none;
-        border-bottom: 0;
-        margin-bottom: 0;
-    }
-    .navbar-links ul.subs {
-        position: relative;
-        top: 0;
-    }
-    .navbar-links li:hover ul.subs {
-        display: none;
-    }
-    .navbar-links li #s1:target + ul.subs,
-    .navbar-links li #s2:target + ul.subs {
-        display: block;
-    }
 
-    .navbar-links ul.subs > li {
-        display: block;
-        width: auto;
-    }
-}
+
 
 .navbar{
     width: 100%;
-    height: 60px;
+    height: auto;
     padding-top: -2px;
     padding-bottom: 20px;
     background-color: #2A3744;
@@ -109,10 +87,7 @@
     margin-right: 0px;
     white-space: normal;
 }
-.active a{
-    background-color: #F55856;
-    color: white;
-}
+
 .navbar a:hover{
     background-color: #F55856;
      -moz-transition: color 450ms ease-in-out 0s, background-color 450ms ease-in-out 0s;
@@ -127,6 +102,106 @@
 .navbar i{
     font-size: 16px;   
 }
+  /*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .navbar {
+         height: auto;   
+    }
+    
+    .active a{
+        background-color: #2A3744;
+    }
+    
+    .navbar-links ul {
+         margin: 0;
+        padding: 0;
+    }
+    .navbar-links ul li {
+        display: block;
+         border-bottom: 1px solid #eee;   
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+     .navbar {
+         height: auto;   
+    }
+    
+    .active{
+        background-color: #2A3744;
+    }
+    
+    .navbar-links{
+        float: right;   
+    }
+    .navbar-links ul {
+         margin: 0;
+        padding: 0;
+    }
+    .navbar-links ul li {
+        display: inline;
+        border: none;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+     .navbar {
+         height: auto;   
+    }
+    .navbar-links{
+        width: 100%;
+        margin-top: 20px;
+        float: left;   
+    }
+    
+    .navbar-links ul {
+         margin: 0;
+        padding: 0;
+    }
+    .navbar-links ul li {
+        display: inline;
+        border: none;
+    }
+    .active a{
+        background-color: #F55856;
+        color: white;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+     .navbar {
+         height: auto;   
+    }
+    .navbar-links{
+        float: right;   
+    }
+    
+    .navbar-links ul {
+         margin: 0;
+        padding: 0;
+    }
+    .navbar-links ul li {
+        display: inline;
+    }
+    .active a{
+        background-color: #F55856;
+        color: white;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    
+}
+
+
+
 
 .section-banner{
      width: 100%;

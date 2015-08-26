@@ -1,0 +1,117 @@
+  /*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: white !important;   
+    }
+    .navbar-form{
+         border: none;   
+    }
+    
+    .form-control{
+         border: none;   
+    }
+  .navbar img {
+    height: auto;
+    width: 165px;
+    margin-right: 60px;
+    margin-top: 0px;
+   }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: white !important;   
+    }
+    
+    .navbar-form{
+         border: none;   
+    }
+    
+    .form-control{
+        border: none;   
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .navbar img{
+    height: 35px;
+    width: auto;
+    margin-right: 60px;
+    margin-top: 0px;
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.navbar img{
+    height: 35px;
+    width: auto;
+    margin-right: 60px;
+    margin-top: 0px;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .navbar img{
+    height: 35px;
+    width: auto;
+    margin-right: 60px;
+    margin-top: 0px;
+}
+}
+
+
+.navbar{
+    background-color: #2A3744;
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-radius: 0px;
+}
+
+.navbar ul li a, .navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    background-color: #f55856;
+    color: white;
+}
+
+.navbar-nav>li{
+    height: 100%;   
+}
+
+.navbar-nav>li>a{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover
+{
+    background-color: #F55856 !important;
+    color: white;
+}
+
+
+
+.navbar form{
+    border-radius: 0;
+    margin-top: 12px;
+}
+
+.navbar input{
+    border-radius: 0;   
+}
+
+.dropdown-menu>li>a {
+    color: #333 !important;   
+}
+
