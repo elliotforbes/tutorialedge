@@ -15,8 +15,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <!-- Latest compiled and minified JavaScript -->
     <link rel="stylesheet" href="{{ asset('/css/prismnew.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=157355') }}">
-    <link rel="stylesheet" href="{{ asset('/css/menu.css?v=1234') }}">
+    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=1573525') }}">
+    <link rel="stylesheet" href="{{ asset('/css/menu.css?v=12345') }}">
     <!--        <link rel="stylesheet" href="{{ asset('/css/top-menu.css?v=23') }}">-->
     <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
     <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
