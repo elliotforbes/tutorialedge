@@ -53,6 +53,9 @@
                         </a>
                     </div>
                     {!! $article->body !!}
+                    <br/>
+                    <h2>Share This Tutorial:</h2>
+                    
                     <div class="share-buttons">
                         <!-- Twitter -->
                         <a href="http://twitter.com/share?url=https://github.com/gschier/html-share-buttons&text=HMTL%20Share%20Buttons&via=GregorySchier" target="_blank" class="share-btn twitter">
