@@ -62,7 +62,7 @@
                                 <i class="fa fa-envelope"></i>
                             </a>
                     </div>
-                    {!! $article->body !!}
+                    {{ $article->body }}
                     <br/>
                     <h2>Share This Tutorial:</h2>
                     <br/>
