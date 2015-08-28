@@ -27,14 +27,81 @@
                </div>
                 <div class="post-content">
                     <div class="share-buttons">
-                       
+                       <!-- Twitter -->
+                            <a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=@tutorialedge" target="_blank" class="share-btn twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+
+                            <!-- Google Plus -->
+                            <a href="https://plus.google.com/share?url=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn google-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+
+                            <!-- StumbleUpon (url, title) -->
+                            <a href="http://www.stumbleupon.com/submit?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn stumbleupon">
+                                <i class="fa fa-stumbleupon"></i>
+                            </a>
+
+                            <!-- Reddit (url, title) -->
+                            <a href="http://reddit.com/submit?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn reddit">
+                                <i class="fa fa-reddit"></i>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="http://www.linkedin.com/shareArticle?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
+                                <i class="fa fa-envelope"></i>
+                            </a>
                     </div>
                     {!! $article->body !!}
                     <br/>
                     <h2>Share This Tutorial:</h2>
                     <br/>
                     <div class="share-buttons">
-          </div>
+                        <!-- Twitter -->
+                            <a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=@tutorialedge" target="_blank" class="share-btn twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+
+                            <!-- Google Plus -->
+                            <a href="https://plus.google.com/share?url=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn google-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+
+                            <!-- StumbleUpon (url, title) -->
+                            <a href="http://www.stumbleupon.com/submit?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn stumbleupon">
+                                <i class="fa fa-stumbleupon"></i>
+                            </a>
+
+                            <!-- Reddit (url, title) -->
+                            <a href="http://reddit.com/submit?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn reddit">
+                                <i class="fa fa-reddit"></i>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="http://www.linkedin.com/shareArticle?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                    </div>
                 </div>
             
             </div>
