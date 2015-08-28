@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- Latest compiled and minified JavaScript -->
     <!-- Latest compiled and minified JavaScript -->
-    <link rel="stylesheet" href="{{ asset('/css/prismnew.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=1573525') }}">
     <link rel="stylesheet" href="{{ asset('/css/menu.css?v=123445') }}">
     <!--        <link rel="stylesheet" href="{{ asset('/css/top-menu.css?v=23') }}">-->
