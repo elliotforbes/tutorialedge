@@ -25,7 +25,6 @@
             @endforeach
          </div>
          <div class="pagination">
-             <?php echo $articles->render(); ?>
          </div>
     </div>
     </div>
