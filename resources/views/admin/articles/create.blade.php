@@ -82,8 +82,4 @@
     </div>
 {!! Form::close() !!}
 
-<script>
-CKEDITOR.replace('body');
-</script>
-
 @stop
