@@ -37,7 +37,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
                     <img src="{{ asset('/images/new-logo.png') }}" alt="Home of high quality programming tutorials">
                 </a>
             </div>
