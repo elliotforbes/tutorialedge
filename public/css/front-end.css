@@ -285,6 +285,14 @@ body{
     
 }
 
+.pagination a{
+    display: block;
+    padding: 12px 20px;
+    border: 2px solid #CCC;
+    color: #999;
+    transition: .3s ease all;
+}
+
 
 /* END OF TOP NAVIGATION */
 .social-metro{
