@@ -27,58 +27,82 @@
                </div>
                 <div class="post-content">
                     <div class="share-buttons">
-                        <!-- Twitter -->
-                        <a href="http://twitter.com/share?url=https://github.com/gschier/html-share-buttons&text=HMTL%20Share%20Buttons&via=GregorySchier" target="_blank" class="share-btn twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
+                        <!-- Social Button HTML -->
 
-                        <!-- Google Plus -->
-                        <a href="https://plus.google.com/share?url=https://github.com/gschier/html-share-buttons" target="_blank" class="share-btn google-plus">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
+                            <!-- Twitter -->
+                            <a href="http://twitter.com/share?url=<URL>&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
 
-                        <!-- Facebook -->
-                        <a href="http://www.facebook.com/sharer/sharer.php?u=https://github.com/gschier/html-share-buttons" target="_blank" class="share-btn facebook">
-                            <i class="fa fa-facebook"></i>
-                        </a>
+                            <!-- Google Plus -->
+                            <a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
 
-                        <!-- LinkedIn -->
-                        <a href="http://www.linkedin.com/shareArticle?url=https://github.com/gschier/html-share-buttons&title=HMTL%20Share%20Buttons&summary=HMTL%20Share%20Buttons&source=http://schier.co/blog/2014/10/22/pure-html-share-buttons.html" target="_blank" class="share-btn linkedin">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
+                            <!-- Facebook -->
+                            <a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
 
-                        <!-- Email -->
-                        <a href="mailto:?subject=HMTL%20Share%20Buttons&body=https://github.com/gschier/html-share-buttons" target="_blank" class="share-btn email">
-                            <i class="fa fa-envelope"></i>
-                        </a>
+                            <!-- StumbleUpon (url, title) -->
+                            <a href="http://www.stumbleupon.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn stumbleupon">
+                                <i class="fa fa-stumbleupon"></i>
+                            </a>
+
+                            <!-- Reddit (url, title) -->
+                            <a href="http://reddit.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn reddit">
+                                <i class="fa fa-reddit"></i>
+                            </a>
+
+                            <!-- LinkedIn -->
+                            <a href="http://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" target="_blank" class="share-btn linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
+                                <i class="fa fa-envelope"></i>
+                            </a>
                     </div>
                     {!! $article->body !!}
                     <br/>
                     <h2>Share This Tutorial:</h2>
                     <br/>
                     <div class="share-buttons">
+                       <!-- Social Button HTML -->
+
                         <!-- Twitter -->
-                        <a href="http://twitter.com/share?url=https://github.com/gschier/html-share-buttons&text=HMTL%20Share%20Buttons&via=GregorySchier" target="_blank" class="share-btn twitter">
+                        <a href="http://twitter.com/share?url=<URL>&text=<TEXT>&via=<VIA>" target="_blank" class="share-btn twitter">
                             <i class="fa fa-twitter"></i>
                         </a>
 
                         <!-- Google Plus -->
-                        <a href="https://plus.google.com/share?url=https://github.com/gschier/html-share-buttons" target="_blank" class="share-btn google-plus">
+                        <a href="https://plus.google.com/share?url=<BTN>" target="_blank" class="share-btn google-plus">
                             <i class="fa fa-google-plus"></i>
                         </a>
 
                         <!-- Facebook -->
-                        <a href="http://www.facebook.com/sharer/sharer.php?u=https://github.com/gschier/html-share-buttons" target="_blank" class="share-btn facebook">
+                        <a href="http://www.facebook.com/sharer/sharer.php?u=<URL>" target="_blank" class="share-btn facebook">
                             <i class="fa fa-facebook"></i>
                         </a>
 
+                        <!-- StumbleUpon (url, title) -->
+                        <a href="http://www.stumbleupon.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn stumbleupon">
+                            <i class="fa fa-stumbleupon"></i>
+                        </a>
+
+                        <!-- Reddit (url, title) -->
+                        <a href="http://reddit.com/submit?url=<URL>&title=<TITLE>" target="_blank" class="share-btn reddit">
+                            <i class="fa fa-reddit"></i>
+                        </a>
+
                         <!-- LinkedIn -->
-                        <a href="http://www.linkedin.com/shareArticle?url=https://github.com/gschier/html-share-buttons&title=HMTL%20Share%20Buttons&summary=HMTL%20Share%20Buttons&source=http://schier.co/blog/2014/10/22/pure-html-share-buttons.html" target="_blank" class="share-btn linkedin">
+                        <a href="http://www.linkedin.com/shareArticle?url=<URL>&title=<TITLE>&summary=<SUMMARY>&source=<SOURCE_URL>" target="_blank" class="share-btn linkedin">
                             <i class="fa fa-linkedin"></i>
                         </a>
 
                         <!-- Email -->
-                        <a href="mailto:?subject=HMTL%20Share%20Buttons&body=https://github.com/gschier/html-share-buttons" target="_blank" class="share-btn email">
+                        <a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
                             <i class="fa fa-envelope"></i>
                         </a>
                     </div>
