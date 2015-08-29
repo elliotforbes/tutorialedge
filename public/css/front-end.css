@@ -257,33 +257,7 @@ pre{
 
 /*END OF VIDEO CONT CODE*/
 
-/*****************************/
-/****COURSE INDEX PAGE CSS****/
-/*****************************/
 
-.course-list{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.course-item{
-    display: flex;
-    margin-bottom: 20px;
-}
-.course-item h2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.course-item img{
-    width: 100%;
-    height: auto;
-}
-
-.course-content{
-    width: 100%;   
-}
 
 /* Content code */
 
