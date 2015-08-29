@@ -50,7 +50,7 @@ class CategoryController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($slug)
 	{
 		$category = Category::whereSlug($slug)->get()->first();
         $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $category->cat_id . ';'));
