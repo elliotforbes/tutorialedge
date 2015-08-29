@@ -44,7 +44,7 @@ class FrontendController extends Controller {
     
     public function courseIndex()
     {
-        $courses = Page::get();
+        $courses = Course::get();
         return view('course.index', compact('courses'));
     }
 

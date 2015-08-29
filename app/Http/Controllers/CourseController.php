@@ -4,7 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use DB;
-use App\Page;
+use App\Course;
 use App\Article;
 use Request;
 
@@ -17,8 +17,8 @@ class CourseController extends Controller {
 	 */
 	public function index()
 	{
-		$pages = Page::orderBy('id', 'DESC')->paginate(9);
-        return view('admin/Courses/index', compact('pages'));
+		$courses = Course::orderBy('id', 'DESC')->paginate(9);
+        return view('admin/courses/index', compact('courses'));
 	}
 
 	/**
@@ -28,8 +28,8 @@ class CourseController extends Controller {
 	 */
 	public function create()
 	{
-		$categories = Page::get();
-        return view('admin/Courses/create', compact('categories'));
+		$courses = Course::get();
+        return view('admin/Courses/create', compact('courses'));
 	}
 
 	/**
@@ -39,10 +39,10 @@ class CourseController extends Controller {
 	 */
 	public function store(Request $request)
 	{
-        $course = new Page;
+        $course = new Course;
         $input = Request::all();
         $course->fill($input)->save();
-        return redirect('admin/Courses/index');
+        return redirect('admin/courses');
 	}
 
 	/**
@@ -53,9 +53,9 @@ class CourseController extends Controller {
 	 */
 	public function show($slug)
 	{
-		$page = page::whereSlug($slug)->get()->first();
-        $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $page->cat_id . ';'));
-        return view('page.index', compact('articles', 'page'));
+		$course = Course::whereSlug($slug)->get()->first();
+        $articles = DB::select(DB::raw('select * from articles where course_id = ' . $course->id . ';'));
+        return view('page.index', compact('articles', 'course'));
 	}
 
 	/**
