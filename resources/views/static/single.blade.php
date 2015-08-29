@@ -132,8 +132,8 @@
                     </div>
                 </div>
                 
-                <h2>{{ $page->title }}</h2>
-                <p>{{ $page->info }}</p>
+                <h2>{{ $category->title }}</h2>
+                <p>{{ $category->info }}</p>
                 <h3>Table of Contents</h3>
                 <br/>
                 <table class="table">
