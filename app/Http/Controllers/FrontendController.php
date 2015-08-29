@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use DB;
-use App\Page;
+use App\Course;
 use App\Article;
 use App\User;
 use App\Category;
@@ -50,7 +50,7 @@ class FrontendController extends Controller {
 
     public function test()
     {
-        $courses = Page::get();
+        $courses = Course::get();
         $articles = Article::orderBy('id', 'DESC')->take(8)->get();
         $artCount = Article::count();
         $userCount = User::count();
