@@ -76,14 +76,14 @@ In-depth Game Programming Tutorials and Courses
 @section('content')
 <div class="container">
     <div class="latest-posts">
-      <h2>Popular Courses</h2>
+      <h2>Popular Categories</h2>
         <div class="row"> 
 
-           @foreach ($courses as $course)
+           @foreach ($categories as $category)
             <div class="col-md-4 col-sm-6 col-sx-12">
                <div class="course-box">
-                    <img class="img-responsive image-responsive-centered" alt="{{ $course->slug }}" title="{{ $course->slug }}" src="/uploads/articles/{{ $course->image_url }}" />
-                    <h3><a href="/course/{{ $course->slug }}">{{ $course->title }}</a></h3>
+                    <img class="img-responsive image-responsive-centered" alt="{{ $category->slug }}" title="{{ $category->slug }}" src="/uploads/articles/{{ $category->image_url }}" />
+                    <h3><a href="/category/{{ $category->slug }}">{{ $category->title }}</a></h3>
                 </div>
             </div>
              @endforeach

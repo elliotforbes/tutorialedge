@@ -27,9 +27,6 @@
 .light-grey-bg {
     background-color: #EFEFEF;
 }
-.bold {
-    font-weight: bold;
-}
 *::-moz-selection {
     background-color: #ff6c5d;
     color: #414146;
@@ -123,143 +120,6 @@ nav#main-nav select {
 .article-image{
     min-height: 172px;   
 }
-#main-nav a {
-    color: #FFFFFF;
-    display: block;
-    font-size: 14px;
-    padding-bottom: 0;
-    padding-top: 30px;
-    position: relative;
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-}
-.sf-menu li > a {
-    font-family: 'Oswald',Arial,Helvetica,sans-serif;
-    padding-bottom: 30px !important;
-    padding-left: 17px;
-    padding-right: 17px;
-    text-transform: uppercase;
-}
-.sf-menu, .sf-menu * {
-    list-style: none outside none;
-    margin: 0;
-    padding: 0;
-}
-.sf-menu {
-    line-height: 1;
-}
-.sf-menu ul {
-    margin-top: 0 !important;
-    position: absolute;
-    top: -999em;
-}
-#main-nav ul.sf-menu li:first-child ul {
-    margin-left: 0 !important;
-}
-.sf-menu ul ul {
-    margin: 0 !important;
-}
-.sf-menu ul li {
-    width: 150px;
-}
-.sf-menu li:hover {
-    visibility: inherit;
-}
-.sf-menu li {
-    float: left;
-    position: relative;
-}
-.sf-menu a {
-    display: block;
-    position: relative;
-}
-.sf-menu li:hover ul, .sf-menu li.sfHover ul {
-    left: 0;
-    text-shadow: none;
-    top: 74px;
-    z-index: 99;
-}
-ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul {
-    top: -999em;
-}
-ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul {
-    left: 150px !important;
-    top: 0;
-}
-ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul {
-    top: -999em;
-}
-ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
-    left: 100em;
-    top: 0;
-}
-.sf-menu li li {
-    background-color: #565A60;
-    margin: 0 !important;
-}
-#main-nav .current li.current li a {
-    background-color: #535961;
-    color: #FFFFFF;
-}
-.sf-menu li li a {
-    color: #FFFFFF !important;
-    font-family: 'Open Sans',Arial,Helvetica,sans-serif;
-    font-size: 12px !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-bottom: 15px !important;
-    padding-left: 15px !important;
-    padding-top: 15px !important;
-    text-shadow: none !important;
-    text-transform: none !important;
-}
-.sf-menu li li a:hover {
-    background: none repeat scroll 0 0 #fff !important;
-    color: #085c95 !important;
-}
-.block-0-content-container {
-    background-color: #FFFFFF;
-    height: 252px;
-    position: relative;
-    transition: all 0.3s ease 0s;
-}
-.block-1-content-container {
-    background-color: #ff6c5d;
-    transition: all 0.3s ease 0s;
-}
-.block-2-content-container {
-    background-color: #EDDA06;
-    transition: all 0.3s ease 0s;
-}
-.block-3-content-container {
-    background-color: #DECB01;
-    transition: all 0.3s ease 0s;
-}
-.block-1-content-container:hover, .block-2-content-container:hover, .block-3-content-container:hover {
-    background-color: #FFFFFF;
-    transition: all 0.3s ease 0s;
-}
-
-
-    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
-    .clearfix:before,
-    .clearfix:after,
-    .row:before,
-    .row:after {
-      content: '\0020';
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0; }
-    .row:after,
-    .clearfix:after {
-      clear: both; }
-    .row,
-    .clearfix {
-      zoom: 1; }
-
-   
 
 body{
 /* font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue",Helvetica,Arial,sans-serif;*/
@@ -301,13 +161,7 @@ body{
     margin-bottom: 40px;
     margin-left: 15px;
 }
-.social-box{
-     padding-top: 20px;
-    padding-bottom: 20px;
-}
-.social-box a{
-    color: white;   
-}
+
 .facebook-icon{
     color: #4D70A8 !important;   
 }
@@ -402,6 +256,35 @@ pre{
 }
 
 /*END OF VIDEO CONT CODE*/
+
+/*****************************/
+/****COURSE INDEX PAGE CSS****/
+/*****************************/
+
+.course-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.course-item{
+    display: flex;
+    margin-bottom: 20px;
+}
+.course-item h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.course-item img{
+    width: 100%;
+    height: auto;
+}
+
+.course-content{
+    width: 100%;   
+}
+
 /* Content code */
 
 .post-box{
@@ -535,11 +418,6 @@ pre{
     
 }
 
-.post-social{
-    margin-bottom: 20px;   
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-}
 
 .author-bar{
     font-size: 14px;

@@ -16,6 +16,7 @@ Route::get('/home', 'FrontendController@index');
 Route::get('/contact', 'FrontendController@contact');
 Route::get('/about', 'FrontendController@about');
 Route::get('/search', 'FrontendController@search');
+Route::get('/courses', 'FrontendController@courseIndex');
 
 //Route::get('/test', 'FrontendController@test');
 
@@ -28,7 +29,8 @@ Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     Route::get('', 'AdminController@index'); 
     
     Route::resource('users', 'UserController');
-    Route::resource('pages', 'CourseController');
+    Route::resource('courses', 'CourseController');
+    Route::resource('categories', 'CategoryControllerr');
     Route::resource('articles', 'ArticleController');
     Route::resource('videos', 'VideoController');
     Route::resource('media', 'MediaController');
@@ -40,7 +42,7 @@ Route::resource('queries', 'QueryController');
 //Route::get('video', 'VideoController@single');
 Route::get('/video/{slug}', array('as' => 'video.show', 'uses' => 'VideoController@show'));
 
-Route::get('/course/{slug}', array('as' => 'page.show', 'uses' => 'CourseController@show'));
+Route::get('/category/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
 Route::get('/{slug}', 'FrontendController@show');
 
 Route::controllers([

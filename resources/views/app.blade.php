@@ -46,39 +46,44 @@
                     <li class="active"><a href="/">Home</a>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Courses <span class="caret"></span></a>
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Tutorials <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="/course/lwjgl3">LWJGL 3 Tutorials</a>
                             </li>
                             <li><a href="/course/laravel-5">Laravel 5 Tutorials</a>
                             </li>
                             <li><a href="/course/python">Python Tutorials</a>
-                                <li><a href="/course/programming_design_patterns">Programming Design Concepts</a>
-                                </li>
-                                <li><a href="/course/artificial-intelligence">Artificial Intelligence</a>
-                                </li>
+                            </li>
+                            <li><a href="/course/programming_design_patterns">Programming Design Concepts</a>
+                            </li>
+                            <li><a href="/course/artificial-intelligence">Artificial Intelligence</a>
+                            </li>
+                            <li><a href="/course/webdev">Web Development Tutorials</a></li>
                         </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Video Tutorials <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="/video/programming-2d-pong">Programming 2D Pong - LWJGL 3 + OpenGL</a></li>
-                            </ul>
-                        </li>
-                        @if (Auth::guest())
-                        <li><a href="{{ url('/auth/login') }}">Login</a>
-                        </li>
-                        <li><a href="{{ url('/auth/register') }}">Register</a>
-                        </li>
-                        @else
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{{ Auth::user()->name }} <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{ url('/auth/logout') }}">Logout</a>
-                                </li>
-                            </ul>
-                        </li>
-                        @endif
+                    </li>
+                    <li><a href="/courses">Courses</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Video Tutorials <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/video/programming-2d-pong">Programming 2D Pong - LWJGL 3 + OpenGL</a>
+                            </li>
+                        </ul>
+                    </li>
+                    @if (Auth::guest())
+                    <li><a href="{{ url('/auth/login') }}">Login</a>
+                    </li>
+                    <li><a href="{{ url('/auth/register') }}">Register</a>
+                    </li>
+                    @else
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{{ Auth::user()->name }} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ url('/auth/logout') }}">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    @endif
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {!! Form::open(array('route' => 'queries.store', 'class'=>'form navbar-form navbar-right searchform')) !!}

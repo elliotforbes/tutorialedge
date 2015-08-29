@@ -9,6 +9,7 @@ use DB;
 use App\Page;
 use App\Article;
 use App\User;
+use App\Category;
 
 class FrontendController extends Controller {
 
@@ -19,11 +20,11 @@ class FrontendController extends Controller {
 	 */
 	public function index()
 	{
-		$courses = Page::get();
+		$categories = Category::get();
         $articles = Article::orderBy('id', 'DESC')->take(8)->get();
         $artCount = Article::count();
         $userCount = User::count();
-        return view('index', compact('courses', 'articles', 'artCount', 'userCount'));
+        return view('index', compact('categories', 'articles', 'artCount', 'userCount'));
 	}
     
     public function single()
@@ -39,6 +40,12 @@ class FrontendController extends Controller {
     public function about()
     {
         return view('static.about');   
+    }
+    
+    public function courseIndex()
+    {
+        $courses = Page::get();
+        return view('course.index', compact('courses'));
     }
 
     public function test()
@@ -95,11 +102,8 @@ class FrontendController extends Controller {
         if($article['post_status'] == "published")
         {
             
-            $page = Page::where('cat_id', '=', $article->cat_id)->get()->first();
-    //        $page = DB::select(DB::raw('select * from pages where cat_id = ' . $article->cat_id . ';'));
-
-
-            return view('static.single', compact('article', 'articles', 'page', 'nextArt', 'prevArt'));
+            $category = Category::where('cat_id', '=', $article->cat_id)->get()->first();
+            return view('static.single', compact('article', 'articles', 'category'));
         }
         else 
         {
