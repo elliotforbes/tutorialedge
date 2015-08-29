@@ -15,7 +15,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <!-- Latest compiled and minified JavaScript -->
     <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=525') }}">
+    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=5255') }}">
     <link rel="stylesheet" href="{{ asset('/css/menu.css?v=123445') }}">
     <!--        <link rel="stylesheet" href="{{ asset('/css/top-menu.css?v=23') }}">-->
     <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
@@ -48,17 +48,17 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Tutorials <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/course/lwjgl3">LWJGL 3 Tutorials</a>
+                            <li><a href="/category/lwjgl3">LWJGL 3 Tutorials</a>
                             </li>
-                            <li><a href="/course/laravel-5">Laravel 5 Tutorials</a>
+                            <li><a href="/category/laravel-5">Laravel 5 Tutorials</a>
                             </li>
-                            <li><a href="/course/python">Python Tutorials</a>
+                            <li><a href="/category/python">Python Tutorials</a>
                             </li>
-                            <li><a href="/course/programming_design_patterns">Programming Design Concepts</a>
+                            <li><a href="/category/programming_design_patterns">Programming Design Concepts</a>
                             </li>
-                            <li><a href="/course/artificial-intelligence">Artificial Intelligence</a>
+                            <li><a href="/category/artificial-intelligence">Artificial Intelligence</a>
                             </li>
-                            <li><a href="/course/webdev">Web Development Tutorials</a></li>
+                            <li><a href="/category/webdev">Web Development Tutorials</a></li>
                         </ul>
                     </li>
                     <li><a href="/courses">Courses</a>
@@ -120,15 +120,15 @@
                 <div class="col-md-3">
                     <h3>Featured Courses</h3>
                     <ul>
-                        <li><a href="/course/python">Python</a>
+                        <li><a href="/category/python">Python</a>
                         </li>
-                        <li><a href="/course/laravel">Laravel 5</a>
+                        <li><a href="/category/laravel">Laravel 5</a>
                         </li>
-                        <li><a href="/course/game-development">Game Development</a>
+                        <li><a href="/category/game-development">Game Development</a>
                         </li>
-                        <li><a href="/course/LWJGL">LWJGL 3</a>
+                        <li><a href="/category/LWJGL">LWJGL 3</a>
                         </li>
-                        <li><a href="/course/artificial-intelligence">Artificial Intelligence</a>
+                        <li><a href="/category/artificial-intelligence">Artificial Intelligence</a>
                         </li>
                     </ul>
                 </div>
