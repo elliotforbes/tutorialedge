@@ -161,7 +161,13 @@ body{
     margin-bottom: 40px;
     margin-left: 15px;
 }
-
+.social-box{
+     padding-top: 20px;
+    padding-bottom: 20px;
+}
+.social-box a{
+    color: white;   
+}
 .facebook-icon{
     color: #4D70A8 !important;   
 }
@@ -256,9 +262,6 @@ pre{
 }
 
 /*END OF VIDEO CONT CODE*/
-
-
-
 /* Content code */
 
 .post-box{
@@ -392,6 +395,11 @@ pre{
     
 }
 
+.post-social{
+    margin-bottom: 20px;   
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
 
 .author-bar{
     font-size: 14px;
