@@ -40,8 +40,8 @@
                         <tbody>
                            @foreach($articles as $article)
                             <tr>
-                                <td class="centered">1</td>
-                                <td>Setting up Eclipse and LWJGL 3</td>
+                                <td class="centered"></td>
+                                <td>{{ $article->title }}</td>
                                 <td class="centered"><a href="/{{ $article->slug }}">Read</a></td>
                             </tr>
                             @endforeach
