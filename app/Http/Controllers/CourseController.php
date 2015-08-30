@@ -66,8 +66,8 @@ class CourseController extends Controller {
 	 */
 	public function edit($slug)
 	{
-        $page = Article::whereSlug($slug)->get()->first();
-        return view('admin/Courses/edit', compact('article'));
+        $course = Course::whereSlug($slug)->get()->first();
+        return view('admin/Courses/edit', compact('course'));
 	}
 
 	/**
