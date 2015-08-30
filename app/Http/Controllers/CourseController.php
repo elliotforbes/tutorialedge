@@ -18,7 +18,7 @@ class CourseController extends Controller {
 	public function index()
 	{
 		$courses = Course::orderBy('id', 'DESC')->paginate(9);
-        return view('admin/courses/index', compact('courses'));
+        return view('admin/Courses/index', compact('courses'));
 	}
 
 	/**
@@ -42,7 +42,7 @@ class CourseController extends Controller {
         $course = new Course;
         $input = Request::all();
         $course->fill($input)->save();
-        return redirect('admin/courses');
+        return redirect('admin/Courses');
 	}
 
 	/**
