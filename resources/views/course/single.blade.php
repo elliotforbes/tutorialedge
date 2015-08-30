@@ -38,9 +38,11 @@
                             </tr>
                         </thead>
                         <tbody>
+                          <?php $iterator=0; ?>
                            @foreach($articles as $article)
+                            <?php $iterator++; ?>
                             <tr>
-                                <td class="centered"></td>
+                                <td class="centered"><?php echo $iterator; ?></td>
                                 <td>{{ $article->title }}</td>
                                 <td class="centered"><a href="/{{ $article->slug }}">Read</a></td>
                             </tr>
