@@ -26,7 +26,7 @@
                 
                 
                 <div class="course-info">
-                    {{ $course->body }}
+                    {!! $course->body !!}
                 </div>
                 <div class="course-tutorial-list">
                     <table class="table table-bordered">
