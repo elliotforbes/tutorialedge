@@ -546,6 +546,12 @@ pre{
     text-overflow: ellipsis;
 }
 
+.white-padding{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
 .gray-padding{
      width: 100%;
     height: 60px;
