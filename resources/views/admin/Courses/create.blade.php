@@ -3,7 +3,7 @@
 
 @section('content')
 
-{!! Form::open(array('route' => 'admin.pages.store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
+{!! Form::open(array('route' => 'admin.courses.store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
     <div class="info-box">
       <div class="row">
             <div class="col-lg-8">
