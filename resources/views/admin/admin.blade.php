@@ -21,6 +21,7 @@
                         <li><a href="/admin/">Home</a></li>
                         <li><a href="/admin/articles">Articles</a></li>
                         <li><a href="/admin/pages">Courses</a></li>
+                        <li><a href="/admin/categories">Categories</a></li>
                         <li><a href="/admin/users">Users</a></li>
                         <li><a href="/admin/videos">Videos</a></li>
                         <li><a href="/admin/settings">Settings</a></li>
