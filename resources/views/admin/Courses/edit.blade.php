@@ -22,7 +22,7 @@
                             'placeholder'=>'Article Body')) !!}
                 </div>
                 <div class="form-group">
-                    {!! Form::label('Blurb') !!}
+                     {!! Form::label('Blurb') !!}
                     {!! Form::text('info', null,
                         array('required',
                             'class'=>'form-control',
