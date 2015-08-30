@@ -78,9 +78,9 @@ class CourseController extends Controller {
 	 */
 	public function update($slug)
 	{
-		$article = Article::whereSlug($slug)->get()->first();
+		$course = Course::whereSlug($slug)->get()->first();
         $input = Request::all();
-        $article->fill($input)->save();
+        $course->fill($input)->save();
         return redirect('admin/Courses/' . $slug . '/edit');
 	}
 
