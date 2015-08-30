@@ -29,7 +29,7 @@ class CourseController extends Controller {
 	public function create()
 	{
 		$courses = Course::get();
-        return view('admin/courses/create', compact('courses'));
+        return view('admin/Courses/create', compact('courses'));
 	}
 
 	/**
@@ -42,7 +42,7 @@ class CourseController extends Controller {
         $course = new Course;
         $input = Request::all();
         $course->fill($input)->save();
-        return redirect('admin/courses');
+        return redirect('admin/Courses');
 	}
     
     public function single($slug)
@@ -74,7 +74,7 @@ class CourseController extends Controller {
 	public function edit($slug)
 	{
         $course = Course::whereSlug($slug)->get()->first();
-        return view('admin/courses/edit', compact('course'));
+        return view('admin/Courses/edit', compact('course'));
 	}
 
 	/**
@@ -88,7 +88,7 @@ class CourseController extends Controller {
 		$course = Course::whereSlug($slug)->get()->first();
         $input = Request::all();
         $course->fill($input)->save();
-        return redirect('admin/courses/' . $slug . '/edit');
+        return redirect('admin/Courses/' . $slug . '/edit');
 	}
 
 	/**
@@ -101,7 +101,7 @@ class CourseController extends Controller {
 	{
 		$page = Page::whereSlug($slug)->get()->first();
         $page->delete();
-        return redirect('admin/courses');
+        return redirect('admin/Courses');
 	}
 
 }
