@@ -61,7 +61,7 @@ class CourseController extends Controller {
 	public function show($slug)
 	{
 		$course = Course::whereSlug($slug)->get()->first();
-        $articles = DB::select(DB::raw('select * from articles where course_id = ' . $course->id . ';'));
+        $articles = DB::select(DB::raw('select * from articles where course_id = ' . $course->cat_id . ';'));
         return view('course.single', compact('articles', 'course'));
 	}
 
