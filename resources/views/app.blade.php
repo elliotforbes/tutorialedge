@@ -63,13 +63,6 @@
                     </li>
                     <li><a href="/courses">Courses</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Video Tutorials <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/video/programming-2d-pong">Programming 2D Pong - LWJGL 3 + OpenGL</a>
-                            </li>
-                        </ul>
-                    </li>
                     @if (Auth::guest())
                     <li><a href="{{ url('/auth/login') }}">Login</a>
                     </li>

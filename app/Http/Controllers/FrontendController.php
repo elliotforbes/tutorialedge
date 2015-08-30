@@ -48,6 +48,11 @@ class FrontendController extends Controller {
         return view('course.index', compact('courses'));
     }
 
+    public function courseSingle()
+    {
+        return view('course.single');   
+    }
+    
     public function test()
     {
         $courses = Course::get();

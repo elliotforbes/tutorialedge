@@ -44,7 +44,14 @@ class CourseController extends Controller {
         $course->fill($input)->save();
         return redirect('admin/Courses');
 	}
-
+    
+    public function single($slug)
+    {
+        $course = Course::whereSlug($slug)->get()->first();
+        
+        return view('course.single', compact('course'));   
+    }
+    
 	/**
 	 * Display the specified resource.
 	 *
@@ -55,7 +62,7 @@ class CourseController extends Controller {
 	{
 		$course = Course::whereSlug($slug)->get()->first();
         $articles = DB::select(DB::raw('select * from articles where course_id = ' . $course->id . ';'));
-        return view('page.index', compact('articles', 'course'));
+        return view('course.single', compact('articles', 'course'));
 	}
 
 	/**
