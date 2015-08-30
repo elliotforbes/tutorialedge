@@ -10,7 +10,7 @@
             @foreach($courses as $course)
             <div class="col-lg-4 course-item">
                 <div class="course-content">
-                   <img src="/uploads/courses/{{ $course->image_url }}" title="{{ $course->title }}" alt="{{ $course->info }}">
+                    <img src="/uploads/courses/{{ $course->image_url }}" title="{{ $course->title }}" alt="{{ $course->info }}">
                     <h2><a href="/course/{{ $course->slug }}">{{ $course->title }}</a></h2>
                     <p>{{ $course->info }}</p>
                 </div>

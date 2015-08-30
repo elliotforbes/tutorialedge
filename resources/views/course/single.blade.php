@@ -43,7 +43,7 @@
                             <?php $iterator++; ?>
                             <tr>
                                 <td class="centered"><?php echo $iterator; ?></td>
-                                <td>{{ $article->title }}</td>
+                                 <td>{{ $article->title }}</td>
                                 <td class="centered"><a href="/{{ $article->slug }}">Read</a></td>
                             </tr>
                             @endforeach
