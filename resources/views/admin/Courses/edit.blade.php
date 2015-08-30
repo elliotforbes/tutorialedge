@@ -3,10 +3,10 @@
 
 @section('content')
 
-{!! Form::model($page, ['url' => 'admin/editcourse/' . $page->slug, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
+{!! Form::model($course, ['url' => 'admin/editcourse/' . $course->slug, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
     <div class="row">
         <div class="col-lg-8">
-            <h2>Update: {{ $page->title }}</h2>
+            <h2>Update: {{ $course->title }}</h2>
              <div class="form-group">
                     {!! Form::label('Post Title') !!}
                     {!! Form::text('title', null,
@@ -25,7 +25,7 @@
         </div>
         <div class="col-lg-4">
             <h2>Publishing Options</h2>
-            <div class="form-group">d
+            <div class="form-group">
                 {!! Form::label('Post Slug') !!}
                 {!! Form::text('slug', null,
                     array('required',
