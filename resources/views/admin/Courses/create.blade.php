@@ -33,7 +33,7 @@
                     {!! Form::label('Description') !!}
                     {!! Form::textarea('body', null,
                         array('required',
-                            'class'=>'form-control',
+                             'class'=>'form-control',
                             'placeholder'=>'Article Body')) !!}
                 </div>
             </div>
