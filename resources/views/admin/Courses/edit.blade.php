@@ -14,7 +14,7 @@
                             'class'=>'form-control',
                             'placeholder'=>'Post Title')) !!}
                 </div>
-                <div class="form-group">
+                 <div class="form-group">
                     {!! Form::label('Subheading') !!}
                     {!! Form::text('tagline', null,
                         array('required',

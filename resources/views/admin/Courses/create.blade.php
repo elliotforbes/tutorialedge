@@ -24,7 +24,7 @@
                 </div>
                     <div class="form-group">
                     {!! Form::label('Blurb') !!}
-                    {!! Form::text('info', null,
+                     {!! Form::text('info', null,
                         array('required',
                             'class'=>'form-control',
                             'placeholder'=>'Article Body')) !!}
