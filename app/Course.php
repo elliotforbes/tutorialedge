@@ -8,6 +8,8 @@ class Course extends Model {
 
     protected $fillable = [
         'title',
+        'tagline',
+        'body',
         'slug',
         'image_url',
         'info',

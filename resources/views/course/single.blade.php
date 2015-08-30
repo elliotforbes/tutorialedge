@@ -7,7 +7,7 @@
     <div class="course-content">
        <div class="row">
            <div class="col-lg-8">
-                <h2>Programming 2D Pong with LWJGL 3<small><br/>A Complete HTML5 Programming Course for Beginners</small></h2>
+                <h2>{{ $course->title }}<small><br/>{{ $course->tagline }}</small></h2>
                 <div class="course-ratings">
                     <p>
                         <span class="stars">
@@ -17,34 +17,16 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </span>
-                         58 ratings , 12 Users
+                         58 ratings
                     </p>
                 </div>
                 <div class="course-image">
-                    <img src="http://tutorialedge.net/uploads/courses/lwjgl3-2d-pong-course.png" alt="">
+                    <img src="/uploads/courses/{{ $course->image_url }}" alt="{{ $course->tagline }}">
                 </div>
                 
                 
                 <div class="course-info">
-                    <h3>About This Course:</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex omnis, animi blanditiis quasi hic delectus suscipit, cupiditate optio eveniet dicta dolorum illum sequi accusamus non veniam deserunt nesciunt ducimus laboriosam.</p>
-                    <h4>Prerequisites</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat doloremque, architecto ullam laudantium labore iste minima eos voluptatem, corporis voluptatum aspernatur nostrum reprehenderit doloribus cumque. Commodi quidem, eum officiis quas.</p>
-                    <ul>
-                        <li>Requisite 1</li>
-                        <li>Requisite 2</li>
-                        <li>Requisite 3</li>
-                    </ul>
-                    <h4>Subheading</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsa quaerat laborum, repellendus, iure modi, neque, nihil numquam molestiae ipsam ducimus placeat reiciendis facilis. Ex soluta beatae voluptates quod fugit.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis ipsa quaerat laborum, repellendus, iure modi, neque, nihil numquam molestiae ipsam ducimus placeat reiciendis facilis. Ex soluta beatae voluptates quod fugit.</p>
-                    <ul>
-                        <li>Java Frameworks</li>
-                        <li>OpenGL</li>
-                        <li>Git Version Control</li>
-                        <li>OpenAL</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatem, commodi cum cupiditate rerum laboriosam quas, quia dicta tempora culpa magni quibusdam delectus unde maiores officiis necessitatibus explicabo earum ab.</p>
+                    {{ $course->body }}
                 </div>
                 <div class="course-tutorial-list">
                     <table class="table table-bordered">
@@ -56,21 +38,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class='clickable-row' data-href='url://'>
+                           @foreach($articles as $article)
+                            <tr>
                                 <td class="centered">1</td>
                                 <td>Setting up Eclipse and LWJGL 3</td>
-                                <td class="centered">Read</td>
+                                <td class="centered"><a href="/{{ $article->slug }}">Read</a></td>
                             </tr>
-                            <tr class='clickable-row' data-href='url://'>
-                                <td class="centered">2</td>
-                                <td>Creating our Game Window</td>
-                                <td class="centered">Read</td>
-                            </tr>
-                            <tr class='clickable-row' data-href='url://'>
-                                <td class="centered">3</td>
-                                <td>Making our Paddle Classes</td>
-                                <td class="centered">Read</td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -79,7 +53,7 @@
                 <div class="course-sidebar">                   
                     <h3 class="register-header">Course Details</h3>
                     <p class="register-text">Gain access to this course and join the growing number of people enjoying courses like this one everyday.</p>
-                    <button class="btn btn-primary register-btn">Register Now!</button>
+                    <a href="/auth/register"><button class="btn btn-primary register-btn">Register Now!</button></a>
                     
                    
                    <div class="ad-block">
@@ -101,11 +75,5 @@
     </div>
 </div>
 
-<script>
-    $(".clickable-row").click(function() {
-        window.document.location = $(this).data("href");
-    });
-
-</script>
 
 @endsection
