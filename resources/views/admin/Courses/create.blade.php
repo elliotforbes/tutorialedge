@@ -7,7 +7,7 @@
     <div class="info-box">
       <div class="row">
             <div class="col-lg-8">
-               <h2>Create a New Course</h2>
+               <h2>Create New Course</h2>
                     <div class="form-group">
                         {!! Form::label('Course Title') !!}
                         {!! Form::text('title', null,

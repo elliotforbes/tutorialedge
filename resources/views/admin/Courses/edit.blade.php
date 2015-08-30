@@ -25,7 +25,7 @@
         </div>
         <div class="col-lg-4">
             <h2>Publishing Options</h2>
-            <div class="form-group">
+            <div class="form-group">d
                 {!! Form::label('Post Slug') !!}
                 {!! Form::text('slug', null,
                     array('required',
