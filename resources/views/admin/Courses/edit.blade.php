@@ -16,8 +16,15 @@
                 </div>
                 
                 <div class="form-group">
-                    {!! Form::label('Article Body') !!}
-                    {!! Form::textarea('info', null,
+                    {!! Form::label('Blurb') !!}
+                    {!! Form::text('info', null,
+                        array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'Article Body')) !!}
+                </div>
+                <div class="form-group">
+                    {!! Form::label('Description') !!}
+                    {!! Form::textarea('body', null,
                         array('required',
                             'class'=>'form-control',
                             'placeholder'=>'Article Body')) !!}

@@ -18,7 +18,7 @@
                 </div>
                 <div class="form-group">
                    <h2>Excerpt</h2>
-                    {!! Form::textarea('excerpt', null,
+                    {!! Form::text('excerpt', null,
                         array('required',
                             'class'=>'form-control',
                             'placeholder'=>'Post Excerpt')) !!}

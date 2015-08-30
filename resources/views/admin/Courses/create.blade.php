@@ -17,12 +17,19 @@
                     </div>
 
                     <div class="form-group">
-                        {!! Form::label('Course Info') !!}
-                        {!! Form::textarea('info', null,
-                            array('required',
-                                'class'=>'form-control',
-                                'placeholder'=>'Article Body')) !!}
-                    </div>
+                    {!! Form::label('Blurb') !!}
+                    {!! Form::text('info', null,
+                        array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'Article Body')) !!}
+                </div>
+                <div class="form-group">
+                    {!! Form::label('Description') !!}
+                    {!! Form::textarea('body', null,
+                        array('required',
+                            'class'=>'form-control',
+                            'placeholder'=>'Article Body')) !!}
+                </div>
             </div>
             <div class="col-lg-4">
                 <h2>Publishing Options</h2>
