@@ -45,7 +45,7 @@
                                 <p>settings stuff</p>
                             </div>
                             <div class="tab-pane" id="3">
-                                <h3>add clearfix to tab-content (see the css)</h3>
+                                <p>Messages: TO BE IMPLEMENTED</p>
                             </div>
                         </div>
                     </div>
