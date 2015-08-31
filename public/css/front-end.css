@@ -393,6 +393,7 @@ pre{
     height: 150px;
     width: 150px;
     border-radius: 75px;
+    margin: auto;
     margin-bottom: 40px;
     border: 10px solid #cee;
 }
