@@ -15,8 +15,8 @@ return [
 	*/
 
 	'mailgun' => [
-		'domain' => '',
-		'secret' => '',
+		'domain' => 'tutorialedge.net',
+		'secret' => 'key-e21b9dadbd5238f82862e47849fcdcd4',
 	],
 
 	'mandrill' => [
