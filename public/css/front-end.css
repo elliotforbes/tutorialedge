@@ -389,6 +389,13 @@ pre{
     margin-bottom: 40px;
 }
 
+.profile-image{
+    height: 250px;
+    width: 250px;
+    border-radius: 125px;
+    border: 10px solid #cee;
+}
+
 .post-content h1,h2,h3,h4,h5,h6{
     font-family: 'Helvetica-neue', helvetica, sans-serif;
     margin-bottom: 0px;

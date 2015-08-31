@@ -6,7 +6,7 @@
     <div class="post-cont">
         <div class="row">
             <div class="col-md-12">
-                <div class="col-md-4 post-image">
+                <div class="col-md-4 profile-image">
                     <img src="{{ asset('images/profile-placeholder.gif') }}" alt="">
                 </div>
                 <div class="col-md-8">
