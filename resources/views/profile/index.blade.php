@@ -21,7 +21,7 @@
                             </li>
                             <li><a href="#2" data-toggle="tab"><i class="fa fa-cog"></i> Settings</a>
                             </li>
-                            <li><a href="#3" data-toggle="tab"></a>
+                            <li><a href="#3" data-toggle="tab"><i class="fa fa-envelope-o"></i> Messages</a>
                             </li>
                         </ul>
 
