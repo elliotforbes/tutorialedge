@@ -95,9 +95,7 @@
                                     {!! Form::model($user, ['url' => 'users/' . $user->name, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
                                         
                                                 
-                                        {!! Form::submit('update',
-                                                    array('class'=>'btn btn-subscribe btn-padding')) !!}
-                                    {!! Form::close() !!}
+                                     {!! Form::close() !!}
                                     </div>
                                     <div class="col-lg-6">
                                         
@@ -105,7 +103,7 @@
                                 </div>
                             </div>
                             <div class="tab-pane" id="4">
-                                <p>Messages: TO BE IMPLEMENTED</p>
+                                <p>Messages: </p>
                             </div>
                         </div>
                     </div>
