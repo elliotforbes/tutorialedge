@@ -68,8 +68,9 @@
                     </li>
                     @else
                     <li class="dropdown">
-                        <a href="/profile/{{ $Auth::user()->name }}" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{{ Auth::user()->name }} <span class="caret"></span></a>
+                        <a href="/profile/{{ Auth::user()->name }}" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{{ Auth::user()->name }} <span class="caret"></span></a>
                         <ul class="dropdown-menu">
+                            <li><a href="/profile/{{ Auth::user()->name }}">Profile</a></li>
                             <li><a href="{{ url('/auth/logout') }}">Logout</a>
                             </li>
                         </ul>
