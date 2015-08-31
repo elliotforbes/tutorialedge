@@ -19,9 +19,10 @@
                             <li class="active">
                                 <a href="#1" data-toggle="tab"><i class="fa fa-home"></i> Overview</a>
                             </li>
-                            <li><a href="#2" data-toggle="tab"><i class="fa fa-cog"></i> Settings</a>
+                            <li><a href="#2" data-toggle="tab"><i class="fa fa-plus"></i> Account</a></li>
+                            <li><a href="#3" data-toggle="tab"><i class="fa fa-cog"></i> Settings</a>
                             </li>
-                            <li><a href="#3" data-toggle="tab"><i class="fa fa-envelope-o"></i> Messages</a>
+                            <li><a href="#4" data-toggle="tab"><i class="fa fa-envelope-o"></i> Messages</a>
                             </li>
                         </ul>
 
@@ -40,9 +41,12 @@
                                 </div>
                             </div>
                             <div class="tab-pane" id="2">
-                                <p>settings stuff</p>
+                                <p>Account Settings</p>
                             </div>
                             <div class="tab-pane" id="3">
+                                <p>Settings: TO BE IMPLEMENTED</p>
+                            </div>
+                            <div class="tab-pane" id="4">
                                 <p>Messages: TO BE IMPLEMENTED</p>
                             </div>
                         </div>
