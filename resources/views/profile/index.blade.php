@@ -74,7 +74,7 @@
                                            <td>Basic Plan</td>
                                        </tr>
                                         <tr>
-                                            <td>All Free Articles</td>
+                                            <td>Åccess to Everything on the site.</td>
                                             <td>No Adverts on the Site</td>
                                             <td>$4.99/month</td>
                                             <td><button class="btn btn-subscribe">Buy Now</button></td>
