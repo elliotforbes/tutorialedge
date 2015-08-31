@@ -79,6 +79,7 @@
                     @endif
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="{{ url('/auth/register') }}">Register Now!</a></li>
                     {!! Form::open(array('route' => 'queries.store', 'class'=>'form navbar-form navbar-right searchform')) !!}
 
                     <div class="input-group">
