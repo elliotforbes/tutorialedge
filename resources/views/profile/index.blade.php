@@ -30,11 +30,9 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <p><i class="fa fa-heart"></i> Likes:</p>
-                                        <ul>
-                                            @foreach($likes as $like)
-                                            <li>{{ $like->title }}</li>
-                                            @endforeach
-                                        </ul>
+                                        <div class="liked-posts">
+                                            
+                                        </div>
                                     </div>
                                     <div class="col-lg-6">
                                         
