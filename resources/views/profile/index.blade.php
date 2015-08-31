@@ -9,9 +9,11 @@
                 <div class="col-md-4 post-image">
                     <img src="{{ asset('images/profile-placeholder.gif') }}" alt="">
                 </div>
-                <div class="col-md-8 post-title">
+                <div class="col-md-8">
                     <h2>{{ $user->name }}</h2>
                     <p>Joined: {{ $user->created_at }}</p>
+                </div>
+                <div class="col-md-12 post-title">
                     <div id="exTab2">
                         <ul class="nav nav-tabs">
                             <li class="active">
@@ -27,9 +29,11 @@
                             <div class="tab-pane active" id="1">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <h4>Likes:</h4>
+                                        <h4><i class="fa fa-heart"></i> Likes:</h4>
                                         <ul>
-                                            <li><i class="fa fa-heart"></i></li>
+                                            @foreach($likes as $like)
+                                            <li>{{ $like->title }}</li>
+                                            @endforeach
                                         </ul>
                                     </div>
                                     <div class="col-lg-6">
