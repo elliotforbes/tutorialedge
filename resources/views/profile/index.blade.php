@@ -15,11 +15,11 @@
                     <div id="exTab2">
                         <ul class="nav nav-tabs">
                             <li class="active">
-                                <a href="#1" data-toggle="tab"><i class="fa fa-home"></i>Overview</a>
+                                <a href="#1" data-toggle="tab"><i class="fa fa-home"></i> Overview</a>
                             </li>
                             <li><a href="#2" data-toggle="tab"><i class="fa fa-cog"></i> Settings</a>
                             </li>
-                            <li><a href="#3" data-toggle="tab">Solution</a>
+                            <li><a href="#3" data-toggle="tab"></a>
                             </li>
                         </ul>
 
@@ -28,7 +28,9 @@
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <h4>Likes:</h4>
-                                        
+                                        <ul>
+                                            <li><i class="fa fa-heart"></i></li>
+                                        </ul>
                                     </div>
                                     <div class="col-lg-6">
                                         
