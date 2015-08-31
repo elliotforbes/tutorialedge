@@ -108,22 +108,75 @@
     background-color: #F55856 !important;
     color: white;
 }
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    padding: 20px;   
+}
 
-
+.price-tables table td{
+    padding: 10px !important;
+}
 
 .navbar form{
     border-radius: 0;
     margin-top: 12px;
+}
+.liked-posts{
+    margin-top: 20px;   
+}
+.liked-posts i{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.btn-padding{
+    margin-top: 20px;   
+}
+.liked-posts img{
+    width: 100%;
+    height: 120px;
+    border: 5px solid #eee;
+}
+.heart a{
+    color: #F55856;   
+}
+.heart a:hover{
+    color: #2D3339;   
+}
+
+.trash a{
+    color: #737C7F;   
+}
+.trash a:hover{
+    color: #F55856; 
+}
+
+.liked-posts h4{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
 }
 
 .navbar input{
     border-radius: 0;   
 }
 
+.tab-pane h3{
+    margin-bottom: 20px;   
+}
+
 .dropdown-menu>li>a {
     color: #333 !important;   
 }
 
+.btn-subscribe{
+    background-color: #0DADB7;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size:16px;
+}
 /** Social Button CSS **/
 
 .share-btn {

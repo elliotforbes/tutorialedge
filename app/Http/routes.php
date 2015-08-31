@@ -21,6 +21,8 @@ Route::get('/courses', 'FrontendController@courseIndex');
 Route::get('/profile/{slug}', 'ProfileController@show');
 
 
+Route::resource('users', 'UserController');
+
 Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     
     Route::get('', 'AdminController@index'); 

@@ -3,7 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+use Request;
 use App\User;
 
 class UserController extends Controller {
@@ -71,9 +71,12 @@ class UserController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($slug)
 	{
-		// TODO
+		$user = User::where('name', '==', $slug)->get()->first();
+        $input = Request::all();
+        $user->fill($input)->save();
+        return redirect('profile/' . $slug);
 	}
 
 	/**
