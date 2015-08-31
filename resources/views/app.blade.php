@@ -15,7 +15,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <!-- Latest compiled and minified JavaScript -->
     <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=59256') }}">
+    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=592856') }}">
     <link rel="stylesheet" href="{{ asset('/css/menu.css?v=123445') }}">
     <!--        <link rel="stylesheet" href="{{ asset('/css/top-menu.css?v=23') }}">-->
     <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
