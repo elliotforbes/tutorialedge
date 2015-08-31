@@ -10,7 +10,7 @@
                     <img src="{{ asset('images/profile-placeholder.gif') }}" alt="">
                 </div>
                 <div class="col-md-8 post-title">
-                    <div id="exTab2" class="container">
+                    <div id="exTab2">
                         <ul class="nav nav-tabs">
                             <li class="active">
                                 <a href="#1" data-toggle="tab">Overview</a>
