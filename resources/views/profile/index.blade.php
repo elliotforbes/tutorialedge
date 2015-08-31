@@ -29,7 +29,7 @@
                             <div class="tab-pane active" id="1">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <h4><i class="fa fa-heart"></i> Likes:</h4>
+                                        <p><i class="fa fa-heart"></i> Likes:</p>
                                         <ul>
                                             @foreach($likes as $like)
                                             <li>{{ $like->title }}</li>
