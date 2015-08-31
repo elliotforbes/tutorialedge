@@ -10,6 +10,8 @@
                     <img src="{{ asset('images/profile-placeholder.gif') }}" alt="">
                 </div>
                 <div class="col-md-8 post-title">
+                    <h2>{{ $user->name }}</h2>
+                    <p>Joined: {{ $user->created_at }}</p>
                     <div id="exTab2">
                         <ul class="nav nav-tabs">
                             <li class="active">
@@ -34,8 +36,7 @@
                         </div>
                     </div>
 
-                    <h2>{{ $user->name }}</h2>
-                    <p>Joined: {{ $user->created_at }}</p>
+                    
                 </div>
 
             </div>
