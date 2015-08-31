@@ -49,7 +49,7 @@ class ProfileController extends Controller {
 	public function show($name)
 	{
 		$user = User::where('name', '=', $name)->get()->first();
-        $likes = null;
+        $likes = [];
         return view('profile.index', compact('user', 'likes'));
 	}
 
