@@ -15,9 +15,9 @@
                     <div id="exTab2">
                         <ul class="nav nav-tabs">
                             <li class="active">
-                                <a href="#1" data-toggle="tab">Overview</a>
+                                <a href="#1" data-toggle="tab"><i class="fa fa-home"></i>Overview</a>
                             </li>
-                            <li><a href="#2" data-toggle="tab">Without clearfix</a>
+                            <li><a href="#2" data-toggle="tab"><i class="fa fa-cog"></i> Settings</a>
                             </li>
                             <li><a href="#3" data-toggle="tab">Solution</a>
                             </li>
@@ -25,10 +25,18 @@
 
                         <div class="tab-content ">
                             <div class="tab-pane active" id="1">
-                                <h3>Standard tab panel created on bootstrap using nav-tabs</h3>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h4>Likes:</h4>
+                                        
+                                    </div>
+                                    <div class="col-lg-6">
+                                        
+                                    </div>
+                                </div>
                             </div>
                             <div class="tab-pane" id="2">
-                                <h3>Notice the gap between the content and tab after applying a background color</h3>
+                                <p>settings stuff</p>
                             </div>
                             <div class="tab-pane" id="3">
                                 <h3>add clearfix to tab-content (see the css)</h3>
