@@ -102,6 +102,19 @@
                                 <i class="fa fa-envelope"></i>
                             </a>
                     </div>
+                    <h2>Recommended Books:</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=ss_til&ad_type=product_link&tracking_id=game0f63-20&marketplace=amazon&region=US&placement=0672337479&asins=0672337479&linkId=XJDG64PUUQF7IEWB&show_border=true&link_opens_in_new_window=true">
+</iframe>
+                        </div>
+                        <div class="col-md-4">
+                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=ss_til&ad_type=product_link&tracking_id=game0f63-20&marketplace=amazon&region=US&placement=1515040003&asins=1515040003&linkId=WNZQS5CBND3X3ZWL&show_border=true&link_opens_in_new_window=true">
+                        </div>
+                        <div class="col-md-4">
+                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=ss_til&ad_type=product_link&tracking_id=game0f63-20&marketplace=amazon&region=US&placement=0990582906&asins=0990582906&linkId=WYWY2OWMBPML25VR&show_border=true&link_opens_in_new_window=true">
+                        </div>
+                    </div>
                 </div>
             
             </div>
