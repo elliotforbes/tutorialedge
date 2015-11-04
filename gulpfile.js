@@ -27,7 +27,7 @@ elixir(function(mix) {
     mix.scripts([
         'jquery.min.js',
         'bootstrap.min.js',
-        'prismnew.js'
+        'prism.js'
     ]);
     
 });
