@@ -24,5 +24,11 @@ elixir(function(mix) {
         'lato.css'
     ]);
     
+    mix.scripts([
+        'jquery.min.js',
+        'bootstrap.min.js',
+        'prismnew.js'
+    ]);
+    
 });
 
