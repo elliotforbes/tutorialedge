@@ -115,11 +115,11 @@
                     <ul>
                         <li><a href="/category/python">Python</a>
                         </li>
-                        <li><a href="/category/laravel">Laravel 5</a>
+                        <li><a href="/category/laravel-5">Laravel 5</a>
                         </li>
                         <li><a href="/category/game-development">Game Development</a>
                         </li>
-                        <li><a href="/category/LWJGL">LWJGL 3</a>
+                        <li><a href="/category/lwjgl3">LWJGL 3</a>
                         </li>
                         <li><a href="/category/artificial-intelligence">Artificial Intelligence</a>
                         </li>
