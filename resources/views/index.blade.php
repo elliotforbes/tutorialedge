@@ -150,7 +150,7 @@ In-depth Game Programming Tutorials and Courses
             </div>
             <div class="col-lg-4">
                 <div class="red-circle-bg">
-                    157
+                    228
                 </div>
                 <h2>YouTube Subscribers</h2>
             </div>
