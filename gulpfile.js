@@ -14,4 +14,15 @@ var elixir = require('laravel-elixir');
 elixir(function(mix) {
     mix.less('app.less');
     mix.less('admin-new.less'); 
+    
+    mix.styles([
+        'font-awesome.min.css',
+        'bootstrap.min.css',
+        'prism.css',
+        'front-end.css',
+        'menu.css',
+        'lato.css'
+    ]);
+    
 });
+

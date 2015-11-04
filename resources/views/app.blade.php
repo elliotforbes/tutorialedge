@@ -8,11 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="https://plus.google.com/b/115194233692529836662">
     <meta property="og:site_name" content="TutorialEdge.net" />
-    <link rel="stylesheet" href="{{ asset('/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/all.css') }}">
+<!--
     <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=4156') }}">
     <link rel="stylesheet" href="{{ asset('/css/menu.css?v=1995') }}">
+-->
     <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
     <link href="{{ asset('/css/lato.css') }}" rel='stylesheet' type='text/css'>
 </head>
