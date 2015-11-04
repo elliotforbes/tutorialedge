@@ -8,26 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="https://plus.google.com/b/115194233692529836662">
     <meta property="og:site_name" content="TutorialEdge.net" />
-
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="{{ asset('/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=4156') }}">
     <link rel="stylesheet" href="{{ asset('/css/menu.css?v=1995') }}">
-    <!--        <link rel="stylesheet" href="{{ asset('/css/top-menu.css?v=23') }}">-->
     <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href="{{ asset('/css/lato.css') }}" rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556ed8694fee5529" async="async"></script>
-
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -166,13 +156,9 @@
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!--
-     Finally, to actually run the highlighter, you need to include this JS on your page 
-    <script src="{{ asset('/js/horizontalMenu.js') }}"></script>
--->
+    <script src="{{ asset('/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+
     <script src="{{ asset('/js/prismnew.js') }}"></script>
     <script>
         $(function () {
