@@ -897,7 +897,7 @@ pre{
     margin-top: 0px;
     width: 100%;
     min-height: 400px;
-    background: url("https://laracasts.com/images/hero.jpg");
+    background: url("../images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -914,7 +914,7 @@ pre{
     margin-top: 0px;
     width: 100%;
     min-height: 400px;
-    background: url("https://laracasts.com/images/hero.jpg");
+    background: url("../images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
