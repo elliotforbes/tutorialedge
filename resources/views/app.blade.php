@@ -152,6 +152,7 @@
     </div>
 
     <script src="{{ asset('/js/all.js') }}"></script>
+    
     <script>
         $(function () {
             cbpHorizontalMenu.init();
