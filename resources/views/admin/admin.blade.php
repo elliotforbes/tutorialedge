@@ -320,22 +320,22 @@
                                 <li>
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Articles</span></a>
                                     <ul>
+                                       <li>
+                                           <a href="/admin/articles">All Articles</a>
+                                       </li>
                                         <li>
-                                            <a href="/admin">Create New</a>
-                                        </li>
-                                        <li>
-                                            <a href="/admin">Edit</a>
+                                            <a href="/admin/articles/create">Create New</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Categories</span></a>
                                     <ul>
+                                       <li>
+                                           <a href="/admin/categories">All Categories</a>
+                                       </li>
                                         <li>
                                             <a href="/admin">Create New</a>
-                                        </li>
-                                        <li>
-                                            <a href="/admin">Edit</a>
                                         </li>
                                     </ul>
                                 </li>

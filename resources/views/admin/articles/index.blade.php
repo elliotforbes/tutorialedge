@@ -1,8 +1,37 @@
 @extends('admin.admin')
 
 @section('content')
+  
+  <!-- Page Header -->
+<div class="content bg-image overflow-hidden" style="background-image: url('../img/photos/photo3@2x.jpg');">
+    <div class="push-50-t push-15">
+        <h1 class="h2 text-white animated zoomIn">All Posts</h1>
+    </div>
+</div>
+   <!-- Stats -->
+<div class="content bg-white border-b">
+    <div class="row items-push text-uppercase">
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">Articles</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> This Week</small></div>
+            <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">1</a>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">Comments</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> This Month</small></div>
+            <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">N/A</a>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">Articles</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> All Time</small></div>
+            <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">48</a>
+        </div>
+    </div>
+</div>
+<!-- END Stats -->
+
+
 <div class="container">
-     <h2>All Articles</h2> 
      <div class="info-box"> 
          <a href="/admin/articles/create"><button class="btn btn-default btn-new">New Article</button></a>
          
