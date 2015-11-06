@@ -2,6 +2,24 @@
 
 
 @section('content')
+<!-- Page Header -->
+<div class="content bg-gray-lighter">
+    <div class="row items-push">
+        <div class="col-sm-8">
+            <h1 class="page-heading">
+                Update Post <small></small>
+            </h1>
+        </div>
+        <div class="col-sm-4 text-right hidden-xs">
+            <ol class="breadcrumb push-10-t">
+                <li>Articles</li>
+                <li><a class="link-effect" href="/admin/articles/create">Create</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
 <div class="content content-narrow">
     <div class="block">
         <div class="block-header">
