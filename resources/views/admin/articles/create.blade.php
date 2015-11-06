@@ -34,28 +34,37 @@
                                     <button type="button" data-toggle="block-option" data-action="content_toggle"></button>
                                 </li>
                             </ul>
-                            <h3 class="block-title">Multiple Columns</h3>
+                            <h3 class="block-title"></h3>
                         </div>
                         <div class="block-content">
-                            <form class="form-horizontal push-10-t push-10" action="base_forms_premade.html" method="post" onsubmit="return false;">
+                            {!! Form::open(array('route' => 'admin.articles.store', 'class' => 'form-horizontal push-10-t push-10', 'files'=>true, 'novalidate' => 'novalidate')) !!}
                                 <div class="row">
                                     <div class="col-sm-7">
                                         <div class="form-group">
                                             <div class="col-xs-6">
-                                                <label for="mega-firstname">Firstname</label>
-                                                <input class="form-control input-lg" type="text" id="mega-firstname" name="mega-firstname" placeholder="Enter your firstname..">
+                                                <label for="mega-firstname">Post Title</label>
+                                                {!! Form::text('title', null,
+                                                    array('required', 
+                                                        'class'=>'form-control',
+                                                        'placeholder'=>'Post Title')) !!}
                                             </div>
                                             <div class="col-xs-6">
-                                                <label for="mega-lastname">Lastname</label>
-                                                <input class="form-control input-lg" type="text" id="mega-lastname" name="mega-lastname" placeholder="Enter your lastname..">
+                                                <label for="mega-lastname">Excerpt</label>
+                                                {!! Form::text('excerpt', null,
+                                                    array('required',
+                                                        'class'=>'form-control',
+                                                        'placeholder'=>'Post Excerpt')) !!}
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="form-group">
                                             <div class="col-xs-12">
-                                                <label for="mega-lastname">Username</label>
-                                                <input class="form-control input-lg" type="text" id="mega-username" name="mega-username" placeholder="Enter your username..">
+                                                <label for="mega-lastname">Image URL</label>
+                                                {!! Form::text('image_url', null,
+                                                    array('required',
+                                                        'class'=>'form-control',
+                                                        'placeholder'=>'Post_slug')) !!}
                                             </div>
                                         </div>
                                     </div>
@@ -64,16 +73,23 @@
                                     <div class="col-sm-7">
                                         <div class="form-group">
                                             <div class="col-xs-12">
-                                                <label for="mega-bio">Bio</label>
-                                                <textarea class="form-control input-lg" id="mega-bio" name="mega-bio" rows="22" placeholder="Enter a few details about yourself.."></textarea>
+                                                <label for="mega-bio">Post Body</label>
+                                                {!! Form::textarea('body', null,
+                                                    array('required',
+                                                        'class'=>'form-control input-lg',
+                                                        'placeholder'=>'Article Body')) !!}
+<!--                                                <textarea class="form-control input-lg" id="mega-bio" name="mega-bio" rows="22" placeholder="Enter a few details about yourself.."></textarea>-->
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="form-group">
                                             <div class="col-xs-12">
-                                                <label for="mega-city">Where do you live?</label>
-                                                <input class="form-control input-lg" type="text" id="mega-city" name="mega-city" placeholder="Enter your location..">
+                                                <label for="mega-city">Post Slug</label>
+                                                {!! Form::text('slug', null,
+                                                    array('required',
+                                                        'class'=>'form-control',
+                                                        'placeholder'=>'Post_slug')) !!}
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -92,29 +108,22 @@
                                         </div>
                                         <div class="form-group">
                                             <div class="col-xs-6">
-                                                <label for="mega-age">Age</label>
-                                                <input class="form-control input-lg" type="text" id="mega-age" name="mega-age" placeholder="Enter your age..">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-xs-12">Gender</label>
-                                            <div class="col-xs-12">
-                                                <label class="css-input css-radio css-radio-warning push-10-r">
-                                                    <input type="radio" name="mega-gender-group"><span></span> Female
-                                                </label>
-                                                <label class="css-input css-radio css-radio-warning">
-                                                    <input type="radio" name="mega-gender-group"><span></span> Male
-                                                </label>
+                                                <label for="mega-age">Category ID</label>
+                                                {!! Form::text('cat_id', null,
+                                                    array('required',
+                                                        'class'=>'form-control',
+                                                        'placeholder'=>'cat_id')) !!}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-xs-12">
-                                        <button class="btn btn-warning" type="submit"><i class="fa fa-check push-5-r"></i> Complete Profile</button>
+                                        {!! Form::submit('Submit',
+                                            array('class'=>'btn btn-primary')) !!}
                                     </div>
                                 </div>
-                            </form>
+                            {!! Form::close() !!}
                         </div>
                     </div>
                     </div>
@@ -157,7 +166,7 @@
                     array('class'=>'btn btn-primary')) !!}
                             
 
-{!! Form::close() !!}
+
 
 @stop
 
