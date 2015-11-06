@@ -22,9 +22,6 @@
 
 <div class="content content-narrow">
     <div class="block">
-        <div class="block-header">
-            <h2>Update Post</h2>
-        </div>
         <div class="block-content">
             {!! Form::model($article, ['url' => 'admin/articles/' . $article->slug, 'method' => 'PATCH', 'files'=>true, 'novalidate' => 'novalidate']) !!}
                 <div class="row">
