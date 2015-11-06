@@ -54,7 +54,6 @@
 
                     <div class="col-lg-4">
                         <div class="info-box">
-                            <h2>Publishing Options</h2>
                             <div class="form-group">
                                 {!! Form::label('Post Slug') !!}
                                 {!! Form::text('slug', null,
