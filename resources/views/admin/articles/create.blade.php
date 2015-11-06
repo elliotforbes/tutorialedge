@@ -41,14 +41,14 @@
                                 <div class="row">
                                     <div class="col-sm-7">
                                         <div class="form-group">
-                                            <div class="col-xs-6">
+                                            <div class="col-xs-12">
                                                 <label for="mega-firstname">Post Title</label>
                                                 {!! Form::text('title', null,
                                                     array('required', 
                                                         'class'=>'form-control',
                                                         'placeholder'=>'Post Title')) !!}
                                             </div>
-                                            <div class="col-xs-6">
+                                            <div class="col-xs-12">
                                                 <label for="mega-lastname">Excerpt</label>
                                                 {!! Form::text('excerpt', null,
                                                     array('required',
@@ -90,20 +90,6 @@
                                                     array('required',
                                                         'class'=>'form-control',
                                                         'placeholder'=>'Post_slug')) !!}
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-xs-12">
-                                                <label for="mega-skills">Skills</label>
-                                                <select class="form-control" id="mega-skills" name="mega-skills" size="7" multiple>
-                                                    <option value="1">HTML</option>
-                                                    <option value="2">CSS</option>
-                                                    <option value="3">JavaScript</option>
-                                                    <option value="4">PHP</option>
-                                                    <option value="5">Ruby</option>
-                                                    <option value="6">Photoshop</option>
-                                                    <option value="7">Illustrator</option>
-                                                </select>
                                             </div>
                                         </div>
                                         <div class="form-group">

@@ -1,7 +1,7 @@
 @extends('admin.admin')
 
 @section('content')
-
+<div class="container">
      <h2>All Articles</h2> 
      <div class="info-box"> 
          <a href="/admin/articles/create"><button class="btn btn-default btn-new">New Article</button></a>
@@ -42,7 +42,7 @@
          
          <div class="pagination"> <?php echo $articles->render(); ?> </div>
      </div>
-     
+</div>
 <!--Adds confirmation popup to delete buttons so that accidental deletion doesn't take place-->
 <script>
     function ConfirmDelete()
