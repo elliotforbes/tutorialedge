@@ -7,7 +7,7 @@
     <div class="row items-push">
         <div class="col-sm-8">
             <h1 class="page-heading">
-                Update Post <small></small>
+                Update Post <small>{{ $article->title }}</small>
             </h1>
         </div>
         <div class="col-sm-4 text-right hidden-xs">
@@ -27,7 +27,6 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="info-box">
-                            <h2>Update: {{ $article->title }}</h2>
                              <div class="form-group">
                                     {!! Form::label('Post Title') !!}
                                     {!! Form::text('title', null,
