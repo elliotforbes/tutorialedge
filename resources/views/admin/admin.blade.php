@@ -70,112 +70,6 @@
 
                     <!-- Side Content -->
                     <div class="side-content remove-padding-t">
-                        <!-- Notifications -->
-                        <div class="block pull-r-l">
-                            <div class="block-header bg-gray-lighter">
-                                <ul class="block-options">
-                                    <li>
-                                        <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
-                                    </li>
-                                    <li>
-                                        <button type="button" data-toggle="block-option" data-action="content_toggle"></button>
-                                    </li>
-                                </ul>
-                                <h3 class="block-title">Recent Activity</h3>
-                            </div>
-                            <div class="block-content">
-                                <!-- Activity List -->
-                                <ul class="list list-activity">
-                                    <li>
-                                        <i class="si si-wallet text-success"></i>
-                                        <div class="font-w600">New sale ($15)</div>
-                                        <div><a href="javascript:void(0)">Admin Template</a></div>
-                                        <div><small class="text-muted">3 min ago</small></div>
-                                    </li>
-                                    <li>
-                                        <i class="si si-pencil text-info"></i>
-                                        <div class="font-w600">You edited the file</div>
-                                        <div><a href="javascript:void(0)"><i class="fa fa-file-text-o"></i> Documentation.doc</a></div>
-                                        <div><small class="text-muted">15 min ago</small></div>
-                                    </li>
-                                    <li>
-                                        <i class="si si-close text-danger"></i>
-                                        <div class="font-w600">Project deleted</div>
-                                        <div><a href="javascript:void(0)">Line Icon Set</a></div>
-                                        <div><small class="text-muted">4 hours ago</small></div>
-                                    </li>
-                                    <li>
-                                        <i class="si si-wrench text-warning"></i>
-                                        <div class="font-w600">Core v2.5 is available</div>
-                                        <div><a href="javascript:void(0)">Update now</a></div>
-                                        <div><small class="text-muted">6 hours ago</small></div>
-                                    </li>
-                                </ul>
-                                <div class="text-center">
-                                    <small><a href="javascript:void(0)">Load More..</a></small>
-                                </div>
-                                <!-- END Activity List -->
-                            </div>
-                        </div>
-                        <!-- END Notifications -->
-
-                        <!-- Online Friends -->
-                        <div class="block pull-r-l">
-                            <div class="block-header bg-gray-lighter">
-                                <ul class="block-options">
-                                    <li>
-                                        <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
-                                    </li>
-                                    <li>
-                                        <button type="button" data-toggle="block-option" data-action="content_toggle"></button>
-                                    </li>
-                                </ul>
-                                <h3 class="block-title">Online Friends</h3>
-                            </div>
-                            <div class="block-content block-content-full">
-                                <!-- Users Navigation -->
-                                <ul class="nav-users">
-                                    <li>
-                                        <a href="base_pages_profile.html">
-                                            <img class="img-avatar" src="assets/img/avatars/avatar1.jpg" alt="">
-                                            <i class="fa fa-circle text-success"></i> Helen Silva
-                                            <div class="font-w400 text-muted"><small>Copywriter</small></div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="base_pages_profile.html">
-                                            <img class="img-avatar" src="assets/img/avatars/avatar13.jpg" alt="">
-                                            <i class="fa fa-circle text-success"></i> Eugene Burke
-                                            <div class="font-w400 text-muted"><small>Web Developer</small></div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="base_pages_profile.html">
-                                            <img class="img-avatar" src="assets/img/avatars/avatar4.jpg" alt="">
-                                            <i class="fa fa-circle text-success"></i> Amy Hunter
-                                            <div class="font-w400 text-muted"><small>Web Designer</small></div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="base_pages_profile.html">
-                                            <img class="img-avatar" src="assets/img/avatars/avatar7.jpg" alt="">
-                                            <i class="fa fa-circle text-warning"></i> Amy Hunter
-                                            <div class="font-w400 text-muted"><small>Photographer</small></div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="base_pages_profile.html">
-                                            <img class="img-avatar" src="assets/img/avatars/avatar14.jpg" alt="">
-                                            <i class="fa fa-circle text-warning"></i> Craig Stone
-                                            <div class="font-w400 text-muted"><small>Graphic Designer</small></div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <!-- END Users Navigation -->
-                            </div>
-                        </div>
-                        <!-- END Online Friends -->
-
                         <!-- Quick Settings -->
                         <div class="block pull-r-l">
                             <div class="block-header bg-gray-lighter">
@@ -266,46 +160,9 @@
                             <button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-toggle="layout" data-action="sidebar_close">
                                 <i class="fa fa-times"></i>
                             </button>
-                            <!-- Themes functionality initialized in App() -> uiHandleTheme() -->
-                            <div class="btn-group pull-right">
-                                <button class="btn btn-link text-gray dropdown-toggle" data-toggle="dropdown" type="button">
-                                    <i class="si si-drop"></i>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-right font-s13 sidebar-mini-hide">
-                                    <li>
-                                        <a data-toggle="theme" data-theme="default" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/amethyst.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/city.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/flat.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/modern.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a data-toggle="theme" data-theme="assets/css/themes/smooth.min.css" tabindex="-1" href="javascript:void(0)">
-                                            <i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <a class="h5 text-white" href="index.html">
-                                <i class="fa fa-circle-o-notch text-primary"></i> <span class="h4 font-w600 sidebar-mini-hide">ne</span>
+                            
+                            <a class="h5 text-white" href="/">
+                                TutorialEdge
                             </a>
                         </div>
                         <!-- END Side Header -->
@@ -343,101 +200,11 @@
                                 
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">Settings</span></li>
                                 <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-layers"></i><span class="sidebar-mini-hide">Generic</span></a>
-                                    <ul>
-                                        <li>
-                                            <a href="base_pages_blank.html">Blank</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_profile.html">User Profile</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_search.html">Search Results</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_invoice.html">Invoice</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_faq.html">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_inbox.html">Inbox</a>
-                                        </li>
-                                        <li>
-                                            <a class="nav-submenu" data-toggle="nav-submenu" href="#">Forum</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="base_pages_forum_categories.html">Categories</a>
-                                                </li>
-                                                <li>
-                                                    <a href="base_pages_forum_topics.html">Topics</a>
-                                                </li>
-                                                <li>
-                                                    <a href="base_pages_forum_discussion.html">Discussion</a>
-                                                </li>
-                                                <li>
-                                                    <a href="base_pages_forum_new_topic.html">New Topic</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_login.html">Log In</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_login_v2.html">Log In v2</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_register.html">Register</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_register_v2.html">Register v2</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_lock.html">Lock Screen</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_lock_v2.html">Lock Screen v2</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_reminder.html">Password Reminder</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_reminder_v2.html">Password Reminder v2</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_coming_soon.html">Coming Soon</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_maintenance.html">Maintenance</a>
-                                        </li>
-                                    </ul>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin/settings"><i class="si si-layers"></i><span class="sidebar-mini-hide">Site Settings</span></a>
                                 </li>
+                                <li class="nav-main-heading"><span class="sidebar-mini-hide">Site</span></li>
                                 <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-fire"></i><span class="sidebar-mini-hide">Error Pages</span></a>
-                                    <ul>
-                                        <li>
-                                            <a href="base_pages_400.html">400</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_401.html">401</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_403.html">403</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_404.html">404</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_500.html">500</a>
-                                        </li>
-                                        <li>
-                                            <a href="base_pages_503.html">503</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-main-heading"><span class="sidebar-mini-hide">Apps</span></li>
-                                <li>
-                                    <a href="frontend_home.html"><i class="si si-rocket"></i><span class="sidebar-mini-hide">Frontend</span></a>
+                                    <a href="/"><i class="si si-rocket"></i><span class="sidebar-mini-hide">Frontpage</span></a>
                                 </li>
                             </ul>
                         </div>

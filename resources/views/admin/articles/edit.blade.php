@@ -7,7 +7,7 @@
     <div class="row items-push">
         <div class="col-sm-8">
             <h1 class="page-heading">
-                Update Post <small>{{ $article->title }}</small>
+                Update Post <small> {{ $article->title }}</small>
             </h1>
         </div>
         <div class="col-sm-4 text-right hidden-xs">
