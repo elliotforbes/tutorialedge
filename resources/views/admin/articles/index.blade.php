@@ -33,9 +33,10 @@
 
 <div class="content content-narrow">
     <div class="block">
-        <div class="info-box"> 
+       <div class="block-header">
              <a href="/admin/articles/create"><button class="btn btn-default btn-new">New Article</button></a>
-
+        </div>
+        <div class="block-content">
              <table class="table table-striped">
                  <thead>
                      <tr>
@@ -72,7 +73,7 @@
 
              <div class="pagination"> <?php echo $articles->render(); ?> </div>
          </div>
-     </div>
+    </div>
 </div>
 <!--Adds confirmation popup to delete buttons so that accidental deletion doesn't take place-->
 <script>
