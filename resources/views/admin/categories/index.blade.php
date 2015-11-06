@@ -1,11 +1,20 @@
 @extends('admin.admin')
 
 @section('content')
-
+  <!-- Page Header -->
+<div class="content bg-image overflow-hidden" style="background-image: url('../img/photos/photo3@2x.jpg');">
+    <div class="push-50-t push-15">
+        <h1 class="h2 text-white animated zoomIn">All Categories</h1>
+    </div>
+</div>
      
-     <h2>All Categories</h2>  
-     <div class="info-box">
-         <a href="/admin/categories/create"><button class="btn btn-default">New Category</button></a>
+<div class="content content-narrow">
+     <div class="block">
+         <div class="block-header">
+             
+         </div>
+         <div class="block-content">
+             <a href="/admin/categories/create"><button class="btn btn-default">New Category</button></a>
          
          <table class="table table-striped">
              <thead>
@@ -38,5 +47,7 @@
              @endforeach
              </tbody>
          </table>
+         </div>
      </div>
+</div>
 @endsection
