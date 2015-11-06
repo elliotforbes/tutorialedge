@@ -102,7 +102,7 @@ class FrontendController extends Controller {
         $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ' ORDER BY title;'));
         if(is_null($article))
         {
-            abort(404);   
+            return view('errors.404');  
         }
         if($article['post_status'] == "published")
         {
@@ -112,9 +112,14 @@ class FrontendController extends Controller {
         }
         else 
         {
-         abort(404);   
+            return view('errors.404');  
         }
-    }          
+    }      
+    
+    public function show404()
+    {
+        return view('errors.404');   
+    }
 
 	/**
 	 * Show the form for editing the specified resource.

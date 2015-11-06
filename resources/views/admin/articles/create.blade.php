@@ -3,83 +3,168 @@
 
 @section('content')
 
+
+<!-- Page Header -->
+<div class="content bg-gray-lighter">
+    <div class="row items-push">
+        <div class="col-sm-8">
+            <h1 class="page-heading">
+                Create Post <small></small>
+            </h1>
+        </div>
+        <div class="col-sm-4 text-right hidden-xs">
+            <ol class="breadcrumb push-10-t">
+                <li>Articles</li>
+                <li><a class="link-effect" href="/admin">Create</a></li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!-- Mega Form -->
+                   <div class="container">
+                    <h2 class="content-heading">Mega Form</h2>
+                    <div class="block block-bordered">
+                        <div class="block-header bg-gray-lighter">
+                            <ul class="block-options">
+                                <li>
+                                    <button type="button" data-toggle="block-option" data-action="refresh_toggle" data-action-mode="demo"><i class="si si-refresh"></i></button>
+                                </li>
+                                <li>
+                                    <button type="button" data-toggle="block-option" data-action="content_toggle"></button>
+                                </li>
+                            </ul>
+                            <h3 class="block-title">Multiple Columns</h3>
+                        </div>
+                        <div class="block-content">
+                            <form class="form-horizontal push-10-t push-10" action="base_forms_premade.html" method="post" onsubmit="return false;">
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <label for="mega-firstname">Firstname</label>
+                                                <input class="form-control input-lg" type="text" id="mega-firstname" name="mega-firstname" placeholder="Enter your firstname..">
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <label for="mega-lastname">Lastname</label>
+                                                <input class="form-control input-lg" type="text" id="mega-lastname" name="mega-lastname" placeholder="Enter your lastname..">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="mega-lastname">Username</label>
+                                                <input class="form-control input-lg" type="text" id="mega-username" name="mega-username" placeholder="Enter your username..">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="mega-bio">Bio</label>
+                                                <textarea class="form-control input-lg" id="mega-bio" name="mega-bio" rows="22" placeholder="Enter a few details about yourself.."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="mega-city">Where do you live?</label>
+                                                <input class="form-control input-lg" type="text" id="mega-city" name="mega-city" placeholder="Enter your location..">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label for="mega-skills">Skills</label>
+                                                <select class="form-control" id="mega-skills" name="mega-skills" size="7" multiple>
+                                                    <option value="1">HTML</option>
+                                                    <option value="2">CSS</option>
+                                                    <option value="3">JavaScript</option>
+                                                    <option value="4">PHP</option>
+                                                    <option value="5">Ruby</option>
+                                                    <option value="6">Photoshop</option>
+                                                    <option value="7">Illustrator</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <label for="mega-age">Age</label>
+                                                <input class="form-control input-lg" type="text" id="mega-age" name="mega-age" placeholder="Enter your age..">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-xs-12">Gender</label>
+                                            <div class="col-xs-12">
+                                                <label class="css-input css-radio css-radio-warning push-10-r">
+                                                    <input type="radio" name="mega-gender-group"><span></span> Female
+                                                </label>
+                                                <label class="css-input css-radio css-radio-warning">
+                                                    <input type="radio" name="mega-gender-group"><span></span> Male
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <button class="btn btn-warning" type="submit"><i class="fa fa-check push-5-r"></i> Complete Profile</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- END Mega Form -->
+
+
 {!! Form::open(array('route' => 'admin.articles.store', 'class' => 'form', 'files'=>true, 'novalidate' => 'novalidate')) !!}
     
-    <div class="row">
-        <div class="col-lg-8">
-           <div class="info-box">
-            <h2>Write a new Article</h2>
-                <div class="form-group">
-                   <h2>Post Title</h2>
+
                     {!! Form::text('title', null,
                         array('required', 
                             'class'=>'form-control',
                             'placeholder'=>'Post Title')) !!}
-                </div>
-                <div class="form-group">
-                   <h2>Excerpt</h2>
                     {!! Form::text('excerpt', null,
                         array('required',
                             'class'=>'form-control',
                             'placeholder'=>'Post Excerpt')) !!}
-                </div>
-                <div class="form-group">
-                   <h2>Article Body</h2>
                     {!! Form::textarea('body', null,
                         array('required',
                             'class'=>'form-control',
                             'placeholder'=>'Article Body')) !!}
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-           <div class="info-box">
-            <h2>Publishing Options</h2>
-            <div class="form-group">
                 {!! Form::label('Post Slug') !!}
                 {!! Form::text('slug', null,
                     array('required',
                         'class'=>'form-control',
                         'placeholder'=>'Post_slug')) !!}
-            </div>
-            <div class="form-group">
                 {!! Form::label('Category ID') !!}
                 {!! Form::text('cat_id', null,
                     array('required',
                         'class'=>'form-control',
                         'placeholder'=>'cat_id')) !!}
-            </div>
-            <div class="form-group">
                 {!! Form::label('Image URL') !!}
                 {!! Form::text('image_url', null,
                     array('required',
                         'class'=>'form-control',
                         'placeholder'=>'Post_slug')) !!}
-            </div>
-            <div class="form-group">
                 {!! Form::label('Post Image') !!}
                 {!! Form::file('image', null) !!}
-            </div>
-            <div class="form-group">
                 {!! Form::submit('Submit',
                     array('class'=>'btn btn-primary')) !!}
-            </div>
-            </div>
-        </div>
-        
-        <div class="clear"></div>
-        <div class="col-lg-12">
-            <div class="info-box">
-                <h2>Image Uploader</h2>
-                <form action="/file-upload" class="dropzone">
-                  <div class="fallback">
-                    <input name="file" type="file" multiple />
-                  </div>
-                </form>
-            </div>
-        </div>
-        
-    </div>
+                            
+
 {!! Form::close() !!}
 
 @stop
+
+
+@section('footerlinks')
+
+<!-- Page JS Plugins -->
+<script src="{{ asset('/js/plugins/ckeditor/ckeditor.js') }}"></script>
+
+@endsection

@@ -1,33 +1,43 @@
 @extends('admin.admin')
 
-@section('content')
-     <h2>Admin Dashboard</h2>
 
-     <div class="row">
-        <div class="col-lg-6">
-            <div class="info-box">
-                <h2>Traffic Stats</h2>
-                <p>traffic stats go here.</p>
-            </div>
+@section('stats')
+<!-- Page Header -->
+<div class="content bg-image overflow-hidden" style="background-image: url('../img/photos/photo3@2x.jpg');">
+    <div class="push-50-t push-15">
+        <h1 class="h2 text-white animated zoomIn">Dashboard</h1>
+        <h2 class="h5 text-white-op animated zoomIn">Welcome Administrator</h2>
+    </div>
+</div>
+ 
+   <!-- Stats -->
+<div class="content bg-white border-b">
+    <div class="row items-push text-uppercase">
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">Product Sales</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> Today</small></div>
+            <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">300</a>
         </div>
-        <div class="col-lg-6">
-            <div class="info-box">
-                <h2>Recent Comments</h2>
-            </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">Product Sales</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> This Month</small></div>
+            <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">8,790</a>
         </div>
-
-        <div class="clear"></div>
-
-        <div class="col-lg-4">
-            <div class="info-box">
-                <h2>Subscriber Count : {{ $userCount }}</h2>
-            </div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">Total Earnings</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> All Time</small></div>
+            <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">$ 93,880</a>
         </div>
-        <div class="col-lg-4">
-            <div class="info-box"></div>
-        </div>
-        <div class="col-lg-4">
-            <div class="info-box"></div>
+        <div class="col-xs-6 col-sm-3">
+            <div class="font-w700 text-gray-darker animated fadeIn">Average Sale</div>
+            <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> All Time</small></div>
+            <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">$ 270</a>
         </div>
     </div>
+</div>
+<!-- END Stats -->
+@endsection
+
+@section('content')
+
 @endsection
