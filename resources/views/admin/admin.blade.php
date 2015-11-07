@@ -161,7 +161,7 @@
                                 <i class="fa fa-times"></i>
                             </button>
                             
-                            <a class="h5 text-white" href="/">
+                            <a class="h5 text-white" href="{{ url('/') }}">
                                 TutorialEdge
                             </a>
                         </div>
@@ -171,17 +171,17 @@
                         <div class="side-content">
                             <ul class="nav-main">
                                 <li>
-                                    <a class="active" href="/admin"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                                    <a class="active" href="{{ url('/admin') }}"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">General</span></li>
                                 <li>
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Articles</span></a>
                                     <ul>
                                        <li>
-                                           <a href="/admin/articles">All Articles</a>
+                                           <a href="{{ url('/admin/articles') }}">All Articles</a>
                                        </li>
                                         <li>
-                                            <a href="/admin/articles/create">Create New</a>
+                                            <a href="{{ url('/admin/articles/create') }}">Create New</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -189,10 +189,10 @@
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Categories</span></a>
                                     <ul>
                                        <li>
-                                           <a href="/admin/categories">All Categories</a>
+                                           <a href="{{ url('/admin/categories') }}">All Categories</a>
                                        </li>
                                         <li>
-                                            <a href="/admin">Create New</a>
+                                            <a href="{{ url('/admin') }}">Create New</a>
                                         </li>
                                     </ul>
                                 </li>

@@ -28,22 +28,22 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Home</a>
+                    <li class="active"><a href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Tutorials <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/category/lwjgl3">LWJGL 3 Tutorials</a>
+                            <li><a href="{{ url('/category/lwjgl3') }}">LWJGL 3 Tutorials</a>
                             </li>
-                            <li><a href="/category/laravel-5">Laravel 5 Tutorials</a>
+                            <li><a href="{{ url('/category/laravel-5') }}">Laravel 5 Tutorials</a>
                             </li>
-                            <li><a href="/category/python">Python Tutorials</a>
+                            <li><a href="{{ url('/category/python') }}">Python Tutorials</a>
                             </li>
-                            <li><a href="/category/programming_design_patterns">Programming Design Concepts</a>
+                            <li><a href="{{ url('/category/programming_design_patterns') }}">Programming Design Concepts</a>
                             </li>
-                            <li><a href="/category/artificial-intelligence">Artificial Intelligence</a>
+                            <li><a href="{{ url('/category/artificial-intelligence') }}">Artificial Intelligence</a>
                             </li>
-                            <li><a href="/category/webdev">Web Development Tutorials</a></li>
+                            <li><a href="{{ url('/category/webdev') }}">Web Development Tutorials</a></li>
                         </ul>
                     </li>
                     <li><a href="/courses">Courses</a>
@@ -55,7 +55,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{{ Auth::user()->name }} <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="/profile/{{ Auth::user()->name }}">Profile</a></li>
+                            <li><a href="<?php echo url(); ?>/profile/{{ Auth::user()->name }}">Profile</a></li>
                             <li><a href="{{ url('/auth/logout') }}">Logout</a>
                             </li>
                         </ul>
