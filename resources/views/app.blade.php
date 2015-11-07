@@ -151,8 +151,10 @@
         </div>
     </div>
     
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="{{ asset('/js/all.js') }}"></script>
+     <script src="{{ asset('/js/jquery.min.js') }}"></script>
+     <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+
+     <script src="{{ asset('/js/prismnew.js') }}"></script>
     
     <script>
         $(function () {
