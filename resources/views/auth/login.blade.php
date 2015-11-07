@@ -53,8 +53,9 @@
                         <div class="push-30-t push-50 animated fadeIn">
                             <!-- Login Title -->
                             <div class="text-center">
+                               <h3>TutorialEdge.net</h3>
                                 <i class="fa fa-2x fa-circle-o-notch text-primary"></i>
-                                <p class="text-muted push-15-t">A perfect match for your project</p>
+                                <p class="text-muted push-15-t">The home of high quality programming tutorials</p>
                             </div>
                             <!-- END Login Title -->
 
