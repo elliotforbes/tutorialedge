@@ -9,6 +9,7 @@
     <link rel="author" href="https://plus.google.com/b/115194233692529836662">
     <meta property="og:site_name" content="TutorialEdge.net" />
     <link rel="stylesheet" href="{{ asset('/css/all.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/front-end.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
 </head>
 
@@ -22,13 +23,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{ asset('/images/new-logo.png') }}" alt="Home of high quality programming tutorials">
                 </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="{{ url('/') }}">Home</a>
+                    <li class="active"><a href="{{ url('/') }}/">Home</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Tutorials <span class="caret"></span></a>

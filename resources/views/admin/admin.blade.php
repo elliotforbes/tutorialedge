@@ -44,6 +44,7 @@
         <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
         <link rel="stylesheet" id="css-main" href="{{ asset('/css/oneui.css') }}">
 
+       <script src="{{ asset('/js/angular.min.js') }}"></script>
         <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
         <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
         <!-- END Stylesheets -->
@@ -192,10 +193,22 @@
                                            <a href="{{ url('/admin/categories') }}">All Categories</a>
                                        </li>
                                         <li>
-                                            <a href="{{ url('/admin') }}">Create New</a>
+                                            <a href="{{ url('/admin/categories/create') }}">Create New</a>
                                         </li>
                                     </ul>
                                 </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Media</span></a>
+                                    <ul>
+                                       <li>
+                                           <a href="{{ url('/admin/media') }}">All Media</a>
+                                       </li>
+                                        <li>
+                                            <a href="{{ url('/admin') }}">Upload Media</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
 
                                 
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">Settings</span></li>
