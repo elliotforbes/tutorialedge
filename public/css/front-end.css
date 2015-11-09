@@ -1148,8 +1148,10 @@ pre{
     color: #307699;   
     margin-right: 10px;
 }
-.course-image{
+.course-image img{
     margin-bottom: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .tab-content{
