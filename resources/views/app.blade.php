@@ -24,7 +24,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('/images/new-logo.png') }}" alt="Home of high quality programming tutorials">
+                    <img src="{{ asset('/uploads/new-logo.png') }}" alt="Home of high quality programming tutorials">
                 </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">

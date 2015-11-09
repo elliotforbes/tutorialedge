@@ -81,7 +81,7 @@ In-depth Game Programming Tutorials and Courses
         <div class="row courses">
             <div class="col-md-4">
                 <div class="course-box-cont">
-               <a href="{{ url('/category/angularjs') }}">
+               <a href="{{ url('/course/angularjs') }}">
                 <div class="course-box">
                      <img src="{{ url('/uploads/articles/angularlogo.png') }}" alt="">
                      <h3>AngularJS</h3>    
