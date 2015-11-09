@@ -1150,7 +1150,7 @@ pre{
 }
 .course-image img{
     margin-bottom: 20px;
-    width: 100%;
+    width: 100% !important;
     height: auto;
 }
 
