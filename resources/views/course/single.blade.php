@@ -7,7 +7,8 @@
     <div class="course-content">
        <div class="row">
            <div class="col-lg-8">
-                <h2>{{ $course->title }}<small><br/>{{ $course->tagline }}</small></h2>
+               <h2>{{ $course->title }}</h2>
+                <p>{{ $course->tagline }}</p>
                 <div class="course-ratings">
                     <p>
                         <span class="stars">
@@ -17,7 +18,7 @@
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                         </span>
-                         58 ratings
+                        : Login to Rate!
                     </p>
                 </div>
                 <div class="course-image">
