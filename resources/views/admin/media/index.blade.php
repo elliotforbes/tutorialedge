@@ -12,7 +12,7 @@
                                @foreach ($images as $image)
                                 <div class="col-md-3 animated fadeIn">
                                     <div class="img-container" >
-                                        <img class="img-responsive" src="{{ $image->src }}" alt="">
+                                        <img class="img-responsive" src="{{ $image }}" alt="">
                                         <div class="img-options">
                                             <div class="img-options-content">
                                                 <h3 class="font-w400 text-white push-5">Image Caption</h3>
