@@ -44,7 +44,6 @@
         <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
         <link rel="stylesheet" id="css-main" href="{{ asset('/css/oneui.css') }}">
 
-       <script src="{{ asset('/js/angular.min.js') }}"></script>
         <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
         <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
         <!-- END Stylesheets -->
@@ -176,7 +175,7 @@
                                 </li>
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">General</span></li>
                                 <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Articles</span></a>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">Articles</span></a>
                                     <ul>
                                        <li>
                                            <a href="{{ url('/admin/articles') }}">All Articles</a>
@@ -405,7 +404,7 @@
         @yield('footerlinks')
         
         <!-- Page JS Code -->
-        <script src="{{ asset('/js/pages/base_pages_dashboard.js') }}"></script>
+        <script src="{{ asset('/js/base_pages_dashboard.js') }}"></script>
         <script>
             $(function () {
                 // Init page helpers (Slick Slider plugin)
