@@ -77,6 +77,15 @@
                                         'placeholder'=>'cat_id')) !!}
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <label for="mega-age">Post Slug</label>
+                                {!! Form::text('slug', null,
+                                    array('required',
+                                        'class'=>'form-control',
+                                        'placeholder'=>'slug')) !!}
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -88,7 +97,6 @@
                                     array('required',
                                         'class'=>'form-control input-lg',
                                         'placeholder'=>'Article Body',
-                                        'name'=>'ckeditor',
                                         'id'=>'js-ckeditor'
                                         )) !!}
                              </div>

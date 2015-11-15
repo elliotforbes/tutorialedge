@@ -28,7 +28,7 @@
                 <div class="post-content">
                     <div class="share-buttons">
                        <!-- Twitter -->
-                            <a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=@tutorialedge" target="_blank" class="share-btn twitter">
+                            <a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=tutorialedge" target="_blank" class="share-btn twitter">
                                 <i class="fa fa-twitter"></i>
                             </a>
 
