@@ -395,7 +395,9 @@ body{
 .courses{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
+
 
 .course-box{
     padding: 15px;
@@ -416,6 +418,7 @@ body{
      font-family: "Lato", "Helvetica", Arial, sans-serif;
     margin-top: 10px;
     font-weight: 200;
+    color: #294860;
 }
 
 /* END OF FEATURE BOX */
