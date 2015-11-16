@@ -9,7 +9,7 @@
     <link rel="author" href="https://plus.google.com/b/115194233692529836662">
     <meta property="og:site_name" content="TutorialEdge.net" />
     <link rel="stylesheet" href="{{ asset('/css/all.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=12343') }}">
+    <link rel="stylesheet" href="{{ asset('/css/front-end.css?v=234') }}">
     <link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
 </head>
 
