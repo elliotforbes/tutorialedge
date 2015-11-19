@@ -117,23 +117,31 @@ In-depth Game Programming Tutorials and Courses
     </div>
 </div>
 
+<div class="gray-bg">
 <div class="container">
     <div class="latest-posts">
       <h2>Popular Categories</h2>
         <div class="row"> 
-
+           
            @foreach ($categories as $category)
-            <div class="col-md-4 col-sm-6 col-sx-12">
-               <div class="cat-box">
-                    <img class="img-responsive image-responsive-centered" alt="{{ $category->slug }}" title="{{ $category->slug }}" src="/uploads/articles/{{ $category->image_url }}" />
-                    <h3><a href="{{ url('/category/') }}/{{ $category->slug }}">{{ $category->title }}</a></h3>
+            <!-- Story -->
+               <div class="story">
+                <div class="col-md-4">
+                    <a class="block block-link-hover2" href="{{ url('/') }}/{{ $category->slug }}">
+                        <img class="img-responsive" src="{{ url('/') }}/uploads/articles/{{ $category->image_url }}" alt="">
+                        <div class="block-content">
+                            <h4 class="cat-title">{{ $category->title }}</h4>
+                        </div>
+                    </a>
                 </div>
-            </div>
-             @endforeach
+                </div>
+           @endforeach
+
 
         </div>
     </div>
 </div>
+   </div>
     
     
 @endsection
