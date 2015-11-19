@@ -1305,6 +1305,7 @@ a.block {
   font-weight: normal;
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
+    padding: 20px;
 }
 a.block:hover {
   color: #646464;
