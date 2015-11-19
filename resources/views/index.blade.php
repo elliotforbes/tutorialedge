@@ -127,7 +127,7 @@ In-depth Game Programming Tutorials and Courses
             <!-- Story -->
                <div class="story">
                 <div class="col-md-4">
-                    <a class="block block-link-hover2" href="{{ url('/') }}/{{ $category->slug }}">
+                    <a class="block block-link-hover2" href="{{ url('/') }}/category/{{ $category->slug }}">
                         <img class="img-responsive" src="{{ url('/') }}/uploads/articles/{{ $category->image_url }}" alt="">
                         <div class="block-content">
                             <h4 class="cat-title">{{ $category->title }}</h4>
