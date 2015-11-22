@@ -27,6 +27,15 @@ class FrontendController extends Controller {
         return view('index', compact('categories', 'articles', 'artCount', 'userCount'));
 	}
     
+	public function newIndex()
+	{
+		$categories = Category::get();
+        $articles = Article::orderBy('id', 'DESC')->take(8)->get();
+        $artCount = Article::count();
+        $userCount = User::count();
+		return view('newindex', compact('categories', 'articles', 'artCount', 'userCount'));
+	}
+	
     public function single()
     {
         return view('static.proto');   
