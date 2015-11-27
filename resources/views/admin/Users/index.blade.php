@@ -1,8 +1,9 @@
 @extends('admin.admin')
 
 @section('content')
-
-     
+<div class="content content-narrow">
+    <div class="block">
+       <div class="block-header">
      <h2>All Users</h2>  
      <div class="info-box">    
          <table class="table table-striped">
@@ -23,5 +24,8 @@
              @endforeach
              </tbody>
          </table>
+     </div>
+     </div>
+     </div>
      </div>
 @endsection

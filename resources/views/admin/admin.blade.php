@@ -202,18 +202,29 @@
                                        <li>
                                            <a href="{{ url('/admin/media') }}">All Media</a>
                                        </li>
-                                        <li>
-                                            <a href="{{ url('/admin') }}">Upload Media</a>
-                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Users</span></a>
+                                    <ul>
+                                       <li>
+                                           <a href="{{ url('/admin/users') }}">All Users</a>
+                                       </li>
                                     </ul>
                                 </li>
 
 
                                 
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">Settings</span></li>
-                                <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin/settings"><i class="si si-layers"></i><span class="sidebar-mini-hide">Site Settings</span></a>
+                                 <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin/settings"><i class="si si-note"></i><span class="sidebar-mini-hide">Settings</span></a>
+                                    <ul>
+                                       <li>
+                                           <a href="{{ url('/admin/settings') }}">Site Settings</a>
+                                       </li>
+                                    </ul>
                                 </li>
+
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">Site</span></li>
                                 <li>
                                     <a href="/"><i class="si si-rocket"></i><span class="sidebar-mini-hide">Frontpage</span></a>
