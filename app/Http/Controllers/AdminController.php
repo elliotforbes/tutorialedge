@@ -11,6 +11,7 @@ use App\Page;
 use App\User;
 use App\Category;
 use Request;
+use Carbon\Carbon;
 
 class AdminController extends Controller {
 
@@ -23,8 +24,12 @@ class AdminController extends Controller {
 	{
         $user = \Auth::user();
         $userCount = User::count();
+        $today = Carbon::today();
+        $week = User::where('created_at', '>', $today->modify('-7 days'));
+        $weekCount = $week->count();
+        
         if($this->isAdmin())
-            return view('admin.index', compact('userCount'));
+            return view('admin.index', compact('userCount', 'weekCount'));
         else
             return redirect('');
     }

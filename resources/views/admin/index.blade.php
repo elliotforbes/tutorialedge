@@ -16,12 +16,12 @@
         <div class="col-xs-6 col-sm-4">
             <div class="font-w700 text-gray-darker animated fadeIn">New Users</div>
             <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> This Week</small></div>
-            <a class="h2 font-w300 text-primary animated flipInX" href="{{ url('/admin/users') }}">3</a>
+            <a class="h2 font-w300 text-primary animated flipInX" href="{{ url('/admin/users') }}">{{ $weekCount }}</a>
         </div>
         <div class="col-xs-6 col-sm-4">
             <div class="font-w700 text-gray-darker animated fadeIn">Total Users</div>
             <div class="text-muted animated fadeIn"><small><i class="si si-calendar"></i> All Time</small></div>
-            <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">133</a>
+            <a class="h2 font-w300 text-primary animated flipInX" href="base_comp_charts.html">{{ $userCount }}</a>
         </div>
         <div class="col-xs-6 col-sm-4">
             <div class="font-w700 text-gray-darker animated fadeIn">Total Hits</div>
