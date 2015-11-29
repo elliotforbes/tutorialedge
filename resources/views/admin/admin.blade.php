@@ -222,8 +222,12 @@
                                        <li>
                                            <a href="{{ url('/admin/settings') }}">Site Settings</a>
                                        </li>
+                                       <li>
+                                           <a href="{{ url('/admin/mail') }}">Mail Controller</a>
+                                       </li>
                                     </ul>
                                 </li>
+                                 
 
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">Site</span></li>
                                 <li>

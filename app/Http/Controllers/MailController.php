@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class SettingsController extends Controller {
+class MailController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -14,9 +14,25 @@ class SettingsController extends Controller {
 	 */
 	public function index()
 	{
-		return view('admin.settings.index');
+		return view('admin.mail.index');
 	}
 
+    /**
+	 * Sends mail to every user.
+	 */
+	public function send()
+	{
+		
+	}
+	
+	/**
+	 * Sends mail to every user.
+	 */
+	public function sendSingleMail()
+	{
+		
+	}
+	
 	/**
 	 * Show the form for creating a new resource.
 	 *

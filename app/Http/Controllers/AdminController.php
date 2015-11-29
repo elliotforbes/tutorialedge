@@ -12,6 +12,8 @@ use App\User;
 use App\Category;
 use Request;
 use Carbon\Carbon;
+use Mail;
+
 
 class AdminController extends Controller {
 
@@ -75,11 +77,33 @@ class AdminController extends Controller {
     public function users()
     {
         $users = User::get();
+        
+        
         if($this->isAdmin())
             return view('admin.users', compact('users'));
         else
             return redirect('');
     }
+    
+     /**
+     * Send an e-mail reminder to the user.
+     *
+     * @param  Request  $request
+     * @param  int  $id
+     * @return Response
+     */
+    public function sendEmail(Request $request, $id)
+    {
+        $user = User::findOrFail($id);
+
+        Mail::send('emails.authenticate', ['user' => $user], function ($m) use ($user) {
+            $m->from('elliot@tutorialedge.net', 'TutorialEdge.net');
+
+            $m->to($user->email, $user->name)->subject('Testing Route!');
+        });
+        
+    }
+
     
 	/**
 	 * Show the form for creating a new resource.

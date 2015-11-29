@@ -36,6 +36,7 @@ Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     Route::resource('videos', 'VideoController');
     Route::resource('media', 'MediaController');
     Route::resource('settings', 'SettingsController');
+    Route::resource('mail', 'MailController');
 });
 
 
