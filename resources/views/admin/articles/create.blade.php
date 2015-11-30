@@ -127,9 +127,5 @@
 <!-- Page JS Plugins -->
 <script src="{{ asset('/js/plugins/ckeditor/ckeditor.js') }}"></script>
 <script>
-    $(function () {
-        // Init page helpers (Summernote + CKEditor plugins)
-        App.initHelpers(['ckeditor']);
-    });
 </script>
 @endsection
