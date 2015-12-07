@@ -1,0 +1,158 @@
+body {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+::selection {
+  background-color: #46B6AC;
+  color: #fff; }
+
+.header, .header .navbar {
+  width: 100%;
+  background-color: #222222;
+  border-radius: 0; }
+  .header .navbar {
+    height: 60px;
+    padding-top: 10px; }
+  .header a, .header .navbar a {
+    color: white !important; }
+
+.featured-bar {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background: url("../images/hero.jpg") center/cover;
+  padding-top: 100px;
+  padding-bottom: 40px; }
+  .featured-bar h2 {
+    color: white;
+    font-size: 52px;
+    font-weight: 100; }
+  .featured-bar h4 {
+    margin-top: 60px;
+    line-height: 30px;
+    font-weight: 500;
+    color: white; }
+
+.price-tables {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  height: auto;
+  background-color: #FAFAFA; }
+  .price-tables h2 {
+    padding-bottom: 40px; }
+  .price-tables .pricing-cards {
+    padding: 20px; }
+    .price-tables .pricing-cards h2 {
+      float: left;
+      font-size: 20px;
+      padding-bottom: 30px; }
+    .price-tables .pricing-cards .monthly-price {
+      float: right;
+      color: #46B6AC;
+      font-weight: 100; }
+    .price-tables .pricing-cards li:before {
+      font-family: 'Material Icons';
+      color: #46B6AC;
+      margin: 0 5px 0 -15px; }
+
+.content, .post-content {
+  background-color: #FAFAFA;
+  width: 100%;
+  padding: 40px; }
+  .content .demo-card-wide.mdl-card, .post-content .demo-card-wide.mdl-card {
+    width: 100%;
+    margin-top: 40px; }
+    .content .demo-card-wide.mdl-card .mdl-card__title, .post-content .demo-card-wide.mdl-card .mdl-card__title {
+      color: #fff;
+      height: 176px;
+      background: #46B6AC; }
+    .content .demo-card-wide.mdl-card .mdl-card__menu, .post-content .demo-card-wide.mdl-card .mdl-card__menu {
+      color: #fff; }
+
+.post-content {
+  background-color: white;
+  word-wrap: break-word; }
+
+.latest-articles {
+  background-color: white;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 60px; }
+  .latest-articles h2 {
+    margin-bottom: 40px;
+    color: #545454; }
+  .latest-articles .demo-card-image.mdl-card {
+    width: 256px;
+    height: 256px;
+    background: #FF4081; }
+  .latest-articles .demo-card-image > .mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2); }
+  .latest-articles .demo-card-image__filename {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500; }
+  .latest-articles .demo-card-wide.mdl-card {
+    width: 100%;
+    margin-top: 40px; }
+    .latest-articles .demo-card-wide.mdl-card .mdl-card__title {
+      color: #fff;
+      height: 176px;
+      background: #FF4081; }
+    .latest-articles .demo-card-wide.mdl-card .mdl-card__menu {
+      color: #fff; }
+
+.about-us {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+.post {
+  background-color: white;
+  padding: 40px;
+  font-size: 28px !important; }
+  .post .post-header h2 {
+    font-size: 62px;
+    margin-bottom: 20px; }
+  .post .post-author {
+    float: left; }
+    .post .post-author p {
+      font-size: 18px !important; }
+    .post .post-author img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px; }
+  .post .post-info {
+    margin-bottom: 40px;
+    float: left; }
+  .post .post-content {
+    margin-top: 20px;
+    padding: 0;
+    margin: 0; }
+    .post .post-content p {
+      font-size: 18px !important;
+      line-height: 30px !important; }
+    .post .post-content li {
+      font-size: 18px !important; }
+  .post .post-info p {
+    margin: 0 !important;
+    padding: 0;
+    color: #b1b1b1; }
+  .post .post-share {
+    float: right; }
+
+.post-share .twitter {
+  background-color: #00BBF2 !important; }
+.post-share .facebook {
+  background-color: #4D70A8 !important; }
+
+.similar-posts {
+  background-color: #FAFAFA;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.clear {
+  clear: both; }
+
+/*# sourceMappingURL=site-style.css.map */
