@@ -12,87 +12,83 @@ In-depth Game Programming Tutorials and Courses
 
 
 @section('featured-top')
-
-<div class="top-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h1>Register Now for More High Quality Tutorials!</h1>
-            </div>
-            <div class="col-lg-6">
-					@if (count($errors) > 0)
-						<div class="alert alert-danger">
-							<strong>Whoops!</strong> There were some problems with your input.<br><br>
-							<ul>
-								@foreach ($errors->all() as $error)
-									<li>{{ $error }}</li>
-								@endforeach
-							</ul>
-						</div>
-					@endif
-
-					<form class="form-horizontal" role="form" method="POST" action="{{ url('/auth/register') }}">
-						<input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-						<div class="form-group">
-							<div class="col-md-8 col-md-offset-2">
-								<input type="text" class="form-control" placeholder="Name"  name="name" value="{{ old('name') }}">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-md-8 col-md-offset-2">
-								<input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-md-8 col-md-offset-2">
-								<input type="password" class="form-control" placeholder="Password" name="password">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-md-8 col-md-offset-2">
-								<input type="password" class="form-control" placeholder="Confirm Password" name="password_confirmation">
-							</div>
-						</div>
-
-						<div class="form-group">
-							<div class="col-md-4 col-md-offset-4">
-								<button type="submit" class="btn btn-primary btn-register">
-									Register
-								</button>
-							</div>
-						</div>
-					</form>
-            </div>
-        </div>
-    </div>
+<div class="stripe"></div>
+		
+<div class="featured-bar">
+    <h2>Learn: <b><span class="featured-text"></span></b></h2>
+    <h4>Our Goal is to help new developers land their dream jobs<br/> by teaching you some of the latest and greatest programming frameworks.</h4>
 </div>
-
 @endsection
 
-@section('content')
-<div class="container">
-    <div class="latest-posts">
-      <h2>Popular Categories</h2>
-        <div class="row"> 
 
-           @foreach ($categories as $category)
-            <div class="col-md-4 col-sm-6 col-sx-12">
-               <div class="course-box">
-                    <img class="img-responsive image-responsive-centered" alt="{{ $category->slug }}" title="{{ $category->slug }}" src="/uploads/articles/{{ $category->image_url }}" />
-                    <h3><a href="/category/{{ $category->slug }}">{{ $category->title }}</a></h3>
+@section('content')
+<div class="course-content content">
+    <div class="container">
+        <div class="row">
+            @foreach ($categories as $category)
+            <div class="col-md-4">
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">{{ $category->title }}</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        {{ $category->info }}
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ url('/category') }}/{{ $category->slug }}">
+                        Get Started
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button id="share1" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">share</i>
+                        </button>
+                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                        for="share1">
+                            <li class="mdl-menu__item">Facebook</li>
+                            <li class="mdl-menu__item">Twitter</li>
+                            <li disabled class="mdl-menu__item">Google+ </li>
+                            <li class="mdl-menu__item">Mail</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-             @endforeach
-
+            @endforeach
         </div>
     </div>
 </div>
-    
-    
+@endsection
+
+@section('latest-articles')
+<div class="latest-articles">
+    <div class="container">
+        <div class="row">
+            <h2>Latest Articles</h2>
+            @foreach($articles as $article)
+            <div class="col-lg-3">					
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">{{$article->title}}</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        {{$article->excerpt}}
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        Get Started
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                        <i class="material-icons">share</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
 @endsection
 
 @section('home-content')

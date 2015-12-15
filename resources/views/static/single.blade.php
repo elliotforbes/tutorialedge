@@ -9,201 +9,156 @@
 @endsection
 
 @section('content')
-   <div class="title-container">
-      <div class="contaienr">
-           <h1>{{ $article->title }}</h1>
-           <p class="author-bar"><img alt="" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/061/3bf/0bc92cc.jpg" srcset="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/061/3bf/0bc92cc.jpg" class="avatar avatar-32 photo" height="32" width="32"> 
-                       By Elliot Forbes  <span class="separator">•</span>   On {{ date("d M, Y",strtotime($article->published_at)) }} <span class="separator">•</span>   In {{ $category->title }}</p>
-           <div class="clear"></div>
-       </div>
-   </div>
-   
-    <div class="container">
-    <div class="post-cont">
-        <div class="row">
-            <div class="col-md-9">             
-                <div class="post-image">
-                   <img src="/uploads/articles/{{ $article->image_url }}" alt="{{ $article->excerpt }}">
-               </div>
-                <div class="post-content">
-                    <div class="share-buttons">
-                       <!-- Twitter -->
-                            <a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=@tutorialedge" target="_blank" class="share-btn twitter">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-
-                            <!-- Google Plus -->
-                            <a href="https://plus.google.com/share?url=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn google-plus">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-
-                            <!-- Facebook -->
-                            <a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn facebook">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-
-                            <!-- StumbleUpon (url, title) -->
-                            <a href="http://www.stumbleupon.com/submit?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn stumbleupon">
-                                <i class="fa fa-stumbleupon"></i>
-                            </a>
-
-                            <!-- Reddit (url, title) -->
-                            <a href="http://reddit.com/submit?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn reddit">
-                                <i class="fa fa-reddit"></i>
-                            </a>
-
-                            <!-- LinkedIn -->
-                            <a href="http://www.linkedin.com/shareArticle?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn linkedin">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-
-                            <!-- Email -->
-                            <a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                    </div>
-                    {!! $article->body !!}
-                    <br/>
-                    <h2>Share This Tutorial:</h2>
-                    <br/>
-                    <div class="share-buttons">
-                        <!-- Twitter -->
-                            <a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=@tutorialedge" target="_blank" class="share-btn twitter">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-
-                            <!-- Google Plus -->
-                            <a href="https://plus.google.com/share?url=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn google-plus">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-
-                            <!-- Facebook -->
-                            <a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn facebook">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-
-                            <!-- StumbleUpon (url, title) -->
-                            <a href="http://www.stumbleupon.com/submit?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn stumbleupon">
-                                <i class="fa fa-stumbleupon"></i>
-                            </a>
-
-                            <!-- Reddit (url, title) -->
-                            <a href="http://reddit.com/submit?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn reddit">
-                                <i class="fa fa-reddit"></i>
-                            </a>
-
-                            <!-- LinkedIn -->
-                            <a href="http://www.linkedin.com/shareArticle?url=http://tutorialedge.net/{{ $article->slug }}&title={{ $article->title }}" target="_blank" class="share-btn linkedin">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-
-                            <!-- Email -->
-                            <a href="mailto:?subject=<SUBJECT&body=<BODY>" target="_blank" class="share-btn email">
-                                <i class="fa fa-envelope"></i>
-                            </a>
-                    </div>
-                    <h2>Recommended Books:</h2>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=ss_til&ad_type=product_link&tracking_id=game0f63-20&marketplace=amazon&region=US&placement=0672337479&asins=0672337479&linkId=XJDG64PUUQF7IEWB&show_border=true&link_opens_in_new_window=true"></iframe>
+  <div class="post-content">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="post">
+						<div class="post-header">
+							<h2>{{$article->title}}</h2>
+							<div class="post-info">
+								<p>Author: Elliot Forbes</p>
+								<p>{{ date("d M, Y",strtotime($article->published_at)) }} | <!-- Number badge -->
+									<span class="mdl-badge" data-badge="4">Comments</span>
+								</p>
+							</div>
+							<div class="post-share">
+								<!-- Accent-colored raised button -->
+								<button class="facebook mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+								Facebook
+								</button>
+								<!-- Accent-colored raised button -->
+								<button class="twitter mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+								Twitter
+								</button>
+								<!-- Accent-colored raised button -->
+								<button class="google-plus mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+								Google+
+								</button>
+							</div>
+						</div>
+						
+                        <div class="clear"></div>
+                        
+						<div class="post-content">
+                             {!! $article->body !!}
                         </div>
-                        <div class="col-md-4">
-                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=ss_til&ad_type=product_link&tracking_id=game0f63-20&marketplace=amazon&region=US&placement=1515040003&asins=1515040003&linkId=WNZQS5CBND3X3ZWL&show_border=true&link_opens_in_new_window=true"></iframe>
-                        </div>
-                        <div class="col-md-4">
-                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=ss_til&ad_type=product_link&tracking_id=game0f63-20&marketplace=amazon&region=US&placement=0990582906&asins=0990582906&linkId=WYWY2OWMBPML25VR&show_border=true&link_opens_in_new_window=true"></iframe>
-                        </div>
-                    </div>
-                </div>
-            
-            </div>
-            
-            <div class="col-md-3">
-                <div class="sidebar">
-                
-                <div class="social-metro">
-                    <div class="row">
-                        <div class="col-lg-6 social-box facebook">
-                            <a href="https://www.facebook.com/tutorialedge"><i class="fa fa-facebook fa-2x"></i></a>
-                        </div>
-                        <div class="col-lg-6 social-box google-plus">
-                           <a href="https://plus.google.com/b/115194233692529836662/+Tutorialedge/posts"><i class="fa fa-google-plus fa-2x"></i></a>
-                        </div>
-                        <div class="col-lg-4 social-box twitter">
-                            <a href="https://www.twitter.com/tutorialedge"><i class="fa fa-twitter fa-2x"></i></a> 
-                        </div>
-                        <div class="col-lg-4 social-box tumblr">
-                            <a href="http://tutorialedge.tumblr.com/"><i class="fa fa-tumblr fa-2x"></i></a>
-                        </div>
-                        <div class="col-lg-4 social-box github">
-                            <a href="https://github.com/emforce"><i class="fa fa-github fa-2x"></i></a>
-                        </div>
-                        <div class="col-lg-12 social-box youtube">
-                            <a href="https://www.youtube.com/tutorialedge"><i class="fa fa-youtube fa-2x"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <h2>{{ $category->title }}</h2>
-                <p>{{ $category->info }}</p>
-                <h3>Table of Contents</h3>
-                <br/>
-                <table class="table">
-                    <tbody>
-                        @foreach ($articles as $single)
-                        <tr>
-                            <td><a href="{{ $single->slug }}">{{ $single->title }}</a></td>
-                        </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Tutorial-Edge-Sidebar-Box -->
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:336px;height:280px"
-                    data-ad-client="ca-pub-6782067367590597"
-                    data-ad-slot="1900324488"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- Tutorial-Edge-Sidebar -->
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-6782067367590597"
-                     data-ad-slot="6639668084"
-                     data-ad-format="auto"></ins>
-                <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-                
-                </div>
-            </div>
-        </div>
-        
-        <div class="padding-top"></div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- Tutorial-Edge-Above-Comments -->
-        <ins class="adsbygoogle"
-            style="display:inline-block;width:728px;height:90px"
-            data-ad-client="ca-pub-6782067367590597"
-            data-ad-slot="6470124888"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-            /* * * CONFIGURATION VARIABLES * * */
-            var disqus_shortname = 'tutsdeve';
+						
+						<div id="disqus_thread"></div>
+						<script>
+						/**
+						* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+						* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+						*/
+						/*
+						var disqus_config = function () {
+						this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+						this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+						};
+						*/
+						(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						
+						s.src = '//tutorialedgenet.disqus.com/embed.js';
+						
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+						})();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    </div>
-    </div>
+						
+					</div>
+									
+				</div>
+				<div class="col-lg-3">
+					<div class="sidebar">
+						<h2>{{ $category->title }}</h2>
+						<p>{{ $category->info }}</p>
+						<h3>Table of Contents</h3>
+						<br/>
+						<table class="table">
+							<tbody>
+								@foreach ($articles as $single)
+								<tr>
+									<td><a href="{{ $single->slug }}">{{ $single->title }}</a></td>
+								</tr>
+								@endforeach
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="course-content content">
+			<div class="container">
+				<h2>Related Articles: </h2>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Getting Started with ExpressJs</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Mauris sagittis pellentesque lacus eleifend lacinia...
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								Get Started
+								</a>
+							</div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Getting Started with ExpressJs</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Mauris sagittis pellentesque lacus eleifend lacinia...
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								Get Started
+								</a>
+							</div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Getting Started with ExpressJs</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Mauris sagittis pellentesque lacus eleifend lacinia...
+							</div>
+							<div class="mdl-card__actions mdl-card--border">
+								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								Get Started
+								</a>
+							</div>
+							<div class="mdl-card__menu">
+								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+								<i class="material-icons">share</i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 @endsection

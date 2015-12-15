@@ -61,7 +61,11 @@ body {
   padding: 40px; }
   .content .demo-card-wide.mdl-card, .post-content .demo-card-wide.mdl-card {
     width: 100%;
-    margin-top: 40px; }
+    margin-top: 40px; 
+     white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+    }
     .content .demo-card-wide.mdl-card .mdl-card__title, .post-content .demo-card-wide.mdl-card .mdl-card__title {
       color: #fff !important;
       height: 176px;

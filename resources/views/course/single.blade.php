@@ -2,9 +2,8 @@
 
 
 @section('content')
-<div class="gray-padding"></div>
-<div class="container">
-    <div class="course-content">
+<div class="course-content content">
+    <div class="container">
        <div class="row">
            <div class="col-lg-8">
                 <h2>{{ $course->title }}<small><br/>{{ $course->tagline }}</small></h2>
@@ -21,7 +20,7 @@
                     </p>
                 </div>
                 <div class="course-image">
-                    <img src="/uploads/courses/{{ $course->image_url }}" alt="{{ $course->tagline }}">
+                    <img src="{{ asset('/uploads/courses') }}/{{ $course->image_url }}" alt="{{ $course->tagline }}">
                 </div>
                 
                 
@@ -38,13 +37,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                          <?php $iterator=0; ?>
+                            <?php $iterator=0; ?>
                            @foreach($articles as $article)
                             <?php $iterator++; ?>
                             <tr>
                                 <td class="centered"><?php echo $iterator; ?></td>
                                  <td>{{ $article->title }}</td>
-                                <td class="centered"><a href="/{{ $article->slug }}">Read</a></td>
+                                <td class="centered"><a href="{{ url('/') }}/{{ $article->slug }}">Read</a></td>
                             </tr>
                             @endforeach
                         </tbody>

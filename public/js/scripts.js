@@ -1,61 +1,9 @@
-/***************** Waypoints ******************/
-
-$(document).ready(function() {
-
-	$('.wp1').waypoint(function() {
-		$('.wp1').addClass('animated fadeInLeft');
-	}, {
-		offset: '75%'
+$(function(){
+	$(".featured-text").typed({
+		strings: ["Laravel 5", "Angular 2", "LWJGL 3", "Python", "Programming Design Patterns"],
+		typeSpeed: 0,
+		// time before backspacing
+		backDelay: 1500,
+		loop: true
 	});
-    $('.wp12').waypoint(function() {
-		$('.wp12').addClass('animated fadeInRight');
-	}, {
-		offset: '75%'
-	});
-	$('.wp2').waypoint(function() {
-		$('.wp2').addClass('animated fadeInUp');
-	}, {
-		offset: '75%'
-	});
-	$('.wp3').waypoint(function() {
-		$('.wp3').addClass('animated fadeInDown');
-	}, {
-		offset: '55%'
-	});
-	$('.wp4').waypoint(function() {
-		$('.wp4').addClass('animated fadeInDown');
-	}, {
-		offset: '75%'
-	});
-	$('.wp5').waypoint(function() {
-		$('.wp5').addClass('animated fadeInLeft');
-	}, {
-		offset: '75%'
-	});
-	$('.wp6').waypoint(function() {
-		$('.wp6').addClass('animated fadeInRight');
-	}, {
-		offset: '75%'
-	});
-
-});
-
-/***************** Smooth Scrolling ******************/
-
-$(function() {
-
-	$('a[href*=#]:not([href=#])').click(function() {
-		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-			if (target.length) {
-				$('html,body').animate({
-					scrollTop: target.offset().top
-				}, 2000);
-				return false;
-			}
-		}
-	});
-
 });

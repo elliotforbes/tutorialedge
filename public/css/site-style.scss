@@ -96,7 +96,9 @@ body{
   .demo-card-wide.mdl-card {
     width: 100%;
     margin-top: 40px;
-    
+        white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
     .mdl-card__title{
       color: #fff !important;
       height: 176px;
@@ -137,7 +139,9 @@ body{
   .demo-card-image.mdl-card {
     width: 256px;
     height: 256px;
-    background: $pink;
+    background: $pink;    white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
   }
   .demo-card-image > .mdl-card__actions {
     height: 52px;
@@ -153,7 +157,7 @@ body{
   .demo-card-wide.mdl-card {
     width: 100%;
     margin-top: 40px;
-    
+
     .mdl-card__title {
       color: #fff;
       height: 176px;
@@ -221,6 +225,12 @@ body{
       font-weight: 200;
       color: #606060;
     }
+    
+    ul{
+      li{
+      font-size: 18px !important;
+      }
+    }
     .tableofcontents{
       
       border-left: 1px solid #79589F;
@@ -269,6 +279,12 @@ body{
   .facebook{
     background-color: #4D70A8 !important;
   }
+  
+}
+
+.sidebar{
+  
+  padding-top: 40px;
   
 }
 
