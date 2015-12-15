@@ -1,5 +1,5 @@
 
-$navColor: #222222;
+$navColor: #333;
 $lightGray: #FAFAFA;
 $aqua: #46B6AC;
 $pink: #FF4081;
@@ -27,6 +27,7 @@ body{
     a{
       color: white !important;
     }
+    
 }
 
 .featured-bar{
@@ -91,12 +92,13 @@ body{
   background-color: $lightGray;  
   width: 100%;
   padding: 40px;   
+  
   .demo-card-wide.mdl-card {
     width: 100%;
     margin-top: 40px;
     
-    .mdl-card__title {
-      color: #fff;
+    .mdl-card__title{
+      color: #fff !important;
       height: 176px;
       background: $aqua;
     }
@@ -111,6 +113,14 @@ body{
   @extend .content;
   background-color: white;
   word-wrap: break-word;
+  
+    h1, h2{
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.1;
+    color: #79589F;
+  }
+  
 }
 
 .latest-articles{
@@ -122,7 +132,7 @@ body{
  
   h2{
     margin-bottom: 40px;
-        color: #545454;
+        color: #fff;
   }
   .demo-card-image.mdl-card {
     width: 256px;
@@ -163,20 +173,29 @@ body{
   
 }
 
+.facebook{
+  background-color: #4670A5 !important;
+}
+
+.twitter{
+  background-color: #00BEEA !important;
+}
+
 .post{
   background-color: white;
   padding: 40px;
   font-size: 28px !important;
   
   .post-header h2{
-    font-size: 62px;
+    font-size: 48px;
     margin-bottom: 20px;
   }
   
   .post-author{ 
     float: left;
     p{
-      font-size: 18px !important; 
+      color: #bdbebd;
+    font-size: .8em;
     }
     img{
       width: 50px;
@@ -186,7 +205,7 @@ body{
   } 
   
   .post-info{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     float: left;
   }
   
@@ -195,11 +214,33 @@ body{
     padding: 0;
     margin: 0;
     p{
-      font-size: 18px !important; 
-      line-height: 30px !important;
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: .5em 0;
+      font-weight: 200;
+      color: #606060;
     }
-    li{
-      font-size: 18px !important;
+    .tableofcontents{
+      
+      border-left: 1px solid #79589F;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 20px;
+      margin-top: 20px;
+      
+      li{
+        margin-top: 5px;
+        font-size: 18px !important;
+        
+        a{
+          color: #79589F;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }
     }
   }
   
@@ -211,6 +252,10 @@ body{
   
   .post-share{
     float: right;
+  }
+  
+  #disqus_thread{
+    margin-top: 40px;
   }
   
 }

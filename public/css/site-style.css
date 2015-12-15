@@ -7,7 +7,7 @@ body {
 
 .header, .header .navbar {
   width: 100%;
-  background-color: #222222;
+  background-color: #333;
   border-radius: 0; }
   .header .navbar {
     height: 60px;
@@ -63,7 +63,7 @@ body {
     width: 100%;
     margin-top: 40px; }
     .content .demo-card-wide.mdl-card .mdl-card__title, .post-content .demo-card-wide.mdl-card .mdl-card__title {
-      color: #fff;
+      color: #fff !important;
       height: 176px;
       background: #46B6AC; }
     .content .demo-card-wide.mdl-card .mdl-card__menu, .post-content .demo-card-wide.mdl-card .mdl-card__menu {
@@ -72,6 +72,11 @@ body {
 .post-content {
   background-color: white;
   word-wrap: break-word; }
+  .post-content h1, .post-content h2 {
+    font-family: inherit;
+    font-weight: 200;
+    line-height: 1.1;
+    color: #79589F; }
 
 .latest-articles {
   background-color: white;
@@ -80,7 +85,7 @@ body {
   padding-bottom: 60px; }
   .latest-articles h2 {
     margin-bottom: 40px;
-    color: #545454; }
+    color: #fff; }
   .latest-articles .demo-card-image.mdl-card {
     width: 256px;
     height: 256px;
@@ -107,39 +112,65 @@ body {
   padding-top: 60px;
   padding-bottom: 60px; }
 
+.facebook {
+  background-color: #4670A5 !important; }
+
+.twitter {
+  background-color: #00BEEA !important; }
+
 .post {
   background-color: white;
   padding: 40px;
   font-size: 28px !important; }
   .post .post-header h2 {
-    font-size: 62px;
+    font-size: 48px;
     margin-bottom: 20px; }
   .post .post-author {
     float: left; }
     .post .post-author p {
-      font-size: 18px !important; }
+      color: #bdbebd;
+      font-size: .8em; }
     .post .post-author img {
       width: 50px;
       height: 50px;
       margin-right: 20px; }
   .post .post-info {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     float: left; }
   .post .post-content {
     margin-top: 20px;
     padding: 0;
     margin: 0; }
     .post .post-content p {
-      font-size: 18px !important;
-      line-height: 30px !important; }
-    .post .post-content li {
-      font-size: 18px !important; }
+      line-height: 1.6;
+      font-size: 18px;
+      margin: 0;
+      padding: .5em 0;
+      font-weight: 200;
+      color: #606060; }
+    .post .post-content .tableofcontents {
+      border-left: 1px solid #79589F;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 20px;
+      margin-top: 20px; }
+      .post .post-content .tableofcontents li {
+        margin-top: 5px;
+        font-size: 18px !important; }
+        .post .post-content .tableofcontents li a {
+          color: #79589F;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 15px; }
   .post .post-info p {
     margin: 0 !important;
     padding: 0;
     color: #b1b1b1; }
   .post .post-share {
     float: right; }
+  .post #disqus_thread {
+    margin-top: 40px; }
 
 .post-share .twitter {
   background-color: #00BBF2 !important; }
