@@ -38,9 +38,6 @@
 					<a class="navbar-brand" href="{{ url('/') }}">TutorialEdge</a>
 					<ul class="nav navbar-nav pull-right">
 						<li class="nav-item">
-							<a class="nav-link" href="{{ url('/categories') }}">Categories</a>
-						</li>
-						<li class="nav-item">
 							<a class="nav-link" href="{{ url('/courses') }}">Courses</a>
 						</li>
 						<li class="nav-item">

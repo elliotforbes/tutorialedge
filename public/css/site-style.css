@@ -58,7 +58,9 @@ body {
 .content, .post-content {
   background-color: #FAFAFA;
   width: 100%;
-  padding: 40px; }
+  padding: 40px;
+  padding-bottom: 60px;
+  min-height: 800px; }
   .content .demo-card-wide.mdl-card, .post-content .demo-card-wide.mdl-card {
     width: 100%;
     margin-top: 40px;
