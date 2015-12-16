@@ -63,10 +63,11 @@ body {
   min-height: 800px; }
   .content .demo-card-wide.mdl-card, .post-content .demo-card-wide.mdl-card {
     width: 100%;
-    margin-top: 40px;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important; }
+    margin-top: 40px; }
+    .content .demo-card-wide.mdl-card .mdl-card__supporting-text, .post-content .demo-card-wide.mdl-card .mdl-card__supporting-text {
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important; }
     .content .demo-card-wide.mdl-card .mdl-card__title, .post-content .demo-card-wide.mdl-card .mdl-card__title {
       color: #fff !important;
       height: 176px;
