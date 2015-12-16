@@ -99,6 +99,7 @@ body{
         white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
+    
     .mdl-card__title{
       color: #fff !important;
       height: 176px;
@@ -131,7 +132,14 @@ body{
   width: 100%;
   padding-top: 40px;
   padding-bottom: 60px;
- 
+  
+  .excerpt{
+    
+        white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  }
+  
   h2{
     margin-bottom: 40px;
         color: #fff;
@@ -139,9 +147,8 @@ body{
   .demo-card-image.mdl-card {
     width: 256px;
     height: 256px;
-    background: $pink;    white-space: nowrap !important;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
+    background: $pink;   
+   
   }
   .demo-card-image > .mdl-card__actions {
     height: 52px;
