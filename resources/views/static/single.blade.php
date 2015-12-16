@@ -18,7 +18,7 @@
 							<div class="post-info">
 								<p>Author: Elliot Forbes</p>
 								<p>{{ date("d M, Y",strtotime($article->published_at)) }} | <!-- Number badge -->
-									<span class="mdl-badge" data-badge="4">Comments</span>
+									<span class="mdl-badge">Comments</span>
 								</p>
 							</div>
 							<div class="post-share">
