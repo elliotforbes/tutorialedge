@@ -17,18 +17,23 @@
 							<h2>{{$article->title}}</h2>
 							<div class="post-info">
 								<p>Author: Elliot Forbes</p>
-								<p>{{ date("d M, Y",strtotime($article->published_at)) }} 
+								<p>{{ date("d M, Y",strtotime($article->published_at)) }}
 								</p>
 							</div>
 							<div class="post-share">
 								<!-- Accent-colored raised button -->
-								<button class="facebook mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-								Facebook
-								</button>
+								<!-- Facebook -->
+								<a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn" > 
+									<button class="facebook mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+									Facebook
+									</button>
+								</a>
 								<!-- Accent-colored raised button -->
-								<button class="twitter mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-								Twitter
-								</button>
+								<a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=@tutorialedge" target="_blank" class="share-btn twitter">
+									<button class="twitter mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+									Twitter
+									</button>
+								</a>
 								<!-- Accent-colored raised button -->
 								<button class="google-plus mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 								Google+
