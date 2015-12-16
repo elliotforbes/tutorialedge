@@ -14,7 +14,8 @@ class MediaController extends Controller {
 	 */
 	public function index()
 	{
-		return view('admin.media.index');
+        $images = ["Hello"];
+		return view('admin.media.index', compact('images'));
 	}
 
 	/**

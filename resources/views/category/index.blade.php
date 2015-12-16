@@ -8,6 +8,7 @@
 
 @section('content')
 <div class="course-content content">
+   <div class="gray-bg">
     <div class="container">
         <h2>{{ $category->title }}</h2>
         <div class="row">
@@ -37,7 +38,7 @@
                             <li class="mdl-menu__item">Mail</li>
                         </ul>
                     </div>
-                </div>
+                </a>
             </div>
             @endforeach
         </div>

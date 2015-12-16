@@ -15,7 +15,7 @@ return [
 	|
 	*/
 
-	'driver' => env('MAIL_DRIVER', 'mandrill'),
+	'driver' => env('MAIL_DRIVER', 'mailgun'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => 'postmaster@tutorialedge.net', 'name' => 'TutorialEdge'],
+	'from' => ['address' => 'elliot@tutorialedge.net', 'name' => 'TutorialEdge'],
 
 	/*
 	|--------------------------------------------------------------------------

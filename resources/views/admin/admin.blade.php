@@ -161,7 +161,7 @@
                                 <i class="fa fa-times"></i>
                             </button>
                             
-                            <a class="h5 text-white" href="/">
+                            <a class="h5 text-white" href="{{ url('/') }}">
                                 TutorialEdge
                             </a>
                         </div>
@@ -171,17 +171,17 @@
                         <div class="side-content">
                             <ul class="nav-main">
                                 <li>
-                                    <a class="active" href="/admin"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                                    <a class="active" href="{{ url('/admin') }}"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">General</span></li>
                                 <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Articles</span></a>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-note"></i><span class="sidebar-mini-hide">Articles</span></a>
                                     <ul>
                                        <li>
-                                           <a href="/admin/articles">All Articles</a>
+                                           <a href="{{ url('/admin/articles') }}">All Articles</a>
                                        </li>
                                         <li>
-                                            <a href="/admin/articles/create">Create New</a>
+                                            <a href="{{ url('/admin/articles/create') }}">Create New</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -189,19 +189,46 @@
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Categories</span></a>
                                     <ul>
                                        <li>
-                                           <a href="/admin/categories">All Categories</a>
+                                           <a href="{{ url('/admin/categories') }}">All Categories</a>
                                        </li>
                                         <li>
-                                            <a href="/admin">Create New</a>
+                                            <a href="{{ url('/admin/categories/create') }}">Create New</a>
                                         </li>
                                     </ul>
                                 </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Media</span></a>
+                                    <ul>
+                                       <li>
+                                           <a href="{{ url('/admin/media') }}">All Media</a>
+                                       </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Users</span></a>
+                                    <ul>
+                                       <li>
+                                           <a href="{{ url('/admin/users') }}">All Users</a>
+                                       </li>
+                                    </ul>
+                                </li>
+
 
                                 
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">Settings</span></li>
-                                <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin/settings"><i class="si si-layers"></i><span class="sidebar-mini-hide">Site Settings</span></a>
+                                 <li>
+                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin/settings"><i class="si si-note"></i><span class="sidebar-mini-hide">Settings</span></a>
+                                    <ul>
+                                       <li>
+                                           <a href="{{ url('/admin/settings') }}">Site Settings</a>
+                                       </li>
+                                       <li>
+                                           <a href="{{ url('/admin/mail') }}">Mail Controller</a>
+                                       </li>
+                                    </ul>
                                 </li>
+                                 
+
                                 <li class="nav-main-heading"><span class="sidebar-mini-hide">Site</span></li>
                                 <li>
                                     <a href="/"><i class="si si-rocket"></i><span class="sidebar-mini-hide">Frontpage</span></a>
@@ -392,7 +419,7 @@
         @yield('footerlinks')
         
         <!-- Page JS Code -->
-        <script src="{{ asset('/js/pages/base_pages_dashboard.js') }}"></script>
+        <script src="{{ asset('/js/base_pages_dashboard.js') }}"></script>
         <script>
             $(function () {
                 // Init page helpers (Slick Slider plugin)

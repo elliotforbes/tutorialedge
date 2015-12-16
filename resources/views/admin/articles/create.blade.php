@@ -22,8 +22,9 @@
 </div>
 
 <!-- Mega Form -->
-<div class="container">
-    <div class="block block-bordered">
+<div class="main-container">
+   <div class="content content-narrow">
+    <div class="block">
         <div class="block-header bg-gray-lighter">
             <ul class="block-options">
                 <li>
@@ -38,7 +39,7 @@
         <div class="block-content">
             {!! Form::open(array('route' => 'admin.articles.store', 'class' => 'form-horizontal push-10-t push-10', 'files'=>true, 'novalidate' => 'novalidate')) !!}
                 <div class="row">
-                    <div class="col-sm-7">
+                    <div class="col-sm-8">
                         <div class="form-group">
                             <div class="col-xs-12">
                                 <label for="mega-firstname">Post Title</label>
@@ -47,6 +48,7 @@
                                         'class'=>'form-control',
                                         'placeholder'=>'Post Title')) !!}
                             </div>
+                            <br/>
                             <div class="col-xs-12">
                                 <label for="mega-lastname">Excerpt</label>
                                 {!! Form::text('excerpt', null,
@@ -56,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-5">
+                    <div class="col-sm-4">
                         <div class="form-group">
                             <div class="col-xs-12">
                                 <label for="mega-lastname">Image URL</label>
@@ -66,32 +68,8 @@
                                         'placeholder'=>'Post_slug')) !!}
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-7">
                         <div class="form-group">
                             <div class="col-xs-12">
-                                <label for="mega-bio">Post Body</label>
-                                {!! Form::textarea('body', null,
-                                    array('required',
-                                        'class'=>'form-control input-lg',
-                                        'placeholder'=>'Article Body')) !!}
-                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-5">
-                        <div class="form-group">
-                            <div class="col-xs-12">
-                                <label for="mega-city">Post Slug</label>
-                                {!! Form::text('slug', null,
-                                    array('required',
-                                        'class'=>'form-control',
-                                        'placeholder'=>'Post_slug')) !!}
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-xs-6">
                                 <label for="mega-age">Category ID</label>
                                 {!! Form::text('cat_id', null,
                                     array('required',
@@ -99,17 +77,44 @@
                                         'placeholder'=>'cat_id')) !!}
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <label for="mega-age">Post Slug</label>
+                                {!! Form::text('slug', null,
+                                    array('required',
+                                        'class'=>'form-control',
+                                        'placeholder'=>'slug')) !!}
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <label for="mega-bio">Post Body</label>
+                                {!! Form::textarea('body', null,
+                                    array('required',
+                                        'class'=>'form-control input-lg',
+                                        'placeholder'=>'Article Body',
+                                        'id'=>'js-ckeditor'
+                                        )) !!}
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="form-group">
-                    <div class="col-xs-12">
-                        {!! Form::submit('Submit',
-                            array('class'=>'btn btn-primary')) !!}
-                    </div>
-                </div>
+                            <div class="col-lg-12">
+                                {!! Form::submit('Submit',
+                                    array('class'=>'btn btn-primary btn-lg')) !!}
+                            </div>
+                        </div>
             {!! Form::close() !!}
         </div>
     </div>
+</div>
+</div>
 </div>
 <!-- END Mega Form -->
 
@@ -121,5 +126,6 @@
 
 <!-- Page JS Plugins -->
 <script src="{{ asset('/js/plugins/ckeditor/ckeditor.js') }}"></script>
-
+<script>
+</script>
 @endsection

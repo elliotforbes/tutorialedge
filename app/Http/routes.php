@@ -18,6 +18,8 @@ Route::get('/about', 'FrontendController@about');
 Route::get('/search', 'FrontendController@search');
 Route::get('/courses', 'FrontendController@courseIndex');
 
+Route::get('/newHome', 'FrontendController@newIndex');
+
 Route::get('/profile/{slug}', 'ProfileController@show');
 
 
@@ -33,6 +35,8 @@ Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     Route::resource('articles', 'ArticleController');
     Route::resource('videos', 'VideoController');
     Route::resource('media', 'MediaController');
+    Route::resource('settings', 'SettingsController');
+    Route::resource('mail', 'MailController');
 });
 
 

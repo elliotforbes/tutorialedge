@@ -2,33 +2,42 @@
 
 
 @section('content')
-     <h2>Media</h2>
+ <!-- Page Content -->
+                <div class="content content-narrow" ng-app="mediaApp">
+                    <div class="row" ng-controller="MediaController">
+                        <div class="col-md-12">
+                            <!-- Default -->
+                            <h2 class="content-heading">Default</h2>
+                            <div class="row items-push">
+                               @foreach ($images as $image)
+                                <div class="col-md-3 animated fadeIn">
+                                    <div class="img-container" >
+                                        <img class="img-responsive" src="{{ $image }}" alt="">
+                                        <div class="img-options">
+                                            <div class="img-options-content">
+                                                <h3 class="font-w400 text-white push-5">Image Caption</h3>
+                                                <h4 class="h6 font-w400 text-white-op push-15">Some Extra Info</h4>
+                                                <a class="btn btn-sm btn-default" href="javascript:void(0)"><i class="fa fa-pencil"></i> Edit</a>
+                                                <a class="btn btn-sm btn-default" href="javascript:void(0)"><i class="fa fa-times"></i> Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                            <!-- END Default -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END Page Content -->
+            </main>
+            <!-- END Main Container -->
 
-     <div class="row">
-        <div class="col-lg-6">
-            <div class="info-box">
-                <h2>Traffic Stats</h2>
-                <p>traffic stats go here.</p>
-            </div>
         </div>
-        <div class="col-lg-6">
-            <div class="info-box">
-                <h2>Recent Comments</h2>
-            </div>
-        </div>
+        <!-- END Page Container -->
+@endsection
 
-        <div class="clear"></div>
 
-        <div class="col-lg-4">
-            <div class="info-box">
-                <h2>Subscriber Count : {{ $userCount }}</h2>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="info-box"></div>
-        </div>
-        <div class="col-lg-4">
-            <div class="info-box"></div>
-        </div>
-    </div>
+@section('footerlinks')
+<script src="{{ asset('/js/MediaController.js') }}"></script>
 @endsection
