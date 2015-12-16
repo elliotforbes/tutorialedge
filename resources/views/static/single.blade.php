@@ -50,7 +50,16 @@
                              {!! $article->body !!}
                         </div>
 						
-					
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Tutorial-Edge-Sidebar -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-6782067367590597"
+                     data-ad-slot="6639668084"
+                     data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
 					<div id="disqus_thread"></div>
 					<script type="text/javascript">
 						/* * * CONFIGURATION VARIABLES * * */
@@ -83,80 +92,22 @@
 								@endforeach
 							</tbody>
 						</table>
+						
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- Tutorial-Edge-Sidebar -->
+						<ins class="adsbygoogle"
+							style="display:block"
+							data-ad-client="ca-pub-6782067367590597"
+							data-ad-slot="6639668084"
+							data-ad-format="auto"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="course-content content">
-			<div class="container">
-				<h2>Related Articles: </h2>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Getting Started with ExpressJs</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Mauris sagittis pellentesque lacus eleifend lacinia...
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Get Started
-								</a>
-							</div>
-							<div class="mdl-card__menu">
-								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Getting Started with ExpressJs</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Mauris sagittis pellentesque lacus eleifend lacinia...
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Get Started
-								</a>
-							</div>
-							<div class="mdl-card__menu">
-								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Getting Started with ExpressJs</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Mauris sagittis pellentesque lacus eleifend lacinia...
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Get Started
-								</a>
-							</div>
-							<div class="mdl-card__menu">
-								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 		
 @endsection
