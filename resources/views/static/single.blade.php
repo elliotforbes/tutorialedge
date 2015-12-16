@@ -23,21 +23,24 @@
 							<div class="post-share">
 								<!-- Accent-colored raised button -->
 								<!-- Facebook -->
-								<a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" class="share-btn" > 
+								<a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" > 
 									<button class="facebook mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 									Facebook
 									</button>
 								</a>
 								<!-- Accent-colored raised button -->
-								<a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=@tutorialedge" target="_blank" class="share-btn twitter">
+								<a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=@tutorialedge" target="_blank">
 									<button class="twitter mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
 									Twitter
 									</button>
 								</a>
 								<!-- Accent-colored raised button -->
-								<button class="google-plus mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-								Google+
-								</button>
+								<!-- Google Plus -->
+                            	<a href="https://plus.google.com/share?url=http://tutorialedge.net/{{ $article->slug }}" target="_blank">
+									<button class="google-plus mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+									Google+
+									</button>
+								</a>
 							</div>
 						</div>
 						
