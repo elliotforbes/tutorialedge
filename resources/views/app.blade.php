@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
 		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
-		<link rel="stylesheet" href="{{ asset('/css/site-style.css') }}">
+		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=1233') }}">
 		
 		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
 		<script src="{{ asset('/js/prism.js') }}"></script>
@@ -40,9 +40,6 @@
 				<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
 					<a class="navbar-brand" href="{{ url('/') }}">TutorialEdge</a>
 					<ul class="nav navbar-nav pull-right">
-						<li class="nav-item">
-							<a class="nav-link" href="{{ url('/categories') }}">Categories</a>
-						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="{{ url('/courses') }}">Courses</a>
 						</li>

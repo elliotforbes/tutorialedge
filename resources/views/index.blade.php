@@ -39,7 +39,7 @@ In-depth Game Programming Tutorials and Courses
                         Get Started
                         </a>
                     </div>
-                    <div class="mdl-card__menu">
+                    <!--<div class="mdl-card__menu">
                         <button id="share1" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                         <i class="material-icons">share</i>
                         </button>
@@ -50,7 +50,7 @@ In-depth Game Programming Tutorials and Courses
                             <li disabled class="mdl-menu__item">Google+ </li>
                             <li class="mdl-menu__item">Mail</li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             @endforeach
@@ -79,7 +79,7 @@ In-depth Game Programming Tutorials and Courses
                         Get Started
                         </a>
                     </div>
-                    <div class="mdl-card__menu">
+                    <!--<div class="mdl-card__menu">
                         <button id="share1" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                         <i class="material-icons">share</i>
                         </button>
@@ -90,7 +90,7 @@ In-depth Game Programming Tutorials and Courses
                             <li disabled class="mdl-menu__item">Google+ </li>
                             <li class="mdl-menu__item">Mail</li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
             </div>
             @endforeach

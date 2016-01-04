@@ -58,13 +58,16 @@ body {
 .content, .post-content {
   background-color: #FAFAFA;
   width: 100%;
-  padding: 40px; }
+  padding: 40px;
+  padding-bottom: 60px;
+  min-height: 800px; }
   .content .demo-card-wide.mdl-card, .post-content .demo-card-wide.mdl-card {
     width: 100%;
-    margin-top: 40px;
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important; }
+    margin-top: 40px; }
+    .content .demo-card-wide.mdl-card .mdl-card__supporting-text, .post-content .demo-card-wide.mdl-card .mdl-card__supporting-text {
+      white-space: nowrap !important;
+      overflow: hidden !important;
+      text-overflow: ellipsis !important; }
     .content .demo-card-wide.mdl-card .mdl-card__title, .post-content .demo-card-wide.mdl-card .mdl-card__title {
       color: #fff !important;
       height: 176px;
@@ -92,7 +95,7 @@ body {
     text-overflow: ellipsis !important; }
   .latest-articles h2 {
     margin-bottom: 40px;
-    color: #fff; }
+    color: #333; }
   .latest-articles .demo-card-image.mdl-card {
     width: 256px;
     height: 256px;

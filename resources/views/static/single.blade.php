@@ -17,23 +17,30 @@
 							<h2>{{$article->title}}</h2>
 							<div class="post-info">
 								<p>Author: Elliot Forbes</p>
-								<p>{{ date("d M, Y",strtotime($article->published_at)) }} | <!-- Number badge -->
-									<span class="mdl-badge" data-badge="4">Comments</span>
+								<p>{{ date("d M, Y",strtotime($article->published_at)) }}
 								</p>
 							</div>
 							<div class="post-share">
 								<!-- Accent-colored raised button -->
-								<button class="facebook mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-								Facebook
-								</button>
+								<!-- Facebook -->
+								<a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" > 
+									<button class="facebook mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+									Facebook
+									</button>
+								</a>
 								<!-- Accent-colored raised button -->
-								<button class="twitter mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-								Twitter
-								</button>
+								<a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=@tutorialedge" target="_blank">
+									<button class="twitter mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+									Twitter
+									</button>
+								</a>
 								<!-- Accent-colored raised button -->
-								<button class="google-plus mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-								Google+
-								</button>
+								<!-- Google Plus -->
+                            	<a href="https://plus.google.com/share?url=http://tutorialedge.net/{{ $article->slug }}" target="_blank">
+									<button class="google-plus mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+									Google+
+									</button>
+								</a>
 							</div>
 						</div>
 						
@@ -43,29 +50,29 @@
                              {!! $article->body !!}
                         </div>
 						
-						<div id="disqus_thread"></div>
-						<script>
-						/**
-						* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-						* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-						*/
-						/*
-						var disqus_config = function () {
-						this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-						this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-						};
-						*/
-						(function() { // DON'T EDIT BELOW THIS LINE
-						var d = document, s = d.createElement('script');
-						
-						s.src = '//tutorialedgenet.disqus.com/embed.js';
-						
-						s.setAttribute('data-timestamp', +new Date());
-						(d.head || d.body).appendChild(s);
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- Tutorial-Edge-Sidebar -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-6782067367590597"
+                     data-ad-slot="6639668084"
+                     data-ad-format="auto"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+					<div id="disqus_thread"></div>
+					<script type="text/javascript">
+						/* * * CONFIGURATION VARIABLES * * */
+						var disqus_shortname = 'tutsdeve';
+						/* * * DON'T EDIT BELOW THIS LINE * * */
+						(function() {
+							var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+							dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+							(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 						})();
-						</script>
-						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+				
 						
 					</div>
 									
@@ -85,80 +92,22 @@
 								@endforeach
 							</tbody>
 						</table>
+						
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- Tutorial-Edge-Sidebar -->
+						<ins class="adsbygoogle"
+							style="display:block"
+							data-ad-client="ca-pub-6782067367590597"
+							data-ad-slot="6639668084"
+							data-ad-format="auto"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="course-content content">
-			<div class="container">
-				<h2>Related Articles: </h2>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Getting Started with ExpressJs</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Mauris sagittis pellentesque lacus eleifend lacinia...
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Get Started
-								</a>
-							</div>
-							<div class="mdl-card__menu">
-								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Getting Started with ExpressJs</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Mauris sagittis pellentesque lacus eleifend lacinia...
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Get Started
-								</a>
-							</div>
-							<div class="mdl-card__menu">
-								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-								</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Getting Started with ExpressJs</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Mauris sagittis pellentesque lacus eleifend lacinia...
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-								Get Started
-								</a>
-							</div>
-							<div class="mdl-card__menu">
-								<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-								<i class="material-icons">share</i>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 		
 @endsection
