@@ -26,8 +26,11 @@
 			
 			<div class="collapse" id="exCollapsingNavbar">
 				<div class="bg-inverse p-a">
-					<h4>Collapsed content</h4>
-					<span class="text-muted">Toggleable via the navbar brand.</span>
+					<h4>Main Menu</h4>
+                    <ul>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('/') }}/courses">Courses</a></li>
+                    </ul>
 				</div>
 			</div>
 			<nav class="navbar navbar-light navbar-inverse bg-faded">
