@@ -13,12 +13,12 @@
 		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
-		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
-		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=1233') }}">
+		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=1234', Request::secure()) }}">
 		
-		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
-		<script src="{{ asset('/js/prism.js') }}"></script>
+		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
+		<script src="{{ asset('/js/prism.js', Request::secure()) }}"></script>
 	</head>
 	<body>
 		
@@ -143,8 +143,8 @@
         ga('send', 'pageview');
     </script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="{{ asset('/js/bootstrap.min.js') }}"></script>
-		<script src="{{ asset('/js/typed.js') }}"></script>
-		<script src="{{ asset('/js/scripts.js') }}"></script>
+		<script src="{{ asset('/js/bootstrap.min.js', Request::secure()) }}"></script>
+		<script src="{{ asset('/js/typed.js', Request::secure()) }}"></script>
+		<script src="{{ asset('/js/scripts.js', Request::secure()) }}"></script>
 	</body>
 </html>
