@@ -14,12 +14,12 @@
 		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
-		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
-		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=1234', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ secure_asset('/css/prism.css', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ secure_asset('/css/bootstrap.min.css', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ secure_asset('/css/site-style.css?v=1234', Request::secure()) }}">
 		
-		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
-		<script src="{{ asset('/js/prism.js', Request::secure()) }}"></script>
+		<link rel="icon" type="image/png" href="{{ secure_asset('/images/favicon.ico', Request::secure()) }}">
+		<script src="{{ secure_asset('/js/prism.js', Request::secure()) }}"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
