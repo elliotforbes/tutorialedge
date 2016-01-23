@@ -6,6 +6,7 @@
 		@yield('meta')
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="google-site-verification" content="o0UedRQqZULbVZPe6SPx1VD1YxJd6WL-2-15-XHWS1g" />
 		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
 		<meta property="og:site_name" content="TutorialEdge.net" />
 		
@@ -13,12 +14,36 @@
 		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<<<<<<< HEAD
 		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
 		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
 		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=1234', Request::secure()) }}">
 		
 		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
 		<script src="{{ asset('/js/prism.js', Request::secure()) }}"></script>
+=======
+		<link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
+		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=343') }}">
+		
+		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
+		<script src="{{ asset('/js/prism.js') }}"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-10255990-23', 'auto');
+            ga('send', 'pageview');
+        </script>
+>>>>>>> 3bf9053cee52d829f602746e402769e5d12557a5
 	</head>
 	<body>
 		
@@ -26,8 +51,11 @@
 			
 			<div class="collapse" id="exCollapsingNavbar">
 				<div class="bg-inverse p-a">
-					<h4>Collapsed content</h4>
-					<span class="text-muted">Toggleable via the navbar brand.</span>
+					<h4>Main Menu</h4>
+                    <ul>
+                        <li><a href="{{ url('/') }}">Home</a></li>
+                        <li><a href="{{ url('/') }}/courses">Courses</a></li>
+                    </ul>
 				</div>
 			</div>
 			<nav class="navbar navbar-light navbar-inverse bg-faded">
@@ -127,21 +155,7 @@
 			</div>
 		</footer>
 
-  <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-10255990-23', 'auto');
-        ga('send', 'pageview');
-    </script>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src="{{ asset('/js/bootstrap.min.js', Request::secure()) }}"></script>
 		<script src="{{ asset('/js/typed.js', Request::secure()) }}"></script>
