@@ -68,7 +68,7 @@ In-depth Game Programming Tutorials and Courses
             @foreach($articles as $article)
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title">
+                    <div class="mdl-card__title" style="background-image: url('{{url('/uploads/articles/') }}/background-template.jpg')">
                         <h2 class="mdl-card__title-text">{{ $article->title }}</h2>
                     </div>
                     <div class="mdl-card__supporting-text excerpt">
@@ -110,7 +110,7 @@ In-depth Game Programming Tutorials and Courses
             <div class="article-box">
                 <div class="col-sm-6 col-xs-12 col-lg-3 col-md-4">
                     <img class="img-responsive image-responsive-centered article-image" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
-                    <div class="article-info">
+                    <div class="article-info" >
                         <h3><a href="{{ url('/') }}/{{ $article->slug }}">{{ $article->title }}</a></h3>
 <!--                        <p></p>-->
                     </div>
