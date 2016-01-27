@@ -95,42 +95,40 @@
 					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
 					<h1 class="mdl-mega-footer__heading">Features</h1>
 					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Terms</a></li>
-					<li><a href="#">Partners</a></li>
-					<li><a href="#">Updates</a></li>
+					<li><a href="{{ url('/about') }}">About</a></li>
+                    <li><a href="{{ url('/contact') }}">Contact Us</a></li>
 					</ul>
 				</div>
 					
 				<div class="mdl-mega-footer__drop-down-section">
 					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					<h1 class="mdl-mega-footer__heading">Details</h1>
+					<h1 class="mdl-mega-footer__heading">Courses</h1>
 					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">Specs</a></li>
-					<li><a href="#">Tools</a></li>
-					<li><a href="#">Resources</a></li>
+					<li><a href="{{ url('/category/programming_design_patterns') }}">Programming Design Patterns</a></li>
+                    <li><a href="{{ url('/category/python') }}">Python</a></li>
+                    <li><a href="{{ url('/category/lwjgl3') }}">LWJGL 3 Programming</a></li>
+                    <li><a href="{{ url('/category/artificial-intelligence') }}">Artificial Intelligence</a></li>
 					</ul>
 				</div>
 					
 				<div class="mdl-mega-footer__drop-down-section">
 					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					<h1 class="mdl-mega-footer__heading">Technology</h1>
+					<h1 class="mdl-mega-footer__heading">More Courses</h1>
 					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">How it works</a></li>
-					<li><a href="#">Patterns</a></li>
-					<li><a href="#">Usage</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Contracts</a></li>
+					<li><a href="{{ url('/category/laravel-5') }}">Laravel 5</a></li>
+                    <li><a href="{{ url('/category/java') }}">Java</a></li>
+                    <li><a href="{{ url('/category/angularjs') }}">AngularJS</a></li>
+                    <li><a href="{{ url('/category/angular2') }}">Angular 2</a></li>
 					</ul>
 				</div>
 					
 				<div class="mdl-mega-footer__drop-down-section">
 					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					<h1 class="mdl-mega-footer__heading">FAQ</h1>
+					<h1 class="mdl-mega-footer__heading">Social Links</h1>
 					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">Questions</a></li>
-					<li><a href="#">Answers</a></li>
-					<li><a href="#">Contact us</a></li>
+					<li><a href="https://www.facebook.com/tutorialedge">Facebook</a></li>
+					<li><a href="https://twitter.com/TutorialEdge">Twitter</a></li>
+					<li><a href="https://www.youtube.com/c/tutorialedge">Youtube</a></li>
 					</ul>
 					</div>
 				
@@ -138,10 +136,6 @@
 					
 				<div class="mdl-mega-footer__bottom-section">
 					<div class="mdl-logo">TutorialEdge</div>
-					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Privacy & Terms</a></li>
-					</ul>
 				</div>
 			</div>
 		</footer>
