@@ -64,32 +64,18 @@
 							<a class="nav-link" href="#">About</a>
 						</li>
                         @if (Auth::guest())
-                        <li class="nav-item">
-                            <a href="{{ url('/auth/logout') }}" class="nav-link">Logout</a>
-                        </li>
-                        @else
+                        
                         <li class="nav-item">
                             <a href="{{ url('/auth/register') }}" class="nav-link">Register</a>
                         </li>
                         <li class="nav-item">
                             <a href="{{ url('/auth/login') }}" class="nav-link">Log In</a>
                         </li>
+                        @else
+                        <li class="nav-item">
+                            <a href="{{ url('/auth/logout') }}" class="nav-link">Logout</a>
+                        </li>
                         @endif
-                        
-						@if (Auth::guest())
-						<li class="nav-item">
-							<!-- Number badge on icon -->
-							<a class="nav-link" id="demo-menu-lower-right" href="#"><span class="material-icons mdl-badge" data-badge="1">account_box</span></a>
-						</li>
-						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-							for="demo-menu-lower-right">
-							<li class="mdl-menu__item"><a class="nav-link" href="{{ url('/auth/logout') }}">Logout</a></li>
-						</ul>
-						@else
-						<li class="nav-item">
-							<a class="nav-link" href="{{ url('/auth/login') }}">Login</a>
-						</li>
-						@endif
 					</ul>
 				</div>
 			</nav>		
