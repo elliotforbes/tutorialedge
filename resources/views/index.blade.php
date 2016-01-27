@@ -29,7 +29,7 @@ In-depth Game Programming Tutorials and Courses
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                     <div class="mdl-card__title" style="background-image: url('{{url('/uploads/articles/course-images') }}/{{ $category->image_url }}')">
-                        <h2 class="mdl-card__title-text">{{ $category->title }}</h2>
+                        
                     </div>
                     <div class="mdl-card__supporting-text">
                         {{ $category->info }}
