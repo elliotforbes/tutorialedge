@@ -59,6 +59,7 @@ body {
   background-color: #FAFAFA;
   width: 100%;
   padding-bottom: 60px;
+  padding-top: 60px;
   min-height: 800px; }
   .content .demo-card-wide.mdl-card, .post-content .demo-card-wide.mdl-card {
     width: 100%;
@@ -88,6 +89,8 @@ body {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 60px; }
+  .latest-articles .article-header {
+    color: #333; }
   .latest-articles .excerpt {
     white-space: nowrap !important;
     overflow: hidden !important;
