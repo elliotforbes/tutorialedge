@@ -55,6 +55,7 @@
 				</button>
 				<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
 					<a class="navbar-brand" href="{{ url('/') }}">TutorialEdge</a>
+                   
 					<ul class="nav navbar-nav pull-right">
 						<li class="nav-item">
 							<a class="nav-link" href="{{ url('/courses') }}">Courses</a>
@@ -62,6 +63,19 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">About</a>
 						</li>
+                        @if (Auth::guest())
+                        <li class="nav-item">
+                            <a href="{{ url('/auth/logout') }}" class="nav-link">Logout</a>
+                        </li>
+                        @else
+                        <li class="nav-item">
+                            <a href="{{ url('/auth/register') }}" class="nav-link">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/auth/login') }}" class="nav-link">Log In</a>
+                        </li>
+                        @endif
+                        
 						@if (Auth::guest())
 						<li class="nav-item">
 							<!-- Number badge on icon -->
