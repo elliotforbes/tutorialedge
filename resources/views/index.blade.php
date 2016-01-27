@@ -66,7 +66,7 @@ In-depth Game Programming Tutorials and Courses
 <div class="latest-articles">
     <div class="container">
         <div class="row">
-            <h2>Latest Articles</h2>
+            <h2 style="color: #333">Latest Articles</h2>
             @foreach($articles as $article)
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
