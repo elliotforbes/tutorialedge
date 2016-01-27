@@ -17,7 +17,9 @@ In-depth Game Programming Tutorials and Courses
 <div class="featured-bar">
     <h2>Learn: <b><span class="featured-text"></span></b></h2>
     <h4>Our Goal is to help new developers land their dream jobs<br/> by teaching you some of the latest and greatest programming frameworks.</h4>
+    <div class="clear"></div>
 </div>
+
 @endsection
 
 
