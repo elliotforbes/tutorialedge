@@ -71,7 +71,8 @@ body {
     .content .demo-card-wide.mdl-card .mdl-card__title, .post-content .demo-card-wide.mdl-card .mdl-card__title {
       color: #fff !important;
       height: 176px;
-      background: #46B6AC; }
+      background: #46B6AC;
+      background-image: auto no-repeat; }
     .content .demo-card-wide.mdl-card .mdl-card__menu, .post-content .demo-card-wide.mdl-card .mdl-card__menu {
       color: #fff; }
 
