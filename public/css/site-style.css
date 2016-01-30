@@ -1,13 +1,6 @@
 body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-::selection {
-  background-color: #46B6AC;
-  color: #fff; }
-
-.mdl-layout__header-row {
-  background-color: #333; }
-
 .header, .header .navbar {
   width: 100%;
   background-color: #333;
@@ -30,7 +23,7 @@ body {
 
 .featured-bar {
   width: 100%;
-  height: 500px auto;
+  height: 400px auto;
   text-align: center;
   background: url("../images/hero.jpg") center/cover;
   padding-top: 100px;
@@ -72,7 +65,7 @@ body {
   background-color: #FAFAFA;
   width: 100%;
   padding-bottom: 60px;
-  padding-top: 100px;
+  padding-top: 60px;
   min-height: 800px; }
   .content .demo-card-wide.mdl-card, .post-content .demo-card-wide.mdl-card {
     width: 100%;
@@ -143,9 +136,14 @@ body {
 .twitter {
   background-color: #00BEEA !important; }
 
-.post-container {
-  width: 80%;
-  margin: auto; }
+@media screen and (max-width: 320px) {
+  .post-container {
+    width: 100%;
+    margin: auto; } }
+@media screen and (min-width: 1200px) {
+  .post-container {
+    width: 80%;
+    margin: auto; } }
 
 .post {
   background-color: white;

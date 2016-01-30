@@ -8,12 +8,6 @@
 <meta name="description" content="{{ $article->excerpt }}">
 @endsection
 
-@section('featured-top')
-<div class="header">
-    <div class="navbar"></div>
-</div>
-@endsection
-
 @section('content')
 <div class="post-container">
   <div class="post-content">

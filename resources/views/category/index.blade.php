@@ -1,12 +1,5 @@
 @extends('app')
 
-@section('featured-top')
-<div class="header">
-    <div class="navbar">
-        <h4>TutorialEdge.net</h4>
-    </div>
-</div>
-@endsection
 
 @section('content')
 <div class="course-content content">
