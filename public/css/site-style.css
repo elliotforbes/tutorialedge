@@ -23,11 +23,16 @@ body {
 
 .featured-bar {
   width: 100%;
-  height: 400px auto;
   text-align: center;
   background: url("../images/hero.jpg") center/cover;
   padding-top: 100px;
   padding-bottom: 40px; }
+  @media screen and (max-width: 320px) {
+    .featured-bar {
+      height: 600px; } }
+  @media screen and (min-width: 1200px) {
+    .featured-bar {
+      height: 400px; } }
   .featured-bar h2 {
     color: white;
     font-size: 52px;
