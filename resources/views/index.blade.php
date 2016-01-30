@@ -20,6 +20,7 @@ In-depth Game Programming Tutorials and Courses
     <div class="clear"></div>
 </div>
 
+<div class="clear"></div>
 @endsection
 
 

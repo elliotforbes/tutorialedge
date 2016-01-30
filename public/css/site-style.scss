@@ -13,15 +13,38 @@ body{
     color: #fff;
 }
 
+.mdl-layout__header-row{
+    background-color: $navColor;
+        
+}
+
 .header {
   width: 100%;
   background-color: $navColor;
   border-radius: 0;    
-  
+  color: white;
     .navbar{
       @extend .header;
       height: 60px;
       padding-top: 10px;
+      
+      h4{
+          text-align: center;
+      }
+    }
+    
+    .small-menu{
+        
+        ul{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            
+            li{
+                border-top: 1px solid #fff;
+            }
+        }
     }
     
     a{
@@ -32,7 +55,7 @@ body{
 
 .featured-bar{
     width: 100%;
-    height: 400px;
+    height: 500px auto;
     text-align: center;
     background: url('../images/hero.jpg') center / cover;
     padding-top: 100px;
@@ -92,7 +115,7 @@ body{
   background-color: $lightGray;  
   width: 100%;
   padding-bottom: 60px;
-  padding-top: 60px;
+  padding-top: 100px;
   min-height: 800px;
   .demo-card-wide.mdl-card {
     width: 100%;
@@ -293,7 +316,7 @@ body{
 .picture-background{
     background-color: #464E78;
     width: 100%;
-    height: 400px;
+    height: 400px auto;
       text-align: center;
     background: url('../images/hero.jpg') center / cover;
     padding-top: 80px;
@@ -325,7 +348,8 @@ body{
     color: white;
     margin-top: 0px;
     width: 100%;
-    min-height: 400px;
+    height: 400px auto;
+    padding-bottom: 50px;
     background: url("../images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -364,7 +388,7 @@ body{
     padding-top: 60px;
     padding-bottom: 60px;
      width: 100%;
-    height: 382px;
+    height: 382px auto;
     background-color: #f5f5f5;
      h2{
         margin-bottom: 20px;   

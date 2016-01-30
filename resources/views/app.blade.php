@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
 		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
-		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=54443', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=543', Request::secure()) }}">
 		
 		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
 		<script src="{{ asset('/js/prism.js', Request::secure()) }}"></script>
@@ -38,49 +38,59 @@
 	</head>
 	<body>
 		
-		<div class="header">
-			
-			<div class="collapse" id="exCollapsingNavbar">
-				<div class="bg-inverse p-a">
-					<h4>Main Menu</h4>
-                    <ul>
-                        <li><a href="{{ url('/') }}">Home</a></li>
-                        <li><a href="{{ url('/') }}/courses">Courses</a></li>
-                    </ul>
-				</div>
-			</div>
-			<nav class="navbar navbar-light navbar-inverse bg-faded">
-				<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-					&#9776;
-				</button>
-				<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
-					<a class="navbar-brand" href="{{ url('/') }}">TutorialEdge</a>
-                   
-					<ul class="nav navbar-nav pull-right">
-						<li class="nav-item">
-							<a class="nav-link" href="{{ url('/courses') }}">Courses</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
-						</li>
-                        @if (Auth::guest())
-                        
-                        <li class="nav-item">
-                            <a href="{{ url('/auth/register') }}" class="nav-link">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ url('/auth/login') }}" class="nav-link">Log In</a>
-                        </li>
-                        @else
-                        <li class="nav-item">
-                            <a href="{{ url('/auth/logout') }}" class="nav-link">Logout</a>
-                        </li>
-                        @endif
-					</ul>
-				</div>
-			</nav>		
-		</div>
+            <!-- Uses a transparent header that draws on top of the layout's background -->
+    <style>
+    .demo-layout-transparent {
+    background: url('../assets/demos/transparent.jpg') center / cover;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+        your background is light. */
+    color: white;
+    }
+    </style>
+
+        <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--transparent">
+                <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <a class="mdl-navigation__link" href="{{ url('/') }}"><span class="mdl-layout-title">TutorialEdge.net</span></a>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                     @if (Auth::guest())
+                    <a class="mdl-navigation__link" href="{{ url('/courses') }}">Courses</a>
+                    <a class="mdl-navigation__link" href="{{ url('/auth/register') }}">Register Now</a>
+                    <a class="mdl-navigation__link" href="{{ url('/auth/login') }}">Login</a>
+                    @else
+                    <a class="mdl-navigation__link" href="{{ url('/auth/logout') }}">Logout</a>
+                    @endif
+                </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Nav Links</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="{{ url('/') }}">Home</a>
+                    <a class="mdl-navigation__link" href="{{ url('/category/laravel-5') }}">Laravel 5</a>
+                    <a class="mdl-navigation__link" href="{{ url('/category/java') }}">Java</a>
+                    <a class="mdl-navigation__link" href="{{ url('/category/angularjs') }}">AngularJS</a>
+                    <a class="mdl-navigation__link" href="{{ url('/category/angular2') }}">Angular 2</a>
+                    <a class="mdl-navigation__link" href="{{ url('/category/programming_design_patterns') }}">Programming Design Patterns</a>
+                    <a class="mdl-navigation__link" href="{{ url('/category/python') }}">Python</a>
+                    <a class="mdl-navigation__link" href="{{ url('/category/lwjgl3') }}">LWJGL 3 Programming</a>
+                    <a class="mdl-navigation__link" href="{{ url('/category/artificial-intelligence') }}">Artificial Intelligence</a>
+					
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+            </main>
+        </div>
 		
+        <div class="clear"></div>
+        
 		@yield('featured-top')
 		
 		@yield('content')
