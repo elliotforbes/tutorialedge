@@ -3,7 +3,7 @@
 
 @section('content')
 <div class="course-content content">
-    <div class="container">
+    <div class="post-container">
        <div class="row">
            <div class="col-lg-8">
                <h2>{{ $course->title }}</h2>
