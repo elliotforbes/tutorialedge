@@ -14,7 +14,7 @@
             @foreach($articles as $article)
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title">
+                    <div class="mdl-card__title" style="background-image: url('{{url('/uploads/articles/') }}/background-template.jpg')">
                         <h2 class="mdl-card__title-text">{{ $article->title }}</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
@@ -25,18 +25,7 @@
                         Get Started
                         </a>
                     </div>
-                    <div class="mdl-card__menu">
-                        <button id="share1" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                        <i class="material-icons">share</i>
-                        </button>
-                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-                        for="share1">
-                            <li class="mdl-menu__item">Facebook</li>
-                            <li class="mdl-menu__item">Twitter</li>
-                            <li disabled class="mdl-menu__item">Google+ </li>
-                            <li class="mdl-menu__item">Mail</li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </div>
             @endforeach

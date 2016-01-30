@@ -14,12 +14,12 @@
 		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
-		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
-		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=343') }}">
+		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=543', Request::secure()) }}">
 		
-		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
-		<script src="{{ asset('/js/prism.js') }}"></script>
+		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
+		<script src="{{ asset('/js/prism.js', Request::secure()) }}"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -55,6 +55,7 @@
 				</button>
 				<div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar">
 					<a class="navbar-brand" href="{{ url('/') }}">TutorialEdge</a>
+                   
 					<ul class="nav navbar-nav pull-right">
 						<li class="nav-item">
 							<a class="nav-link" href="{{ url('/courses') }}">Courses</a>
@@ -62,20 +63,19 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">About</a>
 						</li>
-						@if (Auth::guest())
-						<li class="nav-item">
-							<!-- Number badge on icon -->
-							<a class="nav-link" id="demo-menu-lower-right" href="#"><span class="material-icons mdl-badge" data-badge="1">account_box</span></a>
-						</li>
-						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-							for="demo-menu-lower-right">
-							<li class="mdl-menu__item"><a class="nav-link" href="{{ url('/auth/logout') }}">Logout</a></li>
-						</ul>
-						@else
-						<li class="nav-item">
-							<a class="nav-link" href="{{ url('/auth/login') }}">Login</a>
-						</li>
-						@endif
+                        @if (Auth::guest())
+                        
+                        <li class="nav-item">
+                            <a href="{{ url('/auth/register') }}" class="nav-link">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/auth/login') }}" class="nav-link">Log In</a>
+                        </li>
+                        @else
+                        <li class="nav-item">
+                            <a href="{{ url('/auth/logout') }}" class="nav-link">Logout</a>
+                        </li>
+                        @endif
 					</ul>
 				</div>
 			</nav>		
@@ -98,41 +98,40 @@
 					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
 					<h1 class="mdl-mega-footer__heading">Features</h1>
 					<ul class="mdl-mega-footer__link-list">
-					<li><a href="/about">About</a></li>
-					<li><a href="/partners">Partners</a></li>
-					<li><a href="/blog">Updates</a></li>
+					<li><a href="{{ url('/about') }}">About</a></li>
+                    <li><a href="{{ url('/contact') }}">Contact Us</a></li>
 					</ul>
 				</div>
 					
 				<div class="mdl-mega-footer__drop-down-section">
 					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					<h1 class="mdl-mega-footer__heading">Details</h1>
+					<h1 class="mdl-mega-footer__heading">Courses</h1>
 					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">Specs</a></li>
-					<li><a href="#">Tools</a></li>
-					<li><a href="#">Resources</a></li>
+					<li><a href="{{ url('/category/programming_design_patterns') }}">Programming Design Patterns</a></li>
+                    <li><a href="{{ url('/category/python') }}">Python</a></li>
+                    <li><a href="{{ url('/category/lwjgl3') }}">LWJGL 3 Programming</a></li>
+                    <li><a href="{{ url('/category/artificial-intelligence') }}">Artificial Intelligence</a></li>
 					</ul>
 				</div>
 					
 				<div class="mdl-mega-footer__drop-down-section">
 					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					<h1 class="mdl-mega-footer__heading">Technology</h1>
+					<h1 class="mdl-mega-footer__heading">More Courses</h1>
 					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">How it works</a></li>
-					<li><a href="#">Patterns</a></li>
-					<li><a href="#">Usage</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Contracts</a></li>
+					<li><a href="{{ url('/category/laravel-5') }}">Laravel 5</a></li>
+                    <li><a href="{{ url('/category/java') }}">Java</a></li>
+                    <li><a href="{{ url('/category/angularjs') }}">AngularJS</a></li>
+                    <li><a href="{{ url('/category/angular2') }}">Angular 2</a></li>
 					</ul>
 				</div>
 					
 				<div class="mdl-mega-footer__drop-down-section">
 					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					<h1 class="mdl-mega-footer__heading">FAQ</h1>
+					<h1 class="mdl-mega-footer__heading">Social Links</h1>
 					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">Questions</a></li>
-					<li><a href="#">Answers</a></li>
-					<li><a href="#">Contact us</a></li>
+					<li><a href="https://www.facebook.com/tutorialedge">Facebook</a></li>
+					<li><a href="https://twitter.com/TutorialEdge">Twitter</a></li>
+					<li><a href="https://www.youtube.com/c/tutorialedge">Youtube</a></li>
 					</ul>
 					</div>
 				
@@ -140,18 +139,14 @@
 					
 				<div class="mdl-mega-footer__bottom-section">
 					<div class="mdl-logo">TutorialEdge</div>
-					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">Help</a></li>
-					<li><a href="#">Privacy & Terms</a></li>
-					</ul>
 				</div>
 			</div>
 		</footer>
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="{{ asset('/js/bootstrap.min.js') }}"></script>
-		<script src="{{ asset('/js/typed.js') }}"></script>
-		<script src="{{ asset('/js/scripts.js') }}"></script>
+		<script src="{{ asset('/js/bootstrap.min.js', Request::secure()) }}"></script>
+		<script src="{{ asset('/js/typed.js', Request::secure()) }}"></script>
+		<script src="{{ asset('/js/scripts.js', Request::secure()) }}"></script>
 	</body>
 </html>

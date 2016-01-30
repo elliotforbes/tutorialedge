@@ -17,7 +17,9 @@ In-depth Game Programming Tutorials and Courses
 <div class="featured-bar">
     <h2>Learn: <b><span class="featured-text"></span></b></h2>
     <h4>Our Goal is to help new developers land their dream jobs<br/> by teaching you some of the latest and greatest programming frameworks.</h4>
+    <div class="clear"></div>
 </div>
+
 @endsection
 
 
@@ -28,8 +30,8 @@ In-depth Game Programming Tutorials and Courses
             @foreach ($categories as $category)
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">{{ $category->title }}</h2>
+                    <div class="mdl-card__title" style="background-image: url('{{url('/uploads/articles/course-images') }}/{{ $category->image_url }}')">
+                        
                     </div>
                     <div class="mdl-card__supporting-text">
                         {{ $category->info }}
@@ -81,11 +83,11 @@ In-depth Game Programming Tutorials and Courses
 <div class="latest-articles">
     <div class="container">
         <div class="row">
-            <h2>Latest Articles</h2>
+            <h2 style="color: #333">Latest Articles</h2>
             @foreach($articles as $article)
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title">
+                    <div class="mdl-card__title" style="background-image: url('{{url('/uploads/articles/') }}/background-template.jpg')">
                         <h2 class="mdl-card__title-text">{{ $article->title }}</h2>
                     </div>
                     <div class="mdl-card__supporting-text excerpt">
@@ -117,6 +119,43 @@ In-depth Game Programming Tutorials and Courses
 @endsection
 
 @section('home-content')
+
+<div class="courses">
+    <div class="container">
+        <h2>Latest Articles</h2>
+        <div class="row">
+           @foreach($articles as $article)
+           
+            <div class="article-box">
+                <div class="col-sm-6 col-xs-12 col-lg-3 col-md-4">
+                    <img class="img-responsive image-responsive-centered article-image" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
+                    <div class="article-info" >
+                        <h3><a href="{{ url('/') }}/{{ $article->slug }}">{{ $article->title }}</a></h3>
+<!--                        <p></p>-->
+                    </div>
+                </div>
+            </div>
+            @endforeach
+            
+        </div>
+    </div>
+</div>
+
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="circle-bg">
+                    <i class="fa fa-cog fa-4x"></i>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2>Sharpen Your Mind</h2>
+                <p>Expand your programming knowledge by diving deeper into concepts such as Artificial Intelligence and Graphics Programming. Whether you are just starting out or are a tech industry pro, we are here to provide you with the knowledge you need to excel.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="featured-banner">
     <div class="container">
