@@ -22,6 +22,7 @@ Route::get('/newHome', 'FrontendController@newIndex');
 
 Route::get('/profile/{slug}', 'ProfileController@show');
 
+Route::get('/blog', 'BlogController@index');
 
 Route::resource('users', 'UserController');
 

@@ -59,6 +59,23 @@ In-depth Game Programming Tutorials and Courses
 </div>
 @endsection
 
+@section('registernow')
+<div class="picture-background">
+    <div class="container">
+        <h2>Register Now</h2>
+        <h4>For More High Quality Tutorials Delivered Straight To Your Mailbox:</h4>
+        <p>Join the hundreds of other programmers that have already joined the site and enjoy hours of free content!</p>
+         
+        <!-- Raised button with ripple -->
+        <a href="{{ url('auth/register') }}"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        Register Now
+        </button>
+        </a>
+
+    </div>
+</div>
+@endsection
+
 
 @section('latest-articles')
 <div class="latest-articles">
@@ -101,43 +118,6 @@ In-depth Game Programming Tutorials and Courses
 
 @section('home-content')
 
-<div class="courses">
-    <div class="container">
-        <h2>Latest Articles</h2>
-        <div class="row">
-           @foreach($articles as $article)
-           
-            <div class="article-box">
-                <div class="col-sm-6 col-xs-12 col-lg-3 col-md-4">
-                    <img class="img-responsive image-responsive-centered article-image" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
-                    <div class="article-info">
-                        <h3><a href="{{ url('/') }}/{{ $article->slug }}">{{ $article->title }}</a></h3>
-<!--                        <p></p>-->
-                    </div>
-                </div>
-            </div>
-            @endforeach
-            
-        </div>
-    </div>
-</div>
-
-<div class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="circle-bg">
-                    <i class="fa fa-cog fa-4x"></i>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <h2>Sharpen Your Mind</h2>
-                <p>Expand your programming knowledge by diving deeper into concepts such as Artificial Intelligence and Graphics Programming. Whether you are just starting out or are a tech industry pro, we are here to provide you with the knowledge you need to excel.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="featured-banner">
     <div class="container">
         <div class="row">
@@ -155,19 +135,20 @@ In-depth Game Programming Tutorials and Courses
             </div>
             <div class="col-lg-4">
                 <div class="red-circle-bg">
-                    228
+                    282
                 </div>
                 <h2>YouTube Subscribers</h2>
             </div>
         </div>
     </div>
 </div>
+
 <div class="banner">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h2>Develop New Skills</h2>
-                <p>Enhance your existing programming skills and pad out your github account with interesting projects that will ultimately help you get the job of your dreams.</p>
+                <h2>Join Us</h2>
+                <p>Enhance your existing programming skills and pad out your github account with interesting projects that will expand your programming knowledge.</p>
             </div>
             <div class="col-lg-6">
                 <div class="circle-bg orange">

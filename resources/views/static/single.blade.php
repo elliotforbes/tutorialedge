@@ -9,6 +9,7 @@
 @endsection
 
 @section('content')
+<div class="post-container">
   <div class="post-content">
 			<div class="row">
 				<div class="col-lg-9">
@@ -109,5 +110,5 @@
 		</div>
 		
 		
-		
+</div>
 @endsection

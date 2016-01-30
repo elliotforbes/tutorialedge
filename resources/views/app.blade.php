@@ -84,9 +84,12 @@
 		@yield('featured-top')
 		
 		@yield('content')
+        
+        @yield('registernow')
 		
 		@yield('latest-articles')
-				
+			
+        @yield('home-content')
 		<footer class="mdl-mega-footer">
 			<div class="container">
 				<div class="mdl-mega-footer__middle-section">
@@ -95,10 +98,9 @@
 					<input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
 					<h1 class="mdl-mega-footer__heading">Features</h1>
 					<ul class="mdl-mega-footer__link-list">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Terms</a></li>
-					<li><a href="#">Partners</a></li>
-					<li><a href="#">Updates</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/partners">Partners</a></li>
+					<li><a href="/blog">Updates</a></li>
 					</ul>
 				</div>
 					
