@@ -9,16 +9,14 @@
         <meta name="google-site-verification" content="o0UedRQqZULbVZPe6SPx1VD1YxJd6WL-2-15-XHWS1g" />
 		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
 		<meta property="og:site_name" content="TutorialEdge.net" />
-		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
-		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+		
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
 		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
 		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=54433', Request::secure()) }}">
-		
 		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
-		<script src="{{ asset('/js/prism.js', Request::secure()) }}"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -34,9 +32,7 @@
             ga('create', 'UA-10255990-23', 'auto');
             ga('send', 'pageview');
         </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="{{ asset('/js/bootstrap.min.js', Request::secure()) }}"></script>
-		
+       
 	</head>
 	<body>
 		
@@ -147,7 +143,11 @@
 			</div>
 		</footer>
 
-
+        <script src="{{ asset('/js/prism.js', Request::secure()) }}"></script>
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="{{ asset('/js/bootstrap.min.js', Request::secure()) }}"></script>
+		
 		<script src="{{ asset('/js/typed.js', Request::secure()) }}"></script>
 		<script src="{{ asset('/js/scripts.js', Request::secure()) }}"></script>
 	</body>
