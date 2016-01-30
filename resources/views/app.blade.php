@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
 		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
-		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=543', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=54333', Request::secure()) }}">
 		
 		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
 		<script src="{{ asset('/js/prism.js', Request::secure()) }}"></script>
@@ -35,22 +35,12 @@
             ga('create', 'UA-10255990-23', 'auto');
             ga('send', 'pageview');
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="{{ asset('/js/bootstrap.min.js', Request::secure()) }}"></script>
+		
 	</head>
 	<body>
 		
-            <!-- Uses a transparent header that draws on top of the layout's background -->
-    <style>
-    .demo-layout-transparent {
-    background: url('../assets/demos/transparent.jpg') center / cover;
-    }
-    .demo-layout-transparent .mdl-layout__header,
-    .demo-layout-transparent .mdl-layout__drawer-button {
-    /* This background is dark, so we set text to white. Use 87% black instead if
-        your background is light. */
-    color: white;
-    }
-    </style>
-
         <div class="demo-layout-transparent mdl-layout mdl-js-layout">
             <header class="mdl-layout__header mdl-layout__header--transparent">
                 <div class="mdl-layout__header-row">
@@ -154,8 +144,6 @@
 		</footer>
 
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="{{ asset('/js/bootstrap.min.js', Request::secure()) }}"></script>
 		<script src="{{ asset('/js/typed.js', Request::secure()) }}"></script>
 		<script src="{{ asset('/js/scripts.js', Request::secure()) }}"></script>
 	</body>
