@@ -120,27 +120,6 @@ In-depth Game Programming Tutorials and Courses
 
 @section('home-content')
 
-<div class="courses">
-    <div class="container">
-        <h2>Latest Articles</h2>
-        <div class="row">
-           @foreach($articles as $article)
-           
-            <div class="article-box">
-                <div class="col-sm-6 col-xs-12 col-lg-3 col-md-4">
-                    <img class="img-responsive image-responsive-centered article-image" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
-                    <div class="article-info" >
-                        <h3><a href="{{ url('/') }}/{{ $article->slug }}">{{ $article->title }}</a></h3>
-<!--                        <p></p>-->
-                    </div>
-                </div>
-            </div>
-            @endforeach
-            
-        </div>
-    </div>
-</div>
-
 <div class="banner">
     <div class="container">
         <div class="row">
