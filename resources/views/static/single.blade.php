@@ -16,7 +16,7 @@
 					<div class="post">
 						<div class="post-header">
                             <div class="post-image">
-                                <img src="{{ url('/uploads/articles/')}}/{{ $article->image_url }}" />
+                                <img src="{{ url('/uploads/articles/')}}/{{ $article->image_url }}" alt="{{ $article->excerpt }}"/>
                             </div>                            
 							<h2>{{$article->title}}</h2>
 							<div class="post-info">
