@@ -135,6 +135,7 @@ class FrontendController extends Controller {
 	{
 		$article = Article::whereSlug($slug)->get()->first();
         $articles = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ' ORDER BY title;'));
+        $related = DB::select(DB::raw('select * from articles where cat_id = ' . $article->cat_id . ' AND id != ' . $article->id . ' ORDER BY title LIMIT 3;'));
         if(is_null($article))
         {
             return view('errors.404');  
@@ -143,7 +144,7 @@ class FrontendController extends Controller {
         {
             
             $category = Category::where('cat_id', '=', $article->cat_id)->get()->first();
-            return view('static.single', compact('article', 'articles', 'category'));
+            return view('static.single', compact('article', 'articles', 'category', 'related'));
         }
         else 
         {

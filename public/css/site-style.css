@@ -1,6 +1,24 @@
 body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+.related-posts {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  border-top: 1px solid #E3E3E3;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #E3E3E3; }
+  .related-posts h4 {
+    margin-bottom: 40px; }
+  .related-posts .demo-card-square.mdl-card {
+    width: 320px;
+    height: 260px; }
+    .related-posts .demo-card-square.mdl-card h2 {
+      color: white; }
+  .related-posts .demo-card-square > .mdl-card__title {
+    color: #fff;
+    background: #46B6AC; }
+
 .header, .header .navbar {
   width: 100%;
   background-color: #3F4B5B;
@@ -95,6 +113,53 @@ body {
     font-weight: 200;
     line-height: 1.1;
     color: #79589F; }
+
+.social-sidebar-share {
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center; }
+  .social-sidebar-share a {
+    color: white; }
+  .social-sidebar-share a:hover {
+    color: #E3E3E3; }
+  .social-sidebar-share .twitter {
+    background-color: #2BB5DC;
+    width: 100%;
+    height: 80px; }
+  .social-sidebar-share .facebook {
+    background-color: #5F90B0;
+    width: 100%;
+    height: 80px; }
+  .social-sidebar-share i {
+    font-size: 35px;
+    margin-top: 12px;
+    padding: 15px; }
+  .social-sidebar-share .google {
+    background-color: #DA4A38;
+    width: 100%;
+    height: 80px; }
+  .social-sidebar-share .email {
+    background-color: #E2793C;
+    width: 100%;
+    height: 80px; }
+  .social-sidebar-share .counter {
+    background-color: #085368;
+    width: 30%;
+    height: 50px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-top: 13px;
+    float: left; }
+  .social-sidebar-share .share-button {
+    background-color: #007090;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    padding-top: 13px;
+    width: 70%;
+    height: 50px;
+    float: right; }
 
 .latest-articles {
   background-color: white;

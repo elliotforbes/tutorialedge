@@ -53,6 +53,30 @@
 						<div class="post-content">
                              {!! $article->body !!}
                         </div>
+                        
+                        <div class="related-posts">
+                            <h4>Related Posts</h4>
+                            <div class="row">
+                                @foreach($related as $post)
+                                <div class="col-lg-4">
+                                    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                    <div class="mdl-card__title mdl-card--expand" style="background-image: url('{{url('/uploads/articles/') }}/background-template.jpg')">
+                                        <h2 class="mdl-card__title-text">{{ $post->title }}</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Aenan convallis.
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        View Updates
+                                        </a>
+                                    </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </div>
 						
 					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Tutorial-Edge-Sidebar -->
@@ -79,10 +103,70 @@
 				
 						
 					</div>
-									
+				    
+               
+                    			
 				</div>
 				<div class="col-lg-3">
 					<div class="sidebar">
+                        <div class="social-sidebar-share">
+                             <div class="row">
+                                 <div class="col-lg-6 twitter-share">
+                                    <a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=tutorialedge" target="_blank">
+                                    <div class="twitter">
+                                         <i class="fa fa-twitter"></i>
+                                     </div>
+                                    <p class="counter">
+                                        0
+                                    </p>
+                                    <p class="share-button">
+                                        Tweet
+                                    </p>
+                                    </a>
+                                 </div>
+                                 <div class="col-lg-6 facebook-share">
+                                     <a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" > 
+								    <div class="facebook">
+                                         <i class="fa fa-facebook"></i>
+                                     </div>
+                                    <p class="counter">
+                                        0
+                                    </p>
+                                    <p class="share-button">
+                                        Share
+                                    </p>
+                                    </a>
+                                 </div>
+                                  <div class="col-lg-6 google-share">
+                                     <a href="https://plus.google.com/share?url=http://tutorialedge.net/{{ $article->slug }}" target="_blank">
+                                     <div class="google">
+                                         <i class="fa fa-google-plus"></i>
+                                     </div>
+                                    <p class="counter">
+                                        0
+                                    </p>
+                                    <p class="share-button">
+                                        Share
+                                    </p>
+                                    </a>
+                                 </div>
+                                 <div class="col-lg-6 email-share">
+                                     <a href="mailto:?subject={{ $article->title }} by TutorialEdge.net&amp;body=Check out this article,{{ url('/') }}/{{ $article->slug }}"
+                                       title="Share by Email">
+                                     <div class="email">
+                                         <i class="fa fa-envelope"></i>
+                                     </div>
+                                    <p class="counter">
+                                        0
+                                    </p>
+                                    <p class="share-button">
+                                        Share
+                                    </p>
+                                    </a>
+                                 </div>
+                             </div>
+                        </div>
+                        
 						<h2>{{ $category->title }}</h2>
 						<p>{{ $category->info }}</p>
 						<h3>Table of Contents</h3>
