@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use DB;
+use App;
 use App\Course;
 use App\Article;
 use App\User;
@@ -26,6 +27,31 @@ class FrontendController extends Controller {
         $userCount = User::count();
         return view('index', compact('categories', 'articles', 'artCount', 'userCount'));
 	}
+    
+    public function sitemap()
+    {
+        // create new sitemap object
+        $sitemap = App::make("sitemap");
+
+        // add items to the sitemap (url, date, priority, freq)
+        $sitemap->add(URL::to(), '2012-08-25T20:10:00+02:00', '1.0', 'daily');
+        $sitemap->add(URL::to('page'), '2012-08-26T12:30:00+02:00', '0.9', 'monthly');
+
+        // get all posts from db
+        $posts = DB::table('articles')->orderBy('created_at', 'desc')->get();
+
+        // add every post to the sitemap
+        foreach ($posts as $post)
+        {
+            $sitemap->add($post->slug, $post->updated_at, 1, "monthly");
+        }
+
+        // generate your sitemap (format, filename)
+        $sitemap->store('xml', 'sitemap');
+        // this will generate file mysitemap.xml to your public folder
+        
+       
+    }
     
 	public function newIndex()
 	{

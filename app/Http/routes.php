@@ -18,7 +18,8 @@ Route::get('/about', 'FrontendController@about');
 Route::get('/search', 'FrontendController@search');
 Route::get('/courses', 'FrontendController@courseIndex');
 
-Route::get('/newHome', 'FrontendController@newIndex');
+
+Route::get('sitemap', 'FrontendController@sitemap');
 
 Route::get('/profile/{slug}', 'ProfileController@show');
 
@@ -53,8 +54,6 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
-
-
 
 
 
