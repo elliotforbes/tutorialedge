@@ -109,7 +109,7 @@
 				<div class="col-lg-3">
 					<div class="sidebar">
                         <div class="patreon">
-                            <a href="#">
+                            <a href="https://www.patreon.com/tutorialedge">
                                 <img src="{{ asset('/images/patreon.jpg') }}" alt="Support me on Patreon" />
                             </a>
                         </div>
