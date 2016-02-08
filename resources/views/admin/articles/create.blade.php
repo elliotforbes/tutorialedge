@@ -56,6 +56,7 @@
                                         'class'=>'form-control',
                                         'placeholder'=>'Post Excerpt')) !!}
                             </div>
+                           
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -86,6 +87,11 @@
                                         'placeholder'=>'slug')) !!}
                             </div>
                         </div>
+                         <div class="form-group">
+                                    {!! Form::submit('Submit',
+                                        array('class'=>'btn btn-primary padding')) !!}
+                                
+                            </div>
                     </div>
                 </div>
                 <div class="row">
@@ -97,24 +103,24 @@
                                     array('required',
                                         'class'=>'form-control input-lg',
                                         'placeholder'=>'Article Body',
-                                        'id'=>'js-ckeditor'
+                                        'id'=>'js-ckeditor',
+                                        'rows'=>'25',
+                                        'cols'=>'50'
                                         )) !!}
                              </div>
                         </div>
                     </div>
-                </div>
+                    
                 
-                <div class="form-group">
-                            <div class="col-lg-12">
-                                {!! Form::submit('Submit',
-                                    array('class'=>'btn btn-primary btn-lg')) !!}
-                            </div>
-                        </div>
+            </div>
+                
             {!! Form::close() !!}
         </div>
     </div>
+    
 </div>
 </div>
+<div class="clear"></div>
 </div>
 <!-- END Mega Form -->
 

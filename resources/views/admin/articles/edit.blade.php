@@ -46,6 +46,7 @@
                                     {!! Form::textarea('body', null,
                                         array('required',
                                             'class'=>'form-control',
+                                            'rows'=>'25',
                                             'placeholder'=>'Article Body')) !!}
                                 </div>
                         </div>

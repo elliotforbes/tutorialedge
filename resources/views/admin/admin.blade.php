@@ -43,6 +43,7 @@
         <!-- Bootstrap and OneUI CSS framework -->
         <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
         <link rel="stylesheet" id="css-main" href="{{ asset('/css/oneui.css') }}">
+        <link rel="stylesheet" href="{{ asset('/css/admin-new.css') }}">
 
         <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
         <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->

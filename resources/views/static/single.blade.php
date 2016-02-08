@@ -108,6 +108,12 @@
 				</div>
 				<div class="col-lg-3">
 					<div class="sidebar">
+                        <div class="patreon">
+                            <a href="#">
+                                <img src="{{ asset('/images/patreon.jpg') }}" alt="Support me on Patreon" />
+                            </a>
+                        </div>
+                        
                         <div class="social-sidebar-share">
                              <div class="row">
                                  <div class="col-lg-6 twitter-share">
