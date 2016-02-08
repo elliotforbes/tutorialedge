@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
 		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
-		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=634443', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=6433', Request::secure()) }}">
 		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
         <script>
             (function (i, s, o, g, r, a, m) {
