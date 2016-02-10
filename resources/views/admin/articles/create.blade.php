@@ -72,10 +72,11 @@
                         <div class="form-group">
                             <div class="col-xs-12">
                                 <label for="mega-age">Category ID</label>
-                                {!! Form::text('cat_id', null,
-                                    array('required',
-                                        'class'=>'form-control',
-                                        'placeholder'=>'cat_id')) !!}
+                                <select class="form-control" name="category">
+                                    @foreach($categories as $cat)
+                                    <option>{{ $cat->title }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">

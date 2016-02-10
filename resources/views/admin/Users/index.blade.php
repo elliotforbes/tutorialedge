@@ -7,7 +7,7 @@
                      <div class="block-content tab-content bg-white">
                       
 <div class="border-b push-30">
-                                    <h2 class="push-10">192 <span class="h5 font-w400 text-muted">Users Found</span></h2>
+                                    <h2 class="push-10">{{$count}} <span class="h5 font-w400 text-muted">Users Found</span></h2>
                                 </div>
                                 <table class="table table-striped table-vcenter">
                                     <thead>

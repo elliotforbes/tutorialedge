@@ -64,10 +64,11 @@
                             </div>
                             <div class="form-group">
                                 {!! Form::label('Category ID') !!}
-                                {!! Form::text('cat_id', null,
-                                    array('required',
-                                        'class'=>'form-control',
-                                        'placeholder'=>'cat_id')) !!}
+                                <select class="form-control" name="category">
+                                    @foreach($categories as $cat)
+                                    <option>{{ $cat->title }}</option>
+                                    @endforeach
+                                </select>
                             </div>
                             <div class="form-group">
                                 {!! Form::label('Post Status') !!}

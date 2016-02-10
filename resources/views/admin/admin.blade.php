@@ -197,14 +197,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Media</span></a>
-                                    <ul>
-                                       <li>
-                                           <a href="{{ url('/admin/media') }}">All Media</a>
-                                       </li>
-                                    </ul>
-                                </li>
+                              
                                 <li>
                                     <a class="nav-submenu" data-toggle="nav-submenu" href="/admin"><i class="si si-note"></i><span class="sidebar-mini-hide">Users</span></a>
                                     <ul>

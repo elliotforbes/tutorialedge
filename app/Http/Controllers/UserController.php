@@ -16,7 +16,8 @@ class UserController extends Controller {
 	public function index()
 	{
 		$users = User::get();
-        return view('admin/Users/index', compact('users'));
+        $count = User::get()->count();
+        return view('admin/Users/index', compact('users', 'count'));
 	}
 
 	/**

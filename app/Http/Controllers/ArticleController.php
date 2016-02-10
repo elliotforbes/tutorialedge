@@ -8,6 +8,7 @@ use DB;
 use Carbon\Carbon;
 use App\Article;
 use App\Page;
+use App\Category;
 use Request;
 
 class ArticleController extends Controller {
@@ -20,7 +21,8 @@ class ArticleController extends Controller {
 	public function index()
 	{
 		$articles = Article::orderBy('id', 'DESC')->paginate(15);
-        return view('admin/articles/index', compact('articles'));
+        $categories = Category::get();
+        return view('admin/articles/index', compact('articles', 'categories'));
 	}
 
 	/**
@@ -44,13 +46,15 @@ class ArticleController extends Controller {
         $article = new Article;
         $input = Request::all();
         $file = Request::file('image');
-        
+        $cat = Request::input('category');
+        $catid = Category::where('title', '=', $cat)->firstOrFail();
         if($file){
             $imageName = $article->image_url . '.' . Request::file('image')->getClientOriginalExtension();
             Request::file('image')->move(base_path() . '/public/uploads/articles/', $imageName);
         }
         
         $article->published_at = Carbon::now();
+        $article->cat_id = $catid->cat_id;
         $article->fill($input)->save();
         
         return redirect('admin/articles');
@@ -84,8 +88,9 @@ class ArticleController extends Controller {
 	public function edit($slug)
 	{
 		$article = Article::whereSlug($slug)->get()->first();
+        $categories = Category::get();
         
-        return view('admin/articles/edit', compact('article'));
+        return view('admin/articles/edit', compact('article', 'categories'));
 	}
 
 	/**
@@ -98,6 +103,11 @@ class ArticleController extends Controller {
 	{
 		$article = Article::whereSlug($slug)->get()->first();
         $input = Request::all();
+        
+        $cat = Request::input('category');
+        $catid = Category::where('title', '=', $cat)->firstOrFail();
+        $article->cat_id = $catid->cat_id;
+        
         $article->fill($input)->save();
         return redirect('admin/articles/' . $slug . '/edit');
 	}
