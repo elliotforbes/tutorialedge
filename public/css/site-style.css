@@ -113,6 +113,8 @@ body {
     font-weight: 200;
     line-height: 1.1;
     color: #79589F; }
+  .post-content pre {
+    line-height: 1.5 !important; }
 
 .social-sidebar-share {
   margin-bottom: 20px;

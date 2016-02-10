@@ -58,7 +58,7 @@
                             <h4>Related Posts</h4>
                             <div class="row">
                                 @foreach($related as $post)
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <div class="demo-card-square mdl-card mdl-shadow--2dp">
                                     <div class="mdl-card__title mdl-card--expand" style="background-image: url('{{url('/uploads/articles/') }}/background-template.jpg')">
                                         <h2 class="mdl-card__title-text">{{ $post->title }}</h2>
