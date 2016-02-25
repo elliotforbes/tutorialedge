@@ -10,7 +10,7 @@ myApp.controller('SearchController', ['$scope', '$http' , function($scope, $http
     $scope.results = {};
     
     var getInitialResults = function () {
-        $http.get('http://localhost:8080/tuts01/public/api/v1/articles')
+        $http.get('http://tutorialedge.net/api/v1/articles')
             .success(function (response){
                 $scope.results = response;
             })
