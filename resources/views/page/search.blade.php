@@ -47,5 +47,5 @@
 
 @section('includes')
 <script src="{{ asset('js/angular.min.js') }}"></script>
-<script src="{{ asset('js/components/SearchController.js') }}"></script>
+<script src="{{ asset('js/components/SearchController.js') }}?v=1234"></script>
 @endsection
