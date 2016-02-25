@@ -7,79 +7,45 @@
 @endsection
 
 @section('content')
-    <div class="container">
-     <div class="latest-posts">
+<div class="post-container" ng-app="myApp">
+    <div class="post-content">
+     <div class="latest-posts" ng-controller="SearchController">
        <h2>Search Results</h2>
           <div class="row">
-            
-            @if (count($articles) === 0)
-                <div class="search-title">
-                    <h3>No Tutorials Found Matching That Search Term!</h3>
-                </div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6">
-                {!! Form::open(array('route' => 'queries.search', 'class' => 'form')) !!}
+              <form>
+                <div class="col-lg-12">
                     <div class="form-group">
-                    {!! Form::text('search', null,
-                        array('required',
-                            'class'=>'form-control',
-                            'placeholder'=>'Search Again')) !!}   
+                        <label>Search Tutorials:</label>
+                        <input type="text" class="form-control" placeholder="search now..." ng-model="query" ng-change="updateValue()">
                     </div>
+                </div>
+              </form>
+              <hr/>
+              <div class="col-lg-12">
+                <div class="search-results">
                     <div class="row">
-                       <div class="col-lg-4"></div>
-                       <div class="col-lg-4">
-                        <div class="form-group">
-                        {!! Form::submit('Search Now',
-                            array('class'=>'btn btn-primary search-btn')) !!}
+                    <div class="result" ng-repeat="result in results | filter: query">
+                        <div class="col-lg-2">
+                            <img src="http://tutorialedge.net/uploads/articles/<%result.image_url%>" alt="<%result.excerpt%>" />
                         </div>
-                        </div>
-                        <div class="col-lg-4"></div>
-                    </div>
-                {!! Form::close() !!}
-                </div>
-                <div class="col-lg-3"></div>
-            @elseif (count($articles) >= 1)
-               <div class="search-title">
-                    <h3>Search Results for: {{ $query }}</h3>
-                </div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6">
-                {!! Form::open(array('route' => 'queries.store', 'class' => 'form')) !!}
-                    <div class="form-group">
-                    {!! Form::text('search', null,
-                        array('required',
-                            'class'=>'form-control',
-                            'placeholder'=>'Search Again')) !!}   
-                    </div>
-                    <div class="row">
-                       <div class="col-lg-4"></div>
-                       <div class="col-lg-4">
-                        <div class="form-group">
-                        {!! Form::submit('Search Now',
-                            array('class'=>'btn btn-primary search-btn')) !!}
-                        </div>
-                        </div>
-                        <div class="col-lg-4"></div>
-                    </div>
-                {!! Form::close() !!}
-                </div>
-                <div class="col-lg-3"></div>
-               
-                @foreach($articles as $article)
-                <div class="article-box">
-                    <div class="col-sm-6 col-xs-12 col-lg-4 col-md-4">
-                        <img class="img-responsive image-responsive-centered article-image" alt="{{ $article->excerpt }}" title="{{ $article->excerpt }}" src="/uploads/articles/{{ $article->image_url }}">
-                        <div class="article-info">
-                            <h3><a href="/{{ $article->slug }}">{{ $article->title }}</a></h3>
-    <!--                        <p> </p>-->
+                        <div class="col-lg-10">
+                            <a href="http://tutorialedge.net/<%result.slug%>"><h5><%result.title%></h5></a>
+                            <p class="url"><%result.excerpt%></p>
+                            <a href="http://tutorialedge.net/<%result.slug%>">Read Now</a>
                         </div>
                     </div>
+                    <div class="clear"></div>
+                    </div>
                 </div>
-                @endforeach
-                
-                <div class="pagination"> <?php echo $articles->render(); ?> </div>
-            @endif
-         </div>
+              </div>
+              
+            </div>
+        </div>
     </div>
-    </div>
+</div>
+@endsection
+
+@section('includes')
+<script src="{{ asset('js/angular.min.js') }}"></script>
+<script src="{{ asset('js/components/SearchController.js') }}"></script>
 @endsection

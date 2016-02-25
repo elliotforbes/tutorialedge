@@ -116,6 +116,18 @@ body {
   .post-content pre {
     line-height: 1.5 !important; }
 
+.search-results {
+  margin-top: 40px; }
+  .search-results .result {
+    padding-bottom: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    height: 150px;
+    border-bottom: 1px solid #e3e3e3; }
+    .search-results .result img {
+      height: 110px;
+      width: 176px; }
+
 .social-sidebar-share {
   margin-bottom: 20px;
   color: #fff;

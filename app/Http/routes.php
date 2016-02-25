@@ -18,7 +18,6 @@ Route::get('/about', 'FrontendController@about');
 Route::get('/search', 'FrontendController@search');
 Route::get('/courses', 'FrontendController@courseIndex');
 
-
 Route::get('sitemap', 'FrontendController@sitemap');
 
 Route::get('/profile/{slug}', 'ProfileController@show');
@@ -26,6 +25,10 @@ Route::get('/profile/{slug}', 'ProfileController@show');
 Route::get('/blog', 'BlogController@index');
 
 Route::resource('users', 'UserController');
+
+Route::group(['prefix' => 'api/v1'], function () {
+   Route::get('articles', 'ApiController@articles'); 
+});
 
 Route::group(['middleware' => 'auth','prefix' => 'admin', 'as' ], function() {
     

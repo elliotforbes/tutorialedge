@@ -32,7 +32,7 @@ class ArticleController extends Controller {
 	 */
 	public function create()
 	{
-        $categories = Page::get();
+        $categories = Category::get();
         return view('admin/articles/create', compact('categories'));
 	}
 
@@ -74,7 +74,7 @@ class ArticleController extends Controller {
         {
             abort(404);   
         }
-        $page = Page::where('cat_id', '=', $article->cat_id)->get()->first();       
+        $page = Category::where('cat_id', '=', $article->cat_id)->get()->first();       
         return view('static.single', compact('article', 'articles', 'page'));
 	
 	}

@@ -180,6 +180,28 @@ body{
   }
   
 }
+
+.search-results{
+    
+    margin-top: 40px;
+    
+    .result{
+        padding-bottom: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        height: 150px;
+        border-bottom: 1px solid #e3e3e3;
+        
+        img{
+            height: 110px;
+            width: 176px;
+        }
+
+    }
+   
+    
+}
+
 .social-sidebar-share{
     
     margin-bottom: 20px;
