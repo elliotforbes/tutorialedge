@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 use App\Article;
+use DB;
 
 class ApiController extends Controller {
 
@@ -16,7 +17,7 @@ class ApiController extends Controller {
 	 */
 	public function articles()
 	{
-        $articles = Article::all();
+        $articles = DB::select( DB::raw("SELECT title, slug, image_url, created_at, excerpt FROM articles"));
         
         return $articles;
 	}
