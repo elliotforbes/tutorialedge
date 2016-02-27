@@ -13,10 +13,10 @@
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="{{ secure_asset('/css/prism.css', Request::secure()) }}">
-		<link rel="stylesheet" href="{{ secure_asset('/css/bootstrap.min.css', Request::secure()) }}">
-		<link rel="stylesheet" href="{{ secure_asset('/css/site-style.css?v=432', Request::secure()) }}">
-		<link rel="icon" type="image/png" href="{{ secure_asset('/images/favicon.ico', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
+		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=432', Request::secure()) }}">
+		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -44,6 +44,7 @@
                     <ul>
                         <li><a href="{{ url('/') }}">Home</a></li>
                         <li><a href="{{ url('/') }}/courses">Courses</a></li>
+                        <li><a href="{{ url('/search') }}">Search Tutorials</a></li>
                     </ul>
 				</div>
 			</div>
@@ -61,6 +62,9 @@
 						<li class="nav-item">
 							<a class="nav-link" href="{{ url('/about') }}">About</a>
 						</li>
+                        <li class="nav-item">
+                            <a href="{{ url('/search') }}" class="nav-link">Search Tutorials</a>
+                        </li>
                         @if (Auth::guest())
                         
                         <li class="nav-item">
@@ -145,12 +149,12 @@
         
         @yield('includes')
 
-        <script src="{{ secure_asset('/js/prism.js', Request::secure()) }}"></script>
+        <script src="{{ asset('/js/prism.js', Request::secure()) }}"></script>
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<script src="{{ secure_asset('/js/bootstrap.min.js', Request::secure()) }}"></script>
+		<script src="{{ asset('/js/bootstrap.min.js', Request::secure()) }}"></script>
 		
-		<script src="{{ secure_asset('/js/typed.js', Request::secure()) }}"></script>
-		<script src="{{ secure_asset('/js/scripts.js', Request::secure()) }}"></script>
+		<script src="{{ asset('/js/typed.js', Request::secure()) }}"></script>
+		<script src="{{ asset('/js/scripts.js', Request::secure()) }}"></script>
 	</body>
 </html>
