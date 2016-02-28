@@ -9,7 +9,7 @@
         <meta name="google-site-verification" content="o0UedRQqZULbVZPe6SPx1VD1YxJd6WL-2-15-XHWS1g" />
 		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
 		<meta property="og:site_name" content="TutorialEdge.net" />
-        <link rel="stylesheet" href="{{ asset('/css/all.css') }}">
+        <link rel="stylesheet" href="{{ asset('/css/all.css?v=1234') }}">
 		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
         <script>
             (function (i, s, o, g, r, a, m) {
