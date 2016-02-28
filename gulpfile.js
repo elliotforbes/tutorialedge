@@ -16,18 +16,22 @@ elixir(function(mix) {
     mix.less('admin-new.less'); 
     
     mix.styles([
+        'material.indigo-pink.min.css',
+        'material-icons.css',
         'font-awesome.min.css',
         'bootstrap.min.css',
         'prism.css',
-        'front-end.css',
-        'menu.css',
-        'lato.css'
+        'lato.css',
+        'site-style.css'
     ]);
     
     mix.scripts([
+        'material.min.js',
         'jquery.min.js',
         'bootstrap.min.js',
-        'prism.js'
+        'prism.js',
+        'typed.js',
+        'scripts.js'
     ]);
     
 });
