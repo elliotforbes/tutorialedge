@@ -25,19 +25,26 @@ body{
     .demo-card-square.mdl-card {
         width: 320px;
         height: 260px;
-        h2{
+        h3{
           color: white;  
+          position: absolute;
+          bottom: 20px;
         }
     }
     .demo-card-square > .mdl-card__title {
         color: #fff;
         background: #821232;
-        background: url('http://tutorialedge.net/images/background.svg') no-repeat;
+        background-image: url('images/background.svg');
         background-size: 100%;      
+<<<<<<< HEAD
         h3 {
             margin-top: 100px;
         }
+=======
+       
+>>>>>>> 555131c536d196700ada65f2fa653ccd13ef3f35
     }
+  
 }
 
 .header {
@@ -101,6 +108,7 @@ body{
       line-height: 30px;
       font-weight: 500;
       color: white;
+      
     }
 }
 
