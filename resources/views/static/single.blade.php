@@ -131,64 +131,7 @@
                         </div>
 
                         <!--End mc_embed_signup-->
-                        
-                        <div class="social-sidebar-share">
-                             <div class="row">
-                                 <div class="col-lg-6 twitter-share">
-                                    <a href="http://twitter.com/share?url=http://tutorialedge.net/{{ $article->slug }}&via=tutorialedge" target="_blank">
-                                    <div class="twitter">
-                                         <i class="fa fa-twitter"></i>
-                                     </div>
-                                    <p class="counter">
-                                        0
-                                    </p>
-                                    <p class="share-button">
-                                        Tweet
-                                    </p>
-                                    </a>
-                                 </div>
-                                 <div class="col-lg-6 facebook-share">
-                                     <a href="http://www.facebook.com/sharer/sharer.php?u=http://tutorialedge.net/{{ $article->slug }}" target="_blank" > 
-								    <div class="facebook">
-                                         <i class="fa fa-facebook"></i>
-                                     </div>
-                                    <p class="counter">
-                                        0
-                                    </p>
-                                    <p class="share-button">
-                                        Share
-                                    </p>
-                                    </a>
-                                 </div>
-                                  <div class="col-lg-6 google-share">
-                                     <a href="https://plus.google.com/share?url=http://tutorialedge.net/{{ $article->slug }}" target="_blank">
-                                     <div class="google">
-                                         <i class="fa fa-google-plus"></i>
-                                     </div>
-                                    <p class="counter">
-                                        0
-                                    </p>
-                                    <p class="share-button">
-                                        Share
-                                    </p>
-                                    </a>
-                                 </div>
-                                 <div class="col-lg-6 email-share">
-                                     <a href="mailto:?subject={{ $article->title }} by TutorialEdge.net&amp;body=Check out this article,{{ url('/') }}/{{ $article->slug }}"
-                                       title="Share by Email">
-                                     <div class="email">
-                                         <i class="fa fa-envelope"></i>
-                                     </div>
-                                    <p class="counter">
-                                        0
-                                    </p>
-                                    <p class="share-button">
-                                        Share
-                                    </p>
-                                    </a>
-                                 </div>
-                             </div>
-                        </div>
+
                         
 						<h2>{{ $category->title }}</h2>
 						<p>{{ $category->info }}</p>
