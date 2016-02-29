@@ -17,7 +17,9 @@ body {
       color: white; }
   .related-posts .demo-card-square > .mdl-card__title {
     color: #fff;
-    background: #46B6AC; }
+    background: #821232;
+    background-image: url("images/background.svg");
+    background-size: 100%; }
 
 .header, .header .navbar {
   width: 100%;
