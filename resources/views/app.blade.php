@@ -9,13 +9,12 @@
         <meta name="google-site-verification" content="o0UedRQqZULbVZPe6SPx1VD1YxJd6WL-2-15-XHWS1g" />
 		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
 		<meta property="og:site_name" content="TutorialEdge.net" />
-            <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
- 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
- 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
- 		<link rel="stylesheet" href="{{ asset('/css/prism.css', Request::secure()) }}">
- 		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css', Request::secure()) }}">
- 		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=432', Request::secure()) }}">
-		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico', Request::secure()) }}">
+            <link rel="stylesheet" href="{{ asset('/css/material.indigo-pink.min.css') }}">
+ 		<link rel="stylesheet" href="{{ asset('/css/font-awesome.min.css') }}">
+ 		<link rel="stylesheet" href="{{ asset('/css/material-icons.css') }}">
+ 		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
+ 		<link rel="stylesheet" href="{{ asset('/css/site-style.css?v=432') }}">
+		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
