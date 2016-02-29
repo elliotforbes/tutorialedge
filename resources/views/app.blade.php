@@ -10,7 +10,7 @@
 		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
 		<meta property="og:site_name" content="TutorialEdge.net" />
             <link rel="stylesheet" href="{{ asset('/css/material.indigo-pink.min.css') }}">
- 		<link rel="stylesheet" href="{{ asset('/css/font-awesome.min.css') }}">
+ 		<link rel="stylesheet" href="{{ asset('/fonts/flaticon/flaticon.css') }}">
  		<link rel="stylesheet" href="{{ asset('/css/material-icons.css') }}">
  		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
  		<link rel="stylesheet" href="{{ asset('/css/site-style.css') }}">

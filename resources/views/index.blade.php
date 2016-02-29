@@ -101,7 +101,7 @@ The Programming Tutorial Site
         <div class="row">
             <div class="col-lg-6">
                 <div class="circle-bg">
-                    <i class="fa fa-cog fa-4x"></i>
+                    <i class="flaticon flaticon-cogwheel"></i>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -146,7 +146,7 @@ The Programming Tutorial Site
             </div>
             <div class="col-lg-6">
                 <div class="circle-bg orange">
-                    <i class="fa fa-briefcase fa-4x"></i>
+                    <i class="flaticon flaticon-business"></i>
                 </div>
             </div>
         </div>
