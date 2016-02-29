@@ -21,8 +21,7 @@ elixir(function(mix) {
         'font-awesome.min.css',
         'bootstrap.min.css',
         'prism.css',
-        'lato.css',
-        'site-style.css'
+        'lato.css'
     ]);
     
     mix.scripts([
