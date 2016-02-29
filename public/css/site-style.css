@@ -13,8 +13,10 @@ body {
   .related-posts .demo-card-square.mdl-card {
     width: 320px;
     height: 260px; }
-    .related-posts .demo-card-square.mdl-card h2 {
-      color: white; }
+    .related-posts .demo-card-square.mdl-card h3 {
+      color: white;
+      position: absolute;
+      bottom: 20px; }
   .related-posts .demo-card-square > .mdl-card__title {
     color: #fff;
     background: #821232;

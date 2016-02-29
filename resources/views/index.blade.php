@@ -32,7 +32,7 @@ The Programming Tutorial Site
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
                     <div class="mdl-card__title" style="background: url('{{url('/images') }}/background.svg'); background-size: 100%">
-                        <h3>{{$category->title}}</h3>
+                        <h3 style="margin-top: 100px;">{{$category->title}}</h3>
                     </div>
                     <div class="mdl-card__supporting-text">
                         {{ $category->info }}
