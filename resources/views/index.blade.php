@@ -31,8 +31,8 @@ The Programming Tutorial Site
             @foreach ($categories as $category)
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title" style="background-image: url('{{url('/uploads/articles/course-images') }}/{{ $category->image_url }}')">
-                        
+                    <div class="mdl-card__title" style="background: url('{{url('/images') }}/background.svg')">
+                        <h3>{{$category->title}}</h3>
                     </div>
                     <div class="mdl-card__supporting-text">
                         {{ $category->info }}
@@ -75,7 +75,7 @@ The Programming Tutorial Site
             @foreach($articles as $article)
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title" style="background-image: url('{{url('/uploads/articles/') }}/background-template.jpg')">
+                    <div class="mdl-card__title" style="background: url('{{url('/images') }}/background.svg')">
                         <h2 class="mdl-card__title-text">{{ $article->title }}</h2>
                     </div>
                     <div class="mdl-card__supporting-text excerpt">
