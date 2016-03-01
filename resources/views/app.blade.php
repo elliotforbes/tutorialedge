@@ -13,7 +13,7 @@
  		<link rel="stylesheet" href="{{ asset('/fonts/flaticon/flaticon.css') }}">
  		<link rel="stylesheet" href="{{ asset('/css/material-icons.css') }}">
  		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('/css/prismnew.css') }}">
+        <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
  		<link rel="stylesheet" href="{{ asset('/css/site-style.css') }}">
 		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
         <script>
