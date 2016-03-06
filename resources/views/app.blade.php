@@ -147,7 +147,7 @@
 		</footer>
         
         @yield('includes')
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.3.0/prism.min.js"></script>
+        <script src="{{ secure_asset('/js/prism.js', Request::secure()) }}"></script>
         <script src="{{ secure_asset('/js/all.js', Request::secure()) }}"></script>
 	</body>
 </html>
