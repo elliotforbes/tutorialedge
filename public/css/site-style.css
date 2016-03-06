@@ -113,7 +113,7 @@ body {
   background-color: white;
   word-wrap: break-word; }
   .post-content .related-posts h2 {
-    color: #fff; }
+    color: #fff !important; }
   .post-content h1, .post-content h2 {
     font-family: inherit;
     font-weight: 200;
