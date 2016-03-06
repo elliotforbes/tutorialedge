@@ -14,7 +14,7 @@
  		<link rel="stylesheet" href="{{ secure_asset('/css/material-icons.css', Request::secure()) }}">
  		<link rel="stylesheet" href="{{ secure_asset('/css/bootstrap.min.css', Request::secure()) }}">
  		<link rel="stylesheet" href="{{ secure_asset('/css/site-style.css', Request::secure()) }}">
-		<link rel="stylesheet" href="https://tutorialedge.net/css/prism.css">
+		<link rel="stylesheet" href="//tutorialedge.net/css/prism.css">
         <link rel="icon" type="image/png" href="{{ secure_asset('/images/favicon.ico', Request::secure()) }}">
         <script>
             (function (i, s, o, g, r, a, m) {
@@ -148,6 +148,6 @@
         
         @yield('includes')
         <script src="{{ secure_asset('/js/all.js', Request::secure()) }}"></script>
-        <script src="http://tutorialedge.net/js/prism.js"></script>
+        <script src="//tutorialedge.net/js/prism.js"></script>
 	</body>
 </html>
