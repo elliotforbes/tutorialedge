@@ -18,7 +18,7 @@ class CourseController extends Controller {
 	public function index()
 	{
 		$courses = Course::orderBy('id', 'DESC')->paginate(9);
-        return view('admin/Courses/index', compact('courses'));
+        return view('admin/courses/index', compact('courses'));
 	}
 
 	/**
@@ -29,7 +29,7 @@ class CourseController extends Controller {
 	public function create()
 	{
 		$courses = Course::get();
-        return view('admin/Courses/create', compact('courses'));
+        return view('admin/courses/create', compact('courses'));
 	}
 
 	/**
@@ -74,7 +74,7 @@ class CourseController extends Controller {
 	public function edit($slug)
 	{
         $course = Course::whereSlug($slug)->get()->first();
-        return view('admin/Courses/edit', compact('course'));
+        return view('admin/courses/edit', compact('course'));
 	}
 
 	/**
