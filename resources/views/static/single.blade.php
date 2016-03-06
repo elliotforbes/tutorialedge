@@ -57,14 +57,14 @@
                                 @foreach($related as $post)
                                 <div class="col-lg-6">
                                     <div class="demo-card-square mdl-card mdl-shadow--2dp">
-                                    <div class="mdl-card__title mdl-card--expand" style="background-image: url('{{url('/uploads/articles/') }}/background-template.jpg')">
+                                    <div class="mdl-card__title mdl-card--expand" style="background-image: url('https://tutorialedge.net/uploads/articles/background-template.jpg')">
                                         <h2 class="mdl-card__title-text">{{ $post->title }}</h2>
                                     </div>
                                     <div class="mdl-card__supporting-text">
                                         {{ $post->excerpt }}
                                     </div>
                                     <div class="mdl-card__actions mdl-card--border">
-                                        <a href="{{ url('/') }}/{{$post->slug}}"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        <a href="https://tutorialedge/{{$post->slug}}"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                                         Read Now
                                         </a>
                                     </div>
