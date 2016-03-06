@@ -149,6 +149,12 @@
         @yield('includes')
         <script type="text/javascript" data-cfasync="false" src="{{ secure_asset('/js/all.js', Request::secure()) }}"></script>
         <script type="text/javascript" data-cfasync="false" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            hljs.configure({useBR: true});
+
+            $('xmp').each(function(i, block) {
+            hljs.highlightBlock(block);
+            });
+        </script>
 	</body>
 </html>
