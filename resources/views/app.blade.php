@@ -13,9 +13,9 @@
  		<link rel="stylesheet" href="{{ secure_asset('/fonts/flaticon/flaticon.css', Request::secure()) }}">
  		<link rel="stylesheet" href="{{ secure_asset('/css/material-icons.css', Request::secure()) }}">
  		<link rel="stylesheet" href="{{ secure_asset('/css/bootstrap.min.css', Request::secure()) }}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.3.0/themes/prism.min.css">
  		<link rel="stylesheet" href="{{ secure_asset('/css/site-style.css', Request::secure()) }}">
-		<link rel="icon" type="image/png" href="{{ secure_asset('/images/favicon.ico', Request::secure()) }}">
+		<link rel="stylesheet" href="https://tutorialedge.net/css/prism.css">
+        <link rel="icon" type="image/png" href="{{ secure_asset('/images/favicon.ico', Request::secure()) }}">
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
