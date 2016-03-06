@@ -9,7 +9,7 @@
             @foreach($articles as $article)
             <div class="col-md-4">
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title" style="background-image: url('https://tutorialedge/uploads/articles/background-template.jpg')">
+                    <div class="mdl-card__title" style="background-image: url('https://tutorialedge.net/uploads/articles/background-template.jpg')">
                         <h2 class="mdl-card__title-text">{{ $article->title }}</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
