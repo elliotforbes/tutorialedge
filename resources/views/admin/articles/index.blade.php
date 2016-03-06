@@ -34,7 +34,21 @@
 <div class="content content-narrow">
     <div class="block">
        <div class="block-header">
-             <a href="/admin/articles/create"><button class="btn btn-default btn-new">New Article</button></a>
+           <br/>
+             <div class="row">
+                 <div class="col-lg-4">
+                    <a href="/admin/articles/create"><button class="btn btn-default btn-new">New Article</button></a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search Articles...">
+                        <br/>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <button class="btn btn-primary pull-right"><i class="fa fa-search"></i> Search</button>
+                </div>
+             </div>
         </div>
         <div class="block-content">
              <table class="table table-striped">

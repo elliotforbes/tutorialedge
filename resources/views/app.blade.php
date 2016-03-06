@@ -9,13 +9,13 @@
         <meta name="google-site-verification" content="o0UedRQqZULbVZPe6SPx1VD1YxJd6WL-2-15-XHWS1g" />
 		<link rel="author" href="https://plus.google.com/b/115194233692529836662">
 		<meta property="og:site_name" content="TutorialEdge.net" />
-            <link rel="stylesheet" href="{{ asset('/css/material.indigo-pink.min.css') }}">
- 		<link rel="stylesheet" href="{{ asset('/fonts/flaticon/flaticon.css') }}">
- 		<link rel="stylesheet" href="{{ asset('/css/material-icons.css') }}">
- 		<link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('/css/prism.css') }}">
- 		<link rel="stylesheet" href="{{ asset('/css/site-style.css') }}">
-		<link rel="icon" type="image/png" href="{{ asset('/images/favicon.ico') }}">
+            <link rel="stylesheet" href="{{ secure_asset('/css/material.indigo-pink.min.css') }}">
+ 		<link rel="stylesheet" href="{{ secure_asset('/fonts/flaticon/flaticon.css') }}">
+ 		<link rel="stylesheet" href="{{ secure_asset('/css/material-icons.css') }}">
+ 		<link rel="stylesheet" href="{{ secure_asset('/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('/css/prism.css') }}">
+ 		<link rel="stylesheet" href="{{ secure_asset('/css/site-style.css') }}">
+		<link rel="icon" type="image/png" href="{{ secure_asset('/images/favicon.ico') }}">
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r;
@@ -147,7 +147,7 @@
 		</footer>
         
         @yield('includes')
-        <script src="{{ asset('/js/prism.js') }}"></script>
-        <script src="{{ asset('/js/all.js') }}"></script>
+        <script src="{{ secure_asset('/js/prism.js') }}"></script>
+        <script src="{{ secure_asset('/js/all.js') }}"></script>
 	</body>
 </html>
