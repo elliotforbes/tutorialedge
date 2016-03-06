@@ -118,7 +118,8 @@ body {
     line-height: 1.1;
     color: #79589F; }
   .post-content pre {
-    line-height: 1.5 !important; }
+    font-size: 20px;
+    line-height: 23px; }
 
 .search-results {
   margin-top: 40px; }
