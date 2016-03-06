@@ -13,23 +13,23 @@
 
         <!-- Icons -->
         <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-        <link rel="shortcut icon" href="{{ asset('/img/favicons/favicon.png') }}">
+        <link rel="shortcut icon" href="{{ secure_asset('/img/favicons/favicon.png', Request::secure()) }}">
 
-        <link rel="icon" type="image/png" href="{{ asset('/img/favicons/favicon-16x16.png') }}" sizes="16x16">
-        <link rel="icon" type="image/png" href="{{ asset('/img/favicons/favicon-32x32.png') }}" sizes="32x32">
-        <link rel="icon" type="image/png" href="{{ asset('/img/favicons/favicon-96x96.png') }}" sizes="96x96">
-        <link rel="icon" type="image/png" href="{{ asset('/img/favicons/favicon-160x160.png') }}" sizes="160x160">
-        <link rel="icon" type="image/png" href="{{ asset('/img/favicons/favicon-192x192.png') }}" sizes="192x192">
+        <link rel="icon" type="image/png" href="{{ secure_asset('/img/favicons/favicon-16x16.png', Request::secure()) }}" sizes="16x16">
+        <link rel="icon" type="image/png" href="{{ secure_asset('/img/favicons/favicon-32x32.png', Request::secure()) }}" sizes="32x32">
+        <link rel="icon" type="image/png" href="{{ secure_asset('/img/favicons/favicon-96x96.png', Request::secure()) }}" sizes="96x96">
+        <link rel="icon" type="image/png" href="{{ secure_asset('/img/favicons/favicon-160x160.png', Request::secure()) }}" sizes="160x160">
+        <link rel="icon" type="image/png" href="{{ secure_asset('/img/favicons/favicon-192x192.png', Request::secure()) }}" sizes="192x192">
 
-        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('/img/favicons/apple-touch-icon-57x57.png') }}">
-        <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('/img/favicons/apple-touch-icon-60x60.png') }}">
-        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('/img/favicons/apple-touch-icon-72x72.png') }}">
-        <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/img/favicons/apple-touch-icon-76x76.png') }}">
-        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('/img/favicons/apple-touch-icon-114x114.png') }}">
-        <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('/img/favicons/apple-touch-icon-120x120.png') }}">
-        <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('/img/favicons/apple-touch-icon-144x144.png') }}">
-        <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/img/favicons/apple-touch-icon-152x152.png') }}">
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/img/favicons/apple-touch-icon-180x180.png') }}">
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ secure_asset('/img/favicons/apple-touch-icon-57x57.png', Request::secure()) }}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ secure_asset('/img/favicons/apple-touch-icon-60x60.png', Request::secure()) }}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ secure_asset('/img/favicons/apple-touch-icon-72x72.png', Request::secure()) }}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ secure_asset('/img/favicons/apple-touch-icon-76x76.png', Request::secure()) }}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ secure_asset('/img/favicons/apple-touch-icon-114x114.png', Request::secure()) }}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ secure_asset('/img/favicons/apple-touch-icon-120x120.png', Request::secure()) }}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ secure_asset('/img/favicons/apple-touch-icon-144x144.png', Request::secure()) }}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ secure_asset('/img/favicons/apple-touch-icon-152x152.png', Request::secure()) }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ secure_asset('/img/favicons/apple-touch-icon-180x180.png', Request::secure()) }}">
         <!-- END Icons -->
 
         <!-- Stylesheets -->
@@ -396,24 +396,24 @@
         <!-- END Apps Modal -->
 
         <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
-        <script src="{{ asset('/js/core/jquery.min.js') }}"></script>
-        <script src="{{ asset('/js/core/bootstrap.min.js') }}"></script>
-        <script src="{{ asset('/js/core/jquery.slimscroll.min.js') }}"></script>
-        <script src="{{ asset('/js/core/jquery.scrollLock.min.js') }}"></script>
-        <script src="{{ asset('/js/core/jquery.appear.min.js') }}"></script>
-        <script src="{{ asset('/js/core/jquery.countTo.min.js') }}"></script>
-        <script src="{{ asset('/js/core/jquery.placeholder.min.js') }}"></script>
-        <script src="{{ asset('/js/core/js.cookie.min.js') }}"></script>
-        <script src="{{ asset('/js/app.js') }}"></script>
+        <script src="{{ secure_asset('/js/core/jquery.min.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/core/bootstrap.min.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/core/jquery.slimscroll.min.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/core/jquery.scrollLock.min.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/core/jquery.appear.min.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/core/jquery.countTo.min.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/core/jquery.placeholder.min.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/core/js.cookie.min.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/app.js', Request::secure()) }}"></script>
 
         <!-- Page Plugins -->
-        <script src="{{ asset('/js/plugins/slick/slick.min.js') }}"></script>
-        <script src="{{ asset('/js/plugins/chartjs/Chart.min.js') }}"></script>
+        <script src="{{ secure_asset('/js/plugins/slick/slick.min.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/plugins/chartjs/Chart.min.js', Request::secure()) }}"></script>
         
         @yield('footerlinks')
         
         <!-- Page JS Code -->
-        <script src="{{ asset('/js/base_pages_dashboard.js') }}"></script>
+        <script src="{{ secure_asset('/js/base_pages_dashboard.js', Request::secure()) }}"></script>
         <script>
             $(function () {
                 // Init page helpers (Slick Slider plugin)
