@@ -62,7 +62,7 @@
                             <!-- Login Form -->
                             <!-- jQuery Validation (.js-validation-login class is initialized in js/pages/base_pages_login.js) -->
                             <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                            <form class="js-validation-login form-horizontal push-30-t" role="form" method="POST" action="{{ url('/auth/login') }}">
+                            <form class="js-validation-login form-horizontal push-30-t" role="form" method="POST" action="https://tutorialedge.net/auth/login">
                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <div class="form-group">
                                     <div class="col-xs-12">
