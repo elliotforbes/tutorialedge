@@ -147,7 +147,7 @@
 		</footer>
         
         @yield('includes')
-        <script src="{{ secure_asset('/js/prism.js', Request::secure()) }}"></script>
         <script src="{{ secure_asset('/js/all.js', Request::secure()) }}"></script>
+        <script src="{{ secure_asset('/js/prism.js', Request::secure()) }}"></script>
 	</body>
 </html>
