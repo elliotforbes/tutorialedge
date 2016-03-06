@@ -148,6 +148,6 @@
         
         @yield('includes')
         <script src="{{ secure_asset('/js/all.js', Request::secure()) }}"></script>
-        <script src="{{ secure_asset('/js/prism.js', Request::secure()) }}"></script>
+        <script src="http://tutorialedge.net/js/prism.js"></script>
 	</body>
 </html>
