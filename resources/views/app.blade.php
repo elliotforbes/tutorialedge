@@ -13,7 +13,7 @@
  		<link rel="stylesheet" href="{{ secure_asset('/fonts/flaticon/flaticon.css', Request::secure()) }}">
  		<link rel="stylesheet" href="{{ secure_asset('/css/material-icons.css', Request::secure()) }}">
  		<link rel="stylesheet" href="{{ secure_asset('/css/bootstrap.min.css', Request::secure()) }}">
-        <link rel="stylesheet" href="{{ secure_asset('/css/prism.css', Request::secure()) }}">
+        <link rel="stylesheet" href="https://tutorialedge/net/css/prism.css">
  		<link rel="stylesheet" href="{{ secure_asset('/css/site-style.css', Request::secure()) }}">
 		<link rel="icon" type="image/png" href="{{ secure_asset('/images/favicon.ico', Request::secure()) }}">
         <script>
@@ -147,7 +147,7 @@
 		</footer>
         
         @yield('includes')
-        <script src="{{ secure_asset('/js/prism.js', Request::secure()) }}"></script>
+        <script src="https://tutorialedge.net/js/prism.js"></script>
         <script src="{{ secure_asset('/js/all.js', Request::secure()) }}"></script>
 	</body>
 </html>
