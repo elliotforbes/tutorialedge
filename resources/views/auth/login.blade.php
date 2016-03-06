@@ -62,8 +62,8 @@
                             <!-- Login Form -->
                             <!-- jQuery Validation (.js-validation-login class is initialized in js/pages/base_pages_login.js) -->
                             <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                            {!! Form::open(['url'=>'auth/login']) !!}
-                                {!! csrf_field() !!}
+                            {!! Form::open(array('url'=>'/auth/login')) !!}
+                                
                                 <div class="form-group">
                                     <div class="col-xs-12">
                                         <div class="form-material form-material-primary floating">
