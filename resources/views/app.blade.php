@@ -147,8 +147,8 @@
 		</footer>
         
         @yield('includes')
-        <script src="{{ secure_asset('/js/all.js', Request::secure()) }}"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+        <script type="text/javascript" data-cfasync="false" src="{{ secure_asset('/js/all.js', Request::secure()) }}"></script>
+        <script type="text/javascript" data-cfasync="false" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
 	</body>
 </html>
