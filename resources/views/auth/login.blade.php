@@ -63,7 +63,7 @@
                             <!-- jQuery Validation (.js-validation-login class is initialized in js/pages/base_pages_login.js) -->
                             <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
                             {!! Form::open(['url'=>'auth/login']) !!}
-                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                {!! csrf_field() !!}
                                 <div class="form-group">
                                     <div class="col-xs-12">
                                         <div class="form-material form-material-primary floating">
