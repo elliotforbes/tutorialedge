@@ -174,7 +174,13 @@ body{
   @extend .content;
   background-color: white;
   word-wrap: break-word;
-  
+   
+   .related-posts{
+       h2{
+           color: #fff;
+       }
+   }
+   
     h1, h2{
     font-family: inherit;
     font-weight: 200;
