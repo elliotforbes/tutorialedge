@@ -26,12 +26,12 @@
                     <div class="row">
                     <div class="result" ng-repeat="result in results | filter: query">
                         <div class="col-lg-2">
-                            <img src="http://tutorialedge.net/uploads/articles/<%result.image_url%>" alt="<%result.excerpt%>" />
+                            <img src="https://tutorialedge.net/uploads/articles/<%result.image_url%>" alt="<%result.excerpt%>" />
                         </div>
                         <div class="col-lg-10">
-                            <a href="http://tutorialedge.net/<%result.slug%>"><h5><%result.title%></h5></a>
+                            <a href="https://tutorialedge.net/<%result.slug%>"><h5><%result.title%></h5></a>
                             <p class="url"><%result.excerpt%></p>
-                            <a href="http://tutorialedge.net/<%result.slug%>">Read Now</a>
+                            <a href="https://tutorialedge.net/<%result.slug%>">Read Now</a>
                         </div>
                     </div>
                     <div class="clear"></div>
