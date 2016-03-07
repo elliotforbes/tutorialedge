@@ -125,7 +125,9 @@ body {
   .post-content pre {
     font-size: 18px;
     line-height: 21px;
-    overflow: auto; }
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre; }
 
 .search-results {
   margin-top: 40px; }
