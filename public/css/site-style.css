@@ -119,9 +119,12 @@ body {
     font-weight: 200;
     line-height: 1.1;
     color: #79589F; }
+  .post-content img {
+    width: 100%;
+    height: auto; }
   .post-content pre {
-    font-size: 20px;
-    line-height: 23px; }
+    font-size: 18px;
+    line-height: 21px; }
 
 .search-results {
   margin-top: 40px; }
