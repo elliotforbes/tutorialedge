@@ -124,7 +124,8 @@ body {
     height: auto; }
   .post-content pre {
     font-size: 18px;
-    line-height: 21px; }
+    line-height: 21px;
+    overflow: auto; }
 
 .search-results {
   margin-top: 40px; }
