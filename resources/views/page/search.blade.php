@@ -47,5 +47,5 @@
 
 @section('includes')
 <script src="{{ secure_asset('js/angular.min.js', Request::secure()) }}"></script>
-<script src="{{ secure_asset('js/components/SearchController.js', Request::secure()) }}"></script>
+<script src="{{ secure_asset('js/components/SearchController.js', Request::secure()) }}?v=12"></script>
 @endsection
