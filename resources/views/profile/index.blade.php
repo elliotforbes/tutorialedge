@@ -3,7 +3,7 @@
 <div class="gray-padding"></div>
 
 <div class="container ">
-    <div class="post-cont">
+    <div class="profile-cont">
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-4 profile-image">
