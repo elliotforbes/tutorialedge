@@ -144,7 +144,7 @@ return [
 		'App\Providers\ConfigServiceProvider',
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
-
+        'Laravel\Socialite\SocialiteServiceProvider',
 	],
 
 	/*
@@ -193,7 +193,7 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
         'Form'      => 'Illuminate\Html\FormFacade',
-        
+        'Socialite' => 'Laravel\Socialite\Facades\Socialite',
 
 	],
 
