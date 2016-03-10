@@ -4,6 +4,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+
+use Illuminate\Support\Facades\Session;
 use Socialite;
 use Illuminate\Http\Request;
 use App\User;
@@ -63,9 +65,13 @@ class AuthController extends Controller {
             return Redirect::to('auth/github');
         }
 
-        $authUser = $this->findOrCreateUser($user);
+        Session::put('user', $user);
 
-        Auth::login($authUser, true);
+        $redirect = $request->input('redirect');
+        if($redirect)
+        {
+            return redirect($redirect);
+        }
 
         return Redirect::to('home');
     }
