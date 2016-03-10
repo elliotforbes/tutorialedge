@@ -59,12 +59,7 @@ class AuthController extends Controller {
      */
     public function handleProviderCallback(Request $request)
     {
-        try {
-            $user = Socialite::driver('github')->user();
-        } catch (Exception $e) {
-            return Redirect::to('auth/github');
-        }
-
+        $user = Socialite::driver('github')->user();
         Session::put('user', $user);
 
         $redirect = $request->input('redirect');
@@ -72,8 +67,8 @@ class AuthController extends Controller {
         {
             return redirect($redirect);
         }
-
-        return redirect('home');
+        
+        return 'GitHub auth successful. Now navigate to a demo.';
     }
 
     /**
