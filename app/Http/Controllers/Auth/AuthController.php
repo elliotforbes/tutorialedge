@@ -68,10 +68,7 @@ class AuthController extends Controller {
         {
             return redirect($redirect);
         }
-        // Current user is now available via Auth facade
-        Auth::attempt(['email' => $user->getEmail(), 'github_id' => $user->getId()]);
-        
-        
+                
         return redirect('');
     }
 
