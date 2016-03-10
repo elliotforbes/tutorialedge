@@ -67,6 +67,9 @@ class AuthController extends Controller {
         {
             return redirect($redirect);
         }
+        // Current user is now available via Auth facade
+        $user = Auth::user();
+        
         return redirect('');
     }
 
