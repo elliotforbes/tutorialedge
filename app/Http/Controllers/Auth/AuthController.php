@@ -67,12 +67,7 @@ class AuthController extends Controller {
         {
             return redirect($redirect);
         }
-        $categories = Category::get();
-        $articles = Article::orderBy('id', 'DESC')->take(8)->get();
-        $artCount = Article::count();
-        $userCount = User::count();
-        
-        return view('index', compact('categories', 'articles', 'artCount', 'userCount'));
+        return redirect()->route('home');
     }
 
     /**
