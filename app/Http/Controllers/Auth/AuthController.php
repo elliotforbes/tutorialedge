@@ -67,8 +67,12 @@ class AuthController extends Controller {
         {
             return redirect($redirect);
         }
+        $categories = Category::get();
+        $articles = Article::orderBy('id', 'DESC')->take(8)->get();
+        $artCount = Article::count();
+        $userCount = User::count();
         
-        return 'GitHub auth successful. Now navigate to a demo.';
+        return view('index', compact('categories', 'articles', 'artCount', 'userCount'));
     }
 
     /**
