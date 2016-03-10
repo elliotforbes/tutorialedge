@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Session;
 use Socialite;
 use Illuminate\Http\Request;
 use App\User;
+use Auth;
 
 class AuthController extends Controller {
 
@@ -68,7 +69,8 @@ class AuthController extends Controller {
             return redirect($redirect);
         }
         // Current user is now available via Auth facade
-        $user = Auth::user();
+        Auth::login($user);
+        
         
         return redirect('');
     }
