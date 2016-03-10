@@ -43,7 +43,9 @@ class AuthController extends Controller {
      */
     public function redirectToProvider()
     {
-        return Socialite::driver('github')->redirect();
+        return Socialite::driver('github')
+            ->with(['redirect_uri' => env('GITHUB_CALLBACK_URL' ) . '?redirect=' . $request->input('redirect')])
+            ->redirect();
     }
 
     /**
