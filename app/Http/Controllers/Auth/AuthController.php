@@ -70,7 +70,7 @@ class AuthController extends Controller {
         $redirect = $request->input('redirect');
         if($redirect)
         {
-            return redirect($redirect);
+            return Redirect::to($redirect);
         }
 
         return Redirect::to('home');
