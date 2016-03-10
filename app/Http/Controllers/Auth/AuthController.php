@@ -10,7 +10,7 @@ use Socialite;
 use Illuminate\Http\Request;
 use App\User;
 use Auth;
-
+use Log;
 class AuthController extends Controller {
 
 	/*
@@ -84,6 +84,8 @@ class AuthController extends Controller {
     private function findOrCreateUser($githubUser)
     {
         if ($authUser = User::where('github_id', $githubUser->id)->first()) {
+            Log::info("User Found");
+            Auth::login($authUser);
             return $authUser;
         }
 
