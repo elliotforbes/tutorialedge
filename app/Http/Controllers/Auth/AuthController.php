@@ -67,7 +67,7 @@ class AuthController extends Controller {
         {
             return redirect($redirect);
         }
-        return redirect()->route('home');
+        return redirect('');
     }
 
     /**
