@@ -57,7 +57,7 @@ class AuthController extends Controller {
      *
      * @return Response
      */
-    public function handleProviderCallback()
+    public function handleProviderCallback(Request $request)
     {
         try {
             $user = Socialite::driver('github')->user();
