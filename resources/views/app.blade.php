@@ -67,10 +67,7 @@
                         @if (Auth::guest())
                         
                         <li class="nav-item">
-                            <a href="{{ url('/auth/register') }}" class="nav-link">Register</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ url('/auth/login') }}" class="nav-link">Log In</a>
+                            <a href="{{ url('/auth/github') }}" class="nav-link"><i class="fa fa-github"></i> Login With Github</a>
                         </li>
                         @else
                         <li class="nav-item">
