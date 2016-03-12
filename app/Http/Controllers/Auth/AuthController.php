@@ -64,12 +64,17 @@ class AuthController extends Controller {
         Session::put('user', $user);
 
         $redirect = $request->input('redirect');
+        
         if($redirect)
         {
             return redirect($redirect);
         }
+        
+        $authUser = $this->findOrCreateUser($user);
+
+        Auth::login($authUser, true);
                 
-        return redirect('');
+        return redirect('home');
     }
 
     /**
