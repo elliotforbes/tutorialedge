@@ -123,19 +123,15 @@ body {
     width: 100%;
     height: auto; }
   .post-content pre {
-<<<<<<< HEAD
     line-height: 1.5 !important;
     font-size: 15px !important;
     padding: 1em;
     margin: 10px 0 20px;
-    overflow: auto; }
-=======
-    font-size: 18px;
+    overflow: auto;
     line-height: 21px;
     overflow: auto;
     word-wrap: normal;
     white-space: pre; }
->>>>>>> cbdfe6e44787b820fffa7feb35ef4a68d68caf18
 
 .search-results {
   margin-top: 40px; }
@@ -418,5 +414,10 @@ body {
   width: 100%;
   height: auto;
   margin-bottom: 20px; }
+
+.profile-cont {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 40px; }
 
 /*# sourceMappingURL=site-style.css.map */
