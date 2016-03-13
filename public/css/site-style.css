@@ -125,8 +125,8 @@ body {
   .post-content pre {
     line-height: 1.5 !important;
     font-size: 15px !important;
-    padding: 1em;
-    margin: 10px 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     overflow: auto;
     line-height: 21px;
     overflow: auto;
