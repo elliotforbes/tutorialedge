@@ -33,5 +33,11 @@ return [
 		'model'  => 'App\User',
 		'secret' => '',
 	],
+    
+    'github' => [
+        'client_id' => env('GITHUB_ID'),
+        'client_secret' => env('GITHUB_SECRET'),
+        'redirect' => env('GITHUB_URL'),  
+    ],
 
 ];

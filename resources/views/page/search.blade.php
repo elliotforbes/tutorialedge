@@ -26,12 +26,12 @@
                     <div class="row">
                     <div class="result" ng-repeat="result in results | filter: query">
                         <div class="col-lg-2">
-                            <img src="http://tutorialedge.net/uploads/articles/<%result.image_url%>" alt="<%result.excerpt%>" />
+                            <img src="https://tutorialedge.net/uploads/articles/<%result.image_url%>" alt="<%result.excerpt%>" />
                         </div>
                         <div class="col-lg-10">
-                            <a href="http://tutorialedge.net/<%result.slug%>"><h5><%result.title%></h5></a>
+                            <a href="https://tutorialedge.net/<%result.slug%>"><h5><%result.title%></h5></a>
                             <p class="url"><%result.excerpt%></p>
-                            <a href="http://tutorialedge.net/<%result.slug%>">Read Now</a>
+                            <a href="https://tutorialedge.net/<%result.slug%>">Read Now</a>
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -46,6 +46,6 @@
 @endsection
 
 @section('includes')
-<script src="{{ asset('js/angular.min.js') }}"></script>
-<script src="{{ asset('js/components/SearchController.js') }}?v=1234"></script>
+<script src="{{ secure_asset('js/angular.min.js', Request::secure()) }}"></script>
+<script src="{{ secure_asset('js/components/SearchController.js', Request::secure()) }}?v=12"></script>
 @endsection

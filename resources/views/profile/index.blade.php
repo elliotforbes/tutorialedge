@@ -2,8 +2,13 @@
 
 <div class="gray-padding"></div>
 
+<<<<<<< HEAD
 <div class="container">
     <div class="profile post-cont">
+=======
+<div class="container ">
+    <div class="profile-cont">
+>>>>>>> cbdfe6e44787b820fffa7feb35ef4a68d68caf18
         <div class="row">
             <div class="col-md-12">
                 <div class="col-md-4 profile-image">

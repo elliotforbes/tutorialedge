@@ -57,8 +57,8 @@ The Programming Tutorial Site
         <h4>For More High Quality Tutorials Delivered Straight To Your Mailbox:</h4>
         <p>Join the hundreds of other programmers that have already joined the site and enjoy hours of free content!</p>
          
-        <a href="{{ url('auth/register') }}"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-        Register Now
+        <a href="{{ url('auth/github') }}"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        Register Using Github
         </button>
         </a>
 

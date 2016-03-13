@@ -174,7 +174,13 @@ body{
   @extend .content;
   background-color: white;
   word-wrap: break-word;
-  
+   
+   .related-posts{
+       h2{
+           color: #fff !important;
+       }
+   }
+   
     h1, h2{
     font-family: inherit;
     font-weight: 200;
@@ -182,12 +188,25 @@ body{
     color: #79589F;
   }
   
+  img {
+      width: 100%;
+      height: auto;
+  }
+  
   pre {
+<<<<<<< HEAD
     line-height: 1.5 !important;
     font-size: 15px !important;
     padding: 1em;
     margin: 10px 0 20px;
     overflow: auto;
+=======
+        font-size: 18px;
+        line-height: 21px;
+        overflow: auto;
+        word-wrap: normal;
+        white-space: pre;
+>>>>>>> cbdfe6e44787b820fffa7feb35ef4a68d68caf18
   }
   
 }
@@ -602,4 +621,10 @@ body{
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+}
+
+.profile-cont{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
 }

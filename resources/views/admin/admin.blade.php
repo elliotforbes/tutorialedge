@@ -37,13 +37,13 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
 
         <!-- Page JS Plugins CSS -->
-        <link rel="stylesheet" href="{{ asset('/js/plugins/slick/slick.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('/js/plugins/slick/slick-theme.min.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('/js/plugins/slick/slick.min.css', Request::secure()) }}">
+        <link rel="stylesheet" href="{{ secure_asset('/js/plugins/slick/slick-theme.min.css', Request::secure()) }}">
 
         <!-- Bootstrap and OneUI CSS framework -->
-        <link rel="stylesheet" href="{{ asset('/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" id="css-main" href="{{ asset('/css/oneui.css') }}">
-        <link rel="stylesheet" href="{{ asset('/css/admin-new.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('/css/bootstrap.min.css', Request::secure()) }}">
+        <link rel="stylesheet" id="css-main" href="{{ secure_asset('/css/oneui.css', Request::secure()) }}">
+        <link rel="stylesheet" href="{{ secure_asset('/css/admin-new.css', Request::secure()) }}">
 
         <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
         <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->

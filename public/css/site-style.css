@@ -112,17 +112,30 @@ body {
 .post-content {
   background-color: white;
   word-wrap: break-word; }
+  .post-content .related-posts h2 {
+    color: #fff !important; }
   .post-content h1, .post-content h2 {
     font-family: inherit;
     font-weight: 200;
     line-height: 1.1;
     color: #79589F; }
+  .post-content img {
+    width: 100%;
+    height: auto; }
   .post-content pre {
+<<<<<<< HEAD
     line-height: 1.5 !important;
     font-size: 15px !important;
     padding: 1em;
     margin: 10px 0 20px;
     overflow: auto; }
+=======
+    font-size: 18px;
+    line-height: 21px;
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre; }
+>>>>>>> cbdfe6e44787b820fffa7feb35ef4a68d68caf18
 
 .search-results {
   margin-top: 40px; }

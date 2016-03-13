@@ -53,12 +53,15 @@ Route::get('/video/{slug}', array('as' => 'video.show', 'uses' => 'VideoControll
 Route::get('/category/{slug}', array('as' => 'page.show', 'uses' => 'CategoryController@show'));
 Route::get('/{slug}', 'FrontendController@show');
 
+Route::get('auth/github', 'Auth\AuthController@redirectToProvider');
+Route::get('auth/github/callback', 'Auth\AuthController@handleProviderCallback');
+
+
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
-
-
 
 
 
