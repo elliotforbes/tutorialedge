@@ -13,13 +13,9 @@
  		<link rel="stylesheet" href="{{ secure_asset('/fonts/flaticon/flaticon.css', Request::secure()) }}">
  		<link rel="stylesheet" href="{{ secure_asset('/css/material-icons.css', Request::secure()) }}">
  		<link rel="stylesheet" href="{{ secure_asset('/css/bootstrap.min.css', Request::secure()) }}">
-<<<<<<< HEAD
- 		<link rel="stylesheet" href="http://tutorialedge.net/css/prism.css">
-         <link rel="stylesheet" href="{{ secure_asset('/css/site-style.css?v=123', Request::secure()) }}">
-=======
+
          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/styles/default.min.css">
          <link rel="stylesheet" href="{{ secure_asset('/css/site-style.css?v=2333', Request::secure()) }}">
->>>>>>> cbdfe6e44787b820fffa7feb35ef4a68d68caf18
         <link rel="icon" type="image/png" href="{{ secure_asset('/images/favicon.ico', Request::secure()) }}">
         <script>
             (function (i, s, o, g, r, a, m) {
