@@ -64,7 +64,7 @@
                                         {{ $post->excerpt }}
                                     </div>
                                     <div class="mdl-card__actions mdl-card--border">
-                                        <a href="https://tutorialedge/{{$post->slug}}"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                        <a href="https://tutorialedge.net/{{$post->slug}}"class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                                         Read Now
                                         </a>
                                     </div>
